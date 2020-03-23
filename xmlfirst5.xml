@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Esercizio: correggere il codice originale
+
+    Originale:
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <text>
+        il primo xml con validazione
+    </text>
+    <text />
+
+
+    Validazione: 
+
+    "Extra content at the end of the document
+        <text />"
+
+    Correggo eliminando <text />, il tag <text> è già stato chiudo alla linea 13 con </text>, 
+    <text /> non chiude nessun tag ed è un errore.
+    Se non avessi avuto la chiusura del tag alla linea 13, avrei corretto <text /> con </text> spostando lo slash e cancellando lo spazio.
+    
+
+    Corretto:
+    
+    <text>
+        il primo xml con validazione
+    </text>
+-->
+
+
+
+<!-- Esercizio: aggiungere un figlio (child) ad un elemento
+
+    <text>
+        <figlio>
+            il
+        </figlio> 
+        primo xml con validazione
+    </text>
+-->
+
+
+
+<!-- Esercizio: aggiungere un fratello (sibling) -->
+    
+    <text>
+        <figlio>
+            il 
+        </figlio>
+        <figlia>
+            primo
+        </figlia>
+        xml con validazione
+    </text>
