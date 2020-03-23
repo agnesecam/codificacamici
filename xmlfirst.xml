@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- CORRETTO  -->
+
+<choice>
+    <sic> testo con errore </sic>
+    <cor> testo corretto </cor>
+</choice>
+
+<!--choice ha contenuto strutturato ed è il padre/parent di sic e di cor
+    cor e sic hanno contenuto testuale, e sono figli di choice, siblings/fratelli tra loro-->
