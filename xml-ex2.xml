@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    studente: Agnese Camici
+    matricola: 559788
+    corso: codifica di testi 19-20
+-->
+
+<root>
+    <content>
+        c&#x61;sa
+        <character-data>
+            <![CDATA[
+                non vengono convertiti i codici;
+                1<2;
+                &#97;
+                <xml></xml>
+                <prova>
+            ]]>
+        </character-data>    
+    </content>
+</root>
