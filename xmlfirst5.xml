@@ -19,7 +19,6 @@
 
     Correggo eliminando <text />, il tag <text> è già stato chiudo alla linea 13 con </text>, 
     <text /> non chiude nessun tag ed è un errore.
-    Se non avessi avuto la chiusura del tag alla linea 13, avrei corretto <text /> con </text> spostando lo slash e cancellando lo spazio.
     
 
     Corretto:
