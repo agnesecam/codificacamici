@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TEI [
+    <!ELEMENT TEI (header, facsimile?, text+)>
+    <!ELEMENT header (#PCDATA)>
+    <!ELEMENT facsimile (#PCDATA)>
+    <!ELEMENT testo (#PCDATA|seg)*>
+
+    <!ATTLIST header
+        type CDATA #FIXED "intestazione" 
+        lang NMTOKEN #IMPLIED>
+
+    <!ATTLIST facsimile
+        source CDATA #REQUIRED
+        ref IDREFS #IMPLIED>
+
+    <!ATTLIST testo
+        id ID #REQUIRED
+        type CDATA #IMPLIED>
+]>
+<!-- ho collegato una DTD interna -->
+
+<!--
+    ESERCIZIO
+
+    root: TEI
+    Figli:
+        - header(obbligatorio una volta sola)
+        - facsimile(opzionale una volta sola)
+        - testo(obbligatorio una o più volte)
+        * testo è un mixed content con possibile elemento <seg>
+    Attributi:
+    - header: type:(fixed, CDATA "intestazione"); lang(opzionale, NMTOKEN)
+    - facsimile: source:(obbligatorio); ref(optionale, IDREFS)
+    - testo: id(obbligatorio, ID) type(opzionale contenuto testuale)
+-->
+
+<!-- XML -->
+<TEI>
+    <header type="intestazione" lang="IT">
+        Testo
+    </header>
+
+    <facsimile source="pippo" ref="t1">
+        Qualcosa
+    </facsimile>
+
+    <testo id="t1" type="caratteri">
+        Esempio testuale senza tag
+    </testo>
+
+    <testo id="t2" type="tag"> 
+        <seg>
+            Esempio del tag seg
+        </seg>
+    </testo>
+</TEI>
