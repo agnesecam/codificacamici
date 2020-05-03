@@ -2,3 +2,9 @@
 <!ELEMENT header (#PCDATA)>
 <!ELEMENT facsimile (#PCDATA)>
 <!ELEMENT text (#PCDATA)>
+
+<!--
+    studente: Agnese Camici
+    matricola: 559788
+    corso: codifica di testi 19-20
+-->
