@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Esercizio: dobbiamo scrivere due documenti XML con la presenza di due gerarchie, 
+    il primo codificato in modo non corretto (utilizzando degli elementi sovrapposti e intrecciati) 
+    e il secondo introducendo gli elementi vuoti che vanno poi a risolvere il problema della gerarchia sovrapposta.-->
+<!--VERSIONE WELLFORMED-->
+
+<!DOCTYPE TEI SYSTEM "tei_all.dtd" > <!-- qui collego una DTD esterna -->
+
+<text>
+    <titolo> Esercizio con gerarchie sovrapposte </titolo>
+    <intestazione> File XML codificato non correttamente, elementi sovrapposti </intestazione>
+
+    <pagina n="1"/>
+        <div id="div1"> Qual è l'errore?
+            <p id="p1"> L'errore consiste nella sovrapposizione gerarchia anche in questo caso.</p>
+            <p id="p2"> Questo div è chiuso dopo l'ultimo p, e va bene, ma il tag pagina crea problemi.</p>
+    <pagina n="2"/> 
+            <p id="p3"> Fine. </p>   
+        </div>
+</text>
+
+<!-- VALIDAZIONE OK finché non troviamo il tag <pagina n="2" il testo appartiene alla pagina1 
+    e non c'è sovrapposizione di gerarchie-->
+
+<!--
+    studente: Agnese Camici
+    matricola: 559788
+    corso: codifica di testi 19-20
+-->
