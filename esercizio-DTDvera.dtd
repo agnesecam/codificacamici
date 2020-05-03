@@ -15,3 +15,9 @@
 <!ATTLIST testo
     id ID #REQUIRED,
     type CDATA #IMPLIED>
+
+<!--
+    studente: Agnese Camici
+    matricola: 559788
+    corso: codifica di testi 19-20
+-->
