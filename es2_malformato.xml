@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE text SYSTEM "tei_all.dtd" > <!-- qui collego una DTD esterna -->
+
 <!--Esercizio: dobbiamo scrivere due documenti XML con la presenza di due gerarchie, 
     il primo codificato in modo non corretto (utilizzando degli elementi sovrapposti e intrecciati) 
     e il secondo introducendo gli elementi vuoti che vanno poi a risolvere il problema della gerarchia sovrapposta.-->
-<!-- VERSIONE CON GERARCHIE SOVRAPPOSTE -->
 
-<!DOCTYPE text SYSTEM "tei_all.dtd" > <!-- qui collego una DTD esterna -->
+<!-- VERSIONE CON GERARCHIE SOVRAPPOSTE -->
 
 <text>
     <titolo> Esercizio con gerarchie sovrapposte </titolo>
