@@ -18,7 +18,7 @@
         <text />"
 
     Correggo eliminando <text />, il tag <text> è già stato chiudo alla linea 13 con </text>, 
-    <text /> non chiude nessun tag ed è un errore.
+    <text/> è il tag corretto per la milestone, in <text /> c'è uno spazio di troppo.
     
 
     Corretto:
@@ -26,8 +26,8 @@
     <text>
         il primo xml con validazione
     </text>
--->
-
+    <text/>
+    -->
 
 
 <!-- Esercizio: aggiungere un figlio (child) ad un elemento
