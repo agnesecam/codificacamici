@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE text SYSTEM "tei_all.dtd" > <!-- qui collego una DTD esterna -->
+
+<!-- ESERCIZIO
+Marcare un testo plain text di circa 3000 caratteri a piacere.
+1 Inserire prologo XML
+2 marcare la struttura usando gli elementi fin qui descritti in particolare marcare tutti i paragrafi usando <p> e la struttura editoriale usando <div>
+3 verificare che sia ben formato con xmllint 
+4 salvare il file XML su github
+-->
+
+<text>
+    <div>
+        <head> Prima lezione </head>
+        <date> 17.02.20 </date>
+    </div>
+    <div>
+­­        <argomento> T.E.I. Text Encoding Initiative </argomento>
+            <p>Per l’esame faremo un progetto di codifica di testo, ci darà dei testi diversi culturali, 
+            codificheremo questi documenti complessi, non è detto in lingua italiana corrente.</p> 
+            <p>Ci sarà un gruppo di documenti che si rifarà a delle cartoline, uno a delle lettere, 
+            uno a risorse pergamenacee medievali in latino. </p>
+            <p>Queste risorse saranno coordinate non solo dal prof ma d anche responsabilità più ampie e ci chiederanno di partecipare in progetti eventualmente.</p>
+            <p>Le cartoline sono di un museo di La Spezia. Le lettere sono in un italiano non corrente.</p> 
+            <p>C’è un progetto coordinato dalla prof.sa Salvatori che sta codificando un codice medievale e 
+            da cui potrebbero prendere delle risorse per codificare per l’esame.</p>
+            <p>La TEI ha a disposizione una serie di moduli che noi utilizzeremo, tante modalità di codifica, 
+            non sarà possibile usarli tutti, alla fine del corso saremo in grado di decidere quale schema 
+            di codifica è adatto a quello che stiamo facendo.</p>
+            <p>La codifica del testo è statica, noi ci applicheremo altre tecnologie per avere il documento 
+            digitalizzato per avere la lettura da parte di un uomo.</p> 
+            <p>Codificheremo il testo e lo trasformeremo in una piccolissima applicazione web.</p>
+            <p>All’interno del corso vedremo cos’è un documento XML, un’applicazione XML e 
+            come si scrivono gli schemi di una codifica XML, secondo W3C.</p>
+            <p>La TEI è in pratica un’applicazione XML con 600 elementi che interagiscono tra loro.</p> 
+            <p>Nel momento in cui decidiamo di codificare un fenomeno testuale dobbiamo decidere come 
+            far interagire gli elementi per rappresentare il fenomeno testuale. Dopodiché occorre scegliere 
+            come rappresentare il documento XML, la prima tecnologia per farlo è XSL e poi useremo dei fogli di stile XSL.</p>
+            <p>Il progetto di esame è fatto di tre parti (codifica, foglio di stile, e applicazione web): codifica XML, 
+            scrittura di un foglio di stile e presentazione della nostra edizione digitale su una piccola applicazione web.
+                <ul>
+                    <li>Edizione diplomatica: più vicina possibile a quella originale</li>
+                    <li>Edizione interpretativa: meno vicina al documento originale al cui aggiungiamo una parziale interpretazione
+                        personale di alcuni fenomeni, come lo scioglimento delle abbreviazioni, attualizzare il testo, correggere degli errori…</li>
+                    <li>Edizioni critiche: avere a disposizione più documenti che veicolano lo stesso testo, eventualmente ci sono delle parti che cambiano, varianti</li>
+                </ul>
+            </p>
+            <p>Per rendere disponibile il patrimonio testuale che abbiamo a disposizione che la macchina da sola non sa ancora leggere in modo perfetto, 
+            se ci riferiamo a quelli di letteratura e storico-letterari.</p>
+            <p>Abbiamo la necessità di digitalizzarli esplicitando le informazioni in qualche modo.</p> 
+            <p>Per farlo occorre fare una transcodifica dei testi, dal mondo reale, a quello digitale, c’è bisogno di codificarli.</p> 
+            <p>Questa necessità rende i testi leggibili dal calcolatore ed elaborabili da questo. Le informazioni, oltre che testuali, 
+            possono essere para-testuali o extra-testuali, come dire che un documento è una pergamena.</p>
+    </div>
+</text>
+<!--
+    studente: Agnese Camici
+    matricola: 559788
+    corso: codifica di testi 19-20
+-->
