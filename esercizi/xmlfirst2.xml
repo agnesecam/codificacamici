@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Esempio di annidamento scorretto -->
+
+<choice>
+    <sic> testo con <cor>errore </sic>
+    testo corretto </cor>
+</choice>
+
+<!--
+    Primo errore: Opening and ending tag mismatch: cor line 6 and sic
+        <sic> testo con <cor>errore </sic>
+        
+    Secondo errore: Opening and ending tag mismatch: sic line 6 and cor
+        testo corretto </cor>
+        
+    Spiegazione: Devo chiudere i tag nell'ordine opposto in cui li ho aperti: <sic><cor></cor></sic>
+        <sic> testo con <i>errore</b> </sic>
+-->
+
+<!--
+    studente: Agnese Camici
+    matricola: 559788
+    corso: codifica di testi 19-20
+-->
