@@ -1,1 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Vincenzo Bellini a Stefano Notarbartolo, duca di Sammartino, in Catania, maggio 1819 </title>
+                <author ref="TEI-ListPerson.xml#VB">Vincenzo Bellini</author> <!-- Serena non ha messo "TEI-ListPerson.xml" il prof sì nell'esempio-->
+                <respStmt>
+					<resp>Responsabilità di</resp>
+					<name ref="#AMDG">Angelo Mario Del Grosso</name>
+					<name ref="#DS">Daria Spampinato</name>
+					<name ref="#EC">Erica Capizzi</name>
+				</respStmt>
+                <respStmt>
+                    <resp>Transcription by</resp>
+                    <name ref="#GS">Graziella Seminara</name>
+                </respStmt>
+            </titleStmt>
+
+            <editionStmt>
+                <edition>Digital edition
+                    <date when="2020-08"> August 2020 </date>
+                </edition>
+                <respStmt>
+					<resp>Digital edition project coordineted by</resp>
+					<name ref="#AC">Agnese Camici</name>
+				</respStmt>
+                <respStmt>
+                    <resp>Encoding by</resp>
+                    <name ref="#AC">Agnese Camici</name>
+                </respStmt>
+            </editionStmt>
+
+            <publicationStmt>
+				<publisher>Fondazione Bellini</publisher>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+				</availability>
+			</publicationStmt>
+
+            <sourceDesc>
+                <bibl source="TEI-ListBibl.xml#Seminara2017" resp="#GS" ana="1">
+                    <citedRange unit="page" from="65" to="66">65-66</citedRange>
+				</bibl>
+				<msDesc>
+					<msIdentifier>
+						<country>Italy</country>
+						<settlement>Catania</settlement>
+						<repository role="museum" ref="http://www.rism.info/typo3conf/ext/user_apachesolr/result.php?q=id:30003436" n="I-CATm">Museo Belliniano Catania</repository>
+						<idno type="inventory">LL1.1</idno>					
+						<altIdentifier><idno type="collocation">in esposizione Casa Natale, sala B, vetrina 2, ripiano 1, I</idno></altIdentifier>
+					</msIdentifier>
+                    <msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material>Carta sottile.</material>
+                                    <watermark>Filigrana di forma circolare leggermente visibile raffigurante uno stemma, posizionata nella zona centrale del folio retro, visibile principalmente per metà, nella zona del folio non coperta da testo. La filigrana si espande per qualche centimetro attorno allo stemma. Sulla diagonale che congiunge il centro del folio all'angolo in alto a sinistra nella filigrana è riconoscibile una lettera B maiuscola.</watermark>
+                                    <stamp>Non sono presenti tracce di francobolli né di timbri postali.</stamp>
+                                    <p>Lettera in buone condizioni fisiche, composta da un solo folio suddiviso in tre facciate e piegato in più parti. Il testo della lettera è presente nella colonna destra di ogni facciata. La supplica non è di mano di Bellini. Circa al centro della colonna sinistra della prima facciata (fronte recto) è scritto "Supp | 3. Mag 1819".</p>
+                                    <p>La carta è sottile e di colore beige, con filigrana, l'inchiostro è marrone. La lettera presenta due lacerazioni, la prima nell'angolo superiore destro del fronte, la seconda in quello inferiore. I bordi sono tutti leggermente frastagliati a causa dell'invecchiamento.
+                                    <p>Varie grandi macchie marroni sono presenti sia sul fronte che sul retro del folio, probabilmente anch'esse dovute all'invecchiamento del supporto materiale.</p>
+                                <support>
+                                <extent>
+									<measure type="folio">1</measure>				
+									<dimensions unit="mm">
+										<height>302</height>
+										<width>213</width>
+									</dimensions>
+								</extent>
+								<foliation>
+                                Il folio sembra essere stato piegato 4 volte, risulta infatti una divisione simmetrica in 16 sezioni di pari dimensione, ogni facciata viene così divisa in 8 sezioni rettangolari.
+                                </foliation>
+                                <condition>
+                                    <p>Lettera in buone condizioni fisiche.</p> <!-- riguarda dove devi mettere <p> e dove solo testo -->
+                                </condition>
+                            </supportDesc>
+                        </objectDesc>
+                        <handDesc hands="5"> <!--rivedi tag abbreviazioni e nomi Bellini -->
+                            <handNote><p>Scrittura a mano leggibile. Sono presenti quattro annotazioni non attribuibili a Vincenzo Bellini.</p></handNote>
+                            <handNote xml:id="h1"><p>Il folio retro recto di seguito alla firma apposta da Bellini presenta l'aggiunta "sup.te" posta da una seconda mano.</p></handNote>
+                            <handNote xml:id="h2"><p>Nel folio fronte recto una terza mano ha scritto "Supp | 3. Mag 1819".</p></handNote>
+                            <handNote xml:id="h3"><P>Nell'angolo superiore destro del folio fronte recto è presente l'annotazine "188" probabilmente attribuibile ad un catalogatore.</p></handNote>
+                            <handNote xml:id="h4"><P>Nell'angolo superiore sinistro del folio fronte recto è presente un'annotazione di colore blu scuro riconducibile ad una "R" probabilmente di mano di un altro catalogatore.</p></handNote>
+                        </handDesc>
+                    </physDesc>
+                    <additional>
+						<adminInfo>
+							<note>	
+								All'interno del carteggio belliniano (LL), la segnatura LL1.1 identifica la terzaprima missiva in ordine cronologico del primo sottogruppo, che corrisponde alle lettere scritte da Vincenzo Bellini.			
+							</note>
+						</adminInfo>
+					</additional>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="TEI-ListPerson.xml#VB" role="composer">Vincenzo Bellini</persName>
+                    <placeName ref="TEI-ListPlace.xml#CT" type="postmark">Catania</placeName>
+                    <date when="1819-05" cert="high" resp="#GS" type="writing">maggio 1819</date>					
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="TEI-ListPerson.xml#SN">Stefano Notarbartolo, duca di Sammartino</persName>
+                    <placeName ref="TEI-ListPlace.xml#CT"> Catania</placeName>
+                    <date>unknown</date>
+                </correspAction >
+                <correspContext>
+                    <p>Non è presente un contesto di riferimento</p>
+                </correspContext>
+            </correspDesc>
+
+            <textClass>
+                <keywords scheme="http://thes.bncf.firenze.sbn.it">
+                    <term resp="#GS">lettera</term>
+                </keywords>
+            </textClass>
+
+            <langUsage>
+                <language ident="it">Italiano di inizio Ottocento</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+
+    <facsimile>
+
+        <!-- FRONTE RECTO FACCIATA 1 -->
+        <surface n="1" xml:id="LL1.1_fronte_recto">
+            <graphic url='LL1.1_fronte_recto.jpg' width='2584px' height='3642px' />
+            <!-- Righe contenuto lettera -->
+            <zone ulx="1210" uly="123" lrx="2048" lry="331" rendition="Line" xml:id="LL1.1_line_fr-01"/>
+            <zone ulx="1393" uly="373" lrx="2488" lry="463" rendition="Line" xml:id="LL1.1_line_fr-02"/>
+            <zone ulx="1328" uly="519" lrx="2419" lry="586" rendition="Line" xml:id="LL1.1_line_fr-03"/>
+            <zone ulx="1340" uly="643" lrx="2503" lry="711" rendition="Line" xml:id="LL1.1_line_fr-04"/>
+            <zone ulx="1290" uly="765" lrx="2496" lry="847" rendition="Line" xml:id="LL1.1_line_fr-05"/>
+            <zone ulx="1306" uly="886" lrx="2521" lry="966" rendition="Line" xml:id="LL1.1_line_fr-06"/>
+            <zone ulx="1318" uly="1024" lrx="2486" lry="1073" rendition="Line" xml:id="LL1.1_line_fr-07"/>
+            <zone ulx="1302" uly="1153" lrx="2460" lry="1193" rendition="Line" xml:id="LL1.1_line_fr-08"/>
+            <zone ulx="1305" uly="1265" lrx="2486" lry="1302" rendition="Line" xml:id="LL1.1_line_fr-09"/>
+            <zone ulx="1290" uly="1394" lrx="2527" lry="1426" rendition="Line" xml:id="LL1.1_line_fr-10"/>
+            <zone ulx="1305" uly="1523" lrx="2531" lry="1559" rendition="Line" xml:id="LL1.1_line_fr-11"/>
+            <zone ulx="1309" uly="1633" lrx="2537" lry="1683" rendition="Line" xml:id="LL1.1_line_fr-12"/>
+            <zone ulx="1218" uly="1735" lrx="2528" lry="1823" rendition="Line" xml:id="LL1.1_line_fr-13"/>
+            <zone ulx="1276" uly="1867" lrx="2524" lry="1962" rendition="Line" xml:id="LL1.1_line_fr-14"/>
+            <zone ulx="1294" uly="2007" lrx="2495" lry="2086" rendition="Line" xml:id="LL1.1_line_fr-15"/>
+            <zone ulx="1282" uly="2122" lrx="2517" lry="2179" rendition="Line" xml:id="LL1.1_line_fr-16"/>
+            <zone ulx="1293" uly="2230" lrx="2489" lry="2307" rendition="Line" xml:id="LL1.1_line_fr-17"/>
+            <zone ulx="1299" uly="2367" lrx="2513" lry="2443" rendition="Line" xml:id="LL1.1_line_fr-18"/>
+            <zone ulx="1299" uly="2487" lrx="2508" lry="2562" rendition="Line" xml:id="LL1.1_line_fr-19"/>
+            <zone ulx="1269" uly="2608" lrx="2511" lry="2686" rendition="Line" xml:id="LL1.1_line_fr-20"/>
+            <zone ulx="1302" uly="2737" lrx="2505" lry="2800" rendition="Line" xml:id="LL1.1_line_fr-21"/>
+            <zone ulx="1298" uly="2851" lrx="2527" lry="2928" rendition="Line" xml:id="LL1.1_line_fr-22"/>
+            <zone ulx="1295" uly="2960" lrx="2510" lry="3040" rendition="Line" xml:id="LL1.1_line_fr-23"/>
+            <zone ulx="1321" uly="3105" lrx="2538" lry="3170" rendition="Line" xml:id="LL1.1_line_fr-24"/>
+            <zone ulx="1303" uly="3228" lrx="2521" lry="3328" rendition="Line" xml:id="LL1.1_line_fr-25"/>
+            <zone ulx="1302" uly="3367" lrx="2537" lry="3470" rendition="Line" xml:id="LL1.1_line_fr-26"/>
+            <!-- Annotazione Supp. 3 Mag 1819 -->
+            <zone ulx="523" uly="1036" lrx="974" lry="1431" rendition="HotSpot" xml:id="LL1.1_hotspot_fr-01"/>
+            <!-- Annotazione catalogo lettera R -->
+            <zone ulx="336" uly="99" lrx="427" lry="176" />
+            <!-- Annotazione catalogo 188 -->
+            <zone ulx="2208" uly="104" lrx="2394" lry="180" />
+            <!-- Indirizzo del destinatario -->
+            <zone ulx="214" uly="2966" lrx="1127" lry="3559" />
+        </surface>
+
+        <!-- RETRO VERSO FACCIATA 2 -->
+        <surface n="1" xml:id="LL1.1_retro_verso">
+        
+
 
