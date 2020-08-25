@@ -274,7 +274,7 @@
                                 <lb xml:id="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
                                 <persName ref="#SN">
                                     <roleName type="honorific" full="abb">S.E.</roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice> <roleName type="honorific">Duca Sammar
-                                    <lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <unclear reason="illegible">Valle di</unclear>
+                                    <lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov.a</abbr><expan resp="#AC">Provincia"</expan></choice> di</unclear>
                                     <lb xml:id="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"> <placeName ref="#CT"><hi rend="double">Catania</hi></placeName></roleName>
                                 </persName>
                         </addrLine>
@@ -299,7 +299,7 @@
                 <ab type="parag" n="ab_02">
                     <s type="sentence" n="s_02">
                         <lb xml:id="LL1.1_lb_fr_01" n="1" facs="LL1.1_line_fr-02"/>
-                        <persName ref="#VB"><forename>Vincenzo</forename> <surename>Bellini</surename><pc type="comma">,</pc> e <supplied resp="#AC"><persName><forename>Vincenzo</forename></persName></supplied> <persName><surename>Ferlito</surename></persName> spinto dal
+                        <persName ref="#VB"><forename>Vincenzo</forename> <surename>Bellini</surename><pc type="comma">,</pc> e <supplied resp="#AC"><persName><forename>Vincenzo</forename></persName></supplied><!--MA SONO LA STESSA PERSONA! ATTENTA!!--> <persName><surename>Ferlito</surename></persName> spinto dal
                         <lb xml:id="LL1.1_lb_fr_01" n="2" facs="LL1.1_line_fr-03"/> 
                         proprio genio<pc type="comma">,</pc> dall<pc type="apostrophe">'</pc>esempio<pc type="comma">,</pc> e dalla
                         <lb xml:id="LL1.1_lb_fr_01" n="3" facs="LL1.1_line_fr-04"/> 
@@ -311,7 +311,7 @@
                         <lb xml:id="LL1.1_lb_fr_01" n="6" facs="LL1.1_line_fr-07" break="no" rend="double stroke"/>
                         ché</sic><corr resp="#AC">tantoché</corr></w> nella sua appena giovanile età 
                         <lb xml:id="LL1.1_lb_fr_01" n="7" facs="LL1.1_line_fr-08"/>
-                        ha prodotto alcune composizioni<pc type="comma">,</pc> il 
+                        ha prodotto alcune <term subtype="music-term" ref="#composizioni">composizioni</term><pc type="comma">,</pc> il 
                         <lb xml:id="LL1.1_lb_fr_01" n="8" facs="LL1.1_line_fr-09"/>
                         merito delle quali<pc type="comma">,</pc> ignoto a <persName ref="#VB">lui</persName><pc type="comma">,</pc> è 
                         <lb xml:id="LL1.1_lb_fr_01" n="9" facs="LL1.1_line_fr-10"/>
@@ -425,7 +425,12 @@
                         <lb xml:id="LL1.1_lb_rr_01" n="60" facs="LL1.1_line_rr-08"/>   
                         e la decente educazione<pc type="comma">,</pc> che ha <w>ricevu
                         <lb xml:id="LL1.1_lb_rr_01" n="61" facs="LL1.1_line_rr-09" break="no" rend="double-stroke"/>   
-                        to</w><pc type="colon">:</pc></s> <s type="sentence" n="s_07">Conoscendosi universalmente <w>que
+                        to</w><pc type="colon">:</pc></s> 
+                    </ab>
+                </div>
+                <div type="closer" n="c_01">
+                    <salute n="ab_03">
+                        <s type="sentence" n="s_07">Conoscendosi universalmente <w>que
                         <lb xml:id="LL1.1_lb_rr_01" n="62" facs="LL1.1_line_rr-10" break="no" rend="double-stroke"/>   
                         sto</w> bisogno<pc type="comma">,</pc> ed <choice><sic>anzioso</sic><cor resp="#AC">ansioso</cor></choice> il <persName ref="#VB">Ricorrente</persName> <supplied resp="#AC"><forename>Vincenzo</forename> <surename>Bellini</surename></supplied> 
                         <lb xml:id="LL1.1_lb_rr_01" n="63" facs="LL1.1_line_rr-11"/>   
@@ -447,8 +452,16 @@
                         <lb xml:id="LL1.1_lb_rr_01" n="71" facs="LL1.1_line_rr-19" break="no" rend="double-stroke"/>   
                         disfare</w><pc type="comma">,</pc> e contentare la pubblica 
                         <lb xml:id="LL1.1_lb_rr_01" n="72" facs="LL1.1_line_rr-20"/>   
-                        aspettazione
-                    </s>
-                </ab>
-            </div>
-                    
+                        aspettazione</s>
+                    </salute>
+                    <signed>
+                        <persName ref="#VB">Vincenzo Bellini Ferlito</persName> <choice><abbr>supp.te</abbr><expan resp="#AC">supp<ex>plican</ex>te</expan>
+                    </signed>
+                </div>
+                
+             <!-- sistema paragrafi ab e vedi se trovi sentence più piccole-->
+                    <!-- aggiungi composer a ruolo di Vincenzo??!-->
+                    <!-- guarda quali termini sono <term subtype=....-->
+                    <!-- rivedi commenti sparsi-->
+                    <!--- rivedi gli #ID in ref in giro ai nomi-->
+                    <!-- devi codificare anche la pagina vuota -->
