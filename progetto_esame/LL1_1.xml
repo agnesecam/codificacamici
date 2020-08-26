@@ -265,17 +265,13 @@
         <front> 
                             <!-- FRONTE RECTO FACCIATA 1 --> 
             <pb n="1" xml:id="LL1.1_fr_front" facs="#LL1.1_fronte_recto"/> 
-            <!-- su questa facciata è presente sia il front che la prima colonna del corpo della lettera, quindi nel body non sarà presente il page beginning della n="1" fronte recto, essendo iniziata qui -->
-
-            <add type="paratext" subtype="addition" hand="#h5" rend="case(allcaps)" xml:id="LL1.1_hs_fr-02" facs="#LL1.1_hotspot_rr-01">189</add>   
-
             <div type="sent">
                 <!-- Data -->
                 <ab hand="#h3" xml:id="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> <!-- annotazione data e supp. -->
                     <mentioned>
                         <unclear><abbr>supp</abbr></unclear>
                         <date when="1819-05-03" type="writing">3. Mag 1819</date>
-                        <unclear>SS88<pc type="dot">.</pc></unclear>
+                        <unclear>SS88<pc type="dot">.</pc></unclear> <!-- lo inserisco nel front in quanto potrebbe essere un'indicazione del luogo in cui è stata scritta/spedita la supplica-->
                     </mentioned>
                 </ab>
             </div>
@@ -297,13 +293,39 @@
         </front>
 
         <body xml:lang="it" hand="#h1">
+            <pb n="1" xml:id="LL1.1_fr_body" facs="#LL1.1_fronte_recto"/> 
             <add type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03"> 189 </add> <!-- annotazione catalogatore 188 -->
 
             <!-- In questo punto NON ho inserito un <div type="fronte-recto"> perché così facendo avrei avuto un overlap tra div, 
             in quanto il corpo della lettera finisce nel folio retro recto, perciò avrei dovuto chiudere il <div type="fronte-recto">,
-            aperto prima del  <div type="letter-body" n="t_01", prima quest'ultimo -->
+            aperto prima del  <div type="letter-body" n="t_01", prima quest'ultimo --> <!--SISTEMAAAAAAAAAAAAAAAAAAAAAAAAAA-->
 
-                            <!-- ANCORA FRONTE RECTO dove è presente anche il front, iniziato alla riga 260 -->
+            <div type="sent">
+                <ab hand="#h3" copyOf="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> <!-- annotazione data e supp. -->
+                    <mentioned>
+                        <unclear><abbr>supp</abbr></unclear>
+                        <date when="1819-05-03" type="writing">3. Mag 1819</date>
+                        <unclear>SS88<pc type="dot">.</pc></unclear>
+                    </mentioned>
+                </ab>
+            </div>
+
+            <div type="destination"> 
+                <ab type="receiver" rend="align(right)">
+                    <!-- Destinatario -->
+                    <address copyOf="LL1.1_hs_fr-04" facs="#LL1.1_hotspot_fr-04">
+                        <addrLine>
+                                <lb copyOf="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
+                                <persName ref="TEI-ListPerson.xml#SN">
+                                    <roleName type="honorific" full="abb">S.E.</roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice> <roleName type="honorific">Duca Sammar
+                                    <lb copyOf="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc place="below" type="dot">.</pc><c place="above">a</c></abbr><expan resp="#AC">Provincia"</expan></choice> di
+                                    <lb copyOf="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="TEI-ListPlace.xml#CT"><hi rend="double">Catania</hi></placeName></roleName>
+                                </persName>
+                        </addrLine>
+                    </address>
+                </ab>
+            </div>
+
             <div type="opener">                
                 <opener n="o_01">
                     <salute n="ab_01">
@@ -488,6 +510,22 @@
                     </ab>
                 </signed>
             </div>
+
+            <div type="destination"> 
+                <ab type="receiver" rend="align(right)">
+                    <!-- Destinatario -->
+                    <address xml:id="LL1.1_hs_fr-04" facs="#LL1.1_hotspot_fr-04">
+                        <addrLine>
+                                <lb xml:id="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
+                                <persName ref="TEI-ListPerson.xml#SN">
+                                    <roleName type="honorific" full="abb">S.E.</roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice> <roleName type="honorific">Duca Sammar
+                                    <lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc place="below" type="dot">.</pc><c place="above">a</c></abbr><expan resp="#AC">Provincia"</expan></choice> di
+                                    <lb xml:id="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="TEI-ListPlace.xml#CT"><hi rend="double">Catania</hi></placeName></roleName>
+                                </persName>
+                        </addrLine>
+                    </address>
+                </ab>
+            </div><!--corri qui-->
 
             <!-- Anche se non ho utilizzato un tag div per il fronte recto, 
             lo uso per codificare la pagina bianca, folio fronte verso-->
