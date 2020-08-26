@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<!DOCTYPE TEI SYSTEM "tei-all.dtd">
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
@@ -269,7 +269,7 @@
                 <ab xml:id="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> 
                     <mentioned>
                         <abbr>supp</abbr>
-                        <date when="1819-05-03" certainity="high" type="writing">3. Mag 1819</date>
+                        <date when="1819-05-03" type="writing">3. Mag 1819</date>
                         <unclear>SS88<pc type="dot">.</pc></unclear>
                     </mentioned>
                 </ab>
@@ -300,15 +300,15 @@
                             <!-- ANCORA FRONTE RECTO dove è presente anche il front, iniziato alla riga 260 -->
             <div type="opener">                
                 <opener n="o_01">
-                    <s type="sentence" n="s_01">
-                        <salute n="ab_01">
+                    <salute n="ab_01">
+                        <s type="sentence" n="s_01">
                             <persName ref="TEI-ListPerson.xml#SN">
                                 <hi rend="align(left)">
                                 <roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Sig<ex>nor</ex></expan></choice></roleName> <roleName type="honorific" ref="TEI-ListPerson.xml#SN">Duca Intendente</roleName> <supplied resp="#AC"> Duca di Sammartino</supplied>
                                 </hi>
                             </persName>
-                        </salute>
-                    </s>
+                        </s>
+                    </salute>
                 </opener>
             </div>
 
@@ -316,13 +316,13 @@
                 <ab type="parag" n="ab_02">
                     <s type="sentence" n="s_02">
                     <lb xml:id="LL1.1_lb_fr_01" n="1" facs="LL1.1_line_fr-02"/>
-                    <persName ref="TEI-ListPerson.xml#VB" role="composer"><forename>Vincenzo</forename> <surename>Bellini</surename></persName><pc type="comma">,</pc> e <supplied resp="#AC"><persName><forename>Vincenzo</forename></persName></supplied><persName><surename>Ferlito</surename></persName> spinto dal
+                    <persName ref="TEI-ListPerson.xml#VB" role="composer"><forename>Vincenzo</forename> <surname>Bellini</surname></persName><pc type="comma">,</pc> e <supplied resp="#AC"><persName><forename>Vincenzo</forename></persName></supplied><persName><surname>Ferlito</surname></persName> spinto dal
                     <lb xml:id="LL1.1_lb_fr_02" n="2" facs="LL1.1_line_fr-03"/> 
                     proprio genio<pc type="comma">,</pc> dall<pc type="apostrophe">'</pc>esempio<pc type="comma">,</pc> e dalla
                     <lb xml:id="LL1.1_lb_fr_03" n="3" facs="LL1.1_line_fr-04"/> 
-                    Educazione<pc type="comma">,</pc> che ha ricevuto dai suoi<pc type="comma">,</pc> <persName ref="TEI-ListPerson.xml#VTB">Avo <supplied resp="#AC"><forename>Vincenzo</forename> <forename>Tobia</forename> <surename>Bellini</surename></supplied></persName>)<pc type="comma">,</pc> 
+                    Educazione<pc type="comma">,</pc> che ha ricevuto dai suoi<pc type="comma">,</pc> <persName ref="TEI-ListPerson.xml#VTB">Avo <supplied resp="#AC"><forename>Vincenzo</forename> <forename>Tobia</forename> <surname>Bellini</surname></supplied></persName>)<pc type="comma">,</pc> 
                     <lb xml:id="LL1.1_lb_fr_04" n="4" facs="LL1.1_line_fr-05"/>
-                    e <persName ref="TEI-ListPerson.xml#RB">Padre <supplied resp="#AC"><forename>Rosario</forename> <surename>Bellini</surename></supplied></persName><pc type="comma">,</pc> ha professato<pc type="comma">,</pc> com<pc type="apostrophe">'</pc><persName ref="TEI-ListPerson.xml#VTB TEI-ListPerson.xml#RB">eglino</persName><pc type="comma">,</pc> la
+                    e <persName ref="TEI-ListPerson.xml#RB">Padre <supplied resp="#AC"><forename>Rosario</forename> <surname>Bellini</surname></supplied></persName><pc type="comma">,</pc> ha professato<pc type="comma">,</pc> com<pc type="apostrophe">'</pc><persName ref="TEI-ListPerson.xml#VTB TEI-ListPerson.xml#RB">eglino</persName><pc type="comma">,</pc> la
                     <lb xml:id="LL1.1_lb_fr_05" n="5" facs="LL1.1_line_fr-06"/> 
                     Musica sin dai più teneri anni<pc type="comma">,</pc> <w><choice><sic>tantoc
                     <lb xml:id="LL1.1_lb_fr_06" n="6" facs="LL1.1_line_fr-07" break="no" rend="double stroke"/>
@@ -352,13 +352,13 @@
                     <lb xml:id="LL1.1_lb_fr_18" n="18" facs="LL1.1_line_fr-19"/>
                     ne viene impossibilitato dalla sua 
                     <lb xml:id="LL1.1_lb_fr_19" n="19" facs="LL1.1_line_fr-20"/>
-                    povertà.</s> <s type="sentence" n="s_04"><persName ref="TEI-ListPerson.xml#VB" role="composer">Figlio</persName> di un <persName ref="TEI-ListPerson.xml#RB">Padre <supplied resp="#AC"><forename>Rosario</forename> <surename>Bellini</surename></supplied></persName> senza 
+                    povertà.</s> <s type="sentence" n="s_04"><persName ref="TEI-ListPerson.xml#VB" role="composer">Figlio</persName> di un <persName ref="TEI-ListPerson.xml#RB">Padre <supplied resp="#AC"><forename>Rosario</forename> <surname>Bellini</surname></supplied></persName> senza 
                     <lb xml:id="LL1.1_lb_fr_20" n="20" facs="LL1.1_line_fr-21"/>
                     rendite di sorte alcuna<pc type="comma">,</pc> e carico di 
                     <lb xml:id="LL1.1_lb_fr_21" n="21" facs="LL1.1_line_fr-22"/>
                     numerosa famiglia<pc type="comma">,</pc> e <persName ref="TEI-ListPerson.xml#VB" role="composer">Nipote</persName> di un 
                     <lb xml:id="LL1.1_lb_fr_22" n="22" facs="LL1.1_line_fr-23"/>
-                    <persName ref="TEI-ListPerson.xml#VTB">Avo <supplied resp="#AC"><forename>Vincenzo</forename> <forename>Tobia</forename> <surename>Bellini</surename></supplied></persName> dell’uguale condizione<pc type="comma">,</pc> non può 
+                    <persName ref="TEI-ListPerson.xml#VTB">Avo <supplied resp="#AC"><forename>Vincenzo</forename> <forename>Tobia</forename> <surname>Bellini</surname></supplied></persName> dell’uguale condizione<pc type="comma">,</pc> non può 
                     <lb xml:id="LL1.1_lb_fr_23" n="23" facs="LL1.1_line_fr-24"/>
                     sperare il <distinct type="non-preferred">menomo</distinct> sussidio<pc type="comma">,</pc> di cui 
                     <lb xml:id="LL1.1_lb_fr_24" n="24" facs="LL1.1_line_fr-25"/>
@@ -406,9 +406,9 @@
                     <lb xml:id="LL1.1_lb_rv_18" n="43" facs="LL1.1_line_rv-18"/>
                     colte nazioni<pc type="comma">,</pc> per non essere <w>trascura
                     <lb xml:id="LL1.1_lb_rv_19" n="44" facs="LL1.1_line_rv-19" break="no" rend="double-stroke"/>
-                    ta</w> tra noi<pc type="comma">,</pc> viene l<pc type="apostrophe">'</pc><persName ref="TEI-ListPerson.xml#VB" role="composer">Esponente <supplied resp="#AC"><forename>Vincenzo</forename> <surename>Bellini</surename></supplied></persName> a <w>pre
+                    ta</w> tra noi<pc type="comma">,</pc> viene l<pc type="apostrophe">'</pc><persName ref="TEI-ListPerson.xml#VB" role="composer">Esponente <supplied resp="#AC"><forename>Vincenzo</forename> <surname>Bellini</surname></supplied></persName> a <w>pre
                     <lb xml:id="LL1.1_lb_rv_20" n="45" facs="LL1.1_line_rv-20" break="no" rend="double-stroke"/>
-                    sentarsi</w> a <persName ref="TEI-ListPerson.xml#SN">lei</persName> <persName ref="TEI-ListPerson.xml#SN"><roleName><choice><abbr>Sig:r</abbr><expand resp="#AC">Sig<ex>no</ex>r</expand></choice></roleName> <roleName type="honorific" ref="#SN">Duca Intendente</roleName><supplied resp="#AC">Duca di Sammartino</supplied></persName><pc type="comma">,</pc> 
+                    sentarsi</w> a <persName ref="TEI-ListPerson.xml#SN">lei</persName> <persName ref="TEI-ListPerson.xml#SN"><roleName><choice><abbr>Sig:r</abbr><expan resp="#AC">Sig<ex>no</ex>r</expan></choice></roleName> <roleName type="honorific" ref="#SN">Duca Intendente</roleName><supplied resp="#AC">Duca di Sammartino</supplied></persName><pc type="comma">,</pc> 
                     <lb xml:id="LL1.1_lb_rv_21" n="46" facs="LL1.1_line_rv-21"/>
                     cui<pc type="comma">,</pc> dopo avere umiliato la sua <w>po
                     <lb xml:id="LL1.1_lb_rv_22" n="47" facs="LL1.1_line_rv-22" break="no" rend="double-stroke"/>
@@ -416,7 +416,7 @@
                     <lb xml:id="LL1.1_lb_rv_23" n="48" facs="LL1.1_line_rv-23" break="no" rend="double-stroke"/>
                     zione</w><pc type="comma">,</pc> passa a pregare ad <w>interpor
                     <lb xml:id="LL1.1_lb_rv_24" n="49" facs="LL1.1_line_rv-24" break="no" rend="double-stroke"/>
-                    re</w> la di <persName ref="TEI-ListPerson.xml#SN">lei</persName> <choice><sic>auttorità</sic><cor resp="#AC">autorità</cor></choice> <pc type="comma">,</pc> affinché si 
+                    re</w> la di <persName ref="TEI-ListPerson.xml#SN">lei</persName> <choice><sic>auttorità</sic><corr resp="#AC">autorità</corr></choice> <pc type="comma">,</pc> affinché si 
                     <lb xml:id="LL1.1_lb_rv_25" n="50" facs="LL1.1_line_rv-25" break="no" rend="double-stroke"/>
                     prestasse da questo Civico <w>Patrimo
                     <lb xml:id="LL1.1_lb_rv_26" n="51" facs="LL1.1_line_rv-26" break="no" rend="double-stroke"/>
@@ -432,15 +432,15 @@
                     <lb xml:id="LL1.1_lb_rr_02" n="54" facs="LL1.1_line_rr-02"/>    
                     propria Patria<pc type="comma">,</pc> ed a corrispondenza 
                     <lb xml:id="LL1.1_lb_rr_03" n="55" facs="LL1.1_line_rr-03"/>   
-                    di come si viene di <choice><sic>pratticare</sic><cor>praticare</cor></choice> in pro 
+                    di come si viene di <choice><sic>pratticare</sic><corr>praticare</corr></choice> in pro 
                     <lb xml:id="LL1.1_lb_rr_04" n="56" facs="LL1.1_line_rr-04"/>   
                     dell<pc type="apostrophe">'</pc>Inviati apprendisti di Pittura<pc type="comma">,</pc> 
                     <lb xml:id="LL1.1_lb_rr_05" n="57" facs="LL1.1_line_rr-05"/>   
-                    e di <choice><sic>Scoltura</sic><cor>Scultura</cor></choice><pc type="comma">,</pc> quando non si vorrà <w>con
+                    e di <choice><sic>Scoltura</sic><corr>Scultura</corr></choice><pc type="comma">,</pc> quando non si vorrà <w>con
                     <lb xml:id="LL1.1_lb_rr_06" n="58" facs="LL1.1_line_rr-06" break="no" rend="double-stroke"/>   
                     siderare</w> la prestanza dell<pc type="apostrophe">'</pc>arte del
                     <lb xml:id="LL1.1_lb_rr_07" n="59" facs="LL1.1_line_rr-07"/>   
-                    <persName ref="TEI-ListPerson.xml#VB" role="composer">Ricorrente</persName> <supplied resp="#AC"><forename>Vincenzo</forename> <surename>Bellini</surename></supplied><pc type="comma">,</pc> la sua onesta estrazione<pc type="comma">,</pc> 
+                    <persName ref="TEI-ListPerson.xml#VB" role="composer">Ricorrente</persName> <supplied resp="#AC"><forename>Vincenzo</forename> <surname>Bellini</surname></supplied><pc type="comma">,</pc> la sua onesta estrazione<pc type="comma">,</pc> 
                     <lb xml:id="LL1.1_lb_rr_08" n="60" facs="LL1.1_line_rr-08"/>   
                     e la decente educazione<pc type="comma">,</pc> che ha <w>ricevu
                     <lb xml:id="LL1.1_lb_rr_09" n="61" facs="LL1.1_line_rr-09" break="no" rend="double-stroke"/>   
@@ -448,11 +448,11 @@
                 </ab>
             </div>
             
-            <closer n="c_01">
+            <div type="closer" n="c_01">
                 <salute n="ab_03">
                     <s type="sentence" n="s_07">Conoscendosi universalmente <w>que
                     <lb xml:id="LL1.1_lb_rr_10" n="62" facs="LL1.1_line_rr-10" break="no" rend="double-stroke"/>   
-                    sto</w> bisogno<pc type="comma">,</pc> ed <choice><sic>anzioso</sic><cor resp="#AC">ansioso</cor></choice> il <persName ref="TEI-ListPerson.xml#VB" role="composer">Ricorrente</persName> <supplied resp="#AC"><forename>Vincenzo</forename> <surename>Bellini</surename></supplied> 
+                    sto</w> bisogno<pc type="comma">,</pc> ed <choice><sic>anzioso</sic><corr resp="#AC">ansioso</corr></choice> il <persName ref="TEI-ListPerson.xml#VB" role="composer">Ricorrente</persName> <supplied resp="#AC"><forename>Vincenzo</forename> <surname>Bellini</surname></supplied> 
                     <lb xml:id="LL1.1_lb_rr_11" n="63" facs="LL1.1_line_rr-11"/>   
                     di soddisfarlo insieme colle sue <w>bra
                     <lb xml:id="LL1.1_lb_rr_12" n="64" facs="LL1.1_line_rr-12" break="no" rend="double-stroke"/>   
@@ -460,7 +460,7 @@
                     <lb xml:id="LL1.1_lb_rr_13" n="65" facs="LL1.1_line_rr-13" break="no" rend="double-stroke"/>   
                     te</w> pretese<pc type="comma">,</pc> si augura<pc type="comma">,</pc> che saranno 
                     <lb xml:id="LL1.1_lb_rr_14" n="66" facs="LL1.1_line_rr-14"/>   
-                    accolte le sue preghiere<pc type="comma">,</pc> ed il <persName ref="TEI-ListPerson.xml#VB" role="composer">Ricorrente</persName> <supplied resp="#AC"><forename>Vincenzo</forename> <surename>Bellini</surename></supplied> 
+                    accolte le sue preghiere<pc type="comma">,</pc> ed il <persName ref="TEI-ListPerson.xml#VB" role="composer">Ricorrente</persName> <supplied resp="#AC"><forename>Vincenzo</forename> <surname>Bellini</surname></supplied> 
                     <lb xml:id="LL1.1_lb_rr_15" n="67" facs="LL1.1_line_rr-15"/>   
                     grato all<pc type="apostrophe">'</pc>interesse<pc type="comma">,</pc> che sarà 
                     <lb xml:id="LL1.1_lb_rr_16" n="68" facs="LL1.1_line_rr-16"/>   
@@ -477,7 +477,7 @@
                 <signed>
                     <persName ref="TEI-ListPerson.xml#VB" role="composer">Vincenzo Bellini Ferlito</persName> <choice><abbr>supp.te</abbr><expan resp="#AC">supp<ex>plican</ex>te</expan></choice>
                 </signed>
-            </closer>
+            </div>
 
             <!-- Anche se non ho utilizzato un tag div per il fronte recto, 
             lo uso per codificare la pagina bianca, folio fronte verso-->
