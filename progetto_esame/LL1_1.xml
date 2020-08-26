@@ -82,11 +82,11 @@
                         </objectDesc>
                         <handDesc hands="5"> 
                         
-                            <handNote><p>Scrittura a mano leggibile. Vincenzo Bellini ha apposto solamente la firma alla lettera, il corpo della supplica è stato scritto da un'altra mano.</p></handNote>
-                            <handNote xml:id="h1"><p>Il folio retro recto presenta la firma apposta da Bellini.</p></handNote>
-                            <handNote xml:id="h2"><p>Nel folio fronte recto una terza mano ha scritto "Supp | 3. Mag 1819".</p></handNote>
-                            <handNote xml:id="h3"><p>Nell'angolo superiore destro del folio fronte recto è presente l'annotazine "188" probabilmente attribuibile ad un catalogatore.</p></handNote>
-                            <handNote xml:id="h4"><p>Nell'angolo superiore destro del folio retro recto è presente l'annotazine "189" probabilmente attribuibile allo stesso catalogatore.</p></handNote>
+                            <handNote xml:id="h1"><p>Scrittura a mano leggibile. Vincenzo Bellini ha apposto solamente la firma alla lettera, il corpo della supplica è stato scritto da un'altra mano.</p></handNote>
+                            <handNote xml:id="h2"><p>Il folio retro recto presenta la firma apposta da Bellini.</p></handNote>
+                            <handNote xml:id="h3"><p>Nel folio fronte recto una terza mano ha scritto "Supp | 3. Mag 1819".</p></handNote>
+                            <handNote xml:id="h4"><p>Nell'angolo superiore destro del folio fronte recto è presente l'annotazine "188" probabilmente attribuibile ad un catalogatore.</p>
+														<p>Nell'angolo superiore destro del folio retro recto è presente l'annotazine "189" probabilmente attribuibile allo stesso catalogatore.</p></handNote>
                             <handNote xml:id="h5"><p>Nell'angolo superiore sinistro del folio fronte recto è presente un'annotazione di colore blu scuro riconducibile ad una "R" probabilmente di mano di un secondo catalogatore.</p></handNote>
                         </handDesc>
                     </physDesc>
@@ -264,9 +264,12 @@
                             <!-- FRONTE RECTO FACCIATA 1 --> 
             <pb n="1" xml:id="LL1.1_fr_front" facs="#LL1.1_fronte_recto"/> 
             <!-- su questa facciata è presente sia il front che la prima colonna del corpo della lettera, quindi nel body non sarà presente il page beginning della n="1" fronte recto, essendo iniziata qui -->
+
+            <ab type="paratext" subtype="addition" hand="#h5" rend="case(allcaps)" xml:id="LL1.1_hs_fr-02" facs="#LL1.1_hotspot_rr-01">189</ab>   
+
             <div type="sent">
                 <!-- Data -->
-                <ab xml:id="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> 
+                <ab hand="#h3" xml:id="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> <!-- annotazione data e supp. -->
                     <mentioned>
                         <abbr>supp</abbr>
                         <date when="1819-05-03" type="writing">3. Mag 1819</date>
@@ -292,6 +295,7 @@
         </front>
 
         <body xml:lang="it">
+            <ab type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03"> 189 </ab> <!-- annotazione catalogatore 188 -->
 
             <!-- In questo punto non ho inserito un <div type="fronte-recto"> perché così facendo avrei avuto un overlap tra div, 
             in quanto il corpo della lettera finisce nel folio retro recto, perciò avrei dovuto chiudere il <div type="fronte-recto">,
@@ -427,6 +431,8 @@
                             <!-- RETRO RECTO FACCIATA 3 -->
                     <pb n="3" xml:id="LL1.1_rr_body" facs="#LL1.1_retro_recto"/>     
                     
+                    <ab type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_rr-01" facs="#LL1.1_hotspot_rr-01">189</ab>	<!-- Annotazione catalogatore 189 -->
+
                     <lb xml:id="LL1.1_lb_rr_01" n="53" facs="LL1.1_line_rr-01"/>    
                     della propria famiglia<pc type="comma">,</pc> e della
                     <lb xml:id="LL1.1_lb_rr_02" n="54" facs="LL1.1_line_rr-02"/>    
@@ -475,7 +481,9 @@
                     aspettazione</s>
                 </salute>
                 <signed>
-                    <persName ref="TEI-ListPerson.xml#VB" role="composer">Vincenzo Bellini Ferlito</persName> <choice><abbr>supp.te</abbr><expan resp="#AC">supp<ex>plican</ex>te</expan></choice>
+                    <ab hand="#h2" rend="align(right)" xml:id="LL1.1_hs_rr-02" facs="#LL1.1_hotspot_rr-02">
+                        <persName ref="TEI-ListPerson.xml#VB" role="composer">Vincenzo Bellini Ferlito</persName> <choice><abbr>supp.te</abbr><expan resp="#AC">supp<ex>plican</ex>te</expan></choice>
+                    </ab>
                 </signed>
             </div>
 
