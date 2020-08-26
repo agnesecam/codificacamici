@@ -82,12 +82,12 @@
                         </objectDesc>
                         <handDesc hands="5"> 
                         
-                            <handNote xml:id="h1"><p>Scrittura a mano leggibile. Vincenzo Bellini ha apposto solamente la <hi facs="#LL1.1_hotspot_rr-06">firma</hi> alla lettera, il corpo della supplica è stato scritto da un'altra mano.</p></handNote>
+                            <handNote xml:id="h1"><p>Scrittura a mano leggibile, ha scritto il corpo della lettera. Vincenzo Bellini ha apposto solamente la <hi facs="#LL1.1_hotspot_rr-06">firma</hi>, la supplica è stata scritto da questa prima mano.</p></handNote>
                             <handNote xml:id="h2"><p>Il folio retro recto presenta la <hi facs="#LL1.1_hotspot_rr-06">firma</hi> apposta da Bellini.</p></handNote>
                             <handNote xml:id="h3"><p>Nel folio fronte recto una terza mano ha scritto l'<hi facs="#LL1.1_hotspot_fr-01">annotazione</hi> "Supp | 3. Mag 1819".</p></handNote>
                             <handNote xml:id="h4"><p>Nell'angolo superiore destro del folio fronte recto è presente la <hi facs="#LL1.1_hotspot_fr-03">nota</hi> "188" probabilmente attribuibile ad un catalogatore.</p>
 														<p>Nell'angolo superiore destro del folio retro recto è presente la <hi facs="#LL1.1_hotspot_rr-01">nota</hi> "189" probabilmente attribuibile allo stesso catalogatore.</p></handNote>
-                            <handNote xml:id="h5"><p>Nell'angolo superiore sinistro del folio fronte recto è presente un'<hi facs="#LL1.1_hotspot_rv-02">annotazione</hi> di colore blu scuro riconducibile ad una "B" o ad una "R", probabilmente di mano di un secondo catalogatore.</p></handNote>
+                            <handNote xml:id="h5"><p>Nell'angolo superiore sinistro del folio fronte recto è presente un'<hi facs="#LL1.1_hotspot_rv-02">annotazione</hi> di colore blu scuro somigliante ad una "B" o ad una "R", meno facilmente riconducibile alle iniziali "B V", probabilmente di mano di un secondo catalogatore.</p></handNote>
                         </handDesc>
                     </physDesc>
                     <additional>
@@ -130,8 +130,8 @@
         </profileDesc>
     </teiHeader>
 
-    <facsimile>
 
+    <facsimile>
         <!-- FRONTE RECTO FACCIATA 1 -->
         <surface n="1" xml:id="LL1.1_fronte_recto">
             <graphic url='LL1.1_fronte_recto.jpg' width='2584px' height='3642px' />
@@ -176,7 +176,6 @@
             <zone ulx="253" uly="3123" lrx="1287" lry="3236" rendition="HotSpot" xml:id="LL1.1_hotspot_fr-06"/>
             <!-- Catania -->
             <zone ulx="425" uly="3273" lrx="1048" lry="3563" rendition="HotSpot" xml:id="LL1.1_hotspot_fr-07"/>
-
         </surface>
 
         <!-- RETRO VERSO FACCIATA 2 -->
@@ -248,8 +247,9 @@
             <zone ulx="2344" uly="2936" lrx="2525" lry="3067" rendition="HotSpot" xml:id="LL1.1_hotspot_rr-03"/>
             <!-- Firma totale Vincenzo Bellini supp. -->
             <zone ulx="1385" uly="2764" lrx="2535" lry="3079" rendition="HotSpot" xml:id="LL1.1_hotspot_rr-06"/>
-            <!-- Angoli carta foglio mancanti sup inf-->
+            <!-- Angolo superiore carta mancante -->
             <zone ulx="2340" uly="32" lrx="2577" lry="322" rendition="HotSpot" xml:id="LL1.1_hotspot_rr-05"/>
+            <!-- Angolo inferiore carta mancante -->
             <zone ulx="2000" uly="3158" lrx="2523" lry="3611" rendition="HotSpot" xml:id="LL1.1_hotspot_rr-04"/>
         </surface>
         
@@ -257,27 +257,28 @@
         <surface n="4" xml:id="LL1.1_fronte_verso">
             <graphic url='LL1.1_fronte_verso.jpg' width='2573px' height='3656px' />
         </surface>
-
     </facsimile>
 
-    <text type="letter" xml:id="LL1.1" subtype="manuscript" n="LL1.1">
 
+    <text type="letter" xml:id="LL1.1" subtype="manuscript" n="LL1.1">
         <front> 
-                            <!-- FRONTE RECTO FACCIATA 1 --> 
-            <pb n="1" xml:id="LL1.1_fr_front" facs="#LL1.1_fronte_recto"/> 
+            <!-- FRONTE RECTO FACCIATA 1 --> 
+            <pb n="1front" xml:id="LL1.1_fr_front" facs="#LL1.1_fronte_recto"/>
+
             <div type="sent">
                 <!-- Data -->
-                <ab hand="#h3" xml:id="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> <!-- annotazione data e supp. -->
+                <ab hand="#h3" xml:id="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> <!-- annotazione data e "sup." -->
                     <mentioned>
                         <unclear><abbr>supp</abbr></unclear>
                         <date when="1819-05-03" type="writing">3. Mag 1819</date>
-                        <unclear>SS88<pc type="dot">.</pc></unclear> <!-- lo inserisco nel front in quanto potrebbe essere un'indicazione del luogo in cui è stata scritta/spedita la supplica-->
+                        <unclear>SS88<pc type="dot">.</pc></unclear> <!-- Lo inserisco nel front in quanto SS88 potrebbe essere un'indicazione del luogo in cui è stata scritta/spedita la supplica-->
                     </mentioned>
                 </ab>
             </div>
+
             <div type="destination"> 
+                <!-- Destinatario -->
                 <ab type="receiver" rend="align(right)">
-                    <!-- Destinatario -->
                     <address xml:id="LL1.1_hs_fr-04" facs="#LL1.1_hotspot_fr-04">
                         <addrLine>
                                 <lb xml:id="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
@@ -292,16 +293,26 @@
             </div>
         </front>
 
+
         <body xml:lang="it" hand="#h1">
-            <pb n="1" xml:id="LL1.1_fr_body" facs="#LL1.1_fronte_recto"/> 
-            <add type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03"> 189 </add> <!-- annotazione catalogatore 188 -->
+            <!-- FRONTE RECTO FACCIATA 1 -->
+            <pb n="1" xml:id="LL1.1_fr_body" facs="#LL1.1_fronte_recto"/>
 
-            <!-- In questo punto NON ho inserito un <div type="fronte-recto"> perché così facendo avrei avuto un overlap tra div, 
-            in quanto il corpo della lettera finisce nel folio retro recto, perciò avrei dovuto chiudere il <div type="fronte-recto">,
-            aperto prima del  <div type="letter-body" n="t_01", prima quest'ultimo --> <!--SISTEMAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+            <!-- 
+            Il corpo/testo della lettera prosegue per tre facciate.
+            In questo punto NON ho inserito un <div type="fronte-recto"> per indicare la facciata FR,
+            (né l'ho utilizzato per le altre facciate, per lo stesso motivo, uso solo le milestone di page beginning)
+            perché se lo avessi usato avrei avuto un overlap tra div, in quanto avrei dovuto chiudere il 
+            <div type="fronte-recto"> prima del <div type="letter-body">, che invece andava 
+            aperto dopo l'ipotetivo <div type="fronte-recto">
+            --> 
 
+           
+            <add type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03"> 188 </add> <!-- annotazione catalogatore 188 -->
+
+            <!-- INDICAZIONI SPEDIZIONE E DESTINATARIO -->
             <div type="sent">
-                <ab hand="#h3" copyOf="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> <!-- annotazione data e supp. -->
+                <ab hand="#h3" copyOf="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> <!-- annotazione data e "sup." -->
                     <mentioned>
                         <unclear><abbr>supp</abbr></unclear>
                         <date when="1819-05-03" type="writing">3. Mag 1819</date>
@@ -309,11 +320,9 @@
                     </mentioned>
                 </ab>
             </div>
-
             <div type="destination"> 
                 <ab type="receiver" rend="align(right)">
-                    <!-- Destinatario -->
-                    <address copyOf="LL1.1_hs_fr-04" facs="#LL1.1_hotspot_fr-04">
+                    <address copyOf="LL1.1_hs_fr-04" facs="#LL1.1_hotspot_fr-04"> <!-- destinatario -->
                         <addrLine>
                                 <lb copyOf="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
                                 <persName ref="TEI-ListPerson.xml#SN">
@@ -326,6 +335,7 @@
                 </ab>
             </div>
 
+            <!-- OPENER -->
             <div type="opener">                
                 <opener n="o_01">
                     <salute n="ab_01">
@@ -340,6 +350,7 @@
                 </opener>
             </div>
 
+            <!-- CORPO DELLA LETTERA -->
             <div type="letter-body" n="t_01">
                 <ab type="parag" n="ab_02">
                     <s type="sentence" n="s_02">
@@ -453,10 +464,9 @@
                     sua anche scarsa sussistenza<pc type="comma">,</pc> fuori
 
                             <!-- RETRO RECTO FACCIATA 3 -->
-                    <pb n="3" xml:id="LL1.1_rr_body" facs="#LL1.1_retro_recto"/>     
+                    <pb n="3" xml:id="LL1.1_rr_body" facs="#LL1.1_retro_recto"/>  
                     
-                    <add type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_rr-01" facs="#LL1.1_hotspot_rr-01">189</add>	<!-- Annotazione catalogatore 189 -->
-
+                    <add type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_rr-01" facs="#LL1.1_hotspot_rr-01">189</add>	<!-- annotazione catalogatore 189 -->
                     <lb xml:id="LL1.1_lb_rr_01" n="53" facs="LL1.1_line_rr-01"/>    
                     della propria famiglia<pc type="comma">,</pc> e della
                     <lb xml:id="LL1.1_lb_rr_02" n="54" facs="LL1.1_line_rr-02"/>    
@@ -477,7 +487,8 @@
                     to</w><pc type="colon">:</pc></s> 
                 </ab>
             </div>
-            
+
+            <!-- CLOSER -->
             <div type="closer" n="c_01">
                 <salute n="ab_03">
                     <s type="sentence" n="s_07">Conoscendosi universalmente <w>que
@@ -511,35 +522,29 @@
                 </signed>
             </div>
 
-            <div type="destination"> 
-                <ab type="receiver" rend="align(right)">
-                    <!-- Destinatario -->
-                    <address xml:id="LL1.1_hs_fr-04" facs="#LL1.1_hotspot_fr-04">
-                        <addrLine>
-                                <lb xml:id="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
-                                <persName ref="TEI-ListPerson.xml#SN">
-                                    <roleName type="honorific" full="abb">S.E.</roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice> <roleName type="honorific">Duca Sammar
-                                    <lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc place="below" type="dot">.</pc><c place="above">a</c></abbr><expan resp="#AC">Provincia"</expan></choice> di
-                                    <lb xml:id="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="TEI-ListPlace.xml#CT"><hi rend="double">Catania</hi></placeName></roleName>
-                                </persName>
-                        </addrLine>
-                    </address>
-                </ab>
-            </div><!--corri qui-->
-
-            <!-- Anche se non ho utilizzato un tag div per il fronte recto, 
-            lo uso per codificare la pagina bianca, folio fronte verso-->
-            
-            <!-- FRONTE VERSO, FACCIATA 4 - VUOTA -->
+                        
+            <!-- FRONTE VERSO, FACCIATA 4 - VUOTA -->   <!-- Anche se non ho utilizzato un tag div per il fronte recto, lo uso per codificare la pagina bianca, folio fronte verso-->
             <div type="fronte-verso">
                 <pb n="4" xml:id="LL1.1_fv_div" facs="#LL1.1_fronte_verso"/>     
             </div>
-
-
-                
-
-
         </body>
+
+
+        <back>
+            <div type="notes">
+                <div type="ann_notes">
+                    <note xml:id="LL1_1_note1" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="1">
+                        <bibl>
+                            <citedRange unit="page" from="65" to="66">65-66</citedRange>
+                        </bibl>
+                        <p>
+                            Stefano Notarbartolo, duca di Sammartino (Palermo, 1787-1856), nel 1818 era stato nominato Intendente del Valle di Catania.<!--finisci-->
+                        </p>
+                    </note>
+                    <!-- devi finire di codificare le note qui, e poi mettere un target che punta alla corrispondente nota, ogni volta che nel testo c'è il numerino con una nota -->
+                </div>
+            </div>
+        </back>
     </text>
                 
 </TEI>
