@@ -59,10 +59,10 @@
                             <supportDesc>
                                 <support>
                                     <material>Carta sottile.</material>
-                                    <watermark>Filigrana di forma circolare leggermente visibile raffigurante uno stemma, posizionata nella zona centrale del folio retro verso, visibile principalmente per metà, nella zona del folio non coperta da testo. La filigrana si espande per qualche centimetro attorno allo stemma. Sulla diagonale che congiunge il centro del folio all'angolo in alto a sinistra nella filigrana è riconoscibile una lettera B maiuscola.</watermark>
+                                    <watermark><hi facs="#LL1.1_hotspot_rv-01">Filigrana</hi> di forma circolare leggermente visibile raffigurante uno stemma, posizionata nella zona centrale del folio retro verso, visibile principalmente per metà, nella zona del folio non coperta da testo. La filigrana si espande per qualche centimetro attorno allo stemma. Sulla diagonale che congiunge il centro del folio all'angolo in alto a sinistra nella filigrana è riconoscibile una <hi rend="LL1.1_hotspot_rv-02">lettera</hi> B maiuscola.</watermark>
                                     <stamp>Non sono presenti tracce di francobolli né di timbri postali.</stamp>
                                     <p>Lettera in buone condizioni fisiche, composta da un solo folio suddiviso in tre facciate e piegato in più parti. Il testo della lettera è presente nella colonna destra di ogni facciata. Vi sono varie annotazioni non riconducibili a Bellini. </p>
-                                    <p>La carta è sottile e di colore beige, con filigrana, l'inchiostro è marrone. La lettera presenta due lacerazioni, la prima nell'angolo superiore destro del fronte, la seconda in quello inferiore. I bordi sono tutti leggermente frastagliati a causa dell'invecchiamento.</p>
+                                    <p>La carta è sottile e di colore beige, con filigrana, l'inchiostro è marrone. La lettera presenta due lacerazioni, la <hi facs="#LL1.1_hotspot_rr-05">prima</hi> nell'angolo superiore destro del fronte, la <hi facs="#LL1.1_hotspot_rr-04">seconda</hi> in quello inferiore. I bordi sono tutti leggermente frastagliati a causa dell'invecchiamento.</p>
                                     <p>Varie grandi macchie marroni sono presenti sia sul fronte che sul retro del folio, probabilmente anch'esse dovute all'invecchiamento del supporto materiale.</p>
                                 </support>
                                 <extent>
@@ -82,12 +82,12 @@
                         </objectDesc>
                         <handDesc hands="5"> 
                         
-                            <handNote xml:id="h1"><p>Scrittura a mano leggibile. Vincenzo Bellini ha apposto solamente la firma alla lettera, il corpo della supplica è stato scritto da un'altra mano.</p></handNote>
-                            <handNote xml:id="h2"><p>Il folio retro recto presenta la firma apposta da Bellini.</p></handNote>
-                            <handNote xml:id="h3"><p>Nel folio fronte recto una terza mano ha scritto "Supp | 3. Mag 1819".</p></handNote>
-                            <handNote xml:id="h4"><p>Nell'angolo superiore destro del folio fronte recto è presente l'annotazine "188" probabilmente attribuibile ad un catalogatore.</p>
-														<p>Nell'angolo superiore destro del folio retro recto è presente l'annotazine "189" probabilmente attribuibile allo stesso catalogatore.</p></handNote>
-                            <handNote xml:id="h5"><p>Nell'angolo superiore sinistro del folio fronte recto è presente un'annotazione di colore blu scuro riconducibile ad una "B" probabilmente di mano di un secondo catalogatore.</p></handNote>
+                            <handNote xml:id="h1"><p>Scrittura a mano leggibile. Vincenzo Bellini ha apposto solamente la <hi facs="#LL1.1_hotspot_rr-06">firma</hi> alla lettera, il corpo della supplica è stato scritto da un'altra mano.</p></handNote>
+                            <handNote xml:id="h2"><p>Il folio retro recto presenta la <hi facs="#LL1.1_hotspot_rr-06">firma</hi> apposta da Bellini.</p></handNote>
+                            <handNote xml:id="h3"><p>Nel folio fronte recto una terza mano ha scritto l'<hi facs="#LL1.1_hotspot_fr-01">annotazione</hi> "Supp | 3. Mag 1819".</p></handNote>
+                            <handNote xml:id="h4"><p>Nell'angolo superiore destro del folio fronte recto è presente la <hi facs="#LL1.1_hotspot_fr-03">nota</hi> "188" probabilmente attribuibile ad un catalogatore.</p>
+														<p>Nell'angolo superiore destro del folio retro recto è presente la <hi facs="#LL1.1_hotspot_rr-01">nota</hi> "189" probabilmente attribuibile allo stesso catalogatore.</p></handNote>
+                            <handNote xml:id="h5"><p>Nell'angolo superiore sinistro del folio fronte recto è presente un'<hi facs="#LL1.1_hotspot_rv-02">annotazione</hi> di colore blu scuro riconducibile ad una "B" o ad una "R", probabilmente di mano di un secondo catalogatore.</p></handNote>
                         </handDesc>
                     </physDesc>
                     <additional>
@@ -244,8 +244,10 @@
             <zone ulx="1289" uly="2615" lrx="2534" lry="2707" rendition="Line" xml:id="LL1.1_line_rr-20"/>
             <!-- Firma Vincenzo Bellini -->
             <zone ulx="1420" uly="2788" lrx="2305" lry="2993" rendition="HotSpot" xml:id="LL1.1_hotspot_rr-02"/>
-            <!-- Aggiunta sup<plican>te -->
+            <!-- Aggiunta alla firma, supp. -->
             <zone ulx="2344" uly="2936" lrx="2525" lry="3067" rendition="HotSpot" xml:id="LL1.1_hotspot_rr-03"/>
+            <!-- Firma totale Vincenzo Bellini supp. -->
+            <zone ulx="1385" uly="2764" lrx="2535" lry="3079" rendition="HotSpot" xml:id="LL1.1_hotspot_rr-06"/>
             <!-- Angoli carta foglio mancanti sup inf-->
             <zone ulx="2340" uly="32" lrx="2577" lry="322" rendition="HotSpot" xml:id="LL1.1_hotspot_rr-05"/>
             <zone ulx="2000" uly="3158" lrx="2523" lry="3611" rendition="HotSpot" xml:id="LL1.1_hotspot_rr-04"/>
@@ -265,13 +267,13 @@
             <pb n="1" xml:id="LL1.1_fr_front" facs="#LL1.1_fronte_recto"/> 
             <!-- su questa facciata è presente sia il front che la prima colonna del corpo della lettera, quindi nel body non sarà presente il page beginning della n="1" fronte recto, essendo iniziata qui -->
 
-            <ab type="paratext" subtype="addition" hand="#h5" rend="case(allcaps)" xml:id="LL1.1_hs_fr-02" facs="#LL1.1_hotspot_rr-01">189</ab>   
+            <add type="paratext" subtype="addition" hand="#h5" rend="case(allcaps)" xml:id="LL1.1_hs_fr-02" facs="#LL1.1_hotspot_rr-01">189</add>   
 
             <div type="sent">
                 <!-- Data -->
                 <ab hand="#h3" xml:id="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> <!-- annotazione data e supp. -->
                     <mentioned>
-                        <abbr>supp</abbr>
+                        <unclear><abbr>supp</abbr></unclear>
                         <date when="1819-05-03" type="writing">3. Mag 1819</date>
                         <unclear>SS88<pc type="dot">.</pc></unclear>
                     </mentioned>
@@ -285,7 +287,7 @@
                                 <lb xml:id="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
                                 <persName ref="TEI-ListPerson.xml#SN">
                                     <roleName type="honorific" full="abb">S.E.</roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice> <roleName type="honorific">Duca Sammar
-                                    <lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov.a</abbr><expan resp="#AC">Provincia"</expan></choice> di
+                                    <lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc place="below" type="dot">.</pc><c place="above">a</c></abbr><expan resp="#AC">Provincia"</expan></choice> di
                                     <lb xml:id="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="TEI-ListPlace.xml#CT"><hi rend="double">Catania</hi></placeName></roleName>
                                 </persName>
                         </addrLine>
@@ -295,7 +297,7 @@
         </front>
 
         <body xml:lang="it" hand="#h1">
-            <ab type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03"> 189 </ab> <!-- annotazione catalogatore 188 -->
+            <add type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03"> 189 </add> <!-- annotazione catalogatore 188 -->
 
             <!-- In questo punto NON ho inserito un <div type="fronte-recto"> perché così facendo avrei avuto un overlap tra div, 
             in quanto il corpo della lettera finisce nel folio retro recto, perciò avrei dovuto chiudere il <div type="fronte-recto">,
@@ -431,7 +433,7 @@
                             <!-- RETRO RECTO FACCIATA 3 -->
                     <pb n="3" xml:id="LL1.1_rr_body" facs="#LL1.1_retro_recto"/>     
                     
-                    <ab type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_rr-01" facs="#LL1.1_hotspot_rr-01">189</ab>	<!-- Annotazione catalogatore 189 -->
+                    <add type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_rr-01" facs="#LL1.1_hotspot_rr-01">189</add>	<!-- Annotazione catalogatore 189 -->
 
                     <lb xml:id="LL1.1_lb_rr_01" n="53" facs="LL1.1_line_rr-01"/>    
                     della propria famiglia<pc type="comma">,</pc> e della
@@ -481,7 +483,7 @@
                     aspettazione</s>
                 </salute>
                 <signed>
-                    <ab hand="#h2" rend="align(right)" xml:id="LL1.1_hs_rr-02" facs="#LL1.1_hotspot_rr-02">
+                    <ab hand="#h2" rend="align(right)" xml:id="LL1.1_hs_rr-02" facs="#LL1.1_hotspot_rr-06">
                         <persName ref="TEI-ListPerson.xml#VB" role="composer">Vincenzo Bellini Ferlito</persName> <choice><abbr>supp.te</abbr><expan resp="#AC">supp<ex>plican</ex>te</expan></choice>
                     </ab>
                 </signed>
