@@ -87,7 +87,7 @@
                             <handNote xml:id="h3"><p>Nel folio fronte recto una terza mano ha scritto "Supp | 3. Mag 1819".</p></handNote>
                             <handNote xml:id="h4"><p>Nell'angolo superiore destro del folio fronte recto è presente l'annotazine "188" probabilmente attribuibile ad un catalogatore.</p>
 														<p>Nell'angolo superiore destro del folio retro recto è presente l'annotazine "189" probabilmente attribuibile allo stesso catalogatore.</p></handNote>
-                            <handNote xml:id="h5"><p>Nell'angolo superiore sinistro del folio fronte recto è presente un'annotazione di colore blu scuro riconducibile ad una "R" probabilmente di mano di un secondo catalogatore.</p></handNote>
+                            <handNote xml:id="h5"><p>Nell'angolo superiore sinistro del folio fronte recto è presente un'annotazione di colore blu scuro riconducibile ad una "B" probabilmente di mano di un secondo catalogatore.</p></handNote>
                         </handDesc>
                     </physDesc>
                     <additional>
@@ -164,7 +164,7 @@
             <zone ulx="1302" uly="3367" lrx="2537" lry="3470" rendition="Line" xml:id="LL1.1_line_fr-26"/>
             <!-- Annotazione Supp. 3 Mag 1819 -->
             <zone ulx="523" uly="1036" lrx="974" lry="1431" rendition="HotSpot" xml:id="LL1.1_hotspot_fr-01"/>
-            <!-- Annotazione catalogo lettera R -->
+            <!-- Annotazione catalogo lettera B -->
             <zone ulx="336" uly="99" lrx="427" lry="176" rendition="HotSpot" xml:id="LL1.1_hotspot_fr-02"/>
             <!-- Annotazione catalogo 188 -->
             <zone ulx="2208" uly="104" lrx="2394" lry="180" rendition="HotSpot" xml:id="LL1.1_hotspot_fr-03"/>
@@ -294,10 +294,10 @@
             </div>
         </front>
 
-        <body xml:lang="it">
+        <body xml:lang="it" hand="#h1">
             <ab type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03"> 189 </ab> <!-- annotazione catalogatore 188 -->
 
-            <!-- In questo punto non ho inserito un <div type="fronte-recto"> perché così facendo avrei avuto un overlap tra div, 
+            <!-- In questo punto NON ho inserito un <div type="fronte-recto"> perché così facendo avrei avuto un overlap tra div, 
             in quanto il corpo della lettera finisce nel folio retro recto, perciò avrei dovuto chiudere il <div type="fronte-recto">,
             aperto prima del  <div type="letter-body" n="t_01", prima quest'ultimo -->
 
