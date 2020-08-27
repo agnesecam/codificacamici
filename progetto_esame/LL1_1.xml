@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<!DOCTYPE TEI SYSTEM "tei-all.dtd">
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
@@ -83,11 +83,11 @@
                         <handDesc hands="5"> 
                         
                             <handNote xml:id="h1"><p>Scrittura a mano leggibile, ha scritto il corpo della lettera. Vincenzo Bellini ha apposto solamente la <hi facs="#LL1.1_hotspot_rr-06">firma</hi>, la supplica è stata scritto da questa prima mano.</p></handNote>
-                            <handNote xml:id="h2"><p>Il folio retro recto presenta la <hi facs="#LL1.1_hotspot_rr-06">firma</hi> apposta da Bellini.</p></handNote>
-                            <handNote xml:id="h3"><p>Nel folio fronte recto una terza mano ha scritto l'<hi facs="#LL1.1_hotspot_fr-01">annotazione</hi> "Supp | 3. Mag 1819".</p></handNote>
-                            <handNote xml:id="h4"><p>Nell'angolo superiore destro del folio fronte recto è presente la <hi facs="#LL1.1_hotspot_fr-03">nota</hi> "188" probabilmente attribuibile ad un catalogatore.</p>
-														<p>Nell'angolo superiore destro del folio retro recto è presente la <hi facs="#LL1.1_hotspot_rr-01">nota</hi> "189" probabilmente attribuibile allo stesso catalogatore.</p></handNote>
-                            <handNote xml:id="h5"><p>Nell'angolo superiore sinistro del folio fronte recto è presente un'<hi facs="#LL1.1_hotspot_rv-02">annotazione</hi> di colore blu scuro somigliante ad una "B" o ad una "R", meno facilmente riconducibile alle iniziali "B V", probabilmente di mano di un secondo catalogatore.</p></handNote>
+                            <handNote xml:id="h2"><p>Il folio retro recto presenta la <hi ref="#LL1.1_hs_rr-02" facs="#LL1.1_hotspot_rr-06">firma</hi> apposta da Bellini.</p></handNote>
+                            <handNote xml:id="h3"><p>Nel folio fronte recto una terza mano ha scritto l'<hi ref="#LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01">annotazione</hi> "Supp | 3. Mag 1819".</p></handNote>
+                            <handNote xml:id="h4"><p>Nell'angolo superiore destro del folio fronte recto è presente la <hi ref="#LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03">nota</hi> "188" probabilmente attribuibile ad un catalogatore.</p>
+														<p>Nell'angolo superiore destro del folio retro recto è presente la <hi ref="#LL1.1_hs_rr-01" facs="#LL1.1_hotspot_rr-01">nota</hi> "189" probabilmente attribuibile allo stesso catalogatore.</p></handNote>
+                            <handNote xml:id="h5"><p>Nell'angolo superiore sinistro del folio fronte recto è presente un'<hi ref="#LL1.1_hs_fr-02" facs="#LL1.1_hotspot_rv-02">annotazione</hi> di colore blu scuro somigliante ad una "B" o ad una "R", meno facilmente riconducibile alle iniziali "B V", probabilmente di mano di un secondo catalogatore.</p></handNote>
                         </handDesc>
                     </physDesc>
                     <additional>
@@ -109,7 +109,7 @@
                     <date when="1819-05" cert="high" resp="#GS" type="writing">maggio 1819</date>					
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="TEI-ListPerson.xml#SN">Stefano Notarbartolo, duca di Sammartino</persName>
+                    <persName ref="TEI-ListPerson.xml#SN">Stefano Notarbartolo, duca di <placeName>Sammartino<placeName></persName>
                     <placeName ref="TEI-ListPlace.xml#CT"> Catania</placeName>
                     <date>unknown</date>
                 </correspAction >
@@ -283,8 +283,8 @@
                         <addrLine>
                                 <lb xml:id="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
                                 <persName ref="TEI-ListPerson.xml#SN">
-                                    <roleName type="honorific" full="abb">S.E.</roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice> <roleName type="honorific">Duca Sammar
-                                    <lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc type="dot">.</pc>a</abbr><expan resp="#AC">Provincia"</expan></choice> di
+                                    <roleName type="honorific"><choice><abbr>S.E.</abbr><expan>S<ex>ua</ex> E<ex>ccellenza</ex></expan></choice></roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice><ptr target="#LL1_1_note1"/> <roleName type="honorific">Duca Sammar
+                                    <lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc place="below" type="dot">.</pc><c place="above">a</c></abbr><expan resp="#AC">Provincia"</expan></choice> di
                                     <lb xml:id="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="TEI-ListPlace.xml#CT"><hi rend="double">Catania</hi></placeName></roleName>
                                 </persName>
                         </addrLine>
@@ -294,7 +294,7 @@
         </front>
 
 
-        <body xml:lang="it"> <!-- vedi se trovi un modo per dire che h1 ha scritto il corpo, è errore metterlo qui-->
+        <body xml:lang="it" hand="#h1">
             <!-- FRONTE RECTO FACCIATA 1 -->
             <pb n="1" xml:id="LL1.1_fr_body" facs="#LL1.1_fronte_recto"/>
 
@@ -307,11 +307,8 @@
             aperto dopo l'ipotetivo <div type="fronte-recto">
             --> 
 
-            <div type="paratext">
-				<ab type="paratext" subtype="addition" hand="#h4" xml:id="LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03" rend="align(right)"> <!-- annotazione catalogatore 188 -->
-					<fw type="catalogNum"><idno type="oldCat">188</idno></fw>   <!-- Non ho usato add perché non andava bene add come figlio in body -->
-				</ab>
-            </div>
+           
+            <add type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03"> 188 </add> <!-- annotazione catalogatore 188 -->
 
             <!-- INDICAZIONI SPEDIZIONE E DESTINATARIO -->
             <div type="sent">
@@ -330,7 +327,7 @@
                                 <lb copyOf="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
                                 <persName ref="TEI-ListPerson.xml#SN">
                                     <roleName type="honorific" full="abb">S.E.</roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice> <roleName type="honorific">Duca Sammar
-                                    <lb copyOf="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc type="dot">.</pc>a</abbr><expan resp="#AC">Provincia"</expan></choice> di
+                                    <lb copyOf="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc place="below" type="dot">.</pc><c place="above">a</c></abbr><expan resp="#AC">Provincia"</expan></choice> di
                                     <lb copyOf="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="TEI-ListPlace.xml#CT"><hi rend="double">Catania</hi></placeName></roleName>
                                 </persName>
                         </addrLine>
@@ -345,7 +342,7 @@
                         <s type="sentence" n="s_01">
                             <persName ref="TEI-ListPerson.xml#SN">
                                 <hi rend="align(left)">
-                                <roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Sig<ex>nor</ex></expan></choice></roleName> <roleName type="honorific" ref="TEI-ListPerson.xml#SN">Duca Intendente</roleName> <supplied resp="#AC"> Duca di Sammartino</supplied>
+                                <roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Sig<ex>nor</ex></expan></choice></roleName> <roleName type="honorific" ref="TEI-ListPerson.xml#SN">Duca Intendente</roleName> <supplied resp="#AC"> Duca di <placeName>Sammartino<placeName></supplied>
                                 </hi>
                             </persName>
                         </s>
@@ -354,7 +351,7 @@
             </div>
 
             <!-- CORPO DELLA LETTERA -->
-            <div type="letter-body" n="t_01" hand="#1">
+            <div type="letter-body" n="t_01">
                 <ab type="parag" n="ab_02">
                     <s type="sentence" n="s_02">
                     <lb xml:id="LL1.1_lb_fr_01" n="1" facs="LL1.1_line_fr-02"/>
@@ -450,7 +447,7 @@
                     <lb xml:id="LL1.1_lb_rv_19" n="44" facs="LL1.1_line_rv-19" break="no" rend="double-stroke"/>
                     ta</w> tra noi<pc type="comma">,</pc> viene l<pc type="apostrophe">'</pc><persName ref="TEI-ListPerson.xml#VB" role="composer">Esponente <supplied resp="#AC"><forename>Vincenzo</forename> <surname>Bellini</surname></supplied></persName> a <w>pre
                     <lb xml:id="LL1.1_lb_rv_20" n="45" facs="LL1.1_line_rv-20" break="no" rend="double-stroke"/>
-                    sentarsi</w> a <persName ref="TEI-ListPerson.xml#SN">lei</persName> <persName ref="TEI-ListPerson.xml#SN"><roleName><choice><abbr>Sig:r</abbr><expan resp="#AC">Sig<ex>no</ex>r</expan></choice></roleName> <roleName type="honorific" ref="#SN">Duca Intendente</roleName><supplied resp="#AC">Duca di Sammartino</supplied></persName><pc type="comma">,</pc> 
+                    sentarsi</w> a <persName ref="TEI-ListPerson.xml#SN">lei</persName> <persName ref="TEI-ListPerson.xml#SN"><roleName><choice><abbr>Sig:r</abbr><expan resp="#AC">Sig<ex>no</ex>r</expan></choice></roleName> <roleName type="honorific" ref="#SN">Duca Intendente</roleName><supplied resp="#AC">Duca di <placeName>Sammartino<placeName></supplied></persName><pc type="comma">,</pc> 
                     <lb xml:id="LL1.1_lb_rv_21" n="46" facs="LL1.1_line_rv-21"/>
                     cui<pc type="comma">,</pc> dopo avere umiliato la sua <w>po
                     <lb xml:id="LL1.1_lb_rv_22" n="47" facs="LL1.1_line_rv-22" break="no" rend="double-stroke"/>
@@ -492,7 +489,7 @@
             </div>
 
             <!-- CLOSER -->
-            <div type="closer" n="c_01" hand="#1">
+            <div type="closer" n="c_01">
                 <salute n="ab_03">
                     <s type="sentence" n="s_07">Conoscendosi universalmente <w>que
                     <lb xml:id="LL1.1_lb_rr_10" n="62" facs="LL1.1_line_rr-10" break="no" rend="double-stroke"/>   
@@ -519,9 +516,9 @@
                     aspettazione</s>
                 </salute>
                 <signed>
-                    <hi hand="#h2" rend="align(right)" xml:id="LL1.1_hs_rr-02" facs="#LL1.1_hotspot_rr-06"> <!-- forse hi non è l'elemento migliore, con ab o p non valida-->
+                    <ab hand="#h2" rend="align(right)" xml:id="LL1.1_hs_rr-02" facs="#LL1.1_hotspot_rr-06">
                         <persName ref="TEI-ListPerson.xml#VB" role="composer">Vincenzo Bellini Ferlito</persName> <choice><abbr>supp.te</abbr><expan resp="#AC">supp<ex>plican</ex>te</expan></choice>
-                    </hi>
+                    </ab>
                 </signed>
             </div>
 
@@ -541,10 +538,60 @@
                             <citedRange unit="page" from="65" to="66">65-66</citedRange>
                         </bibl>
                         <p>
-                            Stefano Notarbartolo, duca di Sammartino (Palermo, 1787-1856), nel 1818 era stato nominato Intendente del Valle di Catania.<!--finisci-->
+                            <persName ref="TEI-ListPerson.xml#SN"><forename>Stefano</forename> <surname>Notarbartolo</surname>, <roleName type="honorific">duca di <placeName>Sammartino</placeName></roleName></persName>, nel <date when="1818">1818</date> era stato nominato <roleName type="honorific">Intendente del Valle di <placeName ref="TEI-ListPlace.xml#CT">Catania<placeName></roleName><pc type="dot">.</pc>
                         </p>
                     </note>
-                    <!-- devi finire di codificare le note qui, e poi mettere un target che punta alla corrispondente nota, ogni volta che nel testo c'è il numerino con una nota -->
+                    <note xml:id="LL1_1_note2" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="2">
+                        <bibl>
+                            <citedRange unit="page" from="65" to="66">65-66</citedRange>
+                        </bibl>
+                        <p>
+                            La Supplica<pc type="comma">,</pc> in bella scrittura<pc type="comma">,</pc> 
+                            non è di mano di <persName ref="TEI-ListPerson.xml#VB"><surname>Bellini</surname></persName><pc type="comma">,</pc> 
+                            che appose solo la <hi facs="#LL1.1_hotspot_rr-02" ref="#LL1.1_hs_rr-02">firma</hi><pc type="dot">.</pc> 
+                            Nella prima <hi facs="#LL1.1_fronte_recto">facciata</hi> del foglio è scritto da una <hi ref="#h3">terza mano</hi> 
+                            <hi ref="#LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01">"Supp | <date when="1819-05-03">3<pc type="dot">.</pc> Mag 1819</date>"</hi>.
+                        </p>
+                    </note>
+                    <note xml:id="LL1_1_note3" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="3">
+                        <bibl>
+                            <citedRange unit="page" from="65" to="66">65-66</citedRange>
+                        </bibl>
+                        <p>
+                            Nella sua <ref target="#Cambi1943">edizione</ref> <persName ref="#TEI-ListPers.xml#LC"><forename>Luisa</forename> <surname>Cambi</surname></persName> dichiara di aver desunto il testo della
+                            lettera dal <title level="m">giornale Bellini</title>, a. IV, <biblScope unit="volume" from="84" to="85">n. 84-85</biblScope>, <date when="1879-11-16">1879, 16 novembre</date> (p. <biblScope unit="page">18</biblScope>, nota 1)<pc type="semicolon">;</pc>
+                            <persName ref="#TEI-ListPers.xml#CN"><forename>Carmelo</forename> <surname>Neri</surname> invece informa correttamente circa l<pc="apostrophe">'</pc>ubicazione dell<pc="apostrophe">'</pc>autografo presso il <repository role="museum" ref="http://www.rism.info/typo3conf/ext/user_apachesolr/result.php?q=id:30003436" n="I-CATm">Museo Civico Belliniano di <placeName ref="#TEI-ListPlace.xml#CT">Catania</placeName></repository><pc type="character">.</pc> 
+                            Nondimeno <persName ref="TEI-ListPers.xml#LC TEI-ListPers.xml#CN">entrambi</persName> offrono un testo mutilo<pc type="comma">,</pc> mancante della porzione di lettera contenuta nella <hi ref="#LL1.1_rv_body" facs="#LL1.1_retro_verso">seconda facciata</hi> del
+                            documento, ripiegato in tre parti.
+                        </p>
+                    </note>
+                    <note xml:id="LL1_1_note4" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="4">
+                        <p>
+                            Rosario Bellini (Catania, 1776 - 1840). Padre di Vincenzo, aveva sposato
+                            Agata Ferlito il 17 gennaio 1801; con lei si stabilì in un modesto appartamento di tre stanze ricavato dalle
+                            dépendances del settecentesco palazzo Gravina Cruylas, situato in Largo San Francesco a Catania. I due
+                            coniugi ebbero sette figli: Vincenzo, il primogenito, nel 1801, Carmelo nel 1803, Francesco nel 1804, Michela
+                            nel 1806, Giuseppa nel 1807, Mario nel 1810, Maria nel 1813. Come il padre Vincenzo Tobia e come i fratelli
+                            Carmelo e Mario, anche Rosario Bellini operò a Catania come musicista e si dedicò prevalentemente al
+                            genere sacro.
+                        </p>
+                    </note>
+                    <note xml:id="LL1_1_note5" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="5">
+                        <p>
+                            Vincenzo Tobia Bellini (Torricella Peligna, 1744 - Catania, 1829). Nonno
+                            di Vincenzo, studiò a Napoli al Conservatorio di Sant’Onofrio a Capuana con Carlo Cotumacci e Giuseppe
+                            Dol. Dal 1769 è attestata la sua presenza a Catania; risale a quell’anno il matrimonio con Michela Burzì,
+                            celebrato nella chiesa dei SS. Filippo e Giacomo. Nella città etnea compose drammi sacri e oratori, operò
+                            come maestro di cappella presso il Monastero benedettino di S. Nicolò l’Arena tra il 1784 e il 1793 e fu
+                            stabilmente al servizio di Ignazio Paternò Castello, V principe di Biscari (Catania, 1719 - 1786).
+                        </p>
+                    </note>
+                    <note xml:id="LL1_1_note6" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="6">
+                        <p>
+                            Da intendersi per ‘dimorarvi’; cfr. la voce ‘commorare’ in TOMMASEO -
+                            BELLINI, vol. I, p. 1535: «Aff. al lat. aureo Commorari. Dimorare insieme»
+                        </p>
+                    </note>
                 </div>
             </div>
         </back>
