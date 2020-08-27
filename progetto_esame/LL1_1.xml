@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE TEI SYSTEM "tei-all.dtd">
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
@@ -284,7 +284,7 @@
                                 <lb xml:id="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
                                 <persName ref="TEI-ListPerson.xml#SN">
                                     <roleName type="honorific" full="abb">S.E.</roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice> <roleName type="honorific">Duca Sammar
-                                    <lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc place="below" type="dot">.</pc><c place="above">a</c></abbr><expan resp="#AC">Provincia"</expan></choice> di
+                                    <lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc type="dot">.</pc>a</abbr><expan resp="#AC">Provincia"</expan></choice> di
                                     <lb xml:id="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="TEI-ListPlace.xml#CT"><hi rend="double">Catania</hi></placeName></roleName>
                                 </persName>
                         </addrLine>
@@ -294,7 +294,7 @@
         </front>
 
 
-        <body xml:lang="it" hand="#h1">
+        <body xml:lang="it"> <!-- vedi se trovi un modo per dire che h1 ha scritto il corpo, è errore metterlo qui-->
             <!-- FRONTE RECTO FACCIATA 1 -->
             <pb n="1" xml:id="LL1.1_fr_body" facs="#LL1.1_fronte_recto"/>
 
@@ -307,8 +307,11 @@
             aperto dopo l'ipotetivo <div type="fronte-recto">
             --> 
 
-           
-            <add type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03"> 188 </add> <!-- annotazione catalogatore 188 -->
+            <div type="paratext">
+				<ab type="paratext" subtype="addition" hand="#h4" xml:id="LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03" rend="align(right)"> <!-- annotazione catalogatore 188 -->
+					<fw type="catalogNum"><idno type="oldCat">188</idno></fw>   <!-- Non ho usato add perché non andava bene add come figlio in body -->
+				</ab>
+            </div>
 
             <!-- INDICAZIONI SPEDIZIONE E DESTINATARIO -->
             <div type="sent">
@@ -327,7 +330,7 @@
                                 <lb copyOf="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
                                 <persName ref="TEI-ListPerson.xml#SN">
                                     <roleName type="honorific" full="abb">S.E.</roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice> <roleName type="honorific">Duca Sammar
-                                    <lb copyOf="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc place="below" type="dot">.</pc><c place="above">a</c></abbr><expan resp="#AC">Provincia"</expan></choice> di
+                                    <lb copyOf="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc type="dot">.</pc>a</abbr><expan resp="#AC">Provincia"</expan></choice> di
                                     <lb copyOf="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="TEI-ListPlace.xml#CT"><hi rend="double">Catania</hi></placeName></roleName>
                                 </persName>
                         </addrLine>
@@ -351,7 +354,7 @@
             </div>
 
             <!-- CORPO DELLA LETTERA -->
-            <div type="letter-body" n="t_01">
+            <div type="letter-body" n="t_01" hand="#1">
                 <ab type="parag" n="ab_02">
                     <s type="sentence" n="s_02">
                     <lb xml:id="LL1.1_lb_fr_01" n="1" facs="LL1.1_line_fr-02"/>
@@ -489,7 +492,7 @@
             </div>
 
             <!-- CLOSER -->
-            <div type="closer" n="c_01">
+            <div type="closer" n="c_01" hand="#1">
                 <salute n="ab_03">
                     <s type="sentence" n="s_07">Conoscendosi universalmente <w>que
                     <lb xml:id="LL1.1_lb_rr_10" n="62" facs="LL1.1_line_rr-10" break="no" rend="double-stroke"/>   
@@ -516,9 +519,9 @@
                     aspettazione</s>
                 </salute>
                 <signed>
-                    <ab hand="#h2" rend="align(right)" xml:id="LL1.1_hs_rr-02" facs="#LL1.1_hotspot_rr-06">
+                    <hi hand="#h2" rend="align(right)" xml:id="LL1.1_hs_rr-02" facs="#LL1.1_hotspot_rr-06"> <!-- forse hi non è l'elemento migliore, con ab o p non valida-->
                         <persName ref="TEI-ListPerson.xml#VB" role="composer">Vincenzo Bellini Ferlito</persName> <choice><abbr>supp.te</abbr><expan resp="#AC">supp<ex>plican</ex>te</expan></choice>
-                    </ab>
+                    </hi>
                 </signed>
             </div>
 
