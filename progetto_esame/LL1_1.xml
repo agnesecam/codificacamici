@@ -631,6 +631,7 @@
             <!-- ListPerson -->
 				<listPerson>
 					<head>Lista persone</head>
+
                     <!-- Vincenzo Bellini -->
 					<person xml:id="VB" sameAs="http://viaf.org/viaf/39560983"> 
 						<persName role="composer"> 
@@ -646,69 +647,106 @@
 						<sex>M</sex>
 						<birth>
 							<date when="1801-11-03">3 novembre 1801</date>
-							<placeName ref="#CT">
+							<placeName ref="TEI-ListPlace.xml#CT">
 								<settlement type="municipality">Catania</settlement>
 								<settlement type="provincia" key="CT">Catania</settlement>
 								<country key="IT">Italia</country>
 							</placeName>
 						</birth>
+                        <death>
+							<date when="1835-09-23">23 settembre 1835</date>
+							<placeName ref="TEI-ListPlace#Put">
+									<settlement type="municipality">Puteaux</settlement>
+									<settlement type="department" key="Paris">Paris</settlement>
+									<country key="FR">France</country>
+							</placeName>
+						</death>   
 					</person>
-                    
+
                     <!-- Stefano Notarbartolo -->
-                    <!-- Angelo Mario Del Grosso -->
-                    <!-- Daria Spampinato -->
-                    <!-- Erica Capizzi -->
-                    <!-- Graziella Seminara -->
-                    <!-- Agnese Camici -->
+                    <person xml:id="SN"> 
+						<persName> 
+							<forename>Stefano</forename>
+							<surname>Notarbartolo</surname>
+							<roleName type="honorific">duca di Sammartino</roleName> 
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1787-04-18">18 aprile 1787</date>
+							<placeName ref="TEI-ListPlace.xml#PA">
+								<settlement type="municipality">Palermo</settlement>
+								<settlement type="provincia" key="PA">Palermo</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+                        <death>
+							<date when="1856-05-30">30 maggio 1856</date>
+                            <placeName type="unknown"/>
+						</death>
+					</person> 
+
                     <!-- Vincenzo Tobia Bellini -->
-                    <!-- Rosario Bellini -->
-                    <!-- Luisa Cambi -->
-                    <!-- Carmelo Neri -->
-                    <!-- Agata Ferlito (mamma)-->
+                    <person xml:id="VTB" sameAs="https://viaf.org/viaf/62666262"> 
+						<persName role="composer"> 
+							<ref target="http://www.treccani.it/enciclopedia/vincenzo-tobia-nicola-bellini_%28Dizionario-Biografico%29/ https://it.wikipedia.org/wiki/Vincenzo_Tobia_Nicola_Bellini"/>
+							<forename>Vincenzo</forename>
+							<forename>Tobia</forename>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1744-05-11">11 maggio 1744</date>
+							<placeName>
+								<settlement type="municipality">Torricella Peligna</settlement>
+								<settlement type="provincia" key="CH">Chieti</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+                        <death>
+							<date when="1829-06-08">8 giugno 1829</date>
+							<placeName ref="TEI-ListPlace#CT">
+								<settlement type="municipality">Catania</settlement>
+								<settlement type="provincia" key="CT">Catania</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</death> 
+					</person>
+
+                    <!-- Agata Ferlito -->
                     <person xml:id="AF"> 
                         <persName> 
                             <forename>Agata</forename>
                             <surname>Ferlito</surname>
                         </persName>
                         <sex>F</sex>
-                        <birth><date when="1778">1778</date>
-                                <placeName ref="TEI-ListPlace#CT">
-                                        <settlement type="municipality">Catania</settlement>
-                                        <settlement type="provincia" key="CT">Catania</settlement>
-                                        <country key="IT">Italia</country>
-                                    </placeName>
-                            </birth>
-                                        <death><date when="1842">1842</date>
-                                <placeName ref="TEI-ListPlace#CT">
-                                        <settlement type="municipality">Catania</settlement>
-                                        <settlement type="provincia" key="CT">Catania</settlement>
-                                        <country key="IT">Italia</country>
-                                    </placeName>
-                                        </death>
+                        <birth>
+                            <date when="1778">1778</date>
+                            <placeName ref="TEI-ListPlace#CT">
+                                <settlement type="municipality">Catania</settlement>
+                                <settlement type="provincia" key="CT">Catania</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </birth>
+                        <death><date when="1842">1842</date>
+                            <placeName ref="TEI-ListPlace#CT">
+                                <settlement type="municipality">Catania</settlement>
+                                <settlement type="provincia" key="CT">Catania</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </death>
                         <note resp="#GS">
                             <p>
-                            Agata Ferlito (Catania, 1778 -1842) apparteneva a una famiglia relativamente agiata poiché il padre 
-                            Carmelo era funzionario presso l’amministrazione catanese. Sposò <persName ref="#RB">Rosario Bellini</persName> 
-                            il 17 gennaio 1801 e con lui si stabilì in un modesto appartamento di tre stanze ricavato dalle dépendances 
-                            del settecentesco palazzo Gravina Cruylas, situato in Largo San Francesco a 
-                            <placeName ref="TEI-ListPlace.xml#CT"> Catania </placeName>. I due coniugi ebbero sette figli: 
-                            <persName ref="#VB">Vincenzo</persName>, il primogenito, nel 1801, Carmelo nel 1803, Francesco nel 1804, 
-                            Michela nel 1806, Giuseppa nel 1807, Mario nel 1810, Maria nel 1813.
+                                Agata Ferlito (Catania, 1778 - 1842) apparteneva a una famiglia relativamente agiata poiché il padre 
+                                Carmelo era funzionario presso l'amministrazione catanese. Sposò <persName ref="#RB">Rosario Bellini</persName> 
+                                il 17 gennaio 1801 e con lui si stabilì in un modesto appartamento di tre stanze ricavato dalle dépendances 
+                                del settecentesco palazzo Gravina Cruylas, situato in Largo San Francesco a 
+                                <placeName ref="TEI-ListPlace.xml#CT"> Catania </placeName>. I due coniugi ebbero sette figli: 
+                                <persName ref="#VB">Vincenzo</persName>, il primogenito, nel 1801, Carmelo nel 1803, Francesco nel 1804, 
+                                Michela nel 1806, Giuseppa nel 1807, Mario nel 1810, Maria nel 1813.
                             </p>
                         </note> 
                     </person>
-                    <!-- Carmelo Bellini (fratello)-->
-                    <!-- Francesco Bellini (fratello)-->
-                    <!-- Michela Bellini -->
-                    <!-- Giuseppa Bellini -->
-                    <!-- Mario Bellini -->
-                    <!-- Maria Bellini-->
-                    <!-- Carlo Contumaci -->
-                    <!-- Giuseppe Dol -->
-                    <!-- Michela Burzì -->
-                    <!-- San Filippo e San Giacomo??????-->
-                    <!-- San Nicolò I ???-->
-                    <!-- Sant'Onofrio??-->
+
                     <!-- Ignazio Paternò Castello, V principe di Biscari -->
                     <person xml:id="FPC" sameAs="http://viaf.org/viaf/208235133"> 
           	            <persName> 
@@ -740,16 +778,310 @@
                                 <citedRange unit="page" from="220" to="220">220</citedRange>
                             </bibl>
                             <p>
-                            Francesco Paternò Castello (Catania, 1786 - 1854), nel 1838 – alla morte del nipote Mario – sarebbe diventato VII duca di Carcaci e Gentiluomo di Camera di Ferdinando II, re delle Due Sicilie. Nel 1826 venne nominato primo direttore dell’Accademia Gioenia di <placeName ref="TEI-ListPlace.xml#CT">Catania</placeName> e fu autore di una <hi rend="italic">Descrizione di Catania e delle cose notevoli ne’ dintorni di essa</hi> (Catania, Giuntini, 1841). Compositore dilettante, era un ammiratore del musicista che si premurava di inviargli gli <term subtype="music-term" ref="TEI-ListTerm.xml#spartito">spartiti</term> delle proprie opere.
+                                Francesco Paternò Castello (Catania, 1786 - 1854), nel 1838 – alla morte del nipote Mario – sarebbe diventato VII duca di Carcaci e Gentiluomo di Camera di Ferdinando II, re delle Due Sicilie. Nel 1826 venne nominato primo direttore dell’Accademia Gioenia di <placeName ref="TEI-ListPlace.xml#CT">Catania</placeName> e fu autore di una <hi rend="italic">Descrizione di Catania e delle cose notevoli ne’ dintorni di essa</hi> (Catania, Giuntini, 1841). Compositore dilettante, era un ammiratore del musicista che si premurava di inviargli gli <term subtype="music-term" ref="TEI-ListTerm.xml#spartito">spartiti</term> delle proprie opere.
                             </p>
                         </note> 
                     </person>
+
+                    <!-- Agnese Camici -->
+                    <person xml:id="AC"> 
+          	            <persName> 
+                            <forename>Agnese</forename>
+                            <surname>Camici</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <birth>
+                            <date when="1997-01-25">25 gennaio 1997</date>
+                            <placeName>
+                                <settlement type="municipality">Piombino</settlement>
+                                <settlement type="provincia" key="LI">Livorno</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </birth>
+                    </person>
+
+                    <!-- Angelo Mario Del Grosso -->
+                    <person xml:id="AMDG" sameAs="https://viaf.org/viaf/323148207835400342025"> 
+          	            <persName> 
+                            <forename>Angelo</forename>
+                            <forename>Mario</forename>
+                            <surname>Del Grosso</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <birth>
+                            <date when="1980-02-19">19 febbraio 1980</date>
+                            <placeName>
+                                <settlement type="municipality">Benevento</settlement>
+                                <settlement type="provincia" key="BN">Benevento</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+
+                        </birth>
+                    </person>
+
+                    <!-- Daria Spampinato -->
+                    <person xml:id="DS"> 
+          	            <persName> 
+                            <forename>Daria</forename>
+                            <surname>Spampinato</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <birth>
+                            <date type="unknown"/>
+                            <placeName type="unknown"/>
+                        </birth>
+                    </person>
+
+                    <!-- Erica Capizzi -->
+                    <person xml:id="EC"> 
+          	            <persName> 
+                            <forename>Erica</forename>
+                            <surname>Capizzi</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <birth>
+                            <date type="unknown"/>
+                            <placeName type="unknown"/>
+                        </birth>
+                    </person>
+
+                    <!-- Graziella Seminara -->
+                    <person xml:id="GS" sameAs="https://viaf.org/viaf/37139452/"> 
+          	            <persName> 
+                            <forename>Graziella</forename>
+                            <surname>Seminara</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <birth>
+                            <date when="1957">1957</date>
+                            <placeName>
+                                <settlement type="municipality">Catania</settlement>
+                                <settlement type="provincia" key="CT">Catania</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>                        
+                        </birth>
+                    </person>
+
+                    <!-- Rosario Bellini -->
+                    <person xml:id="RB"> 
+                        <persName> 
+                            <forename>Rosario</forename>
+                            <surname>Bellini</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <birth>
+                            <date when="1776">1776</date>
+                            <placeName ref="TEI-ListPlace#CT">
+                                <settlement type="municipality">Catania</settlement>
+                                <settlement type="provincia" key="CT">Catania</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </birth>
+                        <death>
+                            <date when="1840">1840</date>
+                            <placeName ref="TEI-ListPlace#CT">
+                                <settlement type="municipality">Catania</settlement>
+                                <settlement type="provincia" key="CT">Catania</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </death>
+                    </person>
+
+                    <!-- Luisa Cambi -->
+                    <person xml:id="LC" sameAs="https://viaf.org/viaf/2582281/"> 
+          	            <persName> 
+                            <forename>Luisa</forename>
+                            <surname>Cambi</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <birth>
+                            <date type="unknown"/>
+                            <placeName type="unknown"/>      
+                        </birth>
+                    </person>
+
+                    <!-- Carmelo Neri -->
+                    <person xml:id="CN" sameAs="https://viaf.org/viaf/76540365/"> 
+          	            <persName> 
+                            <forename>Carmelo</forename>
+                            <surname>Neri</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <birth>
+                            <date when="1943">1943</date>
+                            <placeName type="unknown"/>      
+                        </birth>
+                    </person>
+                  
+                    <!-- Carmelo Bellini (fratello)-->
+                    <person xml:id="CB" sameAs="https://viaf.org/viaf/286152742936827732115"> 
+						<persName> 
+							<forename>Carmelo</forename>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1803">1803</date>
+                            <placeName type="unknown"/>
+						</birth>
+                        <death>
+							<date when="1884">1884</date>
+							<placeName type="unknown"/>
+						</death> 
+					</person>
+                    
+                    <!-- Francesco Bellini (fratello)-->
+                    <person xml:id="FB"> 
+						<persName> 
+							<forename>Carmelo</forename>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date type="unknown"/>
+                            <placeName type="unknown"/>
+						</birth>
+                        <death>
+							<date type="unknown"/>
+							<placeName type="unknown"/>
+						</death> 
+					</person>
+
+                    <!-- Michela Bellini -->
+                    <person xml:id="MiB"> 
+						<persName> 
+							<forename>Michela</forename>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>F</sex>
+						<birth>
+							<date type="unknown"/>
+                            <placeName type="unknown"/>
+						</birth>
+                        <death>
+							<date type="unknown"/>
+							<placeName type="unknown"/>
+						</death> 
+					</person>
+
+                    <!-- Giuseppa Bellini -->
+                    <person xml:id="GB"> 
+						<persName> 
+							<forename>Giuseppa</forename>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>F</sex>
+						<birth>
+							<date type="unknown"/>
+                            <placeName type="unknown"/>
+						</birth>
+                        <death>
+							<date type="unknown"/>
+							<placeName type="unknown"/>
+						</death> 
+					</person>
+
+                    <!-- Mario Bellini -->
+                    <person xml:id="MoB"> 
+						<persName> 
+							<forename>Mario</forename>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date type="unknown"/>
+                            <placeName type="unknown"/>
+						</birth>
+                        <death>
+							<date type="unknown"/>
+							<placeName type="unknown"/>
+						</death> 
+					</person>
+
+                    <!-- Maria Bellini-->
+                    <person xml:id="MaB"> 
+						<persName> 
+							<forename>Maria</forename>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date type="unknown"/>
+                            <placeName type="unknown"/>
+						</birth>
+                        <death>
+							<date type="unknown"/>
+							<placeName type="unknown"/>
+						</death> 
+					</person>    
+
+                    <!-- Carlo Cotumacci -->
+                    <person xml:id="CC" sameAs="https://viaf.org/viaf/47025512/"> 
+						<persName role="composer">
+                            <ref target="https://it.wikipedia.org/wiki/Carlo_Cotumacci"/> 
+							<forename>Carlo</forename>
+							<surname>Cotumacci</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1709">1709</date>                          
+                            <placeName>
+                                <settlement type="municipality">Villa Santamaria</settlement>
+                                <settlement type="provincia" key="CH">CH</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+						</birth>
+                        <death>
+							<date when="1785">1785</date>
+							<placeName ref="TEI-ListPlace#NA">
+                                <settlement type="municipality">Napoli</settlement>
+                                <settlement type="provincia" key="NA">Napoli</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+						</death> 
+					</person>
+
+                    <!-- Giuseppe Dol -->
+                    <person xml:id="GD" sameAs="http://viaf.org/viaf/152159032774201182283"> 
+						<persName role="organist">
+                            <ref target="https://it.wikipedia.org/wiki/Joseph_Doll"/> 
+							<forename>Giuseppe</forename>
+							<surname>Dol</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date type="unknown"/>                          
+                            <placeName type="unknown"/>
+						</birth>
+                        <death>
+							<date when="08-1774">agosto 1774</date>
+							<placeName ref="TEI-ListPlace#NA">
+                                <settlement type="municipality">Napoli</settlement>
+                                <settlement type="provincia" key="NA">Napoli</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+						</death> 
+					</person>
+
+                    <!-- Michela Burzì -->
+                    <person xml:id="MBu"> 
+          	            <persName> 
+                            <forename>Michela</forename>
+                            <surname>Burzì</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <birth>
+                            <date type="unknown"/>
+                            <placeName type="unknown"/>      
+                        </birth>
+                    </person>
+                </listPerson>
+                    
 
 
                 <!-- ListPlace -->
                 <listPlace>
                     <head> Lista dei luoghi </head>
-                    <!-- LUOGHI -->
                     <!-- Catania -->
                     <place xml:id="CT">
                         <placeName ref="http://www.geonames.org/2525068/catania.html http://www.treccani.it/enciclopedia/catania/">Catania</placeName>
@@ -762,6 +1094,7 @@
                         <country key="IT">Italia</country>
                         <note></note>
                     </place>
+                    <!-- Palermo -->
                     <!-- Sicilia -->
                     <!-- Europa -->
                     <!-- Sammartino -->
@@ -769,6 +1102,7 @@
                     <!-- Porta Capuana-->
                     <!-- Monastero Benedettino di S. Nicolò-->
                     <!-- chiesa dei SS. Filippo e Giacomo -->
+                    <!-- Puteaux -->
                     
 
 
