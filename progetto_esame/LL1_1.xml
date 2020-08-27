@@ -109,7 +109,7 @@
                     <date when="1819-05" cert="high" resp="#GS" type="writing">maggio 1819</date>					
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="TEI-ListPerson.xml#SN">Stefano Notarbartolo, duca di <placeName>Sammartino<placeName></persName>
+                    <persName ref="TEI-ListPerson.xml#SN">Stefano Notarbartolo, duca di <placeName>Sammartino</placeName></persName>
                     <placeName ref="TEI-ListPlace.xml#CT"> Catania</placeName>
                     <date>unknown</date>
                 </correspAction >
@@ -342,7 +342,7 @@
                         <s type="sentence" n="s_01">
                             <persName ref="TEI-ListPerson.xml#SN">
                                 <hi rend="align(left)">
-                                <roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Sig<ex>nor</ex></expan></choice></roleName> <roleName type="honorific" ref="TEI-ListPerson.xml#SN">Duca Intendente</roleName> <supplied resp="#AC"> Duca di <placeName>Sammartino<placeName></supplied>
+                                <roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Sig<ex>nor</ex></expan></choice></roleName> <roleName type="honorific" ref="TEI-ListPerson.xml#SN">Duca Intendente</roleName> <supplied resp="#AC"> Duca di <placeName>Sammartino</placeName></supplied>
                                 </hi>
                             </persName>
                         </s>
@@ -355,7 +355,7 @@
                 <ab type="parag" n="ab_02">
                     <s type="sentence" n="s_02">
                     <lb xml:id="LL1.1_lb_fr_01" n="1" facs="LL1.1_line_fr-02"/>
-                    <persName ref="TEI-ListPerson.xml#VB" role="composer"><forename>Vincenzo</forename> <surname>Bellini</surname></persName><pc type="comma">,</pc> e <supplied resp="#AC"><persName><forename>Vincenzo</forename></persName></supplied><persName><surname>Ferlito</surname></persName> spinto dal
+                    <persName ref="TEI-ListPerson.xml#VB" role="composer"><forename>Vincenzo</forename> <surname>Bellini</surname></persName><pc type="comma">,</pc> e <supplied resp="#AC"><persName ref="TEI-ListPers.xml#VB"><forename>Vincenzo</forename></persName></supplied><persName><surname>Ferlito</surname></persName> spinto dal
                     <lb xml:id="LL1.1_lb_fr_02" n="2" facs="LL1.1_line_fr-03"/> 
                     proprio genio<pc type="comma">,</pc> dall<pc type="apostrophe">'</pc>esempio<pc type="comma">,</pc> e dalla
                     <lb xml:id="LL1.1_lb_fr_03" n="3" facs="LL1.1_line_fr-04"/> 
@@ -447,7 +447,7 @@
                     <lb xml:id="LL1.1_lb_rv_19" n="44" facs="LL1.1_line_rv-19" break="no" rend="double-stroke"/>
                     ta</w> tra noi<pc type="comma">,</pc> viene l<pc type="apostrophe">'</pc><persName ref="TEI-ListPerson.xml#VB" role="composer">Esponente <supplied resp="#AC"><forename>Vincenzo</forename> <surname>Bellini</surname></supplied></persName> a <w>pre
                     <lb xml:id="LL1.1_lb_rv_20" n="45" facs="LL1.1_line_rv-20" break="no" rend="double-stroke"/>
-                    sentarsi</w> a <persName ref="TEI-ListPerson.xml#SN">lei</persName> <persName ref="TEI-ListPerson.xml#SN"><roleName><choice><abbr>Sig:r</abbr><expan resp="#AC">Sig<ex>no</ex>r</expan></choice></roleName> <roleName type="honorific" ref="#SN">Duca Intendente</roleName><supplied resp="#AC">Duca di <placeName>Sammartino<placeName></supplied></persName><pc type="comma">,</pc> 
+                    sentarsi</w> a <persName ref="TEI-ListPerson.xml#SN">lei</persName> <persName ref="TEI-ListPerson.xml#SN"><roleName><choice><abbr>Sig:r</abbr><expan resp="#AC">Sig<ex>no</ex>r</expan></choice></roleName> <roleName type="honorific" ref="#SN">Duca Intendente</roleName><supplied resp="#AC">Duca di <placeName>Sammartino</placeName></supplied></persName><pc type="comma">,</pc> 
                     <lb xml:id="LL1.1_lb_rv_21" n="46" facs="LL1.1_line_rv-21"/>
                     cui<pc type="comma">,</pc> dopo avere umiliato la sua <w>po
                     <lb xml:id="LL1.1_lb_rv_22" n="47" facs="LL1.1_line_rv-22" break="no" rend="double-stroke"/>
@@ -531,6 +531,7 @@
 
 
         <back>
+            <!-- Note -->
             <div type="notes">
                 <div type="ann_notes">
                     <note xml:id="LL1_1_note1" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="1">
@@ -538,7 +539,7 @@
                             <citedRange unit="page" from="65" to="66">65-66</citedRange>
                         </bibl>
                         <p>
-                            <persName ref="TEI-ListPerson.xml#SN"><forename>Stefano</forename> <surname>Notarbartolo</surname>, <roleName type="honorific">duca di <placeName>Sammartino</placeName></roleName></persName>, nel <date when="1818">1818</date> era stato nominato <roleName type="honorific">Intendente del Valle di <placeName ref="TEI-ListPlace.xml#CT">Catania<placeName></roleName><pc type="dot">.</pc>
+                            <persName ref="TEI-ListPerson.xml#SN"><forename>Stefano</forename> <surname>Notarbartolo</surname>, <roleName type="honorific">duca di <placeName>Sammartino</placeName></roleName></persName>, nel <date when="1818">1818</date> era stato nominato <roleName type="honorific">Intendente del Valle di <placeName ref="TEI-ListPlace.xml#CT">Catania</placeName></roleName><pc type="dot">.</pc>
                         </p>
                     </note>
                     <note xml:id="LL1_1_note2" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="2">
@@ -559,7 +560,7 @@
                         </bibl>
                         <p>
                             Nella sua <ref target="#Cambi1943">edizione</ref> <persName ref="#TEI-ListPers.xml#LC"><forename>Luisa</forename> <surname>Cambi</surname></persName> dichiara di aver desunto il testo della
-                            lettera dal <title level="m">giornale Bellini</title>, a. IV, <biblScope unit="volume" from="84" to="85">n. 84-85</biblScope>, <date when="1879-11-16">1879, 16 novembre</date> (p. <biblScope unit="page">18</biblScope>, nota 1)<pc type="semicolon">;</pc>
+                            lettera dal <ref><title level="m">giornale Bellini</title>, a. IV, <biblScope unit="volume" from="84" to="85">n. 84-85</biblScope>, <date when="1879-11-16">1879, 16 novembre</date> (p. <biblScope unit="page">18</biblScope>, nota 1)</ref><pc type="semicolon">;</pc>
                             <persName ref="#TEI-ListPers.xml#CN"><forename>Carmelo</forename> <surname>Neri</surname> invece informa correttamente circa l<pc="apostrophe">'</pc>ubicazione dell<pc="apostrophe">'</pc>autografo presso il <repository role="museum" ref="http://www.rism.info/typo3conf/ext/user_apachesolr/result.php?q=id:30003436" n="I-CATm">Museo Civico Belliniano di <placeName ref="#TEI-ListPlace.xml#CT">Catania</placeName></repository><pc type="character">.</pc> 
                             Nondimeno <persName ref="TEI-ListPers.xml#LC TEI-ListPers.xml#CN">entrambi</persName> offrono un testo mutilo<pc type="comma">,</pc> mancante della porzione di lettera contenuta nella <hi ref="#LL1.1_rv_body" facs="#LL1.1_retro_verso">seconda facciata</hi> del
                             documento, ripiegato in tre parti.
@@ -567,33 +568,238 @@
                     </note>
                     <note xml:id="LL1_1_note4" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="4">
                         <p>
-                            Rosario Bellini (Catania, 1776 - 1840). Padre di Vincenzo, aveva sposato
-                            Agata Ferlito il 17 gennaio 1801; con lei si stabilì in un modesto appartamento di tre stanze ricavato dalle
-                            dépendances del settecentesco palazzo Gravina Cruylas, situato in Largo San Francesco a Catania. I due
-                            coniugi ebbero sette figli: Vincenzo, il primogenito, nel 1801, Carmelo nel 1803, Francesco nel 1804, Michela
-                            nel 1806, Giuseppa nel 1807, Mario nel 1810, Maria nel 1813. Come il padre Vincenzo Tobia e come i fratelli
-                            Carmelo e Mario, anche Rosario Bellini operò a Catania come musicista e si dedicò prevalentemente al
-                            genere sacro.
+                            <persName ref="TEI-ListPers.xml#RB"><forename>Rosario</forename> <surname>Bellini</surname><pc type="dot">.</pc> <persName ref="TEI-ListPers.xml#RB">Padre</persName> di <persName ref="TEI-ListPers.xml#VB"><forename>Vincenzo</forename></persName><pc type="comma">,</pc> aveva sposato
+                            <persName ref="TEI-ListPers.xml#AF"><forename>Agata</forename> <surname>Ferlito</surname> il <date when="1801-01-17">17 gennaio 1801</date><pc type="semicolon">;</pc> con <persName ref="TEI-ListPers.xml#AF">lei</persName> si stabilì in un modesto appartamento di <num type="cardinal" value="3">tre</num> stanze ricavato dalle 
+                            <foreign xml:lang="fr">dépendances</foreign> del settecentesco palazzo <pc type="comma">,</pc> situato in <settlement><street> Largo San Francesco</street> a <placeName ref="#CT">Catania</placeName></settlement><pc type="dot">.</pc> I <persName ref="TEI-ListPers.xml#RB TEI-ListPers.xml#AF"><num type="cardinal" value="2">due</num></persName>
+                            coniugi ebbero <num type="cardinal" value="7">sette</num> figli<pc type="colon">:</pc> <persName ref="TEI-ListPers.xml#VB"><forename>Vincenzo</forename><pc type="comma">,</pc> il primogenito<pc type="comma">,</pc> nel <date when="1801">1801</date><pc type="comma">,</pc> <persName><forename>Carmelo</forename></persName> nel <date when="1803">1803</date><pc type="comma">,</pc> <persName><forename>Francesco</forename></persName> nel <date when="1804">1804</date><pc type="comma">,</pc> <persName><forename>Michela</forename></persName>
+                            nel <date when="1806">1806</date><pc type="comma">,</pc> <persName><forename>Giuseppa</forename></persName> nel <date when="1807">1807</date><pc type="comma"></pc> <persName><forename>Mario</forename></persName> nel <date when="1810">1810</date><pc type="comma">,</pc> <persName><forename>Maria</forename></persName> nel <date when="1813">1813</date><pc type="dot">.</pc> Come il <persName ref="TEI-ListPers.xml#VTB">padre <forename>Vincenzo</forename> <forename>Tobia</forename> e come i fratelli
+                            <forename>Carmelo</forename> e <forename>Mario</forename><pc type="comma">,</pc> anche <persName ref="TEI-ListPers.xml#RB"><forename>Rosario</forename> <surname>Bellini</surname> operò a <place ref="TEI-ListPlace.xml#CT">Catania</place> come musicista e si dedicò prevalentemente al <term subtype="music-term">genere sacro</term><pc type="dot">.</pc>
                         </p>
                     </note>
                     <note xml:id="LL1_1_note5" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="5">
                         <p>
-                            Vincenzo Tobia Bellini (Torricella Peligna, 1744 - Catania, 1829). Nonno
-                            di Vincenzo, studiò a Napoli al Conservatorio di Sant’Onofrio a Capuana con Carlo Cotumacci e Giuseppe
-                            Dol. Dal 1769 è attestata la sua presenza a Catania; risale a quell’anno il matrimonio con Michela Burzì,
-                            celebrato nella chiesa dei SS. Filippo e Giacomo. Nella città etnea compose drammi sacri e oratori, operò
-                            come maestro di cappella presso il Monastero benedettino di S. Nicolò l’Arena tra il 1784 e il 1793 e fu
-                            stabilmente al servizio di Ignazio Paternò Castello, V principe di Biscari (Catania, 1719 - 1786).
+                            <persName ref="TEI-ListPers.xml#VTB"><forename>Vincenzo</forename> <forename>Tobia</forename> <surname>Bellini</surname></persName><pc type="dot">.</pc>
+                            <persName ref="TEI-ListPers.xml#VTB">Nonno</persName> di <persName ref="TEI-ListPers.xml#VB"><forename>Vincenzo</forename></persName><pc type="comma">,</pc> 
+                            studiò a <placeName ref="TEI-ListPlace.xml#NA">Napoli</placeName> al Conservatorio di Sant<pc type="apostrophe">'</pc>Onofrio a <placeName>Capuana</placeName> con 
+                            <persName><forename>Carlo</forename> <surname>Cotumacci</surname></forename> e <persName><forename>Giuseppe</forename> <surename>Dol</surename></persName><pc type="dot">.</pc> 
+                            Dal <date notBefore="1769">1769</date> è attestata la sua presenza a <placeName ref="TEI-ListPlace.xml#CT">Catania</placeName><pc type="semicolon">;</pc> 
+                            risale a quell<pc type="apostrophe">'</pc>anno il matrimonio con <persName><forename>Michela</forename> <surname>Burzì</surname><pc type="comma">,</pc>
+                            celebrato nella chiesa dei <choice><abbr>SS.</abbr><exten resp="#AC">santi</exten></choice> <persName><forename>Filippo</forename></persName> e <persName><forename>Giacomo</forename></persName><pc type="dot">.
+                            </pc> Nella città etnea <supplied resp="#AC">(<placeName ref="TEI-ListPerson.xml#CT">Catania</placeName>)</supplied> compose <term subtype="music-term">drammi</term> sacri e <term subtype="music-term">oratori</term><pc type="comma">,</pc> operò
+                            come <term subtype="music-term">maestro di cappella</term> presso il Monastero benedettino di <choice><abbr>S.</abbr><exten resp="#AC">santo</exten></choice> 
+                            <persName><forename>Nicolò</forename> <surname>l<pc type="apostrophe">'</pc>Arena</surname> tra il <date notBefore="1784" notAfter="1793">1784 e il 1793</date> e fu
+                            stabilmente al servizio di <persName><forename>Ignazio</forename> <surname>Paternò</surname> <surname>Castello</surname><pc type="comma">,</pc> <num type="ordinal" value="5">V</num> <roleName>principe di <placeName>Biscari</placeName></roleName></persName><pc type="dot">.</dot>
                         </p>
                     </note>
                     <note xml:id="LL1_1_note6" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="6">
                         <p>
-                            Da intendersi per ‘dimorarvi’; cfr. la voce ‘commorare’ in TOMMASEO -
-                            BELLINI, vol. I, p. 1535: «Aff. al lat. aureo Commorari. Dimorare insieme»
+                            Da intendersi per <term>"dimorarvi"</term><pc type="semicolon">;</pc> <choice><abbr>cfr.</abbr><exten resp="#AC">confronta</exten></choice> la voce <term>commorare</term> in
+                            <ref><title>TOMMASEO - BELLINI</title>, <biblScope>vol. I</biblScope>, <biblScope unit="page">p. 1535</biblScope>: «Aff. al lat. aureo <distinct>Commorari</distinct>. Dimorare insieme»</ref>
                         </p>
                     </note>
                 </div>
+                <div type="bibliography">
+					<listBibl xml:id="LL1_1_bibliography">
+						<head>Bibliography of the letter LL1.1</head>
+						<bibl xml:id="LL1_1_Cambi">
+							<ref target="TEI-ListBibl.xml#Cambi1943">
+								<author>Cambi</author>
+								<date when="1943">1943</date>
+								<citedRange unit="page" from="18" to="19">18-19</citedRange>
+							</ref>
+						</bibl>
+                        <bibl xml:id="LL1_1_Neri">
+                            <ref target="TEI-ListBibl.xml#Neri2005">
+                                <author>Neri</author>
+                                <date when="2005">2005</date>
+                                <citedRange unit="page" from="18" to="18">18</citedRange>
+                            </ref>
+                        </bibl>
+                        <bibl xml:id="LL1_1_Seminara">
+                            <ref target="TEI-ListBibl.xml#Seminara2017">
+                                <author>Seminara</author>
+                                <date when="2017">2017</date>
+                                <citedRange unit="page" from="65" to="66">65-66</citedRange>
+                            </ref>
+                        </bibl>
+					</listBibl>
+                </div>
             </div>
+
+            
+            <div type="lists">
+            <!-- ListPerson -->
+				<listPerson>
+					<head>Lista persone</head>
+                    <!-- Vincenzo Bellini -->
+					<person xml:id="VB" sameAs="http://viaf.org/viaf/39560983"> 
+						<persName role="composer"> 
+							<ref target="http://data.rism.info/id/rismauthorities/pe11648 http://www.treccani.it/enciclopedia/vincenzo-bellini_(Dizionario-Biografico)"/>
+							<forename>Vincenzo</forename>
+							<forename>Salvatore</forename>
+							<forename>Carmelo</forename>
+							<forename>Francesco</forename> 
+							<surname>Bellini</surname>
+							<addName type="alias">Il Cigno</addName>
+							<roleName type="honorific">Cavaliere della Legione d'onore</roleName> 
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1801-11-03">3 novembre 1801</date>
+							<placeName ref="#CT">
+								<settlement type="municipality">Catania</settlement>
+								<settlement type="provincia" key="CT">Catania</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+					</person>
+                    
+                    <!-- Stefano Notarbartolo -->
+                    <!-- Angelo Mario Del Grosso -->
+                    <!-- Daria Spampinato -->
+                    <!-- Erica Capizzi -->
+                    <!-- Graziella Seminara -->
+                    <!-- Agnese Camici -->
+                    <!-- Vincenzo Tobia Bellini -->
+                    <!-- Rosario Bellini -->
+                    <!-- Luisa Cambi -->
+                    <!-- Carmelo Neri -->
+                    <!-- Agata Ferlito (mamma)-->
+                    <person xml:id="AF"> 
+                        <persName> 
+                            <forename>Agata</forename>
+                            <surname>Ferlito</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <birth><date when="1778">1778</date>
+                                <placeName ref="TEI-ListPlace#CT">
+                                        <settlement type="municipality">Catania</settlement>
+                                        <settlement type="provincia" key="CT">Catania</settlement>
+                                        <country key="IT">Italia</country>
+                                    </placeName>
+                            </birth>
+                                        <death><date when="1842">1842</date>
+                                <placeName ref="TEI-ListPlace#CT">
+                                        <settlement type="municipality">Catania</settlement>
+                                        <settlement type="provincia" key="CT">Catania</settlement>
+                                        <country key="IT">Italia</country>
+                                    </placeName>
+                                        </death>
+                        <note resp="#GS">
+                            <p>
+                            Agata Ferlito (Catania, 1778 -1842) apparteneva a una famiglia relativamente agiata poiché il padre 
+                            Carmelo era funzionario presso l’amministrazione catanese. Sposò <persName ref="#RB">Rosario Bellini</persName> 
+                            il 17 gennaio 1801 e con lui si stabilì in un modesto appartamento di tre stanze ricavato dalle dépendances 
+                            del settecentesco palazzo Gravina Cruylas, situato in Largo San Francesco a 
+                            <placeName ref="TEI-ListPlace.xml#CT"> Catania </placeName>. I due coniugi ebbero sette figli: 
+                            <persName ref="#VB">Vincenzo</persName>, il primogenito, nel 1801, Carmelo nel 1803, Francesco nel 1804, 
+                            Michela nel 1806, Giuseppa nel 1807, Mario nel 1810, Maria nel 1813.
+                            </p>
+                        </note> 
+                    </person>
+                    <!-- Carmelo Bellini (fratello)-->
+                    <!-- Francesco Bellini (fratello)-->
+                    <!-- Michela Bellini -->
+                    <!-- Giuseppa Bellini -->
+                    <!-- Mario Bellini -->
+                    <!-- Maria Bellini-->
+                    <!-- Carlo Contumaci -->
+                    <!-- Giuseppe Dol -->
+                    <!-- Michela Burzì -->
+                    <!-- San Filippo e San Giacomo??????-->
+                    <!-- San Nicolò I ???-->
+                    <!-- Sant'Onofrio??-->
+                    <!-- Ignazio Paternò Castello, V principe di Biscari -->
+                    <person xml:id="FPC" sameAs="http://viaf.org/viaf/208235133"> 
+          	            <persName> 
+                            <ref target="https://it.wikipedia.org/wiki/Francesco_Paternò_Castello"/>
+                            <forename>Francesco</forename>
+                            <surname>Paternò</surname>
+                            <surname>Castello</surname>
+                            <roleName>duca di Carcaci</roleName>
+                        </persName>
+                        <sex>M</sex>
+                        <birth>
+                            <date when="1786-08-15">15 agosto 1786</date>
+                            <placeName ref="TEI-ListPlace#CT">
+                                <settlement type="municipality">Catania</settlement>
+                                <settlement type="provincia" key="CT">Catania</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </birth>
+                        <death>
+                            <date when="1854-04-08">8 aprile 1854</date>
+                            <placeName ref="TEI-ListPlace#CT">
+                                <settlement type="municipality">Catania</settlement>
+                                <settlement type="provincia" key="CT">Catania</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </death>
+                        <note source="TEI-ListBibl.xml#Seminara2017" resp="#GS" ana="353">
+                            <bibl>
+                                <citedRange unit="page" from="220" to="220">220</citedRange>
+                            </bibl>
+                            <p>
+                            Francesco Paternò Castello (Catania, 1786 - 1854), nel 1838 – alla morte del nipote Mario – sarebbe diventato VII duca di Carcaci e Gentiluomo di Camera di Ferdinando II, re delle Due Sicilie. Nel 1826 venne nominato primo direttore dell’Accademia Gioenia di <placeName ref="TEI-ListPlace.xml#CT">Catania</placeName> e fu autore di una <hi rend="italic">Descrizione di Catania e delle cose notevoli ne’ dintorni di essa</hi> (Catania, Giuntini, 1841). Compositore dilettante, era un ammiratore del musicista che si premurava di inviargli gli <term subtype="music-term" ref="TEI-ListTerm.xml#spartito">spartiti</term> delle proprie opere.
+                            </p>
+                        </note> 
+                    </person>
+
+
+                <!-- ListPlace -->
+                <listPlace>
+                    <head> Lista dei luoghi </head>
+                    <!-- LUOGHI -->
+                    <!-- Catania -->
+                    <place xml:id="CT">
+                        <placeName ref="http://www.geonames.org/2525068/catania.html http://www.treccani.it/enciclopedia/catania/">Catania</placeName>
+                        <country key="IT">Italia</country>
+                        <note></note>
+                    </place>
+                    <!-- Napoli -->
+                    <place xml:id="NA">
+                        <placeName ref="http://www.geonames.org/3172394 http://www.treccani.it/enciclopedia/napoli/">Napoli</placeName>
+                        <country key="IT">Italia</country>
+                        <note></note>
+                    </place>
+                    <!-- Sicilia -->
+                    <!-- Europa -->
+                    <!-- Sammartino -->
+                    <!-- Biscari -->
+                    <!-- Porta Capuana-->
+                    <!-- Monastero Benedettino di S. Nicolò-->
+                    <!-- chiesa dei SS. Filippo e Giacomo -->
+                    
+
+
+                <!-- ListTerm -->
+                <listTerm>
+                    <head> Terminologia </head>
+                    <!-- TERM -->
+                    <!-- supplica -->
+                    <!-- composizioni -->
+                    <!-- commorare -->
+                    <!-- lettera -->
+                    <!-- genere sacro -->
+                    <!-- drammi -->
+                    <!-- oratorio -->
+                    <!-- maestro di cappella -->
+                    <!-- dimorare -->
+
+                
+                <!-- ListBibl -->
+                <listBibl>
+                    <head> Bibliografia </head>
+                    <!-- LISTBIBL -->
+                    <!-- Seminara2017 -->
+                    <!-- Neri2005 -->
+                    <!-- Cambi1943 -->
+                    <!-- giornale Bellini 1879 -->
+                    <!-- TOMMASO - BELLINI (dizionario) vol. I -->
+
+
+
+
         </back>
     </text>
                 
