@@ -93,11 +93,11 @@
                         <handDesc hands="5"> 
                         
                             <handNote xml:id="h1"><p>Scrittura a mano leggibile, ha scritto il corpo della lettera. Vincenzo Bellini ha apposto solamente la <hi facs="#LL1.1_hotspot_rr-06">firma</hi>, la supplica è stata scritto da questa prima mano.</p></handNote>
-                            <handNote xml:id="h2"><p>Il folio retro recto presenta la <hi ref="#LL1.1_hs_rr-02" facs="#LL1.1_hotspot_rr-06">firma</hi> apposta da Bellini.</p></handNote>
-                            <handNote xml:id="h3"><p>Nel folio fronte recto una terza mano ha scritto l'<hi ref="#LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01">annotazione</hi> "Supp | 3. Mag 1819".</p></handNote>
-                            <handNote xml:id="h4"><p>Nell'angolo superiore destro del folio fronte recto è presente la <hi ref="#LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03">nota</hi> "188" probabilmente attribuibile ad un catalogatore.</p>
-														<p>Nell'angolo superiore destro del folio retro recto è presente la <hi ref="#LL1.1_hs_rr-01" facs="#LL1.1_hotspot_rr-01">nota</hi> "189" probabilmente attribuibile allo stesso catalogatore.</p></handNote>
-                            <handNote xml:id="h5"><p>Nell'angolo superiore sinistro del folio fronte recto è presente un'<hi ref="#LL1.1_hs_fr-02" facs="#LL1.1_hotspot_rv-02">annotazione</hi> di colore blu scuro somigliante ad una "B" o ad una "R", meno facilmente riconducibile alle iniziali "B V", probabilmente di mano di un secondo catalogatore.</p></handNote>
+                            <handNote xml:id="h2"><p>Il folio retro recto presenta la <hi facs="#LL1.1_hotspot_rr-06">firma</hi><ptr target="#LL1.1_hs_rr-02"/> apposta da Bellini.</p></handNote>
+                            <handNote xml:id="h3"><p>Nel folio fronte recto una terza mano ha scritto l'<hi facs="#LL1.1_hotspot_fr-01">annotazione</hi><ptr target="#LL1.1_hs_fr-01"/> "Supp | 3. Mag 1819".</p></handNote>
+                            <handNote xml:id="h4"><p>Nell'angolo superiore destro del folio fronte recto è presente la <hi facs="#LL1.1_hotspot_fr-03">nota</hi><ptr target="#LL1.1_hs_fr-03"/> "188" probabilmente attribuibile ad un catalogatore.</p>
+														<p>Nell'angolo superiore destro del folio retro recto è presente la <hi facs="#LL1.1_hotspot_rr-01">nota</hi><ptr target="#LL1.1_hs_rr-01"/> "189" probabilmente attribuibile allo stesso catalogatore.</p></handNote>
+                            <handNote xml:id="h5"><p>Nell'angolo superiore sinistro del folio fronte recto è presente un'<hi facs="#LL1.1_hotspot_rv-02">annotazione</hi><ptr target="#LL1.1_hs_fr-02"/> di colore blu scuro somigliante ad una "B" o ad una "R", meno facilmente riconducibile alle iniziali "B V", probabilmente di mano di un secondo catalogatore.</p></handNote>
                         </handDesc>
                     </physDesc>
                     <additional>
@@ -294,7 +294,7 @@
                                 <lb xml:id="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
                                 <persName ref="TEI-ListPerson.xml#SN">
                                     <roleName type="honorific"><choice><abbr>S.E.</abbr><expan>S<ex>ua</ex> E<ex>ccellenza</ex></expan></choice></roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice><ptr target="#LL1_1_note1"/> <roleName type="honorific">Duca Sammar
-                                    <lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc place="below" type="dot">.</pc><c place="above">a</c></abbr><expan resp="#AC">Provincia"</expan></choice> di
+                                    <lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc type="dot">.</pc><add place="above">a</add></abbr><expan resp="#AC">Provincia"</expan></choice> di
                                     <lb xml:id="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="TEI-ListPlace.xml#CT"><hi rend="double">Catania</hi></placeName></roleName>
                                 </persName>
                         </addrLine>
@@ -304,7 +304,7 @@
         </front>
 
 
-        <body xml:lang="it" hand="#h1">
+        <body xml:lang="it">
             <!-- FRONTE RECTO FACCIATA 1 -->
             <pb n="1" xml:id="LL1.1_fr_body" facs="#LL1.1_fronte_recto"/>
 
@@ -318,10 +318,10 @@
             --> 
 
            
-            <add type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03"> 188 </add> <!-- annotazione catalogatore 188 -->
+            <ab><add type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03"> 188 </add></ab> <!-- annotazione catalogatore 188 -->
 
             <!-- INDICAZIONI SPEDIZIONE E DESTINATARIO -->
-            <div type="sent">
+            <div type="sent" hand="#h1">
                 <ab hand="#h3" copyOf="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> <!-- annotazione data e "sup." -->
                     <mentioned>
                         <unclear><abbr>supp</abbr></unclear>
@@ -330,14 +330,14 @@
                     </mentioned>
                 </ab>
             </div>
-            <div type="destination"> 
+            <div type="destination" hand="#h1"> 
                 <ab type="receiver" rend="align(right)">
                     <address copyOf="LL1.1_hs_fr-04" facs="#LL1.1_hotspot_fr-04"> <!-- destinatario -->
                         <addrLine>
                                 <lb copyOf="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
                                 <persName ref="TEI-ListPerson.xml#SN">
                                     <roleName type="honorific" full="abb">S.E.</roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice> <roleName type="honorific">Duca Sammar
-                                    <lb copyOf="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc place="below" type="dot">.</pc><c place="above">a</c></abbr><expan resp="#AC">Provincia"</expan></choice> di
+                                    <lb copyOf="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc type="dot">.</pc><add place="above">a</add></abbr><expan resp="#AC">Provincia"</expan></choice> di
                                     <lb copyOf="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="TEI-ListPlace.xml#CT"><hi rend="double">Catania</hi></placeName></roleName>
                                 </persName>
                         </addrLine>
@@ -346,7 +346,7 @@
             </div>
 
             <!-- OPENER -->
-            <div type="opener">                
+            <div type="opener" hand="#h1">                
                 <opener n="o_01">
                     <salute n="ab_01">
                         <s type="sentence" n="s_01">
@@ -361,7 +361,7 @@
             </div>
 
             <!-- CORPO DELLA LETTERA -->
-            <div type="letter-body" n="t_01">
+            <div type="letter-body" n="t_01" hand="#h1">
                 <ab type="parag" n="ab_02">
                     <s type="sentence" n="s_02">
                     <lb xml:id="LL1.1_lb_fr_01" n="1" facs="LL1.1_line_fr-02"/>
@@ -421,7 +421,7 @@
                     <lb xml:id="LL1.1_lb_rv_01" n="26" facs="LL1.1_line_rv-01"/> 
                     paesi dell<pc type="apostrophe">'</pc><placeName>Europa</placeName><pc type="comma">,</pc> Fiorisce quest<pc type="apostrophe">'</pc>arte<pc type="comma">,</pc>
                     <lb xml:id="LL1.1_lb_rv_02" n="27" facs="LL1.1_line_rv-02"/> 
-                    per <distinct type="archaic" ref="TEI-ListTerm.xml#commorare">commorarvi</distinct> tanto<pc type="comma">,</pc> quanto sarà <w>ne<pc force="weak">-</pc>
+                    per <term type="archaic" ref="TEI-ListTerm.xml#commorare">commorarvi</term> tanto<pc type="comma">,</pc> quanto sarà <w>ne<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rv_03" n="28" facs="LL1.1_line_rv-03" break="no" rend="double-stroke"/>
                     cessario</w><pc type="comma">,</pc> ad arrivare a quella perfezione<pc type="comma">,</pc>
                     <lb xml:id="LL1.1_lb_rv_04" n="29" facs="LL1.1_line_rv-04"/> 
@@ -525,10 +525,8 @@
                     <lb xml:id="LL1.1_lb_rr_20" n="72" facs="LL1.1_line_rr-20"/>   
                     aspettazione</s>
                 </salute>
-                <signed>
-                    <ab hand="#h2" rend="align(right)" xml:id="LL1.1_hs_rr-02" facs="#LL1.1_hotspot_rr-06">
-                        <persName ref="TEI-ListPerson.xml#VB" role="composer">Vincenzo Bellini Ferlito</persName> <choice><abbr>supp.te</abbr><expan resp="#AC">supp<ex>plican</ex>te</expan></choice>
-                    </ab>
+                <signed hand="#h2" rend="align(right)" xml:id="LL1.1_hs_rr-02" facs="#LL1.1_hotspot_rr-06">
+                    <persName ref="TEI-ListPerson.xml#VB" role="composer">Vincenzo Bellini Ferlito</persName> <choice><abbr>supp.te</abbr><expan resp="#AC">supp<ex>plican</ex>te</expan></choice>
                 </signed>
             </div>
 
@@ -559,9 +557,9 @@
                         <p>
                             La Supplica<pc type="comma">,</pc> in bella scrittura<pc type="comma">,</pc> 
                             non è di mano di <persName ref="TEI-ListPerson.xml#VB"><surname>Bellini</surname></persName><pc type="comma">,</pc> 
-                            che appose solo la <hi facs="#LL1.1_hotspot_rr-02" ref="#LL1.1_hs_rr-02">firma</hi><pc type="dot">.</pc> 
-                            Nella prima <hi facs="#LL1.1_fronte_recto">facciata</hi> del foglio è scritto da una <hi ref="#h3">terza mano</hi> 
-                            <hi ref="#LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01">"Supp | <date when="1819-05-03">3<pc type="dot">.</pc> Mag 1819</date>"</hi>.
+                            che appose solo la <hi facs="#LL1.1_hotspot_rr-02">firma</hi><ptr target="#LL1.1_hs_rr-02"/><pc type="dot">.</pc> 
+                            Nella prima <hi facs="#LL1.1_fronte_recto">facciata</hi> del foglio è scritto da una terza mano<ptr target="#h3"/> 
+                            <hi facs="#LL1.1_hotspot_fr-01">"Supp | <date when="1819-05-03">3<pc type="dot">.</pc> Mag 1819</date>"</hi><ptr target="#LL1.1_hs_fr-01"/>.
                         </p>
                     </note>
       <!-- 3 -->    <note xml:id="LL1_1_note3" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="3">
@@ -570,41 +568,41 @@
                         </bibl>
                         <p>
                             Nella sua <ref target="#Cambi1943">edizione</ref> <persName ref="#TEI-ListPers.xml#LC"><forename>Luisa</forename> <surname>Cambi</surname></persName> dichiara di aver desunto il testo della
-                            lettera dal <ref><title level="m">giornale Bellini</title>, a. IV, <biblScope unit="volume" from="84" to="85">n. 84-85</biblScope>, <date when="1879-11-16">1879, 16 novembre</date> (p. <biblScope unit="page">18</biblScope>, nota 1)</ref><pc type="semicolon">;</pc>
-                            <persName ref="#TEI-ListPers.xml#CN"><forename>Carmelo</forename> <surname>Neri</surname> invece informa correttamente circa l<pc="apostrophe">'</pc>ubicazione dell<pc="apostrophe">'</pc>autografo presso il <repository role="museum" ref="http://www.rism.info/typo3conf/ext/user_apachesolr/result.php?q=id:30003436" n="I-CATm">Museo Civico Belliniano di <placeName ref="#TEI-ListPlace.xml#CT">Catania</placeName></repository><pc type="character">.</pc> 
-                            Nondimeno <persName ref="TEI-ListPers.xml#LC TEI-ListPers.xml#CN">entrambi</persName> offrono un testo mutilo<pc type="comma">,</pc> mancante della porzione di lettera contenuta nella <hi ref="#LL1.1_rv_body" facs="#LL1.1_retro_verso">seconda facciata</hi> del
+                            lettera dal <ref><bibl><title level="m">giornale Bellini</title>, a. IV, <biblScope unit="volume" from="84" to="85">n. 84-85</biblScope>, <date when="1879-11-16">1879, 16 novembre</date> (p. <biblScope unit="page">18</biblScope>, nota 1)</bibl></ref><pc type="semicolon">;</pc>
+                            <persName ref="#TEI-ListPers.xml#CN"><forename>Carmelo</forename> <surname>Neri</surname></persName> invece informa correttamente circa l<pc type="apostrophe">'</pc>ubicazione dell<pc type="apostrophe">'</pc>autografo presso il Museo Civico Belliniano di <placeName ref="#TEI-ListPlace.xml#CT">Catania</placeName><pc type="character">.</pc> 
+                            Nondimeno <persName ref="TEI-ListPers.xml#LC TEI-ListPers.xml#CN">entrambi</persName> offrono un testo mutilo<pc type="comma">,</pc> mancante della porzione di lettera contenuta nella <hi facs="#LL1.1_retro_verso">seconda facciata</hi><ptr target="#LL1.1_rv_body"/> del
                             documento, ripiegato in tre parti.
                         </p>
                     </note>
       <!-- 4 -->    <note xml:id="LL1_1_note4" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="4">
                         <p>
-                            <persName ref="TEI-ListPers.xml#RB"><forename>Rosario</forename> <surname>Bellini</surname><pc type="dot">.</pc> <persName ref="TEI-ListPers.xml#RB">Padre</persName> di <persName ref="TEI-ListPers.xml#VB"><forename>Vincenzo</forename></persName><pc type="comma">,</pc> aveva sposato
-                            <persName ref="TEI-ListPers.xml#AF"><forename>Agata</forename> <surname>Ferlito</surname> il <date when="1801-01-17">17 gennaio 1801</date><pc type="semicolon">;</pc> con <persName ref="TEI-ListPers.xml#AF">lei</persName> si stabilì in un modesto appartamento di <num type="cardinal" value="3">tre</num> stanze ricavato dalle 
-                            <foreign xml:lang="fr">dépendances</foreign> del settecentesco palazzo <pc type="comma">,</pc> situato in <settlement><street> Largo San Francesco</street> a <placeName ref="#CT">Catania</placeName></settlement><pc type="dot">.</pc> I <persName ref="TEI-ListPers.xml#RB TEI-ListPers.xml#AF"><num type="cardinal" value="2">due</num></persName>
-                            coniugi ebbero <num type="cardinal" value="7">sette</num> figli<pc type="colon">:</pc> <persName ref="TEI-ListPers.xml#VB"><forename>Vincenzo</forename><pc type="comma">,</pc> il primogenito<pc type="comma">,</pc> nel <date when="1801">1801</date><pc type="comma">,</pc> <persName><forename>Carmelo</forename></persName> nel <date when="1803">1803</date><pc type="comma">,</pc> <persName><forename>Francesco</forename></persName> nel <date when="1804">1804</date><pc type="comma">,</pc> <persName><forename>Michela</forename></persName>
-                            nel <date when="1806">1806</date><pc type="comma">,</pc> <persName><forename>Giuseppa</forename></persName> nel <date when="1807">1807</date><pc type="comma"></pc> <persName><forename>Mario</forename></persName> nel <date when="1810">1810</date><pc type="comma">,</pc> <persName><forename>Maria</forename></persName> nel <date when="1813">1813</date><pc type="dot">.</pc> Come il <persName ref="TEI-ListPers.xml#VTB">padre <forename>Vincenzo</forename> <forename>Tobia</forename> e come i fratelli
-                            <forename>Carmelo</forename> e <forename>Mario</forename><pc type="comma">,</pc> anche <persName ref="TEI-ListPers.xml#RB"><forename>Rosario</forename> <surname>Bellini</surname> operò a <place ref="TEI-ListPlace.xml#CT">Catania</place> come musicista e si dedicò prevalentemente al <term subtype="music-term" ref="TEI-ListTerm.xml#genere-sacro">genere sacro</term><pc type="dot">.</pc>
+                            <persName ref="TEI-ListPers.xml#RB"><forename>Rosario</forename> <surname>Bellini</surname></persName><pc type="dot">.</pc> <persName ref="TEI-ListPers.xml#RB">Padre</persName> di <persName ref="TEI-ListPers.xml#VB"><forename>Vincenzo</forename></persName><pc type="comma">,</pc> aveva sposato
+                            <persName ref="TEI-ListPers.xml#AF"><forename>Agata</forename> <surname>Ferlito</surname></persName> il <date when="1801-01-17">17 gennaio 1801</date><pc type="semicolon">;</pc> con <persName ref="TEI-ListPers.xml#AF">lei</persName> si stabilì in un modesto appartamento di <num type="cardinal" value="3">tre</num> stanze ricavato dalle 
+                            <foreign xml:lang="fr">dépendances</foreign> del settecentesco palazzo <pc type="comma">,</pc> situato in <settlement><address><street> Largo San Francesco</street></address> a <placeName ref="#CT">Catania</placeName></settlement><pc type="dot">.</pc> I <persName ref="TEI-ListPers.xml#RB TEI-ListPers.xml#AF"><num type="cardinal" value="2">due</num></persName>
+                            coniugi ebbero <num type="cardinal" value="7">sette</num> figli<pc type="colon">:</pc> <persName ref="TEI-ListPers.xml#VB"><forename>Vincenzo</forename></persName><pc type="comma">,</pc> il primogenito<pc type="comma">,</pc> nel <date when="1801">1801</date><pc type="comma">,</pc> <persName><forename>Carmelo</forename></persName> nel <date when="1803">1803</date><pc type="comma">,</pc> <persName><forename>Francesco</forename></persName> nel <date when="1804">1804</date><pc type="comma">,</pc> <persName><forename>Michela</forename></persName>
+                            nel <date when="1806">1806</date><pc type="comma">,</pc> <persName><forename>Giuseppa</forename></persName> nel <date when="1807">1807</date><pc type="comma"></pc> <persName><forename>Mario</forename></persName> nel <date when="1810">1810</date><pc type="comma">,</pc> <persName><forename>Maria</forename></persName> nel <date when="1813">1813</date><pc type="dot">.</pc> Come il <persName ref="TEI-ListPers.xml#VTB">padre <forename>Vincenzo</forename> <forename>Tobia</forename></persName> e come i fratelli
+                            <persName><forename>Carmelo</forename></persName> e <persName><forename>Mario</forename></persName><pc type="comma">,</pc> anche <persName ref="TEI-ListPers.xml#RB"><forename>Rosario</forename> <surname>Bellini</surname></persName> operò a <placeName ref="TEI-ListPlace.xml#CT">Catania</placeName> come musicista e si dedicò prevalentemente al <term subtype="music-term" ref="TEI-ListTerm.xml#genere-sacro">genere sacro</term><pc type="dot">.</pc>
                         </p>
                     </note>
       <!-- 5 -->    <note xml:id="LL1_1_note5" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="5">
                         <p>
                             <persName ref="TEI-ListPers.xml#VTB"><forename>Vincenzo</forename> <forename>Tobia</forename> <surname>Bellini</surname></persName><pc type="dot">.</pc>
                             <persName ref="TEI-ListPers.xml#VTB">Nonno</persName> di <persName ref="TEI-ListPers.xml#VB"><forename>Vincenzo</forename></persName><pc type="comma">,</pc> 
-                            studiò a <placeName ref="TEI-ListPlace.xml#NA">Napoli</placeName> al <orgName ref="TEI-ListOrgan.xml#conservatorioSOPC">Conservatorio di Sant<pc type="apostrophe">'</pc>Onofrio a <placeName ref="TEI-ListPlace.xml#PortaCapuana">Capuana</placeName><orgName> con 
-                            <persName ref="TEI-ListPers.xml#CC"><forename>Carlo</forename> <surname>Cotumacci</surname></forename> e <persName ref="TEI-ListPers.xml#GD"><forename>Giuseppe</forename> <surename>Dol</surename></persName><pc type="dot">.</pc> 
+                            studiò a <placeName ref="TEI-ListPlace.xml#NA">Napoli</placeName> al <orgName ref="TEI-ListOrgan.xml#conservatorioSOPC">Conservatorio di Sant<pc type="apostrophe">'</pc>Onofrio a <placeName ref="TEI-ListPlace.xml#PortaCapuana">Capuana</placeName></orgName> con 
+                            <persName ref="TEI-ListPers.xml#CC"><forename>Carlo</forename> <surname>Cotumacci</surname></persName> e <persName ref="TEI-ListPers.xml#GD"><forename>Giuseppe</forename> <surname>Dol</surname></persName><pc type="dot">.</pc> 
                             Dal <date notBefore="1769">1769</date> è attestata la sua presenza a <placeName ref="TEI-ListPlace.xml#CT">Catania</placeName><pc type="semicolon">;</pc> 
-                            risale a quell<pc type="apostrophe">'</pc>anno il matrimonio con <persName ref="TEI-ListPers.xml#MBu"><forename>Michela</forename> <surname>Burzì</surname><pc type="comma">,</pc>
-                            celebrato nella chiesa dei <choice><abbr>SS.</abbr><exten resp="#AC">santi</exten></choice> <persName><forename>Filippo</forename></persName> e <persName><forename>Giacomo</forename></persName><pc type="dot">.
+                            risale a quell<pc type="apostrophe">'</pc>anno il matrimonio con <persName ref="TEI-ListPers.xml#MBu"><forename>Michela</forename> <surname>Burzì</surname></persName><pc type="comma">,</pc>
+                            celebrato nella chiesa dei <choice><abbr>SS.</abbr><expan resp="#AC">santi</expan></choice> <persName><forename>Filippo</forename></persName> e <persName><forename>Giacomo</forename></persName><pc type="dot">.
                             </pc> Nella città etnea <supplied resp="#AC">(<placeName ref="TEI-ListPerson.xml#CT">Catania</placeName>)</supplied> compose <term subtype="music-term" ref="TEI-ListTerm.xml#dramma">drammi</term> sacri e <term subtype="music-term" ref="TEI-ListTerm.xml#oratorio">oratori</term><pc type="comma">,</pc> operò
-                            come <term subtype="music-term" ref="TEI-ListTerm.xml#maestro-di-cappella"</term> presso il Monastero benedettino di <choice><abbr>S.</abbr><exten resp="#AC">santo</exten></choice> 
-                            <persName><forename>Nicolò</forename> <surname>l<pc type="apostrophe">'</pc>Arena</surname> tra il <date notBefore="1784" notAfter="1793">1784 e il 1793</date> e fu
-                            stabilmente al servizio di <persName ref="TEI-ListPers.xml#IPC"><forename>Ignazio</forename> <surname>Paternò</surname> <surname>Castello</surname><pc type="comma">,</pc> <genName>V</genName> <roleName>principe di <placeName>Biscari</placeName></roleName></persName><pc type="dot">.</dot>
+                            come <term subtype="music-term" ref="TEI-ListTerm.xml#maestro-di-cappella">maestro di cappella</term> presso il Monastero benedettino di <choice><abbr>S.</abbr><expan resp="#AC">santo</expan></choice> 
+                            <persName><forename>Nicolò</forename> <surname>l<pc type="apostrophe">'</pc>Arena</surname></persName> tra il <date notBefore="1784" notAfter="1793">1784 e il 1793</date> e fu
+                            stabilmente al servizio di <persName ref="TEI-ListPers.xml#IPC"><forename>Ignazio</forename> <surname>Paternò</surname> <surname>Castello</surname><pc type="comma">,</pc> <genName>V</genName> <roleName>principe di <placeName>Biscari</placeName></roleName></persName><pc type="dot">.</pc>
                         </p>
                     </note>
       <!-- 6 -->    <note xml:id="LL1_1_note6" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="6">
                         <p>
-                            Da intendersi per <term>"dimorarvi"</term><pc type="semicolon">;</pc> <choice><abbr>cfr.</abbr><exten resp="#AC">confronta</exten></choice> la voce <term>commorare</term> in
-                            <ref><title>TOMMASEO - BELLINI</title>, <biblScope>vol. I</biblScope>, <biblScope unit="page">p. 1535</biblScope>: «Aff. al lat. aureo <distinct>Commorari</distinct>. Dimorare insieme»</ref>
+                            Da intendersi per <term>"dimorarvi"</term><pc type="semicolon">;</pc> <choice><abbr>cfr.</abbr><expan resp="#AC">confronta</expan></choice> la voce <term>commorare</term> in
+                            <ref><bibl><title>TOMMASEO - BELLINI</title>, <biblScope>vol. I</biblScope>, <biblScope unit="page">p. 1535</biblScope>: "Aff. al lat. aureo <distinct>Commorari</distinct>. Dimorare insieme"</bibl></ref>
                         </p>
                     </note>
                 </div>
@@ -614,23 +612,29 @@
 						<head>Bibliography of the letter LL1.1</head>
 						<bibl xml:id="LL1_1_Cambi">
 							<ref target="TEI-ListBibl.xml#Cambi1943">
-								<author>Cambi</author>
-								<date when="1943">1943</date>
-								<citedRange unit="page" from="18" to="19">18-19</citedRange>
+                                <bibl>
+                                    <author>Cambi</author>
+                                    <date when="1943">1943</date>
+                                    <citedRange unit="page" from="18" to="19">18-19</citedRange>
+                                </bibl>
 							</ref>
 						</bibl>
                         <bibl xml:id="LL1_1_Neri">
                             <ref target="TEI-ListBibl.xml#Neri2005">
-                                <author>Neri</author>
-                                <date when="2005">2005</date>
-                                <citedRange unit="page" from="18" to="18">18</citedRange>
+                                <bibl>
+                                    <author>Neri</author>
+                                    <date when="2005">2005</date>
+                                    <citedRange unit="page" from="18" to="18">18</citedRange>
+                                </bibl>
                             </ref>
                         </bibl>
                         <bibl xml:id="LL1_1_Seminara">
                             <ref target="TEI-ListBibl.xml#Seminara2017">
-                                <author>Seminara</author>
-                                <date when="2017">2017</date>
-                                <citedRange unit="page" from="65" to="66">65-66</citedRange>
+                                <bibl>
+                                    <author>Seminara</author>
+                                    <date when="2017">2017</date>
+                                    <citedRange unit="page" from="65" to="66">65-66</citedRange>
+                                </bibl>
                             </ref>
                         </bibl>
 					</listBibl>
@@ -789,16 +793,16 @@
                                 <citedRange unit="page" from="220" to="220">220</citedRange>
                             </bibl>
                             <p>
-                                <persName ref="#FPC"><forename>Francesco</forename> <surname>Paternò</surname> </surname>Castello</surname><pc type="comma">,
+                                <persName ref="#FPC"><forename>Francesco</forename> <surname>Paternò</surname> <surname>Castello</surname></persName><pc type="comma">,
                                 </pc> nel <date when="1838">1838</date> <pc type="dash">–</pc> alla morte del <persName>nipote <forename>Mario</forename></persName> 
-                                <pc type="dash">–</pc> sarebbe diventato <roleName><geName>VII</genName> duca di <placeName>Carcaci</placeName></roleName> 
+                                <pc type="dash">–</pc> sarebbe diventato <roleName><genName>VII</genName> duca di <placeName>Carcaci</placeName></roleName> 
                                 e <roleName>Gentiluomo di Camera</roleName> di <persName><forename>Ferdinando</forename> <genName>II</genName></persName><pc type="comma">,</pc> 
                                 <roleName>re delle <placeName><num type="cardinal">Due</num> Sicilie</placeName></roleName><pc type="dot">.</pc> Nel <date when="1826">1826</date> venne 
                                 nominato <roleName><num type="ordinal" value="1">primo</num> <term subtype="music-term" ref="TEI-ListTerm.xml#direttore">direttore</term> dell'Accademia Gioenia</roleName> 
                                 di <placeName ref="TEI-ListPlace.xml#CT">Catania</placeName> e fu autore di una <title><hi rend="italic">Descrizione di Catania 
-                                e delle cose notevoli ne' dintorni di essa</hi></title> (<pubPlace ref="#TEI-ListPlace.xml#CT">Catania</pubPlace>, <pubPlace>Giuntini</pubPlace>, 
-                                <date when="1841">1841</date>)<pc type="dot">.</dot> 
-                                <term sub-type="music-term" ref="TEI-ListTerm.xml#compositore">Compositore</term> dilettante<pc type="comma">,</pc> era un ammiratore del musicista che si premurava di inviargli gli 
+                                e delle cose notevoli ne' dintorni di essa</hi></title> (<bibl><pubPlace ref="#TEI-ListPlace.xml#CT">Catania</pubPlace>, <publisher>Giuntini</publisher>, 
+                                <date when="1841">1841</date></bibl>)<pc type="dot">.</pc> 
+                                <term subtype="music-term" ref="TEI-ListTerm.xml#compositore">Compositore</term> dilettante<pc type="comma">,</pc> era un ammiratore del musicista che si premurava di inviargli gli 
                                 <term subtype="music-term" ref="TEI-ListTerm.xml#spartito">spartiti</term> delle proprie opere<pc type="dot">.</pc>
                             </p>
                         </note> 
@@ -1151,7 +1155,7 @@
                                 Levy, che negli anni <date from="1834" to="1835">1834-35</date> si trattenne stabilmente a 
                                 <placeName ref="TEI-ListPlace.xml#Paris">Parigi</placeName><pc type="comma">,</pc> apparteneva alla cerchia 
                                 delle più ristrette frequentazioni francesi del musicista<pc type="semicolon">;</pc> risiedeva in un lussuoso appartamento 
-                                <settlement lang="fr"><placeName type="street">in Boulevard des Capucines</placeName></settlement><pc type="comma">,</pc> ma possedeva anche la residenza di Puteaux.
+                                <settlement><address><street>in Boulevard des Capucines</street></address></settlement><pc type="comma">,</pc> ma possedeva anche la residenza di Puteaux.
 							</p>                        											
 						</note>
 					</place>
@@ -1281,10 +1285,10 @@
                     <head> Bibliografia </head>
                     <!-- Seminara2017 -->
                     <bibl xml:id="Seminara2017" type="print">
-						<editor ref="#GS">
+						<author ref="#GS">
 							<forename>Graziella </forename> 
 							<surname>Seminara</surname>
-						</editor>
+						</author>
 						<title level="m">Vincenzo Bellini. Carteggi</title>
 						<title level="s">Historiae Musicae Cultores</title>
 						<biblScope unit="volume">CXXXI</biblScope>
@@ -1295,7 +1299,7 @@
 					</bibl>
                     <!-- Neri2005 -->
                     <bibl xml:id="Neri2005" type="print">
-						<author xml:id="CN">
+						<author ref="TEI-ListPers.xml#CN">
 							<forename>Carmelo </forename>
 							<surname>Neri</surname>
 						</author>
@@ -1306,10 +1310,10 @@
 					</bibl>
                     <!-- Cambi1943 -->
                     <bibl xml:id="Cambi1943" type="print">
-						<editor ref="#LC">
+						<author ref="#LC">
 							<forename>Luisa </forename> 
 							<surname>Cambi</surname>
-						</editor>
+						</author>
 						<title level="m"></title>
 						<title level="s">Historiae Musicae Cultores</title>
 						<biblScope unit="page">pp. 616</biblScope>
