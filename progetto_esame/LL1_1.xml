@@ -6,7 +6,7 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Vincenzo Bellini a Stefano Notarbartolo, duca di Sammartino, in Catania, maggio 1819 </title>
+				<title>Vincenzo Bellini a Stefano Notarbartolo, duca di Sammartino, in Catania, maggio 1819</title>
                 <author ref="TEI-ListPerson.xml#VB" role="composer">Vincenzo Bellini</author>
                 <respStmt>
 					<resp>Responsabilità di</resp>
@@ -15,7 +15,7 @@
 					<name ref="#EC">Erica Capizzi</name>
 				</respStmt>
                 <respStmt>
-                    <resp>Transcription by</resp>
+                    <resp>Responsabile della trascrizione:</resp>
                     <name ref="#GS">Graziella Seminara</name>
                 </respStmt>
             </titleStmt>
@@ -25,7 +25,7 @@
                     <date when="2020-08"> August 2020 </date>
                 </edition>
                 <respStmt>
-					<resp>Digital edition project coordineted by</resp>
+					<resp>Digital edition project coordinated by</resp>
 					<name ref="#AC">Agnese Camici</name>
 				</respStmt>
                 <respStmt>
@@ -92,12 +92,12 @@
                         </objectDesc>
                         <handDesc hands="5"> 
                         
-                            <handNote xml:id="h1"><p>Scrittura a mano leggibile, ha scritto il corpo della lettera. Vincenzo Bellini ha apposto solamente la <hi facs="#LL1.1_hotspot_rr-06">firma</hi>, la supplica è stata scritto da questa prima mano.</p></handNote>
-                            <handNote xml:id="h2"><p>Il folio retro recto presenta la <hi facs="#LL1.1_hotspot_rr-06">firma</hi><ptr target="#LL1.1_hs_rr-02"/> apposta da Bellini.</p></handNote>
-                            <handNote xml:id="h3"><p>Nel folio fronte recto una terza mano ha scritto l'<hi facs="#LL1.1_hotspot_fr-01">annotazione</hi><ptr target="#LL1.1_hs_fr-01"/> "Supp | 3. Mag 1819".</p></handNote>
-                            <handNote xml:id="h4"><p>Nell'angolo superiore destro del folio fronte recto è presente la <hi facs="#LL1.1_hotspot_fr-03">nota</hi><ptr target="#LL1.1_hs_fr-03"/> "188" probabilmente attribuibile ad un catalogatore.</p>
-														<p>Nell'angolo superiore destro del folio retro recto è presente la <hi facs="#LL1.1_hotspot_rr-01">nota</hi><ptr target="#LL1.1_hs_rr-01"/> "189" probabilmente attribuibile allo stesso catalogatore.</p></handNote>
-                            <handNote xml:id="h5"><p>Nell'angolo superiore sinistro del folio fronte recto è presente un'<hi facs="#LL1.1_hotspot_rv-02">annotazione</hi><ptr target="#LL1.1_hs_fr-02"/> di colore blu scuro somigliante ad una "B" o ad una "R", meno facilmente riconducibile alle iniziali "B V", probabilmente di mano di un secondo catalogatore.</p></handNote>
+                            <handNote xml:id="h1"><p>Scrittura a mano leggibile, ha scritto il corpo della lettera. Vincenzo Bellini ha apposto solamente la <hi facs="#LL1.1_hotspot_rr-06">firma</hi>, la supplica è stata scritto da questa prima mano. </p></handNote>
+                            <handNote xml:id="h2"><p>Il folio retro recto presenta la <hi facs="#LL1.1_hotspot_rr-06">firma</hi><ptr target="#LL1.1_hs_rr-02"/> apposta da Bellini. </p></handNote>
+                            <handNote xml:id="h3"><p>Nel folio fronte recto una terza mano ha scritto l'<hi facs="#LL1.1_hotspot_fr-01">annotazione</hi><ptr target="#LL1.1_hs_fr-01"/> "Supp | 3. Mag 1819". </p></handNote>
+                            <handNote xml:id="h4"><p>Nell'angolo superiore destro del folio fronte recto è presente la <hi facs="#LL1.1_hotspot_fr-03">nota</hi><ptr target="#LL1.1_hs_fr-03"/> "188" probabilmente attribuibile ad un catalogatore. </p>
+														<p>Nell'angolo superiore destro del folio retro recto è presente la <hi facs="#LL1.1_hotspot_rr-01">nota</hi><ptr target="#LL1.1_hs_rr-01"/> "189" probabilmente attribuibile allo stesso catalogatore. </p></handNote>
+                            <handNote xml:id="h5"><p>Nell'angolo superiore sinistro del folio fronte recto è presente un'<hi facs="#LL1.1_hotspot_rv-02">annotazione</hi><ptr target="#LL1.1_hs_fr-02"/> di colore blu scuro somigliante ad una "B" o ad una "R", meno facilmente riconducibile alle iniziali "B V", probabilmente di mano di un secondo catalogatore. </p></handNote>
                         </handDesc>
                     </physDesc>
                     <additional>
@@ -280,7 +280,7 @@
                 <ab hand="#h3" xml:id="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> <!-- annotazione data e "sup." -->
                     <mentioned>
                         <unclear><abbr>supp</abbr></unclear>
-                        <date when="1819-05-03" type="writing">3. Mag 1819</date>
+                        <date when="1819-05-03" type="writing">3. Mag 1819 </date>
                         <unclear>SS88<pc type="dot">.</pc></unclear> <!-- Lo inserisco nel front in quanto SS88 potrebbe essere un'indicazione del luogo in cui è stata scritta/spedita la supplica-->
                     </mentioned>
                 </ab>
@@ -293,9 +293,9 @@
                         <addrLine>
                                 <lb xml:id="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
                                 <persName ref="TEI-ListPerson.xml#SN">
-                                    <roleName type="honorific"><choice><abbr>S.E.</abbr><expan>S<ex>ua</ex> E<ex>ccellenza</ex></expan></choice></roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice><ptr target="#LL1_1_note1"/> <roleName type="honorific">Duca Sammar
-                                    <lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc type="dot">.</pc><add place="above">a</add></abbr><expan resp="#AC">Provincia"</expan></choice> di
-                                    <lb xml:id="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="TEI-ListPlace.xml#CT"><hi rend="double">Catania</hi></placeName></roleName>
+                                    <roleName type="honorific"><choice xml:id="choice1"><abbr>S.E.</abbr><expan>S<ex>ua</ex> E<ex>ccellenza</ex></expan></choice></roleName><choice xml:id="choice2"><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice><ptr target="#LL1_1_note1"/> <roleName xml:id="rolename1" type="honorific"> Duca Sammar<lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente</roleName> della
+                                    <choice xml:id="choice3"><abbr>Prov<pc type="dot">.</pc>a</abbr><expan resp="#AC"> Provincia</expan></choice> di
+                                    <lb xml:id="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="TEI-ListPlace.xml#CT"><hi rend="double">Catania</hi></placeName>
                                 </persName>
                         </addrLine>
                     </address>
@@ -336,8 +336,8 @@
                         <addrLine>
                                 <lb copyOf="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
                                 <persName ref="TEI-ListPerson.xml#SN">
-                                    <roleName type="honorific" full="abb">S.E.</roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice> <roleName type="honorific">Duca Sammar
-                                    <lb copyOf="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice><abbr>Prov<pc type="dot">.</pc><add place="above">a</add></abbr><expan resp="#AC">Provincia"</expan></choice> di
+                                    <roleName type="honorific" full="abb">S.E. </roleName><choice xml:id="choice5"><abbr>Sig. </abbr><expan resp="#AC">Signor </expan></choice> <roleName type="honorific">Duca Sammar
+                                    <lb copyOf="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice xml:id="choice4"><abbr>Prov<pc type="dot">.</pc><add place="above">a</add></abbr><expan resp="#AC">Provincia"</expan></choice> di
                                     <lb copyOf="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="TEI-ListPlace.xml#CT"><hi rend="double">Catania</hi></placeName></roleName>
                                 </persName>
                         </addrLine>
@@ -352,7 +352,7 @@
                         <s type="sentence" n="s_01">
                             <persName ref="TEI-ListPerson.xml#SN">
                                 <hi rend="align(left)">
-                                <roleName><choice><abbr>Sig.</abbr><expan resp="#AC">Sig<ex>nor</ex></expan></choice></roleName> <roleName type="honorific" ref="TEI-ListPerson.xml#SN">Duca Intendente</roleName> <supplied resp="#AC"> Duca di <placeName>Sammartino</placeName></supplied>
+                                <roleName><choice xml:id="choice6"><abbr>Sig. </abbr><expan resp="#AC">Sig<ex>nor </ex></expan></choice></roleName> <roleName type="honorific" ref="TEI-ListPerson.xml#SN">Duca Intendente</roleName> <supplied resp="#AC"> Duca di <placeName>Sammartino</placeName></supplied>
                                 </hi>
                             </persName>
                         </s>
@@ -361,19 +361,19 @@
             </div>
 
             <!-- CORPO DELLA LETTERA -->
-            <div type="letter-body" n="t_01" hand="#h1">
+            <div xml:id="body_lettera" type="letter-body" n="t_01" hand="#h1">
                 <ab type="parag" n="ab_02">
                     <s type="sentence" n="s_02">
                     <lb xml:id="LL1.1_lb_fr_01" n="1" facs="LL1.1_line_fr-02"/>
-                    <persName ref="TEI-ListPerson.xml#VB" role="composer"><forename>Vincenzo</forename> <surname>Bellini</surname></persName><pc type="comma">,</pc> e <supplied resp="#AC"><persName ref="TEI-ListPers.xml#VB"><forename>Vincenzo</forename></persName></supplied><persName><surname>Ferlito</surname></persName> spinto dal
+                    <persName ref="TEI-ListPerson.xml#VB" role="composer"><forename>Vincenzo</forename> <surname> Bellini</surname></persName><pc type="comma">,</pc> e <supplied resp="#AC"><persName ref="TEI-ListPers.xml#VB"><forename>Vincenzo </forename></persName></supplied><persName><surname>Ferlito</surname></persName> spinto dal
                     <lb xml:id="LL1.1_lb_fr_02" n="2" facs="LL1.1_line_fr-03"/> 
                     proprio genio<pc type="comma">,</pc> dall<pc type="apostrophe">'</pc>esempio<pc type="comma">,</pc> e dalla
                     <lb xml:id="LL1.1_lb_fr_03" n="3" facs="LL1.1_line_fr-04"/> 
-                    Educazione<pc type="comma">,</pc> che ha ricevuto dai suoi<pc type="comma">,</pc> <persName ref="TEI-ListPerson.xml#VTB">Avo <supplied resp="#AC"><forename>Vincenzo</forename> <forename>Tobia</forename> <surname>Bellini</surname></supplied></persName>)<pc type="comma">,</pc> 
+                    Educazione<pc type="comma">,</pc> che ha ricevuto dai suoi<pc type="comma">, </pc> <persName ref="TEI-ListPerson.xml#VTB">Avo <supplied resp="#AC"><forename>(Vincenzo</forename> <forename> Tobia</forename> <surname> Bellini</surname></supplied></persName>)<pc type="comma">,</pc> 
                     <lb xml:id="LL1.1_lb_fr_04" n="4" facs="LL1.1_line_fr-05"/>
-                    e <persName ref="TEI-ListPerson.xml#RB">Padre <supplied resp="#AC"><forename>Rosario</forename> <surname>Bellini</surname></supplied></persName><pc type="comma">,</pc> ha professato<pc type="comma">,</pc> com<pc type="apostrophe">'</pc><persName ref="TEI-ListPerson.xml#VTB TEI-ListPerson.xml#RB">eglino</persName><pc type="comma">,</pc> la
+                    e <persName ref="TEI-ListPerson.xml#RB">Padre <supplied resp="#AC"><forename> (Rosario</forename> <surname>Bellini)</surname></supplied></persName><pc type="comma">,</pc> ha professato<pc type="comma">,</pc> com<pc type="apostrophe">'</pc><persName ref="TEI-ListPerson.xml#VTB TEI-ListPerson.xml#RB">eglino</persName><pc type="comma">,</pc> la
                     <lb xml:id="LL1.1_lb_fr_05" n="5" facs="LL1.1_line_fr-06"/> 
-                    Musica sin dai più teneri anni<pc type="comma">,</pc> <w><choice><sic>tantoc
+                    Musica sin dai più teneri anni<pc type="comma">,</pc> <w><choice xml:id="choice7"><sic>tantoc
                     <lb xml:id="LL1.1_lb_fr_06" n="6" facs="LL1.1_line_fr-07" break="no" rend="double stroke"/>
                     ché</sic><corr resp="#AC">tantoché</corr></choice></w> nella sua appena giovanile età 
                     <lb xml:id="LL1.1_lb_fr_07" n="7" facs="LL1.1_line_fr-08"/>
@@ -382,7 +382,7 @@
                     merito delle quali<pc type="comma">,</pc> ignoto a <persName ref="TEI-ListPerson.xml#VB">lui</persName><pc type="comma">,</pc> è 
                     <lb xml:id="LL1.1_lb_fr_09" n="9" facs="LL1.1_line_fr-10"/>
                     stato applaudito dai suoi amici<pc type="comma">,</pc> <w>com<pc force="weak">-</pc>
-                    <lb xml:id="LL1.1_lb_fr_10" n="10" facs="LL1.1_line_fr-11"/> break="no" rend="double-stroke"/>
+                    <lb xml:id="LL1.1_lb_fr_10" n="10" facs="LL1.1_line_fr-11" break="no" rend="double-stroke"/>
                     patito</w> dagl<pc type="apostrophe">'</pc>indifferenti<pc type="comma">,</pc> e non <w>di<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_fr_11" n="11" facs="LL1.1_line_fr-12" break="no" rend="double-stroke"/>
                     sprezzato</w> dagli emuli<pc type="dot">.</pc></s> <s type="sentence" n="s_03"> Volendo però 
@@ -401,13 +401,13 @@
                     <lb xml:id="LL1.1_lb_fr_18" n="18" facs="LL1.1_line_fr-19"/>
                     ne viene impossibilitato dalla sua 
                     <lb xml:id="LL1.1_lb_fr_19" n="19" facs="LL1.1_line_fr-20"/>
-                    povertà.</s> <s type="sentence" n="s_04"><persName ref="TEI-ListPerson.xml#VB" role="composer">Figlio</persName> di un <persName ref="TEI-ListPerson.xml#RB">Padre <supplied resp="#AC"><forename>Rosario</forename> <surname>Bellini</surname></supplied></persName> senza 
+                    povertà. </s> <s type="sentence" n="s_04"> <persName ref="TEI-ListPerson.xml#VB" role="composer"> Figlio </persName> di un <persName ref="TEI-ListPerson.xml#RB">Padre <supplied resp="#AC"><forename>(Rosario </forename> <surname> Bellini)</surname></supplied></persName> senza 
                     <lb xml:id="LL1.1_lb_fr_20" n="20" facs="LL1.1_line_fr-21"/>
                     rendite di sorte alcuna<pc type="comma">,</pc> e carico di 
                     <lb xml:id="LL1.1_lb_fr_21" n="21" facs="LL1.1_line_fr-22"/>
                     numerosa famiglia<pc type="comma">,</pc> e <persName ref="TEI-ListPerson.xml#VB" role="composer">Nipote</persName> di un 
                     <lb xml:id="LL1.1_lb_fr_22" n="22" facs="LL1.1_line_fr-23"/>
-                    <persName ref="TEI-ListPerson.xml#VTB">Avo <supplied resp="#AC"><forename>Vincenzo</forename> <forename>Tobia</forename> <surname>Bellini</surname></supplied></persName> dell’uguale condizione<pc type="comma">,</pc> non può 
+                    <persName ref="TEI-ListPerson.xml#VTB">Avo <supplied resp="#AC"><forename>(Vincenzo</forename> <forename> Tobia</forename> <surname> Bellini)</surname></supplied></persName> dell’uguale condizione<pc type="comma">,</pc> non può 
                     <lb xml:id="LL1.1_lb_fr_23" n="23" facs="LL1.1_line_fr-24"/>
                     sperare il <distinct type="non-preferred">menomo</distinct> sussidio<pc type="comma">,</pc> di cui 
                     <lb xml:id="LL1.1_lb_fr_24" n="24" facs="LL1.1_line_fr-25"/>
@@ -435,10 +435,10 @@
                     <lb xml:id="LL1.1_lb_rv_08" n="33" facs="LL1.1_line_rv-08"/> 
                     ad una Città <supplied resp="#AC"><placeName ref="TEI-ListPlace.xml#CA">Catania</placeName></supplied><pc type="comma">,</pc> che<pc type="comma">,</pc> non delle ultime 
                     <lb xml:id="LL1.1_lb_rv_09" n="34" facs="LL1.1_line_rv-09"/>
-                    in quest<pc type="apostrophe">'</pc>Isola<pc type="comma">,</pc> procura di non <w>deca
+                    in quest<pc type="apostrophe">'</pc>Isola<pc type="comma">,</pc> procura di non <w>deca<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rv_10" n="35" facs="LL1.1_line_rv-10"/>
-                    dere</w> per ogni ramo di quella <w>rinoman
-                    <lb xml:id="LL1.1_lb_rv_11" n="36" facs="LL1.1_line_rv-11"/><pc force="weak">-</pc>
+                    dere</w> per ogni ramo di quella <w>rinoman<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rv_11" n="36" facs="LL1.1_line_rv-11"/>
                     za</w><pc type="comma">,</pc> di cui ha goduto<pc type="semicolon">;</pc> e le arti <w>del
                     <lb xml:id="LL1.1_lb_rv_12" n="37" facs="LL1.1_line_rv-12" break="no" rend="double-stroke"/>
                     la</w> Pittura<pc type="comma">,</pc> e della Scultura hanno
@@ -449,15 +449,15 @@
                     <lb xml:id="LL1.1_lb_rv_15" n="40" facs="LL1.1_line_rv-15" break="no" rend="double-stroke"/>
                     dizione</w> di alcuni Individui<pc type="comma">,</pc> alle Scuole 
                     <lb xml:id="LL1.1_lb_rv_16" n="41" facs="LL1.1_line_rv-16"/>
-                    più celebri dell<pc type="apostrophe">'</pc>Europa<pc type="semicolon">;</pc></s> <s type="sentence" n="s_06">Non inferiore
+                    più celebri dell<pc type="apostrophe">'</pc>Europa<pc type="semicolon">;</pc></s> <s type="sentence" n="s_06"> Non inferiore
                     <lb xml:id="LL1.1_lb_rv_17" n="42" facs="LL1.1_line_rv-17"/> 
                     la Musica tanto oggi conosciuta nelle 
                     <lb xml:id="LL1.1_lb_rv_18" n="43" facs="LL1.1_line_rv-18"/>
                     colte nazioni<pc type="comma">,</pc> per non essere <w>trascura<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rv_19" n="44" facs="LL1.1_line_rv-19" break="no" rend="double-stroke"/>
-                    ta</w> tra noi<pc type="comma">,</pc> viene l<pc type="apostrophe">'</pc><persName ref="TEI-ListPerson.xml#VB" role="composer">Esponente <supplied resp="#AC"><forename>Vincenzo</forename> <surname>Bellini</surname></supplied></persName> a <w>pre
+                    ta</w> tra noi<pc type="comma">,</pc> viene l<pc type="apostrophe">'</pc><persName ref="TEI-ListPerson.xml#VB" role="composer">Esponente <supplied resp="#AC"><forename> (Vincenzo</forename> <surname>Bellini) </surname></supplied></persName> a <w>pre
                     <lb xml:id="LL1.1_lb_rv_20" n="45" facs="LL1.1_line_rv-20" break="no" rend="double-stroke"/>
-                    sentarsi</w> a <persName ref="TEI-ListPerson.xml#SN">lei</persName> <persName ref="TEI-ListPerson.xml#SN"><roleName><choice><abbr>Sig:r</abbr><expan resp="#AC">Sig<ex>no</ex>r</expan></choice></roleName> <roleName type="honorific" ref="#SN">Duca Intendente</roleName><supplied resp="#AC">Duca di <placeName>Sammartino</placeName></supplied></persName><pc type="comma">,</pc> 
+                    sentarsi</w> a <persName ref="TEI-ListPerson.xml#SN">lei </persName> <persName ref="TEI-ListPerson.xml#SN"><roleName><choice xml:id="choice9"><abbr>Sig:r</abbr><expan resp="#AC">Sig<ex>no</ex>r</expan></choice></roleName> <roleName type="honorific" ref="#SN"> Duca Intendente</roleName><supplied resp="#AC"> Duca di <placeName>Sammartino</placeName></supplied></persName><pc type="comma">,</pc> 
                     <lb xml:id="LL1.1_lb_rv_21" n="46" facs="LL1.1_line_rv-21"/>
                     cui<pc type="comma">,</pc> dopo avere umiliato la sua <w>po<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rv_22" n="47" facs="LL1.1_line_rv-22" break="no" rend="double-stroke"/>
@@ -465,7 +465,7 @@
                     <lb xml:id="LL1.1_lb_rv_23" n="48" facs="LL1.1_line_rv-23" break="no" rend="double-stroke"/>
                     zione</w><pc type="comma">,</pc> passa a pregare ad <w>interpor<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rv_24" n="49" facs="LL1.1_line_rv-24" break="no" rend="double-stroke"/>
-                    re</w> la di <persName ref="TEI-ListPerson.xml#SN">lei</persName> <choice><sic>auttorità</sic><corr resp="#AC">autorità</corr></choice> <pc type="comma">,</pc> affinché si 
+                    re</w> la di <persName ref="TEI-ListPerson.xml#SN">lei </persName> <choice xml:id="choice8"><sic>auttorità</sic><corr resp="#AC">autorità</corr></choice> <pc type="comma">,</pc> affinché si 
                     <lb xml:id="LL1.1_lb_rv_25" n="50" facs="LL1.1_line_rv-25"/>
                     prestasse da questo Civico <w>Patrimo<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rv_26" n="51" facs="LL1.1_line_rv-26" break="no" rend="double-stroke"/>
@@ -482,7 +482,7 @@
                     <lb xml:id="LL1.1_lb_rr_02" n="54" facs="LL1.1_line_rr-02"/>    
                     propria Patria<pc type="comma">,</pc> ed a corrispondenza 
                     <lb xml:id="LL1.1_lb_rr_03" n="55" facs="LL1.1_line_rr-03"/>   
-                    di come si viene di <choice><sic>pratticare</sic><corr>praticare</corr></choice> in pro 
+                    di come si viene di <choice xml:id="choice11"><sic>pratticare</sic><corr>praticare</corr></choice> in pro 
                     <lb xml:id="LL1.1_lb_rr_04" n="56" facs="LL1.1_line_rr-04"/>   
                     dell<pc type="apostrophe">'</pc>Inviati apprendisti di Pittura<pc type="comma">,</pc> 
                     <lb xml:id="LL1.1_lb_rr_05" n="57" facs="LL1.1_line_rr-05"/>   
@@ -499,11 +499,11 @@
             </div>
 
             <!-- CLOSER -->
-            <div type="closer" n="c_01">
+            <div xml:id="closer_lettera" type="closer" n="c_01">
                 <salute n="ab_03">
                     <s type="sentence" n="s_07">Conoscendosi universalmente <w>que<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rr_10" n="62" facs="LL1.1_line_rr-10" break="no" rend="double-stroke"/>   
-                    sto</w> bisogno<pc type="comma">,</pc> ed <choice><sic>anzioso</sic><corr resp="#AC">ansioso</corr></choice> il <persName ref="TEI-ListPerson.xml#VB" role="composer">Ricorrente</persName> <supplied resp="#AC"><forename>Vincenzo</forename> <surname>Bellini</surname></supplied> 
+                    sto</w> bisogno<pc type="comma">,</pc> ed <choice xml:id="choice12"><sic>anzioso</sic><corr resp="#AC">ansioso</corr></choice> il <persName ref="TEI-ListPerson.xml#VB" role="composer">Ricorrente</persName> <supplied resp="#AC"><forename> Vincenzo</forename> <surname> Bellini</surname></supplied> 
                     <lb xml:id="LL1.1_lb_rr_11" n="63" facs="LL1.1_line_rr-11"/>   
                     di soddisfarlo insieme colle sue <w>bra<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rr_12" n="64" facs="LL1.1_line_rr-12" break="no" rend="double-stroke"/>   
@@ -526,7 +526,7 @@
                     aspettazione</s>
                 </salute>
                 <signed hand="#h2" rend="align(right)" xml:id="LL1.1_hs_rr-02" facs="#LL1.1_hotspot_rr-06">
-                    <persName ref="TEI-ListPerson.xml#VB" role="composer">Vincenzo Bellini Ferlito</persName> <choice><abbr>supp.te</abbr><expan resp="#AC">supp<ex>plican</ex>te</expan></choice>
+                    <persName ref="TEI-ListPerson.xml#VB" role="composer">Vincenzo Bellini Ferlito</persName> <choice xml:id="choice13"><abbr>supp.te</abbr><expan resp="#AC">supp<ex>plican</ex>te</expan></choice>
                 </signed>
             </div>
 
@@ -592,16 +592,16 @@
                             <persName ref="TEI-ListPers.xml#CC"><forename>Carlo</forename> <surname>Cotumacci</surname></persName> e <persName ref="TEI-ListPers.xml#GD"><forename>Giuseppe</forename> <surname>Dol</surname></persName><pc type="dot">.</pc> 
                             Dal <date notBefore="1769">1769</date> è attestata la sua presenza a <placeName ref="TEI-ListPlace.xml#CT">Catania</placeName><pc type="semicolon">;</pc> 
                             risale a quell<pc type="apostrophe">'</pc>anno il matrimonio con <persName ref="TEI-ListPers.xml#MBu"><forename>Michela</forename> <surname>Burzì</surname></persName><pc type="comma">,</pc>
-                            celebrato nella chiesa dei <choice><abbr>SS.</abbr><expan resp="#AC">santi</expan></choice> <persName><forename>Filippo</forename></persName> e <persName><forename>Giacomo</forename></persName><pc type="dot">.
+                            celebrato nella chiesa dei <choice xml:id="choice16"><abbr>SS.</abbr><expan resp="#AC">santi</expan></choice> <persName><forename>Filippo</forename></persName> e <persName><forename>Giacomo</forename></persName><pc type="dot">.
                             </pc> Nella città etnea <supplied resp="#AC">(<placeName ref="TEI-ListPerson.xml#CT">Catania</placeName>)</supplied> compose <term subtype="music-term" ref="TEI-ListTerm.xml#dramma">drammi</term> sacri e <term subtype="music-term" ref="TEI-ListTerm.xml#oratorio">oratori</term><pc type="comma">,</pc> operò
-                            come <term subtype="music-term" ref="TEI-ListTerm.xml#maestro-di-cappella">maestro di cappella</term> presso il Monastero benedettino di <choice><abbr>S.</abbr><expan resp="#AC">santo</expan></choice> 
+                            come <term subtype="music-term" ref="TEI-ListTerm.xml#maestro-di-cappella">maestro di cappella</term> presso il Monastero benedettino di <choice xml:id="choice15"><abbr>S.</abbr><expan resp="#AC">santo</expan></choice> 
                             <persName><forename>Nicolò</forename> <surname>l<pc type="apostrophe">'</pc>Arena</surname></persName> tra il <date notBefore="1784" notAfter="1793">1784 e il 1793</date> e fu
                             stabilmente al servizio di <persName ref="TEI-ListPers.xml#IPC"><forename>Ignazio</forename> <surname>Paternò</surname> <surname>Castello</surname><pc type="comma">,</pc> <genName>V</genName> <roleName>principe di <placeName>Biscari</placeName></roleName></persName><pc type="dot">.</pc>
                         </p>
                     </note>
       <!-- 6 -->    <note xml:id="LL1_1_note6" source="TEI-ListBibl.xml#Seminara2017" resp="#AC" ana="6">
                         <p>
-                            Da intendersi per <term>"dimorarvi"</term><pc type="semicolon">;</pc> <choice><abbr>cfr.</abbr><expan resp="#AC">confronta</expan></choice> la voce <term>commorare</term> in
+                            Da intendersi per <term>"dimorarvi"</term><pc type="semicolon">;</pc> <choice xml:id="choice14"><abbr>cfr.</abbr><expan resp="#AC">confronta</expan></choice> la voce <term>commorare</term> in
                             <ref><bibl><title>TOMMASEO - BELLINI</title>, <biblScope>vol. I</biblScope>, <biblScope unit="page">p. 1535</biblScope>: "Aff. al lat. aureo <distinct>Commorari</distinct>. Dimorare insieme"</bibl></ref>
                         </p>
                     </note>
@@ -650,7 +650,7 @@
                     <!-- Vincenzo Bellini -->
 					<person xml:id="VB" sameAs="http://viaf.org/viaf/39560983"> 
 						<persName role="composer"> 
-							<ref target="http://data.rism.info/id/rismauthorities/pe11648 http://www.treccani.it/enciclopedia/vincenzo-bellini_(Dizionario-Biografico)"/>
+							<ref target="http://www.treccani.it/enciclopedia/vincenzo-bellini_(Dizionario-Biografico)"/>
 							<forename>Vincenzo</forename>
 							<forename>Salvatore</forename>
 							<forename>Carmelo</forename>
@@ -662,7 +662,7 @@
 						<sex>M</sex>
 						<birth>
 							<date when="1801-11-03">3 novembre 1801</date>
-							<placeName ref="TEI-ListPlace.xml#CT">
+							<placeName ref="#CT">
 								<settlement type="municipality">Catania</settlement>
 								<settlement type="provincia" key="CT">Catania</settlement>
 								<country key="IT">Italia</country>
@@ -670,7 +670,7 @@
 						</birth>
                         <death>
 							<date when="1835-09-23">23 settembre 1835</date>
-							<placeName ref="TEI-ListPlace#Put">
+							<placeName ref="#Put">
 									<settlement type="municipality">Puteaux</settlement>
 									<settlement type="department" key="Paris">Paris</settlement>
 									<country key="FR">France</country>
@@ -688,7 +688,7 @@
 						<sex>M</sex>
 						<birth>
 							<date when="1787-04-18">18 aprile 1787</date>
-							<placeName ref="TEI-ListPlace.xml#PA">
+							<placeName ref="#PA">
 								<settlement type="municipality">Palermo</settlement>
 								<settlement type="provincia" key="PA">Palermo</settlement>
 								<country key="IT">Italia</country>
@@ -719,7 +719,7 @@
 						</birth>
                         <death>
 							<date when="1829-06-08">8 giugno 1829</date>
-							<placeName ref="TEI-ListPlace#CT">
+							<placeName ref="#CT">
 								<settlement type="municipality">Catania</settlement>
 								<settlement type="provincia" key="CT">Catania</settlement>
 								<country key="IT">Italia</country>
@@ -736,14 +736,14 @@
                         <sex>F</sex>
                         <birth>
                             <date when="1778">1778</date>
-                            <placeName ref="TEI-ListPlace#CT">
+                            <placeName ref="#CT">
                                 <settlement type="municipality">Catania</settlement>
                                 <settlement type="provincia" key="CT">Catania</settlement>
                                 <country key="IT">Italia</country>
                             </placeName>
                         </birth>
                         <death><date when="1842">1842</date>
-                            <placeName ref="TEI-ListPlace#CT">
+                            <placeName ref="#CT">
                                 <settlement type="municipality">Catania</settlement>
                                 <settlement type="provincia" key="CT">Catania</settlement>
                                 <country key="IT">Italia</country>
@@ -755,7 +755,7 @@
                                 Carmelo era funzionario presso l'amministrazione catanese. Sposò <persName ref="#RB">Rosario Bellini</persName> 
                                 il 17 gennaio 1801 e con lui si stabilì in un modesto appartamento di tre stanze ricavato dalle dépendances 
                                 del settecentesco palazzo Gravina Cruylas, situato in Largo San Francesco a 
-                                <placeName ref="TEI-ListPlace.xml#CT"> Catania </placeName>. I due coniugi ebbero sette figli: 
+                                <placeName ref="#CT"> Catania </placeName>. I due coniugi ebbero sette figli: 
                                 <persName ref="#VB">Vincenzo</persName>, il primogenito, nel 1801, Carmelo nel 1803, Francesco nel 1804, 
                                 Michela nel 1806, Giuseppa nel 1807, Mario nel 1810, Maria nel 1813.
                             </p>
@@ -763,7 +763,7 @@
                     </person>
 
                     <!-- Ignazio Paternò Castello, V principe di Biscari -->
-                    <person xml:id="FPC" sameAs="http://viaf.org/viaf/208235133"> 
+                    <person xml:id="IPC" sameAs="http://viaf.org/viaf/208235133"> 
           	            <persName> 
                             <ref target="https://it.wikipedia.org/wiki/Francesco_Paternò_Castello http://www.treccani.it/enciclopedia/ignazio-paterno-castello-principe-di-biscari_%28Dizionario-Biografico%29/"/>
                             <forename>Francesco</forename>
@@ -774,7 +774,7 @@
                         <sex>M</sex>
                         <birth>
                             <date when="1786-08-15">15 agosto 1786</date>
-                            <placeName ref="TEI-ListPlace#CT">
+                            <placeName ref="#CT">
                                 <settlement type="municipality">Catania</settlement>
                                 <settlement type="provincia" key="CT">Catania</settlement>
                                 <country key="IT">Italia</country>
@@ -782,7 +782,7 @@
                         </birth>
                         <death>
                             <date when="1854-04-08">8 aprile 1854</date>
-                            <placeName ref="TEI-ListPlace#CT">
+                            <placeName ref="#CT">
                                 <settlement type="municipality">Catania</settlement>
                                 <settlement type="provincia" key="CT">Catania</settlement>
                                 <country key="IT">Italia</country>
@@ -798,12 +798,12 @@
                                 <pc type="dash">–</pc> sarebbe diventato <roleName><genName>VII</genName> duca di <placeName>Carcaci</placeName></roleName> 
                                 e <roleName>Gentiluomo di Camera</roleName> di <persName><forename>Ferdinando</forename> <genName>II</genName></persName><pc type="comma">,</pc> 
                                 <roleName>re delle <placeName><num type="cardinal">Due</num> Sicilie</placeName></roleName><pc type="dot">.</pc> Nel <date when="1826">1826</date> venne 
-                                nominato <roleName><num type="ordinal" value="1">primo</num> <term subtype="music-term" ref="TEI-ListTerm.xml#direttore">direttore</term> dell'Accademia Gioenia</roleName> 
-                                di <placeName ref="TEI-ListPlace.xml#CT">Catania</placeName> e fu autore di una <title><hi rend="italic">Descrizione di Catania 
-                                e delle cose notevoli ne' dintorni di essa</hi></title> (<bibl><pubPlace ref="#TEI-ListPlace.xml#CT">Catania</pubPlace>, <publisher>Giuntini</publisher>, 
+                                nominato <roleName><num type="ordinal" value="1">primo</num> <term subtype="music-term" ref="#direttore">direttore</term> dell'Accademia Gioenia</roleName> 
+                                di <placeName ref="#CT">Catania</placeName> e fu autore di una <title><hi rend="italic">Descrizione di Catania 
+                                e delle cose notevoli ne' dintorni di essa</hi></title> (<bibl><pubPlace ref="CT">Catania</pubPlace>, <publisher>Giuntini</publisher>, 
                                 <date when="1841">1841</date></bibl>)<pc type="dot">.</pc> 
-                                <term subtype="music-term" ref="TEI-ListTerm.xml#compositore">Compositore</term> dilettante<pc type="comma">,</pc> era un ammiratore del musicista che si premurava di inviargli gli 
-                                <term subtype="music-term" ref="TEI-ListTerm.xml#spartito">spartiti</term> delle proprie opere<pc type="dot">.</pc>
+                                <term subtype="music-term" ref="#compositore">Compositore</term> dilettante<pc type="comma">,</pc> era un ammiratore del musicista che si premurava di inviargli gli 
+                                <term subtype="music-term" ref="#spartito">spartiti</term> delle proprie opere<pc type="dot">.</pc>
                             </p>
                         </note> 
                     </person>
@@ -1058,7 +1058,7 @@
 						</birth>
                         <death>
 							<date when="1785">1785</date>
-							<placeName ref="TEI-ListPlace#NA">
+							<placeName ref="#NA">
                                 <settlement type="municipality">Napoli</settlement>
                                 <settlement type="provincia" key="NA">Napoli</settlement>
                                 <country key="IT">Italia</country>
@@ -1080,7 +1080,7 @@
 						</birth>
                         <death>
 							<date when="08-1774">agosto 1774</date>
-							<placeName ref="TEI-ListPlace#NA">
+							<placeName ref="#NA">
                                 <settlement type="municipality">Napoli</settlement>
                                 <settlement type="provincia" key="NA">Napoli</settlement>
                                 <country key="IT">Italia</country>
@@ -1102,13 +1102,13 @@
                     </person>
 
                     <listRelation>
-						<relation name="spouse" mutual="TEI-ListPerson.xml#RB TEI-ListPerson.xml#AF"/>
-                        <relation name="parent" active="TEI-ListPerson.xml#RB #AF" passive="TEI-ListPerson.xml#VB"/>
-                        <relation name="parent" active="TEI-ListPerson.xml#VTB" passive="TEI-ListPerson.xml#RB"/>
-                        <relation name="parent" active="TEI-ListPerson.xm#CF" passive="TEI-ListPerson.xml#AF"/>
-                        <relation name="sibling" mutual="TEI-ListPerson.xml#VB TEI-ListPerson.xml#CB TEI-ListPerson.xml#FB TEI-ListPerson.xml#MiB TEI-ListPerson.xml#GB TEI-ListPerson.xml#MoB TEI-ListPerson.xml#MaB"/>
-                        <relation name="supervisor" active="TEI-ListPerson.xml#CC" passive="TEI-ListPerson.xml#VTB"/>
-                        <relation name="supervisor" active="TEI-ListPerson.xml#VTB" passive="TEI-ListPerson.xml#VB"/>
+						<relation name="spouse" mutual="#RB #AF"/>
+                        <relation name="parent" active="#RB #AF" passive="#VB"/>
+                        <relation name="parent" active="#VTB" passive="#RB"/>
+                        <relation name="parent" active="#CF" passive="#AF"/>
+                        <relation name="sibling" mutual="#VB #CB #FB #MiB #GB #MoB #MaB"/>
+                        <relation name="supervisor" active="#CC" passive="#VTB"/>
+                        <relation name="supervisor" active="#VTB" passive="#VB"/>
 					</listRelation>
                 </listPerson>
                     
@@ -1176,6 +1176,13 @@
                         <country key="IT">Italia</country>
                         <note></note>
                     </place> 
+
+                    <!-- Milano -->
+                    <place xml:id="MI">
+                        <placeName ref="https://www.geonames.org/3173434/citta-metropolitana-di-milano.html http://www.treccani.it/enciclopedia/napoli/">Milano</placeName>
+                        <country key="IT">Italia</country>
+                        <note></note>
+                    </place>                    
 
                     <listRelation>
 						<relation name="near" mutual="TEI-ListPlace.xml#NA TEI-ListPlace.xml#PortaCapuana"/>
@@ -1314,8 +1321,8 @@
 							<forename>Luisa </forename> 
 							<surname>Cambi</surname>
 						</author>
-						<title level="m"></title>
-						<title level="s">Historiae Musicae Cultores</title>
+						<title level="m">Vincenzo Bellini.</title>
+						<title level="s">Epistolario.</title>
 						<biblScope unit="page">pp. 616</biblScope>
 						<pubPlace>Milano</pubPlace>
 						<publisher>A. Mondadori</publisher>
