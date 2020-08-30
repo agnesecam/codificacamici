@@ -649,7 +649,7 @@
 
                     <!-- Vincenzo Bellini -->
 					<person xml:id="VB" sameAs="http://viaf.org/viaf/39560983"> 
-						<persName role="composer"> 
+						<persName role="composer" > 
 							<ref target="http://www.treccani.it/enciclopedia/vincenzo-bellini_(Dizionario-Biografico)"/>
 							<forename>Vincenzo</forename>
 							<forename>Salvatore</forename>
@@ -671,9 +671,9 @@
                         <death>
 							<date when="1835-09-23">23 settembre 1835</date>
 							<placeName ref="#Put">
-									<settlement type="municipality">Puteaux</settlement>
-									<settlement type="department" key="Paris">Paris</settlement>
-									<country key="FR">France</country>
+								<settlement type="municipality">Puteaux</settlement>
+								<settlement type="department" key="Paris">Paris</settlement>
+								<country key="FR">France</country>
 							</placeName>
 						</death>   
 					</person>
