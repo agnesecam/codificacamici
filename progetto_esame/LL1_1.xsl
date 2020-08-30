@@ -646,7 +646,12 @@
     <!-- Personaggi singoli formattazione e aggiunta note ulteriori-->
     <!--Vincenzo Bellini -->
     <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='VB']">
-        <xsl:variable name="list" select="tei:persName[@role='composer']/tei:ref/@target"/>
+        <xsl:variable name="Treccani">
+            <xsl:value-of select="tei:persName[@role='composer']/tei:ref/@target"/>  
+        </xsl:variable>
+        <xsl:variable name="VIAF">
+            <xsl:value-of select="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='VB']/@sameAs"/>
+        </xsl:variable>
         <xsl:for-each select="tei:persName">
             <xsl:for-each select="*">
                 <xsl:value-of select="."/>
@@ -655,13 +660,18 @@
         </xsl:for-each>
         compositore
         <xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
-        <xsl:element name="a">
-            
+        <xsl:element name="a">            
             <xsl:attribute name="href">
-                <xsl:value-of select="substring-after( $list, ' ' )"/>
+                <xsl:copy-of select="$Treccani" />
             </xsl:attribute>
             <sub>Treccani</sub>
-
+        </xsl:element>
+         <xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
+        <xsl:element name="a">            
+            <xsl:attribute name="href">
+                <xsl:copy-of select="$VIAF" />
+            </xsl:attribute>
+            <sub>VIAF</sub>
         </xsl:element>
         <xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
         <xsl:for-each select="tei:birth">
@@ -682,7 +692,11 @@
                 <xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
             </xsl:for-each>
         </xsl:for-each>
-        , amante di Giuditta Turina
+
+        , amante di Giuditta Turina   
+                        
+ 
+
     </xsl:template>
 
     <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='GCT']">
