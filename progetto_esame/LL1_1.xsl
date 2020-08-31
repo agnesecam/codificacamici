@@ -681,7 +681,7 @@
             <xsl:value-of select="//tei:person/tei:birth/tei:placeName/tei:settlement"/>
         </xsl:variable> 
         <xsl:variable name="provinciaN">
-            <xsl:value-of select="//tei:person/tei:birth/tei:placeName/tei:settlement[1]"/>
+            <xsl:value-of select="//tei:person/tei:birth/tei:placeName/tei:settlement[2]"/>
         </xsl:variable>
         <xsl:variable name="dataM">
             <xsl:value-of select="//tei:person/tei:death/tei:date"/>
@@ -690,7 +690,7 @@
             <xsl:value-of select="//tei:person/tei:death/tei:placeName/tei:settlement"/>
         </xsl:variable>
         <xsl:variable name="provinciaM">
-            <xsl:value-of select="//tei:person/tei:death/tei:placeName/tei:settlement[1]"/>
+            <xsl:value-of select="//tei:person/tei:death/tei:placeName/tei:settlement[2]"/>
             <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
         </xsl:variable> 
         <!--Variabili per ottenere i link VIAF e Treccani-->
@@ -717,8 +717,8 @@
     <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='SN']">
         <xsl:variable name="nome1">
             <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
-            <xsl:value-of select="//tei:person[@xml:id='SN']/tei:person[@xml:id='SN']/tei:persName/tei:forename"/>
-            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='SN']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
         </xsl:variable> 
         <xsl:variable name="nome2">
             <xsl:value-of select="//tei:person[@xml:id='SN']/tei:persName/tei:forename[2]"/>
@@ -749,15 +749,12 @@
             <xsl:value-of select="//tei:person[@xml:id='SN']/tei:birth/tei:placeName/tei:settlement"/>
         </xsl:variable> 
         <xsl:variable name="provinciaN">
-            <xsl:value-of select="//tei:person[@xml:id='SN']/tei:birth/tei:placeName/tei:settlement[1]"/>
+            <xsl:value-of select="//tei:person[@xml:id='SN']/tei:birth/tei:placeName/tei:settlement[2]"/>
         </xsl:variable>
         <xsl:variable name="dataM">
             <xsl:value-of select="//tei:person[@xml:id='SN']/tei:death/tei:date"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
         </xsl:variable> 
-        <xsl:variable name="cittaM">
-            <xsl:value-of select="//tei:person[@xml:id='SN']/tei:death/tei:placeName/@type"/>
-            <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
-        </xsl:variable>
         Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
         Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
         Ruolo: <xsl:copy-of select="$rolename"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
@@ -765,13 +762,644 @@
         Data di nascita: <xsl:copy-of select="$dataN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
         Luogo di nascita: <xsl:copy-of select="$cittaN"/>, in provincia di <xsl:copy-of select="$provinciaN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
         Data di morte: <xsl:copy-of select="$dataM"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
-        Luogo di morte: <xsl:copy-of select="$cittaM"/>
     </xsl:template>
 
     <!--Vincenzo Tobia Bellini-->
-    <!-- copia e incolla le cose di Vincenzo Bellini e sistemale con l'ID di VTB
-    controlla anche se puoi ridurre il codice fatto da Serena, nella parte "sopra" che fa visualizzare bene la lista delle persone.
-    Ma forse non puoi scriverla insieme a tutte queste informazioni nella parte dei template-->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='VTB']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='VTB']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable> 
+        <xsl:variable name="nome2">
+            <xsl:value-of select="//tei:person[@xml:id='VTB']/tei:persName/tei:forename[2]"/>
+        </xsl:variable> 
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='VTB']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>
+        </xsl:variable>      
+        <xsl:variable name="rolename">
+            <xsl:value-of select="//tei:person[@xml:id='VTB']/tei:persName/tei:roleName"/>
+        </xsl:variable>
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='VTB']/tei:sex"/>
+        </xsl:variable> 
+        <xsl:variable name="dataN">
+            <xsl:value-of select="//tei:person[@xml:id='VTB']/tei:birth/tei:date"/>
+        </xsl:variable> 
+        <xsl:variable name="cittaN">
+            <xsl:value-of select="//tei:person[@xml:id='VTB']/tei:birth/tei:placeName/tei:settlement"/>
+        </xsl:variable> 
+        <xsl:variable name="provinciaN">
+            <xsl:value-of select="//tei:person[@xml:id='VTB']/tei:birth/tei:placeName/tei:settlement[2]"/>
+        </xsl:variable>
+        <xsl:variable name="dataM">
+            <xsl:value-of select="//tei:person[@xml:id='VTB']/tei:death/tei:date"/>
+        </xsl:variable> 
+        <xsl:variable name="cittaM">
+            <xsl:value-of select="//tei:person[@xml:id='VTB']/tei:death/tei:placeName/tei:settlement"/>
+        </xsl:variable>
+        <xsl:variable name="provinciaM">
+            <xsl:value-of select="//tei:person/tei:death/tei:placeName/tei:settlement[2]"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+        </xsl:variable>
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Secondo nome: <xsl:copy-of select="$nome2"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di nascita: <xsl:copy-of select="$dataN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Luogo di nascita: <xsl:copy-of select="$cittaN"/>, in provincia di <xsl:copy-of select="$provinciaN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di morte: <xsl:copy-of select="$dataM"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Luogo di morte: <xsl:copy-of select="$cittaM"/>, in provincia di <xsl:copy-of select="$provinciaM"/>
+    </xsl:template>
+
+    <!-- Agata Ferlito -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='AF']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='AF']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>
+        </xsl:variable> 
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='AF']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>
+        </xsl:variable>
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='AF']/tei:sex"/>
+        </xsl:variable> 
+        <xsl:variable name="dataN">
+            <xsl:value-of select="//tei:person[@xml:id='AF']/tei:birth/tei:date"/>
+        </xsl:variable> 
+        <xsl:variable name="cittaN">
+            <xsl:value-of select="//tei:person[@xml:id='AF']/tei:birth/tei:placeName/tei:settlement"/>
+        </xsl:variable> 
+        <xsl:variable name="provinciaN">
+            <xsl:value-of select="//tei:person[@xml:id='AF']/tei:birth/tei:placeName/tei:settlement[2]"/>
+        </xsl:variable>
+        <xsl:variable name="dataM">
+            <xsl:value-of select="//tei:person[@xml:id='AF']/tei:death/tei:date"/>
+        </xsl:variable> 
+        <xsl:variable name="cittaM">
+            <xsl:value-of select="//tei:person[@xml:id='AF']/tei:death/tei:placeName/tei:settlement"/>
+        </xsl:variable>
+        <xsl:variable name="provinciaM">
+            <xsl:value-of select="//tei:person[@xml:id='AF']/tei:death/tei:placeName/tei:settlement[2]"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        </xsl:variable> 
+        <xsl:variable name="note_pers">
+            <xsl:value-of select="//tei:person[@xml:id='AF']/tei:note/tei:p"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+        </xsl:variable>         
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di nascita: <xsl:copy-of select="$dataN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Luogo di nascita: <xsl:copy-of select="$cittaN"/>, in provincia di <xsl:copy-of select="$provinciaN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di morte: <xsl:copy-of select="$dataM"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Luogo di morte: <xsl:copy-of select="$cittaM"/>, in provincia di <xsl:copy-of select="$provinciaM"/>
+        <xsl:text disable-output-escaping="yes"><![CDATA[<i>]]></xsl:text>
+        <xsl:copy-of select="$note_pers"/><xsl:text disable-output-escaping="yes"><![CDATA[</i>]]></xsl:text>
+    </xsl:template>
+
+    <!-- Ignazio Paternò Castello, V principe di Biscari -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='IPC']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='IPC']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>
+        </xsl:variable> 
+        <xsl:variable name="nome3">
+            <xsl:value-of select="//tei:person[@xml:id='IPC']/tei:persName/tei:forename[3]"/>
+        </xsl:variable>  
+        <xsl:variable name="nome4">
+            <xsl:value-of select="//tei:person[@xml:id='IPC']/tei:persName/tei:forename[4]"/>
+        </xsl:variable>     
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='IPC']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable> 
+        <xsl:variable name="surname2">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='IPC']/tei:persName/tei:surname[2]"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable>      
+            <xsl:variable name="rolename">
+            <xsl:value-of select="//tei:person[@xml:id='IPC']/tei:persName/tei:roleName"/>
+        </xsl:variable>
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='IPC']/tei:sex"/>
+        </xsl:variable> 
+        <xsl:variable name="dataN">
+            <xsl:value-of select="//tei:person[@xml:id='IPC']/tei:birth/tei:date"/>
+        </xsl:variable> 
+        <xsl:variable name="cittaN">
+            <xsl:value-of select="//tei:person[@xml:id='IPC']/tei:birth/tei:placeName/tei:settlement"/>
+        </xsl:variable> 
+        <xsl:variable name="provinciaN">
+            <xsl:value-of select="//tei:person[@xml:id='IPC']/tei:birth/tei:placeName/tei:settlement[2]"/>
+        </xsl:variable>
+        <xsl:variable name="note_pers">
+            <xsl:value-of select="//tei:person[@xml:id='IPC']/tei:note/tei:p"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+        </xsl:variable>         
+        <!--Variabili per ottenere i link VIAF e Treccani-->
+        <xsl:variable name="Treccani">
+            <xsl:value-of select="tei:person[@xml:id='IPC']/tei:persName/tei:ref/@target"/>  
+        </xsl:variable>
+        <xsl:variable name="VIAF">
+            <xsl:value-of select="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='IPC']/@sameAs"/>
+        </xsl:variable>
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Famiglia: <xsl:copy-of select="$surname2"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Ruolo: <xsl:copy-of select="$rolename"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di nascita: <xsl:copy-of select="$dataN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Luogo di nascita: <xsl:copy-of select="$cittaN"/>, in provincia di <xsl:copy-of select="$provinciaN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        <xsl:text disable-output-escaping="yes"><![CDATA[<i>]]></xsl:text>
+        <xsl:copy-of select="$note_pers"/><xsl:text disable-output-escaping="yes"><![CDATA[</i>]]></xsl:text>
+    </xsl:template>
+
+    <!-- Agnese Camici -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='AC']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='AC']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable> 
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='AC']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable> 
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='AC']/tei:sex"/>
+        </xsl:variable> 
+        <xsl:variable name="dataN">
+            <xsl:value-of select="//tei:person[@xml:id='AC']/tei:birth/tei:date"/>
+        </xsl:variable> 
+        <xsl:variable name="cittaN">
+            <xsl:value-of select="//tei:person[@xml:id='AC']/tei:birth/tei:placeName/tei:settlement"/>
+        </xsl:variable> 
+        <xsl:variable name="provinciaN">
+            <xsl:value-of select="//tei:person[@xml:id='AC']/tei:birth/tei:placeName/tei:settlement[2]"/>
+        </xsl:variable>
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di nascita: <xsl:copy-of select="$dataN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Luogo di nascita: <xsl:copy-of select="$cittaN"/>, in provincia di <xsl:copy-of select="$provinciaN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+    </xsl:template>
+
+<!--Angelo Mario Del Grosso-->    
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='AMDG']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='AMDG']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable> 
+        <xsl:variable name="nome2">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='AMDG']/tei:persName/tei:forename[2]"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable>         
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='AMDG']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable> 
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='AMDG']/tei:sex"/>
+        </xsl:variable> 
+        <xsl:variable name="dataN">
+            <xsl:value-of select="//tei:person[@xml:id='AMDG']/tei:birth/tei:date"/>
+        </xsl:variable> 
+        <xsl:variable name="cittaN">
+            <xsl:value-of select="//tei:person[@xml:id='AMDG']/tei:birth/tei:placeName/tei:settlement"/>
+        </xsl:variable> 
+        <xsl:variable name="provinciaN">
+            <xsl:value-of select="//tei:person[@xml:id='AMDG']/tei:birth/tei:placeName/tei:settlement[2]"/>
+        </xsl:variable>
+        <xsl:variable name="dataM">
+            <xsl:value-of select="//tei:person[@xml:id='AMDG']/tei:death/tei:date"/>
+        </xsl:variable> 
+        <xsl:variable name="VIAF">
+            <xsl:value-of select="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='AMDG']/@sameAs"/>
+        </xsl:variable>
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Secondo nome: <xsl:copy-of select="$nome2"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di nascita: <xsl:copy-of select="$dataN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Luogo di nascita: <xsl:copy-of select="$cittaN"/>, in provincia di <xsl:copy-of select="$provinciaN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+    </xsl:template>
+
+    <!-- Daria Spampinato -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='DS']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='DS']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable> 
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='DS']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable> 
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='DS']/tei:sex"/>
+        </xsl:variable> 
+        <xsl:variable name="dataN">
+            <xsl:value-of select="//tei:person[@xml:id='DS']/tei:birth/tei:date"/>
+        </xsl:variable> 
+        <xsl:variable name="cittaN">
+            <xsl:value-of select="//tei:person[@xml:id='DS']/tei:birth/tei:placeName/tei:settlement"/>
+        </xsl:variable> 
+        <xsl:variable name="provinciaN">
+            <xsl:value-of select="//tei:person[@xml:id='DS']/tei:birth/tei:placeName/tei:settlement[2]"/>
+        </xsl:variable>
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+    </xsl:template>    
+
+    <!-- Erica Capizzi -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='EC']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='EC']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable> 
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='EC']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable> 
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='EC']/tei:sex"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+        </xsl:variable> 
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/>
+    </xsl:template> 
+
+    <!-- Graziella Seminara -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='GS']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='GS']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable> 
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='GS']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable> 
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='GS']/tei:sex"/>
+        </xsl:variable> 
+        <xsl:variable name="dataN">
+            <xsl:value-of select="//tei:person[@xml:id='GS']/tei:birth/tei:date"/>
+        </xsl:variable> 
+        <xsl:variable name="cittaN">
+            <xsl:value-of select="//tei:person[@xml:id='GS']/tei:birth/tei:placeName/tei:settlement"/>
+        </xsl:variable> 
+        <xsl:variable name="provinciaN">
+            <xsl:value-of select="//tei:person[@xml:id='GS']/tei:birth/tei:placeName/tei:settlement[2]"/>
+        </xsl:variable>
+        <xsl:variable name="dataM">
+            <xsl:value-of select="//tei:person[@xml:id='GS']/tei:death/tei:date"/>
+        </xsl:variable> 
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di nascita: <xsl:copy-of select="$dataN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Luogo di nascita: <xsl:copy-of select="$cittaN"/>, in provincia di <xsl:copy-of select="$provinciaN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+    </xsl:template>    
+
+    <!-- Rosario Belini -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='RB']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='RB']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable>   
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='RB']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable>  
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='RB']/tei:sex"/>
+        </xsl:variable> 
+        <xsl:variable name="dataN">
+            <xsl:value-of select="//tei:person[@xml:id='RB']/tei:birth/tei:date"/>
+        </xsl:variable> 
+        <xsl:variable name="cittaN">
+            <xsl:value-of select="//tei:person[@xml:id='RB']/tei:birth/tei:placeName/tei:settlement"/>
+        </xsl:variable> 
+        <xsl:variable name="provinciaN">
+            <xsl:value-of select="//tei:person[@xml:id='RB']/tei:birth/tei:placeName/tei:settlement[2]"/>
+        </xsl:variable>
+        <xsl:variable name="dataM">
+            <xsl:value-of select="//tei:person[@xml:id='RB']/tei:death/tei:date"/>
+        </xsl:variable> 
+       <xsl:variable name="cittaM">
+            <xsl:value-of select="//tei:person[@xml:id='RB']/tei:death/tei:placeName/tei:settlement"/>
+        </xsl:variable>
+        <xsl:variable name="provinciaM">
+            <xsl:value-of select="//tei:person[@xml:id='RB']/tei:death/tei:placeName/tei:settlement[2]"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</br>]]></xsl:text> 
+        </xsl:variable>                 
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di nascita: <xsl:copy-of select="$dataN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Luogo di nascita: <xsl:copy-of select="$cittaN"/>, in provincia di <xsl:copy-of select="$provinciaN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di morte: <xsl:copy-of select="$dataM"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Luogo di morte: <xsl:copy-of select="$cittaM"/>, in provincia di <xsl:copy-of select="$provinciaM"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>        
+    </xsl:template>
+
+    <!-- Luisa Cambi -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='LC']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='LC']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable> 
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='LC']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable> 
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='LC']/tei:sex"/>
+        </xsl:variable> 
+        <xsl:variable name="VIAF">
+            <xsl:value-of select="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='LC']/@sameAs"/>
+        </xsl:variable>        
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+    </xsl:template> 
+
+    <!-- Carmelo Neri -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='CN']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='CN']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable> 
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='CN']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable> 
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='CN']/tei:sex"/>
+        </xsl:variable> 
+        <xsl:variable name="dataN">
+            <xsl:value-of select="//tei:person[@xml:id='CN']/tei:birth/tei:date"/></xsl:variable> 
+        <xsl:variable name="VIAF">
+            <xsl:value-of select="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='CN']/@sameAs"/>
+        </xsl:variable>        
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di nascita: <xsl:copy-of select="$dataN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+    </xsl:template> 
+
+    <!-- Carmelo Bellini -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='CB']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='CB']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable> 
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='CB']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    
+        </xsl:variable> 
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='CB']/tei:sex"/>
+        </xsl:variable> 
+        <xsl:variable name="dataN">
+            <xsl:value-of select="//tei:person[@xml:id='CB']/tei:birth/tei:date"/>
+        </xsl:variable> 
+        <xsl:variable name="dataM">
+            <xsl:value-of select="//tei:person[@xml:id='CB']/tei:death/tei:date"/>
+        </xsl:variable> 
+        <xsl:variable name="VIAF">
+            <xsl:value-of select="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='CB']/@sameAs"/>
+        </xsl:variable>        
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di nascita: <xsl:copy-of select="$dataN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di morte: <xsl:copy-of select="$dataM"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+    </xsl:template> 
+
+    <!-- Francesco Bellini -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='FB']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='FB']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable> 
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='FB']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable> 
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='FB']/tei:sex"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+        </xsl:variable> 
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/>
+    </xsl:template>  
+
+    <!-- Michela Bellini -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='MiB']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='MiB']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable> 
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='MiB']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable> 
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='MiB']/tei:sex"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+        </xsl:variable> 
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/>
+    </xsl:template>         
+    
+    <!-- Giuseppa Bellini -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='GB']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='GB']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable> 
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='GB']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable> 
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='GB']/tei:sex"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+        </xsl:variable> 
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/>
+    </xsl:template>   
+
+    <!-- Mario Bellini -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='MoB']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='MoB']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable> 
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='MoB']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable> 
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='MoB']/tei:sex"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+        </xsl:variable> 
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/>
+    </xsl:template> 
+
+    <!-- Maria Bellini -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='MaB']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='MaB']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable> 
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='MaB']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable> 
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='MaB']/tei:sex"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>
+        </xsl:variable> 
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/>
+    </xsl:template>     
+
+    <!-- Carlo Cotumacci -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='CC']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='CC']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable>   
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='CC']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable>  
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='CC']/tei:sex"/>
+        </xsl:variable> 
+        <xsl:variable name="dataN">
+            <xsl:value-of select="//tei:person[@xml:id='CC']/tei:birth/tei:date"/>
+        </xsl:variable> 
+        <xsl:variable name="cittaN">
+            <xsl:value-of select="//tei:person[@xml:id='CC']/tei:birth/tei:placeName/tei:settlement"/>
+        </xsl:variable> 
+        <xsl:variable name="provinciaN">
+            <xsl:value-of select="//tei:person[@xml:id='CC']/tei:birth/tei:placeName/tei:settlement[2]"/>
+        </xsl:variable>
+        <xsl:variable name="dataM">
+            <xsl:value-of select="//tei:person[@xml:id='CC']/tei:death/tei:date"/>
+        </xsl:variable> 
+       <xsl:variable name="cittaM">
+            <xsl:value-of select="//tei:person[@xml:id='CC']/tei:death/tei:placeName/tei:settlement"/>
+        </xsl:variable>
+        <xsl:variable name="provinciaM">
+            <xsl:value-of select="//tei:person[@xml:id='CC']/tei:death/tei:placeName/tei:settlement[2]"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</br>]]></xsl:text> 
+        </xsl:variable>                 
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di nascita: <xsl:copy-of select="$dataN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Luogo di nascita: <xsl:copy-of select="$cittaN"/>, in provincia di <xsl:copy-of select="$provinciaN"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di morte: <xsl:copy-of select="$dataM"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Luogo di morte: <xsl:copy-of select="$cittaM"/>, in provincia di <xsl:copy-of select="$provinciaM"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>        
+    </xsl:template>  
+
+    <!-- Giuseppe Dol -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='GD']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='GD']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable>   
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='GD']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable>  
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='GD']/tei:sex"/>
+        </xsl:variable> 
+        <xsl:variable name="dataM">
+            <xsl:value-of select="//tei:person[@xml:id='GD']/tei:death/tei:date"/>
+        </xsl:variable> 
+       <xsl:variable name="cittaM">
+            <xsl:value-of select="//tei:person[@xml:id='GD']/tei:death/tei:placeName/tei:settlement"/>
+        </xsl:variable>
+        <xsl:variable name="provinciaM">
+            <xsl:value-of select="//tei:person[@xml:id='GD']/tei:death/tei:placeName/tei:settlement[2]"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</br>]]></xsl:text> 
+        </xsl:variable>                 
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Data di morte: <xsl:copy-of select="$dataM"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Luogo di morte: <xsl:copy-of select="$cittaM"/>, in provincia di <xsl:copy-of select="$provinciaM"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>        
+    </xsl:template>      
+    
+    <!-- Michela BurzìMB -->
+    <xsl:template match="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='MBu']">
+        <xsl:variable name="nome1">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+                <xsl:value-of select="//tei:person[@xml:id='MBu']/tei:persName/tei:forename"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>        
+        </xsl:variable>   
+        <xsl:variable name="surname">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<b>]]></xsl:text>
+            <xsl:value-of select="//tei:person[@xml:id='MBu']/tei:persName/tei:surname"/>
+            <xsl:text disable-output-escaping="yes"><![CDATA[</b>]]></xsl:text>    </xsl:variable>  
+        <xsl:variable name="sesso">
+            <xsl:value-of select="//tei:person[@xml:id='MBu']/tei:sex"/>
+        </xsl:variable>                
+        Nome: <xsl:copy-of select="$nome1"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Cognome: <xsl:copy-of select="$surname"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+        Sesso: <xsl:copy-of select="$sesso"/> <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
+    </xsl:template>     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
