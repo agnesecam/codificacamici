@@ -51,3 +51,7 @@ body {
     margin-top: 12px;
     text-align: left;
   }
+
+  .supplied_class{
+    font-size: 30px;
+  }
