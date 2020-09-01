@@ -146,7 +146,9 @@
         <surface n="1" xml:id="LL1.1_fronte_recto">
             <graphic url='LL1.1_fronte_recto.jpg' width='2584px' height='3642px' />
             <!-- Righe contenuto lettera -->
-            <zone ulx="1210" uly="123" lrx="2048" lry="331" rendition="Line" xml:id="LL1.1_line_fr-01"/>
+            <zone ulx="1210" uly="123" lrx="2048" lry="331" rendition="Line" xml:id="LL1.1_line_fr-01">
+                <line>prima riga di trascrizione</line>
+            </zone>
             <zone ulx="1393" uly="373" lrx="2488" lry="463" rendition="Line" xml:id="LL1.1_line_fr-02"/>
             <zone ulx="1328" uly="519" lrx="2419" lry="586" rendition="Line" xml:id="LL1.1_line_fr-03"/>
             <zone ulx="1340" uly="643" lrx="2503" lry="711" rendition="Line" xml:id="LL1.1_line_fr-04"/>
@@ -291,12 +293,12 @@
                 <ab type="receiver" rend="align(right)">
                     <address xml:id="LL1.1_hs_fr-04" facs="#LL1.1_hotspot_fr-04">
                         <addrLine>
-                                <lb xml:id="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
-                                <persName ref="#SN">
-                                    <roleName type="honorific"><choice xml:id="choice1"><abbr>S.E.</abbr><expan>S<ex>ua</ex> E<ex>ccellenza</ex></expan></choice></roleName><choice xml:id="choice2"><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice><ptr target="#LL1_1_note1"/> <roleName xml:id="rolename1" type="honorific"> Duca Sammar<lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente</roleName> della
-                                    <choice xml:id="choice3"><abbr>Prov<pc type="dot">.</pc>a</abbr><expan resp="#AC"> Provincia</expan></choice> di
-                                    <lb xml:id="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="#CT"><hi rend="double">Catania</hi></placeName>
-                                </persName>
+                            <lb xml:id="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
+                            <persName ref="#SN">
+                                <roleName type="honorific"><choice xml:id="choice1"><abbr>S.E.</abbr><expan>S<ex>ua</ex> E<ex>ccellenza</ex></expan></choice></roleName><choice xml:id="choice2"><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice><ptr target="#LL1_1_note1"/> <roleName xml:id="rolename1" type="honorific"> Duca Sammar<lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente</roleName> della
+                                <choice xml:id="choice3"><abbr>Prov<pc type="dot">.</pc>a</abbr><expan resp="#AC"> Provincia</expan></choice> di
+                                <lb xml:id="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="#CT"><hi rend="double">Catania</hi></placeName>
+                            </persName>
                         </addrLine>
                     </address>
                 </ab>
@@ -330,7 +332,7 @@
                     </mentioned>
                 </ab>
             </div>
-            <div type="destination" hand="#h1"> 
+            <div xml:id="info_dest" type="destination" hand="#h1"> 
                 <ab type="receiver" rend="align(right)">
                     <address copyOf="LL1.1_hs_fr-04" facs="#LL1.1_hotspot_fr-04"> <!-- destinatario -->
                         <addrLine>
@@ -405,9 +407,9 @@
                     <lb xml:id="LL1.1_lb_fr_20" n="20" facs="LL1.1_line_fr-21"/>
                     rendite di sorte alcuna<pc type="comma">,</pc> e carico di 
                     <lb xml:id="LL1.1_lb_fr_21" n="21" facs="LL1.1_line_fr-22"/>
-                    numerosa famiglia<pc type="comma">,</pc> e <persName ref="#VB" role="composer">Nipote</persName> di un 
+                    numerosa famiglia<ptr target="#LL1_1_note4"/><pc type="comma">,</pc> e <persName ref="#VB" role="composer">Nipote</persName> di un 
                     <lb xml:id="LL1.1_lb_fr_22" n="22" facs="LL1.1_line_fr-23"/>
-                    <persName ref="#VTB">Avo <supplied resp="#AC"><forename>(Vincenzo</forename> <forename> Tobia</forename> <surname> Bellini)</surname></supplied></persName> dell’uguale condizione<pc type="comma">,</pc> non può 
+                    <persName ref="#VTB">Avo <supplied resp="#AC"><forename>(Vincenzo</forename> <forename> Tobia</forename> <surname> Bellini)</surname></supplied></persName> dell’uguale condizione<ptr target="#LL1_1_note5"/> <pc type="comma">,</pc> non può 
                     <lb xml:id="LL1.1_lb_fr_23" n="23" facs="LL1.1_line_fr-24"/>
                     sperare il <distinct type="non-preferred">menomo</distinct> sussidio<pc type="comma">,</pc> di cui 
                     <lb xml:id="LL1.1_lb_fr_24" n="24" facs="LL1.1_line_fr-25"/>
@@ -421,7 +423,7 @@
                     <lb xml:id="LL1.1_lb_rv_01" n="26" facs="LL1.1_line_rv-01"/> 
                     paesi dell<pc type="apostrophe">'</pc><placeName>Europa</placeName><pc type="comma">,</pc> Fiorisce quest<pc type="apostrophe">'</pc>arte<pc type="comma">,</pc>
                     <lb xml:id="LL1.1_lb_rv_02" n="27" facs="LL1.1_line_rv-02"/> 
-                    per <term type="archaic" ref="#commorare">commorarvi</term> tanto<pc type="comma">,</pc> quanto sarà <w>ne<pc force="weak">-</pc>
+                    per <term type="archaic" ref="#commorare">commorarvi</term><ptr target="#LL1_1_note6"/> tanto<pc type="comma">,</pc> quanto sarà <w>ne<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rv_03" n="28" facs="LL1.1_line_rv-03" break="no" rend="double-stroke"/>
                     cessario</w><pc type="comma">,</pc> ad arrivare a quella perfezione<pc type="comma">,</pc>
                     <lb xml:id="LL1.1_lb_rv_04" n="29" facs="LL1.1_line_rv-04"/> 
@@ -486,7 +488,7 @@
                     <lb xml:id="LL1.1_lb_rr_04" n="56" facs="LL1.1_line_rr-04"/>   
                     dell<pc type="apostrophe">'</pc>Inviati apprendisti di Pittura<pc type="comma">,</pc> 
                     <lb xml:id="LL1.1_lb_rr_05" n="57" facs="LL1.1_line_rr-05"/>   
-                    e di <choice><sic>Scoltura</sic><corr>Scultura</corr></choice><pc type="comma">,</pc> quando non si vorrà <w>con<pc force="weak">-</pc>
+                    e della Scultura <pc type="comma">,</pc> quando non si vorrà <w>con<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rr_06" n="58" facs="LL1.1_line_rr-06" break="no" rend="double-stroke"/>   
                     siderare</w> la prestanza dell<pc type="apostrophe">'</pc>arte del
                     <lb xml:id="LL1.1_lb_rr_07" n="59" facs="LL1.1_line_rr-07"/>   
@@ -592,16 +594,16 @@
                             <persName ref="#CC"><forename>Carlo</forename> <surname>Cotumacci</surname></persName> e <persName ref="#GD"><forename>Giuseppe</forename> <surname>Dol</surname></persName><pc type="dot">.</pc> 
                             Dal <date notBefore="1769">1769</date> è attestata la sua presenza a <placeName ref="#CT">Catania</placeName><pc type="semicolon">;</pc> 
                             risale a quell<pc type="apostrophe">'</pc>anno il matrimonio con <persName ref="#MBu"><forename>Michela</forename> <surname>Burzì</surname></persName><pc type="comma">,</pc>
-                            celebrato nella chiesa dei <choice xml:id="choice16"><abbr>SS.</abbr><expan resp="#AC">santi</expan></choice> <persName><forename>Filippo</forename></persName> e <persName><forename>Giacomo</forename></persName><pc type="dot">.
+                            celebrato nella chiesa dei SS. <persName><forename>Filippo</forename></persName> e <persName><forename>Giacomo</forename></persName><pc type="dot">.
                             </pc> Nella città etnea <supplied resp="#AC">(<placeName ref="#CT">Catania</placeName>)</supplied> compose <term subtype="music-term" ref="#dramma">drammi</term> sacri e <term subtype="music-term" ref="#oratorio">oratori</term><pc type="comma">,</pc> operò
-                            come <term subtype="music-term" ref="#maestro-di-cappella">maestro di cappella</term> presso il Monastero benedettino di <choice xml:id="choice15"><abbr>S.</abbr><expan resp="#AC">santo</expan></choice> 
+                            come <term subtype="music-term" ref="#maestro-di-cappella">maestro di cappella</term> presso il Monastero benedettino di S.
                             <persName><forename>Nicolò</forename> <surname>l<pc type="apostrophe">'</pc>Arena</surname></persName> tra il <date notBefore="1784" notAfter="1793">1784 e il 1793</date> e fu
                             stabilmente al servizio di <persName ref="#IPC"><forename>Ignazio</forename> <surname>Paternò</surname> <surname>Castello</surname><pc type="comma">,</pc> <genName>V</genName> <roleName>principe di <placeName>Biscari</placeName></roleName></persName><pc type="dot">.</pc>
                         </p>
                     </note>
       <!-- 6 -->    <note xml:id="LL1_1_note6" source="#Seminara2017" resp="#AC" ana="6">
                         <p>
-                            Da intendersi per <term>"dimorarvi"</term><pc type="semicolon">;</pc> <choice xml:id="choice14"><abbr>cfr.</abbr><expan resp="#AC">confronta</expan></choice> la voce <term>commorare</term> in
+                            Da intendersi per <term>"dimorarvi"</term><pc type="semicolon">; </pc> cfr. la voce <term>commorare</term> in
                             <ref><bibl><title>TOMMASEO - BELLINI</title>, <biblScope>vol. I</biblScope>, <biblScope unit="page">p. 1535</biblScope>: "Aff. al lat. aureo <distinct>Commorari</distinct>. Dimorare insieme"</bibl></ref>
                         </p>
                     </note>

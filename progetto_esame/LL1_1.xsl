@@ -81,12 +81,16 @@
                     <xsl:apply-templates select="//tei:facsimile"/>
                 </div>
                 
-                <!-- LETTERA -->                
-                <div id="contenitore_fronte_e_body">
+                <!-- LETTERA -->   
+                <div id="contenitore_front">
                     <div>
-                        <h2>Fronte verso</h2>                        
-                        <xsl:apply-templates select="//tei:front" />
+                        <h2>Fronte della lettera</h2>
+                        <div id="info_dest" >
+                            <xsl:apply-templates select="//tei:div[@xml:id='info_dest']" />
+                        </div>
                     </div>
+                </div>             
+                <div id="contenitore_body">
                     <div>
                         <h2>Corpo della lettera</h2>
                         <div id="opener_lettera" style="text-align:right;">
@@ -412,7 +416,7 @@
         </div>
     </xsl:template>
 
-    <!--sourceDesc msDesc-->
+    <!-- sourceDesc msDesc -->
     <xsl:template match="//tei:support">
         <ul>
             <!--Descrizione del materiale-->
@@ -506,7 +510,7 @@
             <xsl:variable name="position" select="position()"/>
             <xsl:element name="img">
                 <xsl:attribute name="usemap">
-                    <xsl:value-of select="concat('#map',$position)"/> <!--le cose con la mappa rifalle perché servono al click sulla riga che riporta al testo-->
+                    <xsl:value-of select="concat('#map',$position)"/>
                 </xsl:attribute>
                 <xsl:attribute name="id">
                     <xsl:value-of select="concat('imglettera' , $position) "/>
@@ -514,8 +518,7 @@
                 <xsl:attribute name="src">
                     <xsl:value-of select="current()/@url "/>
                 </xsl:attribute>
-                <xsl:attribute name="width">25%</xsl:attribute>     
-                <xsl:attribute name="hspace">5px</xsl:attribute>            
+           
                 <xsl:element name="map">
                     <xsl:attribute name="name">
                         <xsl:value-of select="concat('map',$position)"/>
@@ -548,23 +551,14 @@
         </xsl:for-each>
     </xsl:template>
 
-    <!-- Front della lettera -->
-    <xsl:template match="//tei:front">
-        <p>La lettera non presenta una busta sulla quale sia scritto l'indirizzo del destinatario, né sono presenti timbri, come detto in precedenza.
-        <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
-            Il fronte presenta solamente il nome del destinatario e la città: 
-            <i>
-                <xsl:call-template name="abbr_template1"/>
-                <xsl:call-template name="abbr_template2"/>
-                <xsl:call-template name="abbr_template3"/>
-            </i>
-            <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
-            La data in cui è stata scritta la supplica è deducibile dall'annotazione presente sul folio fronte recto che cita:
-            <i>
-                <xsl:value-of select="//tei:front/tei:div/tei:ab/tei:mentioned"/>
-            </i>
-        </p>
-    </xsl:template>
+    <!-- corrisp. facsimile -->
+    <xsl:template match="//tei:body/tei:div[@type='fronte-recto']">        
+        <div>
+            <p style="line-height: 95%; width: 1328px;">
+                <xsl:call-template name="facs_template_body"> </xsl:call-template>     
+            </p>
+        </div>
+    </xsl:template>    
 
     <!-- Note -->
     <xsl:template match="//tei:div[@type='ann_notes']/tei:note">    
@@ -583,13 +577,22 @@
                             <xsl:value-of select="concat(@source, '')"/>
                         </xsl:attribute>
                         Seminara 2017</xsl:element>),
-                    
                     pagina <xsl:value-of select="tei:bibl/tei:citedRange"/>]
                 </xsl:when>
                 <xsl:otherwise><xsl:value-of select="tei:p"/> Nota della codifica</xsl:otherwise>
             </xsl:choose>
         </xsl:element>
     </xsl:template>   
+
+    <!-- Riferimento note nel testo -->
+    <xsl:template name="notes_template" match="//tei:ptr">
+        <xsl:apply-templates/><xsl:element name="a">
+            <xsl:attribute name="href">
+                <xsl:value-of select="concat(@target, '')"/>
+            </xsl:attribute>
+            <sup>&#9834;</sup>
+        </xsl:element>
+    </xsl:template>
 
     <!-- Bibliografia -->
     <xsl:template match="//tei:div[@type='bibliography']/tei:listBibl/tei:bibl">
@@ -638,7 +641,7 @@
 
     <!--Catania-->
     <xsl:template match="//tei:div[@type='lists']/tei:listPlace/tei:place[@xml:id='CT']">        
-    <xsl:variable name="ref_luogo" select="tei:placeName/@ref"/>        
+        <xsl:variable name="ref_luogo" select="tei:placeName/@ref"/>        
         <xsl:variable name="citta">
             <xsl:value-of select="//tei:div[@type='lists']/tei:listPlace/tei:place[@xml:id='CT']/tei:placeName"/> 
             
@@ -1654,102 +1657,172 @@
         </xsl:for-each>    
     </xsl:template>
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- CHOICE tra S.E. e Sua Eccellenza-->
-    <xsl:template name="abbr_template1" match="//tei:choice">
-        <xsl:variable name="SE">
-            <xsl:value-of select="//tei:front/tei:div/tei:ab/tei:address/tei:addrLine/tei:persName/tei:roleName/tei:choice/tei:abbr"/>
-        </xsl:variable>
-        <xsl:variable name="SuaEccellenza">
-            <xsl:value-of select="//tei:front/tei:div/tei:ab/tei:address/tei:addrLine/tei:persName/tei:roleName/tei:choice/tei:expan"/>
-        </xsl:variable>
-        <select class="expan_class">
+    <!-- ansioso sic cor -->
+    <xsl:template name="ansioso" match="//tei:choice[@xml:id='choice12']">
+        <select class="choice_class">
             <xsl:element name="option">
                 <xsl:attribute name="value">
-                    <xsl:copy-of select="$SE" />
+                    <xsl:value-of select="concat(tei:sic, '')"/>
                 </xsl:attribute>
-                <xsl:copy-of select="$SE" />
+                <xsl:value-of select="concat(tei:sic, '')"/>
             </xsl:element>
             <xsl:element name="option">
                 <xsl:attribute name="value">
-                    <xsl:copy-of select="$SuaEccellenza" />
+                    <xsl:value-of select="concat(tei:corr, '')"/>
                 </xsl:attribute>
-                <xsl:copy-of select="$SuaEccellenza" />
-            </xsl:element>       
+                <xsl:value-of select="concat(tei:corr, '')"/>
+            </xsl:element>
         </select>
-    </xsl:template>
-
-    <!--CHOICE tra Sig. e Signor -->
-    <xsl:template name="abbr_template2" match="//tei:choice">
-        <xsl:variable name="Sig.">
-            <xsl:value-of select="//tei:front/tei:div/tei:ab/tei:address/tei:addrLine/tei:persName/tei:choice[1]/tei:abbr"/>
-        </xsl:variable>
-        <xsl:variable name="Signor">
-            <xsl:value-of select="//tei:front/tei:div/tei:ab/tei:address/tei:addrLine/tei:persName/tei:choice[1]/tei:expan"/>
-        </xsl:variable>
-        <select class="expan_class">
+    </xsl:template>        
+    <!-- tantoche sic cor -->
+    <xsl:template name="tantoche" match="//tei:choice[@xml:id='choice7']">
+        <select class="choice_class">
             <xsl:element name="option">
                 <xsl:attribute name="value">
-                    <xsl:copy-of select="$Sig." />
+                    <xsl:value-of select="concat(tei:sic, '')"/>
                 </xsl:attribute>
-                <xsl:copy-of select="$Sig." />
+                <xsl:value-of select="concat(tei:sic, '')"/>
             </xsl:element>
             <xsl:element name="option">
                 <xsl:attribute name="value">
-                    <xsl:copy-of select="$Signor" />
+                    <xsl:value-of select="concat(tei:corr, '')"/>
                 </xsl:attribute>
-                <xsl:copy-of select="$Signor" />
-            </xsl:element>       
+                <xsl:value-of select="concat(tei:corr, '')"/>
+            </xsl:element>
         </select>
-    </xsl:template>
-
-    <!--CHOICE tra Prov.a e Provincia -->
-    <xsl:template name="abbr_template3" match="//tei:choice[2]">
-        <xsl:value-of select="//tei:front/tei:div/tei:ab/tei:address/tei:addrLine/tei:persName/tei:roleName[@xml:id='rolename1']"/>
-        della
-        <xsl:variable name="Prov.a">
-            <xsl:value-of select="//tei:front/tei:div/tei:ab/tei:address/tei:addrLine/tei:persName/tei:choice[2]/tei:abbr"/>
-        </xsl:variable>
-        <xsl:variable name="Provincia">
-            <xsl:value-of select="//tei:front/tei:div/tei:ab/tei:address/tei:addrLine/tei:persName/tei:choice[2]/tei:expan"/>
-        </xsl:variable>
-        <select class="expan_class">
+    </xsl:template> 
+    <!-- autorita -->
+    <xsl:template name="autorita" match="//tei:choice[@xml:id='choice8']">
+        <select class="choice_class">
             <xsl:element name="option">
                 <xsl:attribute name="value">
-                    <xsl:copy-of select="$Prov.a" />
+                    <xsl:value-of select="concat(tei:sic, '')"/>
                 </xsl:attribute>
-                <xsl:copy-of select="$Prov.a" />
+                <xsl:value-of select="concat(tei:sic, '')"/>
             </xsl:element>
             <xsl:element name="option">
                 <xsl:attribute name="value">
-                    <xsl:copy-of select="$Provincia" />
+                    <xsl:value-of select="concat(tei:corr, '')"/>
                 </xsl:attribute>
-                <xsl:copy-of select="$Provincia" />
-            </xsl:element>       
+                <xsl:value-of select="concat(tei:corr, '')"/>
+            </xsl:element>
         </select>
-
+    </xsl:template>     
+    <!-- praticare -->
+    <xsl:template name="praticare" match="//tei:choice[@xml:id='choice11']">
+        <select class="choice_class">
+            <xsl:element name="option">
+                <xsl:attribute name="value">
+                    <xsl:value-of select="concat(tei:sic, '')"/>
+                </xsl:attribute>
+                <xsl:value-of select="concat(tei:sic, '')"/>
+            </xsl:element>
+            <xsl:element name="option">
+                <xsl:attribute name="value">
+                    <xsl:value-of select="concat(tei:corr, '')"/>
+                </xsl:attribute>
+                <xsl:value-of select="concat(tei:corr, '')"/>
+            </xsl:element>
+        </select>
+    </xsl:template> 
+    <!-- supplicante -->
+    <xsl:template name="supplicante" match="//tei:choice[@xml:id='choice13']">
+        <select class="choice_class">
+            <xsl:element name="option">
+                <xsl:attribute name="value">
+                    <xsl:value-of select="concat(tei:abbr, '')"/>
+                </xsl:attribute>
+                <xsl:value-of select="concat(tei:abbr, '')"/>
+            </xsl:element>
+            <xsl:element name="option">
+                <xsl:attribute name="value">
+                    <xsl:value-of select="concat(tei:expan, '')"/>
+                </xsl:attribute>
+                <xsl:value-of select="concat(tei:expan, '')"/>
+            </xsl:element>
+        </select>
+    </xsl:template>       
+    <!-- Sig:r -->
+    <xsl:template name="sig.r" match="//tei:choice[@xml:id='choice9']">
+        <select class="choice_class">
+            <xsl:element name="option">
+                <xsl:attribute name="value">
+                    <xsl:value-of select="concat(tei:abbr, '')"/>
+                </xsl:attribute>
+                <xsl:value-of select="concat(tei:abbr, '')"/>
+            </xsl:element>
+            <xsl:element name="option">
+                <xsl:attribute name="value">
+                    <xsl:value-of select="concat(tei:expan, '')"/>
+                </xsl:attribute>
+                <xsl:value-of select="concat(tei:expan, '')"/>
+            </xsl:element>
+        </select>
+    </xsl:template> 
+    <!-- Sig. -->
+    <xsl:template name="sig." match="//tei:choice[@xml:id='choice6']">
+        <xsl:variable name="sig.">
+            <xsl:value-of select="//tei:choice[@xml:id='choice2']/tei:abbr"/>
+        </xsl:variable>
+        <xsl:variable name="signor">
+            <xsl:value-of select="//tei:choice[@xml:id='choice2']/tei:expan"/>
+        </xsl:variable>    
+        <select class="choice_class">
+            <xsl:element name="option">
+                <xsl:attribute name="value">
+                    <xsl:value-of select="$sig."/>
+                </xsl:attribute>
+                <xsl:value-of select="$sig."/>
+            </xsl:element>
+            <xsl:element name="option">
+                <xsl:attribute name="value">
+                    <xsl:value-of select="$signor"/>
+                </xsl:attribute>
+                <xsl:value-of select="$signor"/>
+            </xsl:element>
+        </select>
     </xsl:template>
-        
+    <!-- Sig.-->
+    <xsl:template name="sig.2" match="//tei:choice[@xml:id='choice5']">
+        <select class="choice_class">
+            <xsl:element name="option">
+                <xsl:attribute name="value">
+                    <xsl:value-of select="concat(tei:abbr, '')"/>
+                </xsl:attribute>
+                <xsl:value-of select="concat(tei:abbr, '')"/>
+            </xsl:element>
+            <xsl:element name="option">
+                <xsl:attribute name="value">
+                    <xsl:value-of select="concat(tei:expan, '')"/>
+                </xsl:attribute>
+                <xsl:value-of select="concat(tei:expan, '')"/>
+            </xsl:element>
+        </select>
+    </xsl:template>
+    <!-- Prov.a-->
+    <xsl:template name="prov.a" match="//tei:choice[@xml:id='choice4']">
+        <select class="choice_class">
+            <xsl:element name="option">
+                <xsl:attribute name="value">
+                    <xsl:value-of select="concat(tei:abbr, '')"/>
+                </xsl:attribute>
+                <xsl:value-of select="concat(tei:abbr, '')"/>
+            </xsl:element>
+            <xsl:element name="option">
+                <xsl:attribute name="value">
+                    <xsl:value-of select="concat(tei:expan, '')"/>
+                </xsl:attribute>
+                <xsl:value-of select="concat(tei:expan, '')"/>
+            </xsl:element>
+        </select>
+    </xsl:template>    
+
+    <!--Annotazione 189, la nascondo perché è nel body e ne ho già parlato nella descrizione -->
+    <xsl:template name="annotaz189" match="//tei:add[@xml:id='LL1.1_hs_rr-01']">
+        <xsl:text></xsl:text>
+    </xsl:template>        
     
 </xsl:stylesheet>
+    
