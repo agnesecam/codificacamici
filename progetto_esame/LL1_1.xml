@@ -90,14 +90,13 @@
                                 </condition>
                             </supportDesc>
                         </objectDesc>
-                        <handDesc hands="5"> 
-                        
-                            <handNote xml:id="h1"><p>Scrittura a mano leggibile, ha scritto il corpo della lettera. Vincenzo Bellini ha apposto solamente la <hi facs="#LL1.1_hotspot_rr-06">firma</hi>, la supplica è stata scritto da questa prima mano. </p></handNote>
-                            <handNote xml:id="h2"><p>Il folio retro recto presenta la <hi facs="#LL1.1_hotspot_rr-06">firma</hi><ptr target="#LL1.1_hs_rr-02"/> apposta da Bellini. </p></handNote>
-                            <handNote xml:id="h3"><p>Nel folio fronte recto una terza mano ha scritto l'<hi facs="#LL1.1_hotspot_fr-01">annotazione</hi><ptr target="#LL1.1_hs_fr-01"/> "Supp | 3. Mag 1819". </p></handNote>
-                            <handNote xml:id="h4"><p>Nell'angolo superiore destro del folio fronte recto è presente la <hi facs="#LL1.1_hotspot_fr-03">nota</hi><ptr target="#LL1.1_hs_fr-03"/> "188" probabilmente attribuibile ad un catalogatore. </p>
-														<p>Nell'angolo superiore destro del folio retro recto è presente la <hi facs="#LL1.1_hotspot_rr-01">nota</hi><ptr target="#LL1.1_hs_rr-01"/> "189" probabilmente attribuibile allo stesso catalogatore. </p></handNote>
-                            <handNote xml:id="h5"><p>Nell'angolo superiore sinistro del folio fronte recto è presente un'<hi facs="#LL1.1_hotspot_fr-02">annotazione</hi><ptr target="#LL1.1_hs_fr-02"/> di colore blu scuro somigliante ad una "B" o ad una "R", meno facilmente riconducibile alle iniziali "B V", probabilmente di mano di un secondo catalogatore. </p></handNote>
+                        <handDesc hands="5">                       
+                            <handNote xml:id="h1"><p>Una prima mano ha scritto il corpo della supplica, in bella grafia, su una colonna per foglio.</p></handNote> 
+                            <handNote xml:id="h2"><p>Vincenzo Bellini ha posto solamente la firma<!-- <ptr target="#LL1.1_hs_rr-02"/> --> sul folio retro recto.</p><hi facs="#LL1.1_hotspot_rr-06"/></handNote>
+                            <handNote xml:id="h3"><p>Una terza mano ha annotato nel folio fronte recto: "Supp. | 3. Mag 1819"<!-- <ptr target="#LL1.1_hs_fr-01"/> -->.</p><hi facs="#LL1.1_hotspot_fr-01"/></handNote>
+                            <handNote xml:id="h4"><p>Uno stesso catalogatore ha probabilmente scritto due annotazioni: un primo numero di catalogo (188)<!-- <ptr target="#LL1.1_hs_fr-03"/> --> nell'angolo superiore destro del folio fronte recto;<hi facs="#LL1.1_hotspot_fr-03"/>
+                            e un secondo numero (189) <!-- <ptr target="#LL1.1_hs_rr-01"/> -->nell'angolo superiore destro del folio retro recto.</p><hi facs="#LL1.1_hotspot_fr-02"/></handNote>
+                            <handNote xml:id="h5"><p>Un'ultima mano ha annotato nell'angolo superiore sinistro del folio fronte recto una lettera<!-- <ptr target="#LL1.1_hs_fr-02"/> --> (o forse due combinate) di colore blu scuro, apparentemente somigliante ad una "B" o ad una "R", ma studiandola più attentamente è possibile ricondurla alle iniziali "B" e "V" leggermente sovrapposte.</p><hi facs="#LL1.1_hotspot_fr-02"/></handNote>
                         </handDesc>
                     </physDesc>
                     <additional>

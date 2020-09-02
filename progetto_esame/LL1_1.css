@@ -1,57 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    margin:15px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #dadac6;
+  font-family: 'Fjalla One', sans-serif;
 }
 
-/*.dropdown {
-    margin-left: 20%;
-  }
+#icona_apertura_fileDesc {
+  margin-right: 5px;
+  margin-left:10px;
+  display: inline;
+  float:left;
+}
+#icona_spegni{
+  opacity: 0.6;
+  margin-top: 4px;
+  margin-left: 44%;
+}
+.icone{
+  width: 30px;
+}
+.icone:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
+#icona_spegni:hover {
+	opacity: 0.3;
+}
 
-  .dropdown .dropbtn {
-    font-size: 130%;
-    margin: 20px;
-    font-variant: small-caps;
-    color: #023f49;
-    border-color: black;
-    border-width: 4px;
-    border-radius: 50%;
-    background-color: #09d1b6;
-    float: left;
-    display: block;
-    width: 15%;
-    height: 15%;
-  }
 
-  .dropdown .dropbtn:hover{
-      background-color: rgb(5, 163, 168);
-      cursor: pointer;
-  }
-*/
-  .dropdown-content {
-    display: block;
-    width: 30%;
-    border: 1px solid;
-    border-color: black;
-    background-color: #f9f9f9;
-    padding: 3px;
-  }
 
-  h2 {
-    color: red;
-  }
+.articoli_box {
+  width: 400px;
+	padding: 23px 40px  5px 30px;
+	border-radius: 80px;
+	background-color: #c1c1a4;
+	color: #474234;
+  margin-bottom: 60px;
+  margin-left:30px;
+  font-size: 15px;
+  float: left;
+}
 
-  .dropdown-content h2 {
-    color: black;
-    text-align: left;
-  }
+.desc_manos_insieme {
+  max-width: 1200px;
+  padding: 23px 40px  5px 30px;
+	border-radius: 80px;
+	background-color: #c1c1a4;
+	color: #474234;
+  margin-bottom: 8px;
+  margin-right:30px;
+  font-size: 17px;
+  line-height: 110%;
+  text-align: justify;
+  float: right;
+}
+.desc_manos_senza {
+  max-width: 990px;
+  padding: 23px 40px  5px 30px;
+	border-radius: 80px;
+	background-color: #c1c1a4;
+	color: #474234;
+  margin-bottom: 8px;
+  margin-left:30px;
+  font-size: 16px;
+  text-align: justify;
+  float: left;
+  
+}
 
-  #descrizione_manoscritto {
-    display: block; 
-    float: left; 
-    margin-top: 12px;
-    text-align: left;
-  }
+.mani_insieme {
+  max-width: 1200px;
+  padding: 23px 40px  45px 30px;
+  border-radius: 80px;
+  background-color: #c1c1a4;
+  color: #474234;
+  margin-right: 30px;
+  margin-bottom: 240px;
+  font-size: 18px;
+  line-height: 90%;
+  text-align: justify;
+  float: right;
+}
+.mani_senza {
+  float: top;
+  margin-left: 62%;
+  margin-bottom: 90px;
+  max-width: 620px;
+  padding: 23px 40px  45px 30px;
+  border-radius: 80px;
+  background-color: #c1c1a4;
+  color: #474234;
+}
 
-  .supplied_class{
-    font-size: 30px;
-  }
+.nascoste{
+  background-color: #adab86;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  margin: 5px 5px 5px 5px;
+  border-radius:15px;
+}
+
+#fileDesc h2 {
+  color: black;
+  font-weight: bold;
+  line-height: 13px;
+}
+
+.nascoste ul{
+  line-height: 13px;
+}
+
+#imglettera1, #imglettera2, #imglettera4, #imglettera3 {
+  width: 650px;
+  display: block;
+}
+#immagini_lettera {
+  float: left;
+  margin-left: 5%;
+  background-color: #c1c1a4;
+  padding: 25px;
+  border-radius: 55px;
+}
+#front_e_body_lettera{
+  float: right;
+  margin-right: 10%;
+  background-color: #c1c1a4;
+  padding: 25px;
+  border-radius: 35px;
+}
+#contenitore_front{
+  background-color: #adab86;
+  border-radius: 55px;
+  padding: 25px;
+  margin-bottom:10px;
+}
+#contenitore_front img{
+  width: 300px;
+  border: 55px;
+  margin: 2px;
+}
+
+#contenitore_front select{
+  background-color: #c1c1a4;
+  border-radius: 6px; 
+  border: 1px solid #c1c1a4;
+  color: brown;               
+  font-style: italic;    
+  font-weight: bold;        
+  padding: 0;             
+  height: 25px;            
+}
+
+#contenitore_body{
+  background-color: #adab86;
+  border-radius: 55px;
+  padding: 25px;
+  line-height: 85%;
+  font-size: 20px;
+}
+#contenitore_body select{
+  background-color: #c1c1a4;
+  border-radius: 6px; 
+  border: 1px solid #c1c1a4;
+  color: black;               
+  font-style: italic;    
+  font-weight: bold;        
+  padding: 0;             
+  height: 25px;            
+}
+
+#contenitore_note{
+  width: 800px;
+  float: bottom;
+}
+
+sub {
+  font-size: 18px;
+  color:brown;
+  text-decoration: none;
+}
+sup {
+  font-size:25px;
+  color: brown;
+  text-decoration: none;
+}
+a:link, a:visited{
+  text-decoration: none;
+}
+a:hover{
+  opacity: 0.2;
+}
+
+/*Classi usate in Javascript*/
+.show { 
+  animation-name: Fade_in;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.hide { 
+  animation-name: Fade_out;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.visibile {
+display: inline;
+}
+
+.nascondi {
+display: none;
+}
