@@ -75,53 +75,62 @@
 
                 <!-- SCAN -->
                 <div id="immagini_lettera">
-                    <h2>Immagini del manoscritto originale:</h2>
+                    <h2>Immagini del manoscritto originale</h2>
+                    <div id="pulsanti_immagini_lettera" >
+                        <input id="icona_1" type="image" class="icone_numeri" alt="Clicca per visualizzare la prima facciata del manoscritto" src="icona1.png"/>
+                        <input id="icona_2" type="image" class="icone_numeri" alt="Clicca per visualizzare la seconda facciata del manoscritto" src="icona2.png"/>
+                        <input id="icona_3" type="image" class="icone_numeri" alt="Clicca per visualizzare la terza facciata del manoscritto" src="icona3.png"/>           
+                        <input id="icona_4" type="image" class="icone_numeri" alt="Clicca per visualizzare la quarta facciata del manoscritto" src="icona4.png"/>             
+                    </div>
                     <xsl:apply-templates select="//tei:facsimile"/>
-                </div>
-                
+                </div>                
+                            
+
                 <!-- LETTERA -->
-                <div id="front_e_body_lettera">   
-                    <div id="contenitore_front" style="line-height: 10px;">
-                        <div>
-                            <h2>Fronte della lettera</h2>
-                            La lettera non presenta né francobolli, né timbri, né sigilli.
-                            Presenta il nome del destinatario:
-                            <i style="color: brown"><div id="info_dest" >
-                                <xsl:apply-templates select="//tei:div[@xml:id='info_dest']" />
-                            </div> </i>        
-                            sulla prima facciata, accompagnato dall'annotazione    
-                            <i style="color: brown"><xsl:apply-templates select="//tei:div/tei:ab[@xml:id='LL1.1_hs_fr-01']"/></i>
-<!--                        <xsl:element name="img">
-                                <xsl:attribute name="src">
-                                    <xsl:text>LL1.1_hotspot_fr-04.png</xsl:text>
-                                </xsl:attribute>
-                                <xsl:attribute name="id">
-                                    <xsl:text>LL1.1_hotspot_fr-04</xsl:text>
-                                </xsl:attribute>                        
-                            </xsl:element>                            f
-                            <xsl:element name="img">
-                                <xsl:attribute name="src">
-                                    <xsl:text>LL1.1_hs_fr-01.png</xsl:text>
-                                </xsl:attribute>
-                                <xsl:attribute name="id">
-                                    <xsl:text>LL1.1_hs_fr-01</xsl:text>
-                                </xsl:attribute>                        
-                            </xsl:element> -->
-                        </div>
-                        
-                    </div>             
-                    <div id="contenitore_body">
-                        <div><xsl:apply-templates select="//tei:body/tei:div[@type='fronte-recto']" /></div>
-                        <div>
-                            <h2>Corpo della lettera</h2>
-                            <div id="opener_lettera" style="text-align:right;">
-                                <xsl:apply-templates select="//tei:opener" />
-                            </div>
-                            <div id="body_lettera">
-                                <xsl:apply-templates select="//tei:div[@xml:id='body_lettera']"/>
-                            </div>
-                            <div id="closer_lettera">
-                                <xsl:apply-templates select="//tei:div[@xml:id='closer_lettera']"/>
+                <div id="front_e_body_lettera">  
+                    <div id="contenitore_scrollbar"> 
+                        <div id="contenitore_front" style="line-height: 10px;">                        
+                            <h2 id="titolo_front" class="titolo_front_insieme">Fronte della lettera 
+                            <input style="float:right" id="icona_apertura_front" type="image" class="icone" alt="Clicca per aprire o chiudere il riquadro" src="icona_apertura_front.png"/></h2>                            
+                            <div class="contenuto_front" id="contenuto_front">
+                                La lettera non presenta né francobolli, né timbri, né sigilli.
+                                Presenta il nome del destinatario:
+                                <i style="color: brown"><div id="info_dest" >
+                                    <xsl:apply-templates select="//tei:div[@xml:id='info_dest']" />
+                                </div> </i>        
+                                sulla prima facciata, accompagnato dall'annotazione    
+                                <i style="color: brown"><xsl:apply-templates select="//tei:div/tei:ab[@xml:id='LL1.1_hs_fr-01']"/></i>
+                                <!--<xsl:element name="img">
+                                    <xsl:attribute name="src">
+                                        <xsl:text>LL1.1_hotspot_fr-04.png</xsl:text>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="id">
+                                        <xsl:text>LL1.1_hotspot_fr-04</xsl:text>
+                                    </xsl:attribute>                        
+                                </xsl:element>                            f
+                                <xsl:element name="img">
+                                    <xsl:attribute name="src">
+                                        <xsl:text>LL1.1_hs_fr-01.png</xsl:text>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="id">
+                                        <xsl:text>LL1.1_hs_fr-01</xsl:text>
+                                    </xsl:attribute>                        
+                                </xsl:element> -->
+                            </div>                        
+                        </div>             
+                        <div id="contenitore_body">
+                            <div><xsl:apply-templates select="//tei:body/tei:div[@type='fronte-recto']" /></div>
+                            <div id="corpo_della_lettera">
+                                <h2>Corpo della lettera</h2>
+                                <div id="opener_lettera" style="text-align:right;">
+                                    <xsl:apply-templates select="//tei:opener"/>
+                                </div>
+                                <div id="body_lettera">
+                                    <xsl:apply-templates select="//tei:div[@xml:id='body_lettera']"/>
+                                </div>
+                                <div id="closer_lettera">
+                                    <xsl:apply-templates select="//tei:div[@xml:id='closer_lettera']"/>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -386,7 +395,7 @@
                 </div> 
                 
                 <!-- TERMINOLOGIA -->                
-                <div>
+                <div id="terminologia">
                     <h2>Terminologia utilizzata</h2>
                     <xsl:apply-templates select="//tei:div[@type='lists']/tei:list[@type='terminology']"/>
                 </div>                   
@@ -520,6 +529,9 @@
                 <xsl:attribute name="src">
                     <xsl:value-of select="current()/@url "/>
                 </xsl:attribute>
+                <xsl:attribute name="class">
+                    <xsl:text>immagini_lettera</xsl:text>
+                </xsl:attribute>
            
                 <xsl:element name="map">
                     <xsl:attribute name="name">
@@ -587,7 +599,7 @@
                         <xsl:attribute name="href"> 
                             <xsl:value-of select="concat(@source, '')"/>
                         </xsl:attribute>
-                        Seminara 2017</xsl:element>),
+                        Seminara 2017</xsl:element>,
                         <xsl:if test="tei:bibl/tei:citedRange">
                             p.<xsl:value-of select="tei:bibl/tei:citedRange"/>]
                         </xsl:if>
@@ -621,8 +633,7 @@
 
     <!-- Fonti -->
     <xsl:template match="//tei:div[@type='lists']/tei:listBibl">
-        <xsl:for-each select="tei:bibl">
-            
+        <xsl:for-each select="tei:bibl"> 
             <li>
                 <xsl:element name="a">
                     <xsl:attribute name="id">
@@ -634,14 +645,13 @@
                         <xsl:text>. </xsl:text>              
                     </xsl:for-each>
                 </xsl:element>
-            </li>
-                    
+            </li>     
         </xsl:for-each>
     </xsl:template>  
 
     <!-- Reference -->
     <xsl:template match="*[@ref]">
-        <xsl:apply-templates />
+        <xsl:apply-templates /> <!-- uso un apply-templates vuoto per mostrare la parola prima della ref, alrimenti viene sostituita-->
         <xsl:element name="a">
             <xsl:attribute name="href">
                 <xsl:value-of select="@ref"/>
@@ -1112,9 +1122,9 @@
             <xsl:text disable-output-escaping="yes"><![CDATA[<br>]]></xsl:text>
         </xsl:variable>         
         <!--Variabili per ottenere i link VIAF e Treccani-->
-        <xsl:variable name="Treccani">
-            <xsl:value-of select="tei:person[@xml:id='IPC']/tei:persName/tei:ref/@target"/>  
-        </xsl:variable>
+        <xsl:variable name="Treccani" >
+            <xsl:value-of select="//tei:person[@xml:id='IPC']/tei:persName/tei:ref/@target"/>  
+        </xsl:variable>      
         <xsl:variable name="VIAF">
             <xsl:value-of select="//tei:div[@type='lists']/tei:listPerson/tei:person[@xml:id='IPC']/@sameAs"/>
         </xsl:variable>
@@ -1135,8 +1145,13 @@
         <xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
         <xsl:element name="a">                     
             <xsl:attribute name="href">
-                <xsl:value-of select="$Treccani"/>
+                <xsl:value-of select="substring-after($Treccani, ' ' )"/>
             </xsl:attribute>Treccani</xsl:element>
+        <xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
+        <xsl:element name="a">                     
+            <xsl:attribute name="href">
+                <xsl:value-of select="substring-before( $Treccani, ' ' )"/>
+            </xsl:attribute>Wikipedia</xsl:element>            
         <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>        
     </xsl:template>
 

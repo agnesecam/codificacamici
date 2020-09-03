@@ -91,12 +91,12 @@
                             </supportDesc>
                         </objectDesc>
                         <handDesc hands="5">                       
-                            <handNote xml:id="h1"><p>Una prima mano ha scritto il corpo della supplica, in bella grafia, su una colonna per foglio.</p></handNote> 
-                            <handNote xml:id="h2"><p>Vincenzo Bellini ha posto solamente la firma<!-- <ptr target="#LL1.1_hs_rr-02"/> --> sul folio retro recto.</p><hi facs="#LL1.1_hotspot_rr-06"/></handNote>
+                            <handNote xml:id="h1"><p>Una prima mano ha scritto il corpo della supplica, in bella grafia, su una colonna per foglio. </p></handNote> 
+                            <handNote xml:id="h2"><p>Vincenzo Bellini ha posto solamente la firma<!-- <ptr target="#LL1.1_hs_rr-02"/> --> sul folio retro recto.<ptr target="#LL1_1_note2"/></p><hi facs="#LL1.1_hotspot_rr-06"/></handNote>
                             <handNote xml:id="h3"><p>Una terza mano ha annotato nel folio fronte recto: "Supp. | 3. Mag 1819"<!-- <ptr target="#LL1.1_hs_fr-01"/> -->.</p><hi facs="#LL1.1_hotspot_fr-01"/></handNote>
                             <handNote xml:id="h4"><p>Uno stesso catalogatore ha probabilmente scritto due annotazioni: un primo numero di catalogo (188)<!-- <ptr target="#LL1.1_hs_fr-03"/> --> nell'angolo superiore destro del folio fronte recto;<hi facs="#LL1.1_hotspot_fr-03"/>
                             e un secondo numero (189) <!-- <ptr target="#LL1.1_hs_rr-01"/> -->nell'angolo superiore destro del folio retro recto.</p><hi facs="#LL1.1_hotspot_fr-02"/></handNote>
-                            <handNote xml:id="h5"><p>Un'ultima mano ha annotato nell'angolo superiore sinistro del folio fronte recto una lettera<!-- <ptr target="#LL1.1_hs_fr-02"/> --> (o forse due combinate) di colore blu scuro, apparentemente somigliante ad una "B" o ad una "R", ma studiandola più attentamente è possibile ricondurla alle iniziali "B" e "V" leggermente sovrapposte.</p><hi facs="#LL1.1_hotspot_fr-02"/></handNote>
+                            <handNote xml:id="h5"><p>Un'ultima mano ha annotato nell'angolo superiore sinistro del folio fronte recto una lettera<!-- <ptr target="#LL1.1_hs_fr-02"/> --> (o forse due combinate) di colore blu scuro, apparentemente somigliante ad una "B" o ad una "R", ma osservandola più attentamente è possibile ricondurla alle iniziali "B" e "V" leggermente sovrapposte.</p><hi facs="#LL1.1_hotspot_fr-02"/></handNote>
                         </handDesc>
                     </physDesc>
                     <additional>
@@ -364,7 +364,7 @@
                 <ab type="parag" n="ab_02">
                     <s type="sentence" n="s_02">
                     <lb xml:id="LL1.1_lb_fr_01" n="1" facs="#LL1.1_line_fr-02"/>
-                    <persName ref="#VB" role="composer"><forename>Vincenzo</forename> <surname> Bellini</surname></persName><pc type="comma">,</pc> e <supplied resp="#AC"><persName ref="#VB"><forename>(Vincenzo) </forename></persName></supplied><persName><surname>Ferlito</surname></persName> spinto dal
+                    <persName ref="#VB" role="composer"><forename>Vincenzo</forename> <surname> Bellini</surname></persName><pc type="comma">,</pc> e <supplied resp="#AC"><persName ref="#VB"><forename>(Vincenzo)</forename></persName></supplied><persName><surname> Ferlito</surname></persName> spinto dal
                     <lb xml:id="LL1.1_lb_fr_02" n="2" facs="#LL1.1_line_fr-03"/> 
                     proprio genio<pc type="comma">,</pc> dall<pc type="apostrophe">'</pc>esempio<pc type="comma">,</pc> e dalla
                     <lb xml:id="LL1.1_lb_fr_03" n="3" facs="#LL1.1_line_fr-04"/> 
@@ -400,7 +400,7 @@
                     <lb xml:id="LL1.1_lb_fr_18" n="18" facs="#LL1.1_line_fr-19"/>
                     ne viene impossibilitato dalla sua 
                     <lb xml:id="LL1.1_lb_fr_19" n="19" facs="#LL1.1_line_fr-20"/>
-                    povertà. </s> <s type="sentence" n="s_04"> <persName ref="#VB" role="composer"> Figlio </persName> di un <persName ref="#RB">Padre <supplied resp="#AC"><forename>(Rosario </forename> <surname> Bellini)</surname></supplied></persName> senza 
+                    povertà. </s> <s type="sentence" n="s_04"> <persName ref="#VB" role="composer"> Figlio</persName> di un <persName ref="#RB"> Padre<supplied resp="#AC"><forename> (Rosario </forename> <surname> Bellini)</surname></supplied></persName> senza 
                     <lb xml:id="LL1.1_lb_fr_20" n="20" facs="#LL1.1_line_fr-21"/>
                     rendite di sorte alcuna<pc type="comma">,</pc> e carico di 
                     <lb xml:id="LL1.1_lb_fr_21" n="21" facs="#LL1.1_line_fr-22"/>
@@ -432,7 +432,7 @@
                     <lb xml:id="LL1.1_lb_rv_07" n="32" facs="#LL1.1_line_rv-07"/>
                     dimenticato<pc type="comma">,</pc> che appartiene per nascita
                     <lb xml:id="LL1.1_lb_rv_08" n="33" facs="#LL1.1_line_rv-08"/> 
-                    ad una Città <supplied resp="#AC"><placeName ref="#CA">Catania</placeName></supplied><pc type="comma">,</pc> che<pc type="comma">,</pc> non delle ultime 
+                    ad una Città <supplied resp="#AC"><placeName ref="#CT">Catania</placeName></supplied><pc type="comma">,</pc> che<pc type="comma">,</pc> non delle ultime 
                     <lb xml:id="LL1.1_lb_rv_09" n="34" facs="#LL1.1_line_rv-09"/>
                     in quest<pc type="apostrophe">'</pc>Isola<pc type="comma">,</pc> procura di non <w>deca<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rv_10" n="35" facs="#LL1.1_line_rv-10"/>
@@ -454,9 +454,9 @@
                     <lb xml:id="LL1.1_lb_rv_18" n="43" facs="#LL1.1_line_rv-18"/>
                     colte nazioni<pc type="comma">,</pc> per non essere <w>trascura<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rv_19" n="44" facs="#LL1.1_line_rv-19" break="no" rend="double-stroke"/>
-                    ta</w> tra noi<pc type="comma">,</pc> viene l<pc type="apostrophe">'</pc><persName ref="#VB" role="composer">Esponente <supplied resp="#AC"><forename> (Vincenzo </forename> <surname>Bellini) </surname></supplied></persName> a <w>pre
+                    ta</w> tra noi<pc type="comma">,</pc> viene l<pc type="apostrophe">'</pc><persName ref="#VB" role="composer">Esponente <supplied resp="#AC"><forename> (Vincenzo </forename> <surname>Bellini) </surname></supplied></persName> a <w>pre<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rv_20" n="45" facs="#LL1.1_line_rv-20" break="no" rend="double-stroke"/>
-                    sentarsi</w> a <persName ref="#SN">lei </persName> <persName ref="#SN"><roleName><choice xml:id="choice9"><abbr>Sig:r</abbr><expan resp="#AC">Sig<ex>no</ex>r</expan></choice></roleName> <roleName type="honorific" ref="#SN"> Duca Intendente</roleName><supplied resp="#AC"> Duca di <placeName>Sammartino</placeName></supplied></persName><pc type="comma">,</pc> 
+                    sentarsi</w> a <persName ref="#SN">lei</persName> <persName ref="#SN"> <roleName> <choice xml:id="choice9"><abbr> Sig:r</abbr><expan resp="#AC">Sig<ex>no</ex>r</expan></choice></roleName> <roleName type="honorific" ref="#SN"> Duca Intendente</roleName><supplied resp="#AC"> Duca di <placeName>Sammartino</placeName></supplied></persName><pc type="comma">,</pc> 
                     <lb xml:id="LL1.1_lb_rv_21" n="46" facs="#LL1.1_line_rv-21"/>
                     cui<pc type="comma">,</pc> dopo avere umiliato la sua <w>po<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rv_22" n="47" facs="#LL1.1_line_rv-22" break="no" rend="double-stroke"/>
@@ -464,7 +464,7 @@
                     <lb xml:id="LL1.1_lb_rv_23" n="48" facs="#LL1.1_line_rv-23" break="no" rend="double-stroke"/>
                     zione</w><pc type="comma">,</pc> passa a pregare ad <w>interpor<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rv_24" n="49" facs="#LL1.1_line_rv-24" break="no" rend="double-stroke"/>
-                    re</w> la di <persName ref="#SN">lei </persName> <choice xml:id="choice8"><sic>auttorità</sic><corr resp="#AC">autorità</corr></choice> <pc type="comma">,</pc> affinché si 
+                    re</w> la di <persName ref="#SN">lei</persName> <choice xml:id="choice8"><sic>auttorità</sic><corr resp="#AC">autorità</corr></choice> <pc type="comma">,</pc> affinché si 
                     <lb xml:id="LL1.1_lb_rv_25" n="50" facs="#LL1.1_line_rv-25"/>
                     prestasse da questo Civico <w>Patrimo<pc force="weak">-</pc>
                     <lb xml:id="LL1.1_lb_rv_26" n="51" facs="#LL1.1_line_rv-26" break="no" rend="double-stroke"/>
@@ -546,7 +546,7 @@
                             <citedRange unit="page" from="65">65</citedRange>
                         </bibl>
                         <p>
-                            <persName ref="#SN"><forename>Stefano</forename> <surname>Notarbartolo</surname>, <roleName type="honorific">duca di <placeName>Sammartino</placeName></roleName></persName>, nel <date when="1818">1818</date> era stato nominato <roleName type="honorific">Intendente del Valle di <placeName ref="#CT">Catania</placeName></roleName><pc type="dot">.</pc>
+                            <persName ref="#SN"><forename>Stefano </forename> <surname>Notarbartolo</surname>, <roleName type="honorific">duca di <placeName>Sammartino</placeName></roleName></persName>, nel <date when="1818">1818</date> era stato nominato <roleName type="honorific">Intendente del Valle di <placeName ref="#CT">Catania</placeName></roleName><pc type="dot">.</pc>
                         </p>
                     </note>
       <!-- 2 -->    <note xml:id="LL1_1_note2" source="#Seminara2017" resp="#AC" ana="2">
@@ -557,7 +557,7 @@
                             La Supplica<pc type="comma">,</pc> in bella scrittura<pc type="comma">,</pc> 
                             non è di mano di <persName ref="#VB"><surname>Bellini</surname></persName><pc type="comma">,</pc> 
                             che appose solo la <hi facs="#LL1.1_hotspot_rr-02">firma</hi><ptr target="#LL1.1_hs_rr-02"/><pc type="dot">.</pc> 
-                            Nella prima <hi facs="#LL1.1_fronte_recto">facciata</hi> del foglio è scritto da una terza mano<ptr target="#h3"/> 
+                            Nella prima <hi facs="#LL1.1_fronte_recto">facciata</hi> del foglio è scritto da una <hi ref="#h3">terza mano</hi> 
                             <hi facs="#LL1.1_hotspot_fr-01">"Supp | <date when="1819-05-03">3<pc type="dot">.</pc> Mag 1819</date>"</hi><ptr target="#LL1.1_hs_fr-01"/>.
                         </p>
                     </note>
@@ -566,7 +566,7 @@
                             <citedRange unit="page" from="65">65</citedRange>
                         </bibl>
                         <p>
-                            Nella sua <ref target="#Cambi1943">edizione</ref> <persName ref="#LC"><forename>Luisa</forename> <surname>Cambi</surname></persName> dichiara di aver desunto il testo della
+                            Nella sua edizione <persName ref="#LC"><forename>Luisa </forename> <surname>Cambi</surname></persName> dichiara di aver desunto il testo della
                             lettera dal <ref><bibl><title level="m">giornale Bellini</title>, a. IV, <biblScope unit="volume" from="84" to="85">n. 84-85</biblScope>, <date when="1879-11-16">1879, 16 novembre</date> (p. <biblScope unit="page">18</biblScope>, nota 1)</bibl></ref><pc type="semicolon">;</pc>
                             <persName ref="#CN"><forename>Carmelo</forename> <surname>Neri</surname></persName> invece informa correttamente circa l<pc type="apostrophe">'</pc>ubicazione dell<pc type="apostrophe">'</pc>autografo presso il Museo Civico Belliniano di <placeName ref="#CT">Catania</placeName><pc type="character">.</pc> 
                             Nondimeno <persName ref="#LC #CN">entrambi</persName> offrono un testo mutilo<pc type="comma">,</pc> mancante della porzione di lettera contenuta nella <hi facs="#LL1.1_retro_verso">seconda facciata</hi><ptr target="#LL1.1_rv_body"/> del
@@ -776,15 +776,15 @@
                     <!-- Ignazio Paternò Castello, V principe di Biscari -->
                     <person xml:id="IPC" sameAs="http://viaf.org/viaf/208235133"> 
           	            <persName> 
-                            <ref target="https://it.wikipedia.org/wiki/Francesco_Paternò_Castello http://www.treccani.it/enciclopedia/ignazio-paterno-castello-principe-di-biscari_%28Dizionario-Biografico%29/"/>
-                            <forename>Francesco</forename>
+                            <ref target="https://it.wikipedia.org/wiki/Ignazio_Patern%C3%B2_Castello http://www.treccani.it/enciclopedia/ignazio-paterno-castello-principe-di-biscari_%28Dizionario-Biografico%29/"/>
+                            <forename>Ignazio</forename>
                             <surname>Paternò</surname>
                             <surname>Castello</surname>
-                            <roleName>duca di Carcaci</roleName>
+                            <roleName>principe di Biscari</roleName>
                         </persName>
                         <sex>M</sex>
                         <birth>
-                            <date when="1786-08-15">15 agosto 1786</date>
+                            <date when="1719-05-24">24 maggio 1719</date>
                             <placeName ref="#CT">
                                 <settlement type="municipality">Catania</settlement>
                                 <settlement type="provincia" key="CT">Catania</settlement>
@@ -792,7 +792,7 @@
                             </placeName>
                         </birth>
                         <death>
-                            <date when="1854-04-08">8 aprile 1854</date>
+                            <date when="1786-09-01">01 settembre 1786</date>
                             <placeName ref="#CT">
                                 <settlement type="municipality">Catania</settlement>
                                 <settlement type="provincia" key="CT">Catania</settlement>
@@ -803,19 +803,6 @@
                             <bibl>
                                 <citedRange unit="page" from="220" to="220">220</citedRange>
                             </bibl>
-                            <p>
-                                <persName ref="#FPC"><forename>Francesco </forename> <surname>Paternò </surname> <surname>Castello</surname></persName><pc type="comma">,
-                                </pc> nel <date when="1838"> 1838 </date> <pc type="dash">–</pc> alla morte del <persName>nipote <forename>Mario </forename></persName> 
-                                <pc type="dash">–</pc> sarebbe diventato <roleName><genName>VII</genName> duca di <placeName>Carcaci</placeName></roleName> 
-                                e <roleName>Gentiluomo di Camera</roleName> di <persName><forename>Ferdinando </forename> <genName>II </genName></persName><pc type="comma">,</pc> 
-                                <roleName>re delle <placeName><num type="cardinal">Due</num> Sicilie</placeName></roleName><pc type="dot">.</pc> Nel <date when="1826">1826</date> venne 
-                                nominato <roleName><num type="ordinal" value="1">primo </num> <term subtype="music-term" ref="#direttore">direttore</term> dell'Accademia Gioenia</roleName> 
-                                di <placeName ref="#CT">Catania</placeName> e fu autore di una <title><hi rend="italic">Descrizione di Catania 
-                                e delle cose notevoli ne' dintorni di essa</hi></title> (<bibl><pubPlace ref="CT">Catania</pubPlace>, <publisher>Giuntini</publisher>, 
-                                <date when="1841">1841</date></bibl>)<pc type="dot">.</pc> 
-                                <term subtype="music-term" ref="#compositore"> Compositore</term> dilettante<pc type="comma">,</pc> era un ammiratore del musicista che si premurava di inviargli gli 
-                                <term subtype="music-term" ref="#spartito">spartiti</term> delle proprie opere<pc type="dot">.</pc>
-                            </p>
                         </note> 
                     </person>
 

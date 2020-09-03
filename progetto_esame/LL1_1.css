@@ -11,11 +11,13 @@ body {
   margin-left:10px;
   display: inline;
   float:left;
+  outline: none;
 }
 #icona_spegni{
   opacity: 0.6;
   margin-top: 4px;
   margin-left: 44%;
+  outline: none;
 }
 .icone{
   width: 30px;
@@ -51,7 +53,7 @@ body {
   margin-bottom: 8px;
   margin-right:30px;
   font-size: 17px;
-  line-height: 110%;
+  line-height: 25px;
   text-align: justify;
   float: right;
 }
@@ -63,10 +65,10 @@ body {
 	color: #474234;
   margin-bottom: 8px;
   margin-left:30px;
-  font-size: 16px;
+  font-size: 16.5px;
   text-align: justify;
   float: left;
-  
+  line-height: 25px;
 }
 
 .mani_insieme {
@@ -113,17 +115,29 @@ body {
   line-height: 13px;
 }
 
-#imglettera1, #imglettera2, #imglettera4, #imglettera3 {
-  width: 650px;
+.immagini_lettera {
+  width: 700px;
   display: block;
 }
+
 #immagini_lettera {
   float: left;
   margin-left: 5%;
+  margin-top:40px;
   background-color: #c1c1a4;
   padding: 25px;
   border-radius: 55px;
 }
+
+#pulsanti_immagini_lettera{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.icone_numeri:hover{
+  opacity: 0.3;
+}
+
 #front_e_body_lettera{
   float: right;
   margin-right: 10%;
@@ -131,19 +145,51 @@ body {
   padding: 25px;
   border-radius: 35px;
 }
-#contenitore_front{
+.contenuto_front {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 55px;
+  border-bottom-right-radius: 55px;
+  margin-bottom: 10px;
   background-color: #adab86;
-  border-radius: 55px;
   padding: 25px;
-  margin-bottom:10px;
-}
-#contenitore_front img{
-  width: 300px;
-  border: 55px;
-  margin: 2px;
 }
 
-#contenitore_front select{
+#front_e_body_lettera{
+  width:650px;
+  margin-top:35px;  
+}
+
+#contenitore_scrollbar{
+  overflow: scroll;
+  height: 1110px;
+  border-radius: 55px;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #c1c1a4;
+}
+::-webkit-scrollbar-track {
+  background:#c1c1a4; 
+  border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb {
+  background:#76905d9d;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7f8a7e;
+}
+::-webkit-scrollbar-corner { 
+  background: #c1c1a4; 
+}
+
+#div_scomparsa{
+  margin-bottom: 186px;
+}
+
+#contenitore_titolo_e_front select, .contenuto_front select{
   background-color: #c1c1a4;
   border-radius: 6px; 
   border: 1px solid #c1c1a4;
@@ -151,7 +197,31 @@ body {
   font-style: italic;    
   font-weight: bold;        
   padding: 0;             
-  height: 25px;            
+  height: 25px; 
+}
+
+#icona_apertura_front{
+  width: 24px;
+  outline: none;
+}
+.ruota {
+  transform:rotate(180deg);
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Safari e Chrome */
+  
+}
+.titolo_front_insieme{
+  border-top-left-radius: 55px;
+  border-top-right-radius: 55px;
+  margin-bottom: 0px;
+  background-color: #adab86;
+  padding: 45px 25px 25px 25px;
+}
+.titolo_front_senza{
+  background-color: #adab86;
+  border-radius: 55px;
+  padding: 25px;
+  margin-bottom:10px;
 }
 
 #contenitore_body{
@@ -159,7 +229,7 @@ body {
   border-radius: 55px;
   padding: 25px;
   line-height: 85%;
-  font-size: 20px;
+  font-size: 19px;
 }
 #contenitore_body select{
   background-color: #c1c1a4;
@@ -173,9 +243,27 @@ body {
 }
 
 #contenitore_note{
-  width: 800px;
-  float: bottom;
+  width: 90%;
+  float: left;
+  background-color: red;
+  margin: 20px;
 }
+#persone_citate{
+  float:left;
+}
+#luoghi_citati{
+  float:left;
+}
+#bibliografia{
+  float:left;
+}
+#bibliografia2{
+  float:left;
+}
+#terminologia{
+  float:left;
+}
+
 
 sub {
   font-size: 18px;
@@ -183,7 +271,7 @@ sub {
   text-decoration: none;
 }
 sup {
-  font-size:25px;
+  font-size:27px;
   color: brown;
   text-decoration: none;
 }
@@ -194,27 +282,8 @@ a:hover{
   opacity: 0.2;
 }
 
-/*Classi usate in Javascript*/
-.show { 
-  animation-name: Fade_in;
-  animation-duration: 0.3s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-
-.hide { 
-  animation-name: Fade_out;
-  animation-duration: 0.3s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-
-.visibile {
-display: inline;
-}
-
+/*Altre classi usate in Javascript*/
 .nascondi {
 display: none;
 }
+
