@@ -1,0 +1,99 @@
+<?xml version="1<pc type="dot">.</pc>0" encoding="utf-8"?>
+<!DOCTYPE text SYSTEM "tei_all.dtd" > <!-- qui collego una DTD esterna -->
+
+<!-- ESERCIZIO
+Utilizzare puntatori, note, lista, glossario marcare nomi, rs,
+term.
+-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Prima lezione</title>
+                <author>Agnese Camici</author>
+                <respStmt>
+					<resp>Responsabilità di</resp>
+					<name> Agnese Camici</name>
+				</respStmt>
+            </titleStmt>
+            <handDesc hands="5">                       
+                <handNote xml:id="h1">Una prima mano ha scritto il corpo della supplica, in bella grafia, su una colonna per foglio. </handNote> 
+                <handNote xml:id="h2"><hi facs="#LL1.1_hotspot_rr-06"/>Vincenzo Bellini ha posto solamente la firma sul folio retro recto.<ptr target="#LL1_1_note2"/></handNote>
+            </handDesc>
+		</fileDesc>
+	<teiHeader>
+    <text>
+        <div type="sent">
+        <!-- Data -->
+            <ab hand="#h3" xml:id="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> <!-- annotazione data e "sup." -->
+                <mentioned>
+                    <unclear><abbr>supp</abbr></unclear>
+                    <date when="1819-05-03" type="writing">3. Mag 1819 </date>
+                    <unclear>SS88<pc type="dot">.</pc></unclear> <!-- Lo inserisco nel front in quanto SS88 potrebbe essere un'indicazione del luogo in cui è stata scritta/spedita la supplica-->
+                </mentioned>
+            </ab>
+        </div>
+    </text>
+    <back>
+        <list type="terminology">                  
+            <!-- composizione -->
+            <label>
+                <term subtype="music-term" xml:lang="it" xml:id="composizione" key="">Composizione</term>
+            </label>
+            <item>
+                <gloss xml:lang="it" target="#composizione">
+                    Processo creativo che concepisce un'opera d'arte e il prodotto stesso dell'atto
+                </gloss>
+            </item>
+            <!-- commorare -->
+            <label>
+                <term xml:lang="it" xml:id="commorare" key="">Commorare</term>
+            </label>
+            <item>
+                <gloss xml:lang="it" target="#commorare">
+                    Dimorare insieme
+                </gloss>
+            </item>
+            <!-- genere sacro -->
+            <label>
+                <term xml:lang="it" xml:id="genere-sacro" key="">Genere sacro</term>
+            </label>
+            <item>
+                <gloss xml:lang="it" target="#genere-sacro">
+                    Musica associata a tematiche sacre e religiose
+                </gloss>
+            </item>
+            <!-- dramma -->
+            <label>
+                <term xml:lang="it" xml:id="dramma" key="">Dramma</term>
+            </label>
+            <item>
+                <gloss xml:lang="it" target="#dramma">
+                    Opera diretta a riprodurre una vicenda che si fondi e si sviluppi su elementi di conflitto particolarmente significativi
+                </gloss>
+            </item>
+        </list>
+        <div type="notes">
+            <note xml:id="LL1_1_note1" source="#Seminara2017" resp="#AC" ana="1">
+                <bibl>
+                    <citedRange unit="page" from="65">65</citedRange>
+                </bibl>
+                <p>
+                    <persName ref="#SN"><forename>Stefano </forename> <surname>Notarbartolo</surname>, <roleName type="honorific">duca di <placeName>Sammartino</placeName></roleName></persName>, nel <date when="1818">1818</date> era stato nominato <roleName type="honorific">Intendente del Valle di <placeName ref="#CT">Catania</placeName></roleName><pc type="dot">.</pc>
+                </p>
+            </note>
+            <note xml:id="LL1_1_note2" source="#Seminara2017" resp="#AC" ana="2">
+                <bibl>
+                    <citedRange unit="page" from="65">65</citedRange>
+                </bibl>
+                <p>
+                    La Supplica<pc type="comma">,</pc> in bella scrittura<pc type="comma">,</pc> 
+                    non è di mano di <persName><surname>Bellini</surname></persName><pc type="comma">,</pc> 
+                    che appose solo la firma <pc type="dot">.</pc> 
+                    Nella prima facciata del foglio è scritto da unaterza mano
+                    "Supp | <date when="1819-05-03">3<pc type="dot">.</pc> Mag 1819</date>"<ptr target="#LL1.1_hs_fr-01"/>.
+                </p>
+            </note>
+        </div>
+    </back>
+<TEI>

@@ -1,0 +1,71 @@
+<?xml version="1<pc type="dot">.</pc>0" encoding="utf-8"?>
+<!DOCTYPE text SYSTEM "tei_all.dtd" > <!-- qui collego una DTD esterna -->
+
+<!-- ESERCIZIO
+Marcare un testo plain text di circa 3000 caratteri a piacere<pc type="dot">.</pc>
+1 Inserire prologo XML
+2 marcare la struttura usando gli elementi fin qui descritti in particolare marcare tutti i paragrafi usando <p> e la struttura editoriale usando <div>
+3 verificare che sia ben formato con xmllint 
+4 salvare il file XML su github
+-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Prima lezione</title>
+                <author>Agnese Camici</author>
+                <respStmt>
+					<resp>Responsabilità di</resp>
+					<name> Agnese Camici</name>
+				</respStmt>
+            </titleStmt>
+		</fileDesc>
+	<teiHeader>
+	
+<text>
+        <head> Prima lezione </head>
+        <date when="2020-02-17" type="writing"> 17<pc type="dot">.</pc>02<pc type="dot">.</pc>20 </date>
+		<body xml:lang="it">
+    	<argomento> T<pc type="dot">.</pc>E<pc type="dot">.</pc>I<pc type="dot">.</pc> Text Encoding Initiative </argomento>
+            <p>Per l’esame faremo un progetto di codifica di testo<pc type="comma">,</pc> ci darà dei testi diversi culturali<pc type="comma">,</pc> 
+            codificheremo questi documenti complessi<pc type="comma">,</pc> non è detto in lingua italiana corrente<pc type="dot">.</pc></p> 
+            <p>Ci sarà un gruppo di documenti che si rifarà a delle cartoline<pc type="comma">,</pc> uno a delle lettere<pc type="comma">,</pc> 
+            uno a risorse pergamenacee medievali in latino<pc type="dot">.</pc> </p>
+            <p>Queste risorse saranno coordinate non solo dal prof ma da anche responsabilità più ampie e ci chiederanno di partecipare in progetti eventualmente<pc type="dot">.</pc></p>
+            <p>Le cartoline sono di un museo di <placeName>La Spezia</placeName><pc type="dot">.</pc> Le lettere sono in un italiano non corrente<pc type="dot">.</pc></p> 
+            <p>C’è un progetto coordinato dalla <persName><roleName><abbr>prof<pc type="dot">.</pc>sa</abbr></roleName><surname> Salvatori</surname></persName> che sta codificando un codice medievale e 
+            da cui potrebbero prendere delle risorse per codificare per l’esame<pc type="dot">.</pc></p>
+            <p>La <orgName>TEI</orgName> ha a disposizione una serie di moduli che noi utilizzeremo<pc type="comma">,</pc> tante modalità di codifica<pc type="comma">,</pc> 
+            non sarà possibile usarli tutti<pc type="comma">,</pc> alla fine del corso saremo in grado di decidere quale schema 
+            di codifica è adatto a quello che stiamo facendo<pc type="dot">.</pc></p>
+            <p>La codifica del testo è statica<pc type="comma">,</pc> noi ci applicheremo altre tecnologie per avere il documento 
+            digitalizzato per avere la lettura da parte di un uomo<pc type="dot">.</pc></p> 
+            <p>Codificheremo il testo e lo trasformeremo in una piccolissima applicazione web<pc type="dot">.</pc></p>
+            <p>All’interno del corso vedremo cos’è un documento XML<pc type="comma">,</pc> un’applicazione XML e 
+            come si scrivono gli schemi di una codifica XML<pc type="comma">,</pc> secondo W3C<pc type="dot">.</pc></p>
+            <p>La TEI è in pratica un’applicazione XML con <num>600</num> elementi che interagiscono tra loro<pc type="dot">.</pc></p> 
+            <p>Nel momento in cui decidiamo di codificare un fenomeno testuale dobbiamo decidere come 
+            far interagire gli elementi per rappresentare il fenomeno testuale<pc type="dot">.</pc> Dopodiché occorre scegliere 
+            come rappresentare il documento XML<pc type="comma">,</pc> la prima tecnologia per farlo è XSL e poi useremo dei fogli di stile XSL<pc type="dot">.</pc></p>
+            <p>Il progetto di esame è fatto di tre parti (codifica<pc type="comma">,</pc> foglio di stile<pc type="comma">,</pc> e applicazione web): codifica XML<pc type="comma">,</pc> 
+            scrittura di un foglio di stile e presentazione della nostra edizione digitale su una piccola applicazione web<pc type="dot">.</pc>
+                <ul>
+                    <li>Edizione diplomatica: più vicina possibile a quella originale</li>
+                    <li>Edizione interpretativa: meno vicina al documento originale al cui aggiungiamo una parziale interpretazione
+                        personale di alcuni fenomeni<pc type="comma">,</pc> come lo scioglimento delle abbreviazioni<pc type="comma">,</pc> attualizzare il testo<pc type="comma">,</pc> correggere degli errori…</li>
+                    <li>Edizioni critiche: avere a disposizione più documenti che veicolano lo stesso testo<pc type="comma">,</pc> eventualmente ci sono delle parti che cambiano<pc type="comma">,</pc> varianti</li>
+                </ul>
+            </p>
+            <p>Per rendere disponibile il patrimonio testuale che abbiamo a disposizione che la macchina da sola non sa ancora leggere in modo perfetto<pc type="comma">,</pc> 
+            se ci riferiamo a quelli di letteratura e storico-letterari<pc type="dot">.</pc></p>
+            <p>Abbiamo la necessità di digitalizzarli esplicitando le informazioni in qualche modo<pc type="dot">.</pc></p> 
+            <p>Per farlo occorre fare una transcodifica dei testi<pc type="comma">,</pc> dal mondo reale<pc type="comma">,</pc> a quello digitale<pc type="comma">,</pc> c’è bisogno di codificarli<pc type="dot">.</pc></p> 
+            <p>Questa necessità rende i testi leggibili dal calcolatore ed elaborabili da questo<pc type="dot">.</pc> Le informazioni<pc type="comma">,</pc> oltre che testuali<pc type="comma">,</pc> 
+            possono essere para-testuali o extra-testuali<pc type="comma">,</pc> come dire che un documento è una pergamena<pc type="dot">.</pc></p>
+		</body>
+</text>
+<!--
+    studente: Agnese Camici
+    matricola: 559788
+    corso: codifica di testi 19-20
+-->

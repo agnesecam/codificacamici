@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!-- This document contains data on Codifica di Testi.
+Filename: project.xml
+Author: Agnese Camici
+Date: 19.03.2020 -->
+
+<radice>
+    <figlio n="1">
+    </figlio>
+
+    <figlio n="2">
+    <figlio>
+</radice>
+
+
+<!--
+    studente: Agnese Camici
+    matricola: 559788
+    corso: codifica di testi 19-20
+-->

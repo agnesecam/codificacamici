@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE text SYSTEM "tei_all.dtd" > <!-- qui collego una DTD esterna -->
+
+<!--Esercizio: dobbiamo scrivere due documenti XML con la presenza di due gerarchie, 
+    il primo codificato in modo non corretto (utilizzando degli elementi sovrapposti e intrecciati) 
+    e il secondo introducendo gli elementi vuoti che vanno poi a risolvere il problema della gerarchia sovrapposta.-->
+
+<!-- VERSIONE CON GERARCHIE SOVRAPPOSTE -->
+
+<text>
+    <titolo> Esercizio con gerarchie sovrapposte </titolo>
+    <intestazione> File XML codificato non correttamente, elementi sovrapposti </intestazione>
+
+    <pagina n="1">
+        <div id="div1"> Qual è l'errore?
+            <p id="p1"> L'errore consiste nella sovrapposizione gerarchia anche in questo caso.</p>
+            <p id="p2"> Questo div è chiuso dopo l'ultimo p, e va bene, ma il tag pagina crea problemi.</p>
+    </pagina>
+    <pagina n="2"> 
+            <p id="p3"> Fine. </p>   
+        </div>
+    </pagina>
+<!-- Nell'esempio soprastante l'errore consiste nell'aver chiuso il tag </pagina> prima del tag </div> e dopo aver chiuso div prima di pagina-->
+</text>
+
+
+<!-- VALIDAZIONE 
+
+es_malformato.xml:17: parser error : Opening and ending tag mismatch: div line 14 and pagina
+    </pagina>
+             ^
+es_malformato.xml:20: parser error : Opening and ending tag mismatch: pagina line 18 and div
+        </div>
+              ^
+-->
+
+<!--
+    studente: Agnese Camici
+    matricola: 559788
+    corso: codifica di testi 19-20
+-->
