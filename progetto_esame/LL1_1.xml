@@ -4,8 +4,8 @@
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
-		<fileDesc>
-			<titleStmt>
+		<fileDesc>  <!-- descrizione bibliografica del digitale - OBBLIGATORIO -->
+			<titleStmt>   <!-- titolo autori e responsabilità -->
 				<title>Vincenzo Bellini a Stefano Notarbartolo, duca di Sammartino, in Catania, maggio 1819</title>
                 <author ref="#VB" role="composer">Vincenzo Bellini</author>
                 <respStmt>
@@ -19,8 +19,8 @@
                     <name ref="#GS">Graziella Seminara</name>
                 </respStmt>
             </titleStmt>
-
-            <editionStmt>
+            
+            <editionStmt>   <!-- info sull'edizione -->
                 <edition>Digital edition
                     <date when="2020-08"> August 2020 </date>
                 </edition>
@@ -33,27 +33,27 @@
                     <name ref="#AC">Agnese Camici</name>
                 </respStmt>
             </editionStmt>
-
-            <publicationStmt>
+            
+            <publicationStmt>   <!-- pubblicazione e distribuzione -->
 				<publisher>Fondazione Bellini</publisher>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
 				</availability>
 			</publicationStmt>
-
-            <sourceDesc>
+            
+            <sourceDesc>    <!-- descrizione bibliografica relativa alle fonti da cui il testo digitale è derivato -->
                 <bibl source="#Seminara2017" resp="#GS" ana="1">
                     <citedRange unit="page" from="65" to="66">65-66</citedRange>
 				</bibl>
-				<msDesc>
-					<msIdentifier>
+				<msDesc>    <!-- descrizione del manoscritto fisico -->
+					<msIdentifier>  <!-- obbligatorio in msDesc, può contenere l'idno e dove è conservata la lettera -->
 						<country>Italy</country>
 						<settlement>Catania</settlement>
 						<repository role="museum" ref="http://www.rism.info/typo3conf/ext/user_apachesolr/result.php?q=id:30003436" n="I-CATm">Museo Belliniano Catania</repository>
 						<idno type="inventory">LL1.1</idno>					
 						<altIdentifier><idno type="collocation">in esposizione Casa Natale, sala B, vetrina 2, ripiano 1, I</idno></altIdentifier>
 					</msIdentifier>
-                    <msContents>
+                    <msContents>    <!-- contenuto  del manoscritto -->
 						<msItem>
 							<author xml:lang="it" ref="#VB">Vincenzo Bellini</author>
 							<title type="uniform" xml:lang="it">
@@ -64,15 +64,15 @@
 							<textLang mainLang="it">italiano di inizio Ottocento</textLang>
 						</msItem>
 					</msContents>
-                    <physDesc>
+                    <physDesc>  <!-- descrizione del supporto fisico del manoscritto -->
                         <objectDesc>
                             <supportDesc>
                                 <support>
                                     <material>Carta sottile.</material>
                                     <watermark>
-                                        <p><hi facs="#LL1.1_hotspot_rv-01"/>Filigrana di forma circolare leggermente visibile raffigurante uno stemma, posizionata nella zona centrale del folio retro verso, visibile principalmente per metà, nella zona del folio non coperta da testo. 
-                                        La filigrana si espande per qualche centimetro attorno allo stemma. </p>
-                                        <p><hi facs="#LL1.1_hotspot_rv-02"/>Sulla diagonale che congiunge il centro del folio all'angolo in alto a sinistra nella filigrana è riconoscibile una lettera B maiuscola.</p>
+                                        <hi facs="#LL1.1_hotspot_rv-01"/>Filigrana di forma circolare leggermente visibile raffigurante uno stemma, posizionata nella zona centrale del folio retro verso, visibile principalmente per metà, nella zona del folio non coperta da testo. 
+                                        La filigrana si espande per qualche centimetro attorno allo stemma. 
+                                        <hi facs="#LL1.1_hotspot_rv-02"/>Sulla diagonale che congiunge il centro del folio all'angolo in alto a sinistra nella filigrana è riconoscibile una lettera B maiuscola.
                                     </watermark>
                                     <stamp>Non sono presenti tracce di francobolli né di timbri postali.</stamp>
                                     <p>Lettera in buone condizioni fisiche, composta da un solo folio suddiviso in tre facciate e piegato in più parti. La carta è sottile e di colore beige, con filigrana, l'inchiostro è marrone. Il testo della lettera è presente nella colonna destra di ogni facciata. Vi sono varie annotazioni non riconducibili a Bellini. </p>
@@ -99,11 +99,11 @@
                             <handNote xml:id="h2"><hi facs="#LL1.1_hotspot_rr-06"/>Vincenzo Bellini ha posto solamente la firma sul folio retro recto.<ptr target="#LL1_1_note2"/></handNote>
                             <handNote xml:id="h3"><hi facs="#LL1.1_hotspot_fr-01"/>Una terza mano ha annotato nel folio fronte recto: "Supp. | 3. Mag 1819".</handNote>
                             <handNote xml:id="h4"><hi facs="#LL1.1_hotspot_fr-03"/>Uno stesso catalogatore ha probabilmente scritto due annotazioni: un primo numero di catalogo (188) nell'angolo superiore destro del folio fronte recto;
-                                                     <hi facs="#LL1.1_hotspot_rr-07"/>e un secondo numero (189) nell'angolo superiore destro del folio retro recto.</handNote>
+                                                <hi facs="#LL1.1_hotspot_rr-07"/>e un secondo numero (189) nell'angolo superiore destro del folio retro recto.</handNote>
                             <handNote xml:id="h5"><hi facs="#LL1.1_hotspot_fr-02"/>Un'ultima mano ha annotato nell'angolo superiore sinistro del folio fronte recto una lettera (o forse due combinate) di colore blu scuro, apparentemente somigliante ad una "B" o ad una "R", ma osservandola più attentamente è possibile ricondurla alle iniziali "B" e "V" leggermente sovrapposte.</handNote>
                         </handDesc>
                     </physDesc>
-                    <additional>
+                    <additional> <!-- info aggiuntive bibliografiche -->
 						<adminInfo>
 							<note>	
 								All'interno del carteggio belliniano (LL), la segnatura LL1.1 identifica la prima missiva in ordine cronologico del primo sottogruppo, che corrisponde alle lettere scritte da Vincenzo Bellini.			
@@ -114,9 +114,9 @@
 			</sourceDesc>
 		</fileDesc>
 
-        <profileDesc>
-            <correspDesc>
-                <correspAction type="sent">
+        <profileDesc>   <!-- descrizione degli aspetti non bibliografici, in particolare della lingua usata e dei sublinguaggi, il contesto in cui è stato prodotto il testo, e i protagonisti/partecipanti - FACOLTATIVO -->
+            <correspDesc>   <!-- descrizione azioni legate alla corrispondenza -->
+                <correspAction type="sent">   <!-- descrizione strutturata del mittente e destinatario della corrispondenza, dei luoghi di invio/ricezione e delle date di queste -->
                     <persName ref="#VB" role="composer">Vincenzo Bellini</persName>
                     <placeName ref="#CT" type="postmark">Catania</placeName>
                     <date when="1819-05" cert="high" resp="#GS" type="writing">maggio 1819</date>					
@@ -126,12 +126,12 @@
                     <placeName ref="#CT"> Catania</placeName>
                     <date>unknown</date>
                 </correspAction >
-                <correspContext>
+                <correspContext>    <!-- info su scambi di lettere precedenti o successive -->
                     <p>Non è presente un contesto di riferimento</p>
                 </correspContext>
             </correspDesc>
 
-            <textClass>
+            <textClass>     <!-- natura o argomento del testo -->
                 <keywords scheme="http://thes.bncf.firenze.sbn.it">
                     <term resp="#GS">lettera</term>
                 </keywords>
@@ -266,16 +266,16 @@
         </surface>
     </facsimile>
 
-
+            
     <text type="letter" xml:id="LL1.1" subtype="manuscript" n="LL1.1">
-        <front> 
+        <front>  <!-- intestazioni, frontespizio, prefazioni, dediche, etc.) -->
             <!-- FRONTE RECTO FACCIATA 1 --> 
             <pb n="1front" xml:id="LL1.1_fr_front" facs="#LL1.1_fronte_recto"/>
 
             <div type="sent">
                 <!-- Data -->
                 <ab hand="#h3" xml:id="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> <!-- annotazione data e "sup." -->
-                    <mentioned>
+                    <mentioned>   <!-- mentioned si usa per parole riportate/citate ma non usate - forse devi sistemarlo -->
                         <unclear><abbr>supp</abbr></unclear>
                         <date when="1819-05-03" type="writing">3. Mag 1819 </date>
                         <unclear>SS88<pc type="dot">.</pc></unclear> <!-- Lo inserisco nel front in quanto SS88 potrebbe essere un'indicazione del luogo in cui è stata scritta/spedita la supplica-->
@@ -313,14 +313,13 @@
             <div type="fronte-recto"> prima del <div type="letter-body">, che invece andava 
             aperto dopo l'ipotetivo <div type="fronte-recto">
             --> 
-
-           
+            
             <ab><add type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03"> 188 </add></ab> <!-- annotazione catalogatore 188 -->
 
             <!-- INDICAZIONI SPEDIZIONE E DESTINATARIO -->
             <div type="sent" hand="#h1">
                 <ab hand="#h3" copyOf="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> <!-- annotazione data e "sup." -->
-                    <mentioned>
+                    <mentioned> <!-- mentioned si usa per parole riportate/citate ma non usate - forse devi sistemarlo -->
                         <unclear><abbr>supp</abbr></unclear>
                         <date when="1819-05-03" type="writing">3. Mag 1819</date>
                         <unclear>SS88<pc type="dot">.</pc></unclear>
@@ -330,13 +329,13 @@
             <div xml:id="info_dest" type="destination" hand="#h1"> 
                 <ab type="receiver" rend="align(right)">
                     <address copyOf="LL1.1_hs_fr-04" facs="#LL1.1_hotspot_fr-04"> <!-- destinatario -->
-                        <addrLine>
-                                <lb copyOf="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
-                                <persName ref="#SN">
-                                    <roleName type="honorific" full="abb">S.E. </roleName><choice xml:id="choice5"><abbr>Sig. </abbr><expan resp="#AC">Signor </expan></choice> <roleName type="honorific">Duca Sammar
-                                    <lb copyOf="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice xml:id="choice4"><abbr>Prov<pc type="dot">.</pc><add place="above">a</add></abbr><expan resp="#AC">Provincia</expan></choice> di
-                                    <lb copyOf="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="#CT"><hi rend="double">Catania</hi></placeName></roleName>
-                                </persName>
+                        <addrLine>  <!-- stesse info di riga 290 codice front -->
+                            <lb copyOf="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
+                            <persName ref="#SN">
+                                <roleName type="honorific" full="abb">S.E. </roleName><choice xml:id="choice5"><abbr>Sig. </abbr><expan resp="#AC">Signor </expan></choice> <roleName type="honorific">Duca Sammar
+                                <lb copyOf="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice xml:id="choice4"><abbr>Prov<pc type="dot">.</pc><add place="above">a</add></abbr><expan resp="#AC">Provincia</expan></choice> di
+                                <lb copyOf="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="#CT"><hi rend="double">Catania</hi></placeName></roleName>
+                            </persName>
                         </addrLine>
                     </address>
                 </ab>
@@ -539,7 +538,7 @@
             <!-- Note -->
             <div type="notes">
                 <div type="ann_notes">
-      <!-- 1 -->    <note xml:id="LL1_1_note1" source="#Seminara2017" resp="#AC" ana="1">
+        <!-- 1 -->  <note xml:id="LL1_1_note1" source="#Seminara2017" resp="#AC" ana="1">
                         <bibl>
                             <citedRange unit="page" from="65">65</citedRange>
                         </bibl>
@@ -547,7 +546,7 @@
                             <persName ref="#SN"><forename>Stefano </forename> <surname>Notarbartolo</surname>, <roleName type="honorific">duca di <placeName>Sammartino</placeName></roleName></persName>, nel <date when="1818">1818</date> era stato nominato <roleName type="honorific">Intendente del Valle di <placeName ref="#CT">Catania</placeName></roleName><pc type="dot">.</pc>
                         </p>
                     </note>
-      <!-- 2 -->    <note xml:id="LL1_1_note2" source="#Seminara2017" resp="#AC" ana="2">
+        <!-- 2 -->  <note xml:id="LL1_1_note2" source="#Seminara2017" resp="#AC" ana="2">
                         <bibl>
                             <citedRange unit="page" from="65">65</citedRange>
                         </bibl>
@@ -555,11 +554,11 @@
                             La Supplica<pc type="comma">,</pc> in bella scrittura<pc type="comma">,</pc> 
                             non è di mano di <persName ref="#VB"><surname>Bellini</surname></persName><pc type="comma">,</pc> 
                             che appose solo la <hi facs="#LL1.1_hotspot_rr-02">firma</hi><pc type="dot">.</pc> 
-                            Nella prima <hi facs="#LL1.1_fronte_recto">facciata</hi> del foglio è scritto da una <hi ref="#h3">terza mano</hi> 
+                            Nella prima <hi facs="#LL1.1_fronte_recto">facciata</hi> del foglio è scritto da una terza mano
                             <hi facs="#LL1.1_hotspot_fr-01"> "Supp | <date when="1819-05-03">3<pc type="dot">.</pc> Mag 1819</date>"</hi><ptr target="#LL1.1_hs_fr-01"/>.
                         </p>
                     </note>
-      <!-- 3 -->    <note xml:id="LL1_1_note3" source="#Seminara2017" resp="#AC" ana="3">
+        <!-- 3 -->  <note xml:id="LL1_1_note3" source="#Seminara2017" resp="#AC" ana="3">
                         <bibl>
                             <citedRange unit="page" from="65">65</citedRange>
                         </bibl>
@@ -571,7 +570,7 @@
                             documento, ripiegato in tre parti.
                         </p>
                     </note>
-      <!-- 4 -->    <note xml:id="LL1_1_note4" source="#Seminara2017" resp="#AC" ana="4">
+        <!-- 4 -->  <note xml:id="LL1_1_note4" source="#Seminara2017" resp="#AC" ana="4">
                         <bibl>
                             <citedRange unit="page" from="65">65</citedRange>
                         </bibl>
@@ -584,7 +583,7 @@
                             <persName><forename>Carmelo</forename></persName> e <persName><forename>Mario</forename></persName><pc type="comma">,</pc> anche <persName ref="#RB"><forename>Rosario</forename> <surname> Bellini</surname></persName> operò a <placeName ref="#CT">Catania</placeName> come musicista e si dedicò prevalentemente al <term subtype="music-term" ref="#genere-sacro">genere sacro</term><pc type="dot">.</pc>
                         </p>
                     </note>
-      <!-- 5 -->    <note xml:id="LL1_1_note5" source="#Seminara2017" resp="#AC" ana="5">
+        <!-- 5 -->  <note xml:id="LL1_1_note5" source="#Seminara2017" resp="#AC" ana="5">
                         <bibl>
                             <citedRange unit="page" from="65">65</citedRange>
                         </bibl>
@@ -602,7 +601,7 @@
                             stabilmente al servizio di <persName ref="#IPC"><forename>Ignazio </forename> <surname>Paternò </surname> <surname>Castello</surname><pc type="comma">,</pc> <genName> V </genName> <roleName>principe di <placeName>Biscari</placeName></roleName></persName><pc type="dot">.</pc>
                         </p>
                     </note>
-      <!-- 6 -->    <note xml:id="LL1_1_note6" source="#Seminara2017" resp="#AC" ana="6">
+        <!-- 6 -->  <note xml:id="LL1_1_note6" source="#Seminara2017" resp="#AC" ana="6">
                         <bibl>
                             <citedRange unit="page" from="65">65</citedRange>
                         </bibl>
@@ -773,7 +772,7 @@
 
                     <!-- Ignazio Paternò Castello, V principe di Biscari -->
                     <person xml:id="IPC" sameAs="http://viaf.org/viaf/208235133"> 
-          	            <persName> 
+                        <persName> 
                             <ref target="https://it.wikipedia.org/wiki/Ignazio_Patern%C3%B2_Castello http://www.treccani.it/enciclopedia/ignazio-paterno-castello-principe-di-biscari_%28Dizionario-Biografico%29/"/>
                             <forename>Ignazio</forename>
                             <surname>Paternò</surname>
@@ -806,7 +805,7 @@
 
                     <!-- Agnese Camici -->
                     <person xml:id="AC"> 
-          	            <persName> 
+                        <persName> 
                             <forename>Agnese</forename>
                             <surname>Camici</surname>
                         </persName>
@@ -823,7 +822,7 @@
 
                     <!-- Angelo Mario Del Grosso -->
                     <person xml:id="AMDG" sameAs="https://viaf.org/viaf/323148207835400342025"> 
-          	            <persName> 
+                        <persName> 
                             <forename>Angelo</forename>
                             <forename>Mario</forename>
                             <surname>Del Grosso</surname>
@@ -842,7 +841,7 @@
 
                     <!-- Daria Spampinato -->
                     <person xml:id="DS"> 
-          	            <persName> 
+                        <persName> 
                             <forename>Daria</forename>
                             <surname>Spampinato</surname>
                         </persName>
@@ -855,7 +854,7 @@
 
                     <!-- Erica Capizzi -->
                     <person xml:id="EC"> 
-          	            <persName> 
+                        <persName> 
                             <forename>Erica</forename>
                             <surname>Capizzi</surname>
                         </persName>
@@ -868,7 +867,7 @@
 
                     <!-- Graziella Seminara -->
                     <person xml:id="GS" sameAs="https://viaf.org/viaf/37139452/"> 
-          	            <persName> 
+                        <persName> 
                             <forename>Graziella</forename>
                             <surname>Seminara</surname>
                         </persName>
@@ -910,7 +909,7 @@
 
                     <!-- Luisa Cambi -->
                     <person xml:id="LC" sameAs="https://viaf.org/viaf/2582281/"> 
-          	            <persName> 
+                        <persName> 
                             <forename>Luisa</forename>
                             <surname>Cambi</surname>
                         </persName>
@@ -923,7 +922,7 @@
 
                     <!-- Carmelo Neri -->
                     <person xml:id="CN" sameAs="https://viaf.org/viaf/76540365/"> 
-          	            <persName> 
+                        <persName> 
                             <forename>Carmelo</forename>
                             <surname>Neri</surname>
                         </persName>
@@ -933,7 +932,7 @@
                             <placeName type="unknown"/>      
                         </birth>
                     </person>
-                  
+                    
                     <!-- Carmelo Bellini (fratello)-->
                     <person xml:id="CB" sameAs="https://viaf.org/viaf/286152742936827732115"> 
 						<persName> 
@@ -1086,7 +1085,7 @@
 
                     <!-- Michela Burzì -->
                     <person xml:id="MBu"> 
-          	            <persName> 
+                        <persName> 
                             <forename>Michela</forename>
                             <surname>Burzì</surname>
                         </persName>
@@ -1162,7 +1161,7 @@
                         <country key="IT">Italia</country>
                         <note></note>
                     </place>
-                  
+                        
                     <!-- Porta Capuana-->
                     <place xml:id="PortaCapuana">
                         <placeName ref="https://www.geonames.org/8015174/">Porta Capuana</placeName>
@@ -1190,7 +1189,7 @@
                 <list type="terminology">                  
                     <!-- composizione -->
                     <label>
-                    	<term subtype="music-term" xml:lang="it" xml:id="composizione" key="">Composizione</term>
+                        <term subtype="music-term" xml:lang="it" xml:id="composizione" key="">Composizione</term>
 					</label>
 					<item>
 						<gloss xml:lang="it" target="#composizione">
@@ -1199,7 +1198,7 @@
 					</item>
                     <!-- commorare -->
                     <label>
-                    	<term xml:lang="it" xml:id="commorare" key="">Commorare</term>
+                        <term xml:lang="it" xml:id="commorare" key="">Commorare</term>
 					</label>
 					<item>
 						<gloss xml:lang="it" target="#commorare">
@@ -1208,7 +1207,7 @@
 					</item>
                     <!-- genere sacro -->
                     <label>
-                    	<term xml:lang="it" xml:id="genere-sacro" key="">Genere sacro</term>
+                        <term xml:lang="it" xml:id="genere-sacro" key="">Genere sacro</term>
 					</label>
 					<item>
 						<gloss xml:lang="it" target="#genere-sacro">
@@ -1217,7 +1216,7 @@
 					</item>
                     <!-- dramma -->
                     <label>
-                    	<term xml:lang="it" xml:id="dramma" key="">Dramma</term>
+                        <term xml:lang="it" xml:id="dramma" key="">Dramma</term>
 					</label>
 					<item>
 						<gloss xml:lang="it" target="#dramma">
@@ -1226,7 +1225,7 @@
 					</item>
                     <!-- oratorio -->
                     <label>
-                    	<term xml:lang="it" xml:id="oratorio" key="">Oratorio</term>
+                        <term xml:lang="it" xml:id="oratorio" key="">Oratorio</term>
 					</label>
 					<item>
 						<gloss xml:lang="it" target="#oratorio">
@@ -1235,7 +1234,7 @@
 					</item>
                     <!-- maestro di cappella -->
                     <label>
-                    	<term xml:lang="it" xml:id="maestro-di-cappella" key="">Maestro di cappella</term>
+                        <term xml:lang="it" xml:id="maestro-di-cappella" key="">Maestro di cappella</term>
 					</label>
 					<item>
 						<gloss xml:lang="it" target="#maestro-di-cappella">
@@ -1244,7 +1243,7 @@
 					</item>
                     <!-- compositore -->
                     <label>
-                    	<term xml:lang="it" xml:id="compositore" key="">Compositore</term>
+                        <term xml:lang="it" xml:id="compositore" key="">Compositore</term>
 					</label>
 					<item>
 						<gloss xml:lang="it" target="#compositore">
@@ -1253,7 +1252,7 @@
 					</item>
                     <!-- spartito -->
                     <label>
-                    	<term xml:lang="it" xml:id="spartito" key="">Spartito</term>
+                        <term xml:lang="it" xml:id="spartito" key="">Spartito</term>
 					</label>
 					<item>
 						<gloss xml:lang="it" target="#spartito">
@@ -1262,7 +1261,7 @@
 					</item>
                     <!-- direttore -->
                     <label>
-                    	<term xml:lang="it" xml:id="direttore" key="">Direttore</term>
+                        <term xml:lang="it" xml:id="direttore" key="">Direttore</term>
 					</label>
 					<item>
 						<gloss xml:lang="it" target="#direttore">
