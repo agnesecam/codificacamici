@@ -42,7 +42,7 @@
                             <!--publicationStmt-->
                             <div class="nascoste">
                                 <h2 class="titolo-sezione">Pubblicazione</h2>
-                                <div style='font-size: 13px' class="contenuto-sezioni">
+                                <div style='font-size: 9px' class="contenuto-sezioni">
                                     <xsl:apply-templates select="//tei:publicationStmt" />
                                     <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>                                 
                                 </div>
