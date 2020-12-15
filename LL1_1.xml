@@ -1,0 +1,1344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI SYSTEM "tei-all.dtd">
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>  <!-- descrizione bibliografica del digitale - OBBLIGATORIO -->
+			<titleStmt>   <!-- titolo autori e responsabilità -->
+				<title>Vincenzo Bellini a Stefano Notarbartolo, duca di Sammartino, in Catania, maggio 1819</title>
+                <author ref="#VB" role="composer">Vincenzo Bellini</author>
+                <respStmt>
+					<resp>Responsabilità di</resp>
+					<name ref="#AMDG">Angelo Mario Del Grosso</name>
+					<name ref="#DS">Daria Spampinato</name>
+					<name ref="#EC">Erica Capizzi</name>
+				</respStmt>
+                <respStmt>
+                    <resp>Responsabile della trascrizione:</resp>
+                    <name ref="#GS">Graziella Seminara</name>
+                </respStmt>
+            </titleStmt>
+            
+            <editionStmt>   <!-- info sull'edizione -->
+                <edition>Digital edition
+                    <date when="2020-08"> December 2020 </date>
+                </edition>
+                <respStmt>
+					<resp>Digital edition project coordinated by</resp>
+					<name ref="#AC">Agnese Camici</name>
+				</respStmt>
+                <respStmt>
+                    <resp>Encoding by</resp>
+                    <name ref="#AC">Agnese Camici</name>
+                </respStmt>
+            </editionStmt>
+            
+            <publicationStmt>   <!-- pubblicazione e distribuzione -->
+				<publisher>Fondazione Bellini</publisher>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+				</availability>
+			</publicationStmt>
+            
+            <sourceDesc>    <!-- descrizione bibliografica relativa alle fonti da cui il testo digitale è derivato -->
+                <bibl source="#Seminara2017" resp="#GS" ana="1">
+                    <citedRange unit="page" from="65" to="66">65-66</citedRange>
+				</bibl>
+				<msDesc>    <!-- descrizione del manoscritto fisico -->
+					<msIdentifier>  <!-- obbligatorio in msDesc, può contenere l'idno e dove è conservata la lettera -->
+						<country>Italy</country>
+						<settlement>Catania</settlement>
+						<repository role="museum" ref="http://www.rism.info/typo3conf/ext/user_apachesolr/result.php?q=id:30003436" n="I-CATm">Museo Belliniano Catania</repository>
+						<idno type="inventory">LL1.1</idno>					
+						<altIdentifier><idno type="collocation">in esposizione Casa Natale, sala B, vetrina 2, ripiano 1, I</idno></altIdentifier>
+					</msIdentifier>
+                    <msContents>    <!-- contenuto  del manoscritto -->
+						<msItem>
+							<author xml:lang="it" ref="#VB">Vincenzo Bellini</author>
+							<title type="uniform" xml:lang="it">
+								<persName ref="#VB" role="composer">Vincenzo Bellini</persName> a								
+								<persName ref="#SN">Stefano Notarbartolo</persName>,							
+								<date when="1819-05-03">03 maggio 1819</date>
+							</title>
+							<textLang mainLang="it">italiano di inizio Ottocento</textLang>
+						</msItem>
+					</msContents>
+                    <physDesc>  <!-- descrizione del supporto fisico del manoscritto -->
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material>Carta sottile.</material>
+                                    <watermark>
+                                        <hi facs="#LL1.1_hotspot_rv-01"/>Filigrana di forma circolare leggermente visibile raffigurante uno stemma, posizionata nella zona centrale del folio retro verso, visibile principalmente per metà, nella zona del folio non coperta da testo. 
+                                        La filigrana si espande per qualche centimetro attorno allo stemma. 
+                                        <hi facs="#LL1.1_hotspot_rv-02"/>Sulla diagonale che congiunge il centro del folio all'angolo in alto a sinistra nella filigrana è riconoscibile una lettera B maiuscola.
+                                    </watermark>
+                                    <stamp>Non sono presenti tracce di francobolli né di timbri postali.</stamp>
+                                    <p>Lettera in buone condizioni fisiche, composta da un solo folio suddiviso in tre facciate e piegato in più parti. La carta è sottile e di colore beige, con filigrana, l'inchiostro è marrone. Il testo della lettera è presente nella colonna destra di ogni facciata. Vi sono varie annotazioni non riconducibili a Bellini. </p>
+                                    <p><hi facs="#LL1.1_hotspot_rr-05"/>La lettera presenta due lacerazioni, la prima  nell'angolo superiore destro del fronte, la seconda  in quello inferiore. I bordi sono tutti leggermente frastagliati a causa dell'invecchiamento. </p>
+                                    <p>Varie grandi macchie marroni sono presenti sia sul fronte che sul retro del folio, probabilmente anch'esse dovute all'invecchiamento del supporto materiale.</p>
+                                </support>
+                                <extent>
+									<measure type="folio">1</measure>				
+									<dimensions unit="mm">
+										<height>302</height>
+										<width>213</width>
+									</dimensions>
+								</extent>
+								<foliation>
+                                Il folio sembra essere stato piegato 3 volte, risulta infatti una divisione simmetrica in 8 sezioni di pari dimensione, ogni facciata viene così divisa in 4 sezioni rettangolari.
+                                </foliation>
+                                <condition>
+                                    <p>Lettera in buone condizioni fisiche.</p> 
+                                </condition>
+                            </supportDesc>
+                        </objectDesc>
+                        <handDesc hands="5">                       
+                            <handNote xml:id="h1">Una prima mano ha scritto il corpo della supplica, in bella grafia, su una colonna per foglio. </handNote> 
+                            <handNote xml:id="h2"><hi facs="#LL1.1_hotspot_rr-06"/>Vincenzo Bellini ha posto solamente la firma sul folio retro recto.<ptr target="#LL1_1_note2"/></handNote>
+                            <handNote xml:id="h3"><hi facs="#LL1.1_hotspot_fr-01"/>Una terza mano ha annotato nel folio fronte recto: "Supp. | 3. Mag 1819".</handNote>
+                            <handNote xml:id="h4"><hi facs="#LL1.1_hotspot_fr-03"/>Uno stesso catalogatore ha probabilmente scritto due annotazioni: un primo numero di catalogo (188) nell'angolo superiore destro del folio fronte recto;
+                                                <hi facs="#LL1.1_hotspot_rr-07"/>e un secondo numero (189) nell'angolo superiore destro del folio retro recto.</handNote>
+                            <handNote xml:id="h5"><hi facs="#LL1.1_hotspot_fr-02"/>Un'ultima mano ha annotato nell'angolo superiore sinistro del folio fronte recto una lettera (o forse due combinate) di colore blu scuro, apparentemente somigliante ad una "B" o ad una "R", ma osservandola più attentamente è possibile ricondurla alle iniziali "B" e "V" leggermente sovrapposte.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <additional> <!-- info aggiuntive bibliografiche -->
+						<adminInfo>
+							<note>	
+								All'interno del carteggio belliniano (LL), la segnatura LL1.1 identifica la prima missiva in ordine cronologico del primo sottogruppo, che corrisponde alle lettere scritte da Vincenzo Bellini.			
+							</note>
+						</adminInfo>
+					</additional>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+
+        <profileDesc>   <!-- descrizione degli aspetti non bibliografici, in particolare della lingua usata e dei sublinguaggi, il contesto in cui è stato prodotto il testo, e i protagonisti/partecipanti - FACOLTATIVO -->
+            <correspDesc>   <!-- descrizione azioni legate alla corrispondenza -->
+                <correspAction type="sent">   <!-- descrizione strutturata del mittente e destinatario della corrispondenza, dei luoghi di invio/ricezione e delle date di queste -->
+                    <persName ref="#VB" role="composer">Vincenzo Bellini</persName>
+                    <placeName ref="#CT" type="postmark">Catania</placeName>
+                    <date when="1819-05" cert="high" resp="#GS" type="writing">maggio 1819</date>					
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#SN">Stefano Notarbartolo, duca di <placeName>Sammartino</placeName></persName>
+                    <placeName ref="#CT"> Catania</placeName>
+                    <date>unknown</date>
+                </correspAction >
+                <correspContext>    <!-- info su scambi di lettere precedenti o successive -->
+                    <p>Non è presente un contesto di riferimento</p>
+                </correspContext>
+            </correspDesc>
+
+            <textClass>     <!-- natura o argomento del testo -->
+                <keywords scheme="http://thes.bncf.firenze.sbn.it">
+                    <term resp="#GS">lettera</term>
+                </keywords>
+            </textClass>
+
+            <langUsage>
+                <language ident="it">Italiano di inizio Ottocento</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+
+
+    <facsimile>
+        <!-- FRONTE RECTO FACCIATA 1 -->
+        <surface n="1" xml:id="LL1.1_fronte_recto">
+            <graphic url='LL1.1_fronte_recto.jpg' width='723px' height='1019px' />
+            <!-- Righe corpo lettera -->
+            <zone ulx="326" uly="32" lrx="587" lry="92"  rendition="Line" xml:id="LL1.1_line_fr-01"/>
+            <zone ulx="333" uly="94" lrx="703" lry="146" rendition="Line" xml:id="LL1.1_line_fr-02"/>
+            <zone ulx="333" uly="151" lrx="696" lry="176" rendition="Line" xml:id="LL1.1_line_fr-03"/>
+            <zone ulx="335" uly="184" lrx="705" lry="203" rendition="Line" xml:id="LL1.1_line_fr-04"/>
+            <zone ulx="348" uly="215" lrx="717" lry="237" rendition="Line" xml:id="LL1.1_line_fr-05"/>
+            <zone ulx="359" uly="248" lrx="716" lry="273" rendition="Line" xml:id="LL1.1_line_fr-06"/>
+            <zone ulx="361" uly="283" lrx="708" lry="296" rendition="Line" xml:id="LL1.1_line_fr-07"/>
+            <zone ulx="365" uly="314" lrx="706" lry="342" rendition="Line" xml:id="LL1.1_line_fr-08"/>
+            <zone ulx="359" uly="354" lrx="700" lry="376" rendition="Line" xml:id="LL1.1_line_fr-09"/>
+            <zone ulx="358" uly="384" lrx="711" lry="408" rendition="Line" xml:id="LL1.1_line_fr-10"/>
+            <zone ulx="362" uly="423" lrx="714" lry="442" rendition="Line" xml:id="LL1.1_line_fr-11"/>
+            <zone ulx="367" uly="458" lrx="708" lry="484" rendition="Line" xml:id="LL1.1_line_fr-12"/>
+            <zone ulx="314" uly="489" lrx="711" lry="516" rendition="Line" xml:id="LL1.1_line_fr-13"/>
+            <zone ulx="346" uly="523" lrx="719" lry="549" rendition="Line" xml:id="LL1.1_line_fr-14"/>
+            <zone ulx="352" uly="563" lrx="711" lry="581" rendition="Line" xml:id="LL1.1_line_fr-15"/>
+            <zone ulx="356" uly="592" lrx="716" lry="610" rendition="Line" xml:id="LL1.1_line_fr-16"/>
+            <zone ulx="360" uly="623" lrx="711" lry="644" rendition="Line" xml:id="LL1.1_line_fr-17"/>
+            <zone ulx="357" uly="662" lrx="714" lry="684" rendition="Line" xml:id="LL1.1_line_fr-18"/>
+            <zone ulx="361" uly="698" lrx="709" lry="717" rendition="Line" xml:id="LL1.1_line_fr-19"/>
+            <zone ulx="359" uly="732" lrx="706" lry="752" rendition="Line" xml:id="LL1.1_line_fr-20"/>
+            <zone ulx="350" uly="765" lrx="717" lry="779" rendition="Line" xml:id="LL1.1_line_fr-21"/>
+            <zone ulx="360" uly="799" lrx="709" lry="812" rendition="Line" xml:id="LL1.1_line_fr-22"/>
+            <zone ulx="360" uly="825" lrx="711" lry="855" rendition="Line" xml:id="LL1.1_line_fr-23"/>
+            <zone ulx="366" uly="866" lrx="717" lry="894" rendition="Line" xml:id="LL1.1_line_fr-24"/>
+            <zone ulx="359" uly="912" lrx="712" lry="932" rendition="Line" xml:id="LL1.1_line_fr-25"/>
+            <zone ulx="358" uly="942" lrx="721" lry="974" rendition="Line" xml:id="LL1.1_line_fr-26"/>
+            <!-- Annotazione Supp. 3 Mag 1819 -->
+            <zone ulx="147" uly="297" lrx="283" lry="405"  rendition="HotSpot" xml:id="LL1.1_hotspot_fr-01"/>
+            <!-- Annotazione catalogo lettera B -->
+            <zone ulx="96" uly="31" lrx="128" lry="58" rendition="HotSpot" xml:id="LL1.1_hotspot_fr-02" />
+            <!-- Annotazione catalogo 188 -->
+            <zone ulx="614" uly="25" lrx="675" lry="53"  rendition="HotSpot" xml:id="LL1.1_hotspot_fr-03"/>
+            <!-- Indirizzo del destinatario -->
+            <zone ulx="31" uly="819" lrx="346" lry="1002" rendition="HotSpot" xml:id="LL1.1_hotspot_fr-04"/>
+            <!-- Prima riga indirizzo destinatario -->
+            <zone ulx="56" uly="830" lrx="352" lry="874" rendition="HotSpot" xml:id="LL1.1_hotspot_fr-05"/>
+            <!-- Seconda riga indirizzo destinatario -->
+            <zone ulx="56" uly="884" lrx="351" lry="909" rendition="HotSpot" xml:id="LL1.1_hotspot_fr-06"/>
+            <!-- Catania -->
+            <zone ulx="117" uly="929" lrx="302" lry="993" rendition="HotSpot" xml:id="LL1.1_hotspot_fr-07"/>
+        </surface>
+
+        <!-- RETRO VERSO FACCIATA 2 -->
+        <surface n="2" xml:id="LL1.1_retro_verso">
+            <graphic url='LL1.1_retro_verso.jpg' width='723px' height='1011px' />
+            <!-- Righe contenuto lettera -->
+            <zone ulx="357" uly="37" lrx="711" lry="88" rendition="Line" xml:id="LL1.1_line_rv-01"/>
+            <zone ulx="349" uly="94" lrx="709" lry="118" rendition="Line" xml:id="LL1.1_line_rv-02"/>
+            <zone ulx="352" uly="122" lrx="710" lry="149" rendition="Line" xml:id="LL1.1_line_rv-03"/>
+            <zone ulx="356" uly="154" lrx="711" lry="186" rendition="Line" xml:id="LL1.1_line_rv-04"/>
+            <zone ulx="352" uly="190" lrx="712" lry="219" rendition="Line" xml:id="LL1.1_line_rv-05"/>
+            <zone ulx="348" uly="227" lrx="706" lry="254" rendition="Line" xml:id="LL1.1_line_rv-06"/>
+            <zone ulx="348" uly="261" lrx="706" lry="282" rendition="Line" xml:id="LL1.1_line_rv-07"/>
+            <zone ulx="350" uly="290" lrx="700" lry="312" rendition="Line" xml:id="LL1.1_line_rv-08"/>
+            <zone ulx="355" uly="319" lrx="709" lry="344" rendition="Line" xml:id="LL1.1_line_rv-09"/>
+            <zone ulx="349" uly="346" lrx="713" lry="377" rendition="Line" xml:id="LL1.1_line_rv-10"/>
+            <zone ulx="353" uly="383" lrx="713" lry="414" rendition="Line" xml:id="LL1.1_line_rv-11"/>
+            <zone ulx="353" uly="416" lrx="707" lry="439" rendition="Line" xml:id="LL1.1_line_rv-12"/>
+            <zone ulx="355" uly="450" lrx="714" lry="471" rendition="Line" xml:id="LL1.1_line_rv-13"/>
+            <zone ulx="350" uly="484" lrx="714" lry="512" rendition="Line" xml:id="LL1.1_line_rv-14"/>
+            <zone ulx="353" uly="518" lrx="707" lry="550" rendition="Line" xml:id="LL1.1_line_rv-15"/>
+            <zone ulx="354" uly="560" lrx="709" lry="586" rendition="Line" xml:id="LL1.1_line_rv-16"/>
+            <zone ulx="354" uly="594" lrx="709" lry="616" rendition="Line" xml:id="LL1.1_line_rv-17"/>
+            <zone ulx="359" uly="631" lrx="711" lry="658" rendition="Line" xml:id="LL1.1_line_rv-18"/>
+            <zone ulx="353" uly="666" lrx="717" lry="697" rendition="Line" xml:id="LL1.1_line_rv-19"/>
+            <zone ulx="355" uly="705" lrx="714" lry="730" rendition="Line" xml:id="LL1.1_line_rv-20"/>
+            <zone ulx="358" uly="736" lrx="716" lry="768" rendition="Line" xml:id="LL1.1_line_rv-21"/>
+            <zone ulx="357" uly="771" lrx="710" lry="796" rendition="Line" xml:id="LL1.1_line_rv-22"/>
+            <zone ulx="358" uly="805" lrx="709" lry="833" rendition="Line" xml:id="LL1.1_line_rv-23"/>
+            <zone ulx="360" uly="837" lrx="706" lry="853" rendition="Line" xml:id="LL1.1_line_rv-24"/>
+            <zone ulx="360" uly="872" lrx="713" lry="904" rendition="Line" xml:id="LL1.1_line_rv-25"/>
+            <zone ulx="355" uly="918" lrx="709" lry="937" rendition="Line" xml:id="LL1.1_line_rv-26"/>
+            <zone ulx="352" uly="947" lrx="714" lry="971" rendition="Line" xml:id="LL1.1_line_rv-27"/>
+            <!-- Filigrana disegno centrale ovale -->
+            <zone ulx="260" uly="412" lrx="351" lry="611" rendition="HotSpot" xml:id="LL1.1_hotspot_rv-01"/>
+            <!-- Filigrana lettera B in alto a sinistra -->
+            <zone ulx="263" uly="268" lrx="297" lry="313" rendition="HotSpot" xml:id="LL1.1_hotspot_rv-02"/>
+        </surface>
+
+        <!-- RETRO RECTO FACCIATA 3 -->
+        <surface n="3" xml:id="LL1.1_retro_recto">
+            <graphic url='LL1.1_retro_recto.jpg' width='727px' height='1019px' />
+            <!-- Annotazione catalogo 189 -->
+            <zone ulx="639" uly="18" lrx="672" lry="42" rendition="Line" xml:id="LL1.1_hotspot_rr-07"/>
+            <!-- Righe contenuto lettera -->
+            <zone ulx="337" uly="38" lrx="695" lry="58" rendition="Line" xml:id="LL1.1_line_rr-01"/>
+            <zone ulx="343" uly="69" lrx="709" lry="92" rendition="Line" xml:id="LL1.1_line_rr-02"/>
+            <zone ulx="362" uly="102" lrx="715" lry="121" rendition="Line" xml:id="LL1.1_line_rr-03"/>
+            <zone ulx="349" uly="133" lrx="719" lry="165" rendition="Line" xml:id="LL1.1_line_rr-04"/>
+            <zone ulx="362" uly="179" lrx="717" lry="194" rendition="Line" xml:id="LL1.1_line_rr-05"/>
+            <zone ulx="348" uly="206" lrx="723" lry="236" rendition="Line" xml:id="LL1.1_line_rr-06"/>
+            <zone ulx="360" uly="245" lrx="721" lry="262" rendition="Line" xml:id="LL1.1_line_rr-07"/>
+            <zone ulx="354" uly="279" lrx="721" lry="292" rendition="Line" xml:id="LL1.1_line_rr-08"/>
+            <zone ulx="363" uly="313" lrx="719" lry="338" rendition="Line" xml:id="LL1.1_line_rr-09"/>
+            <zone ulx="356" uly="355" lrx="712" lry="372" rendition="Line" xml:id="LL1.1_line_rr-10"/>
+            <zone ulx="362" uly="384" lrx="714" lry="413" rendition="Line" xml:id="LL1.1_line_rr-11"/>
+            <zone ulx="366" uly="425" lrx="717" lry="452" rendition="Line" xml:id="LL1.1_line_rr-12"/>
+            <zone ulx="353" uly="466" lrx="709" lry="485" rendition="Line" xml:id="LL1.1_line_rr-13"/>
+            <zone ulx="361" uly="494" lrx="700" lry="530" rendition="Line" xml:id="LL1.1_line_rr-14"/>
+            <zone ulx="355" uly="542" lrx="705" lry="561" rendition="Line" xml:id="LL1.1_line_rr-15"/>
+            <zone ulx="360" uly="583" lrx="707" lry="596" rendition="Line" xml:id="LL1.1_line_rr-16"/>
+            <zone ulx="351" uly="633" lrx="717" lry="642" rendition="Line" xml:id="LL1.1_line_rr-17"/>
+            <zone ulx="358" uly="663" lrx="716" lry="679" rendition="Line" xml:id="LL1.1_line_rr-18"/>
+            <zone ulx="351" uly="700" lrx="716" lry="716" rendition="Line" xml:id="LL1.1_line_rr-19"/>
+            <zone ulx="349" uly="738" lrx="707" lry="770" rendition="Line" xml:id="LL1.1_line_rr-20"/>
+            <!-- Firma totale Vincenzo Bellini supp. -->
+            <zone ulx="387" uly="782" lrx="716" lry="859" rendition="HotSpot" xml:id="LL1.1_hotspot_rr-06"/>
+            <!-- Angolo superiore carta mancante -->
+            <zone ulx="646" uly="4" lrx="723" lry="96" rendition="HotSpot" xml:id="LL1.1_hotspot_rr-05"/>
+        </surface>
+        
+        <!-- FRONTE VERSO FACCIATA 4 -->
+        <surface n="4" xml:id="LL1.1_fronte_verso">
+            <graphic url='LL1.1_fronte_verso.jpg' width='727px' height='1019px' />
+        </surface>
+    </facsimile>
+
+            
+    <text type="letter" xml:id="LL1.1" subtype="manuscript" n="LL1.1">
+        <front>  <!-- intestazioni, frontespizio, prefazioni, dediche, etc.) -->
+            <!-- FRONTE RECTO FACCIATA 1 --> 
+            <pb n="1front" xml:id="LL1.1_fr_front" facs="#LL1.1_fronte_recto"/>
+
+            <div type="sent">
+                <!-- Data -->
+                <ab hand="#h3" xml:id="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> <!-- annotazione data e "sup." -->
+                    <mentioned>   <!-- mentioned si usa per parole riportate/citate ma non usate - forse devi sistemarlo -->
+                        <unclear><abbr>supp</abbr></unclear>
+                        <date when="1819-05-03" type="writing">3. Mag 1819 </date>
+                        <unclear>SS88<pc type="dot">.</pc></unclear> <!-- Lo inserisco nel front in quanto SS88 potrebbe essere un'indicazione del luogo in cui è stata scritta/spedita la supplica-->
+                    </mentioned>
+                </ab>
+            </div>
+
+            <div type="destination"> 
+                <!-- Destinatario -->
+                <ab type="receiver" rend="align(right)">
+                    <address xml:id="LL1.1_hs_fr-04" facs="#LL1.1_hotspot_fr-04">
+                        <addrLine>
+                            <lb xml:id="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
+                            <persName ref="#SN">
+                                <roleName type="honorific"><choice xml:id="choice1"><abbr>S.E.</abbr><expan>S<ex>ua</ex> E<ex>ccellenza</ex></expan></choice></roleName><choice xml:id="choice2"><abbr>Sig.</abbr><expan resp="#AC">Signor</expan></choice><ptr target="#LL1_1_note1"/> <roleName xml:id="rolename1" type="honorific"> Duca Sammar<lb xml:id="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente</roleName> della
+                                <choice xml:id="choice3"><abbr>Prov<pc type="dot">.</pc>a</abbr><expan resp="#AC"> Provincia</expan></choice> di
+                                <lb xml:id="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="#CT"><hi rend="double">Catania</hi></placeName>
+                            </persName>
+                        </addrLine>
+                    </address>
+                </ab>
+            </div>
+        </front>
+
+
+        <body xml:lang="it">
+            <!-- FRONTE RECTO FACCIATA 1 -->
+            <pb n="1" xml:id="LL1.1_fr_body" facs="#LL1.1_fronte_recto"/>
+
+            <!-- 
+            Il corpo/testo della lettera prosegue per tre facciate.
+            In questo punto NON ho inserito un <div type="fronte-recto"> per indicare la facciata FR,
+            (né l'ho utilizzato per le altre facciate, per lo stesso motivo, uso solo le milestone di page beginning)
+            perché se lo avessi usato avrei avuto un overlap tra div, in quanto avrei dovuto chiudere il 
+            <div type="fronte-recto"> prima del <div type="letter-body">, che invece andava 
+            aperto dopo l'ipotetivo <div type="fronte-recto">
+            --> 
+            
+            <ab><add type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_fr-03" facs="#LL1.1_hotspot_fr-03"> 188 </add></ab> <!-- annotazione catalogatore 188 -->
+
+            <!-- INDICAZIONI SPEDIZIONE E DESTINATARIO -->
+            <div type="sent" hand="#h1">
+                <ab hand="#h3" copyOf="LL1.1_hs_fr-01" facs="#LL1.1_hotspot_fr-01" rend="align(center)"> <!-- annotazione data e "sup." -->
+                    <mentioned> <!-- mentioned si usa per parole riportate/citate ma non usate - forse devi sistemarlo -->
+                        <unclear><abbr>supp</abbr></unclear>
+                        <date when="1819-05-03" type="writing">3. Mag 1819</date>
+                        <unclear>SS88<pc type="dot">.</pc></unclear>
+                    </mentioned>
+                </ab>
+            </div>
+            <div xml:id="info_dest" type="destination" hand="#h1"> 
+                <ab type="receiver" rend="align(right)">
+                    <address copyOf="LL1.1_hs_fr-04" facs="#LL1.1_hotspot_fr-04"> <!-- destinatario -->
+                        <addrLine>  <!-- stesse info di riga 290 codice front -->
+                            <lb copyOf="LL1.1_dest_lb-01" facs="#LL1.1_hotspot_fr-05"/>
+                            <persName ref="#SN">
+                                <roleName type="honorific" full="abb">S.E. </roleName><choice xml:id="choice5"><abbr>Sig. </abbr><expan resp="#AC">Signor </expan></choice> <roleName type="honorific">Duca Sammar
+                                <lb copyOf="LL1.1_dest_lb-02" facs="#LL1.1_hotspot_fr-06" break="no" rend="double stroke"/>tino Intendente della <choice xml:id="choice4"><abbr>Prov<pc type="dot">.</pc><add place="above">a</add></abbr><expan resp="#AC">Provincia</expan></choice> di
+                                <lb copyOf="LL1.1_dest_lb-03" facs="#LL1.1_hotspot_fr-07"/> <placeName ref="#CT"><hi rend="double">Catania</hi></placeName></roleName>
+                            </persName>
+                        </addrLine>
+                    </address>
+                </ab>
+            </div>
+
+            <!-- OPENER -->
+            <div type="opener" hand="#h1">                
+                <opener n="o_01">
+                    <salute n="ab_01" facs="#LL1.1_line_fr-01">
+                        <s type="sentence" n="s_01">
+                            <persName ref="#SN">
+                                <hi rend="align(right)">
+                                <roleName><choice xml:id="choice6"><abbr>Sig. </abbr><expan resp="#AC">Sig<ex>nor </ex></expan></choice></roleName> <roleName type="honorific" ref="#SN">Duca Intendente</roleName> <supplied resp="#AC"> Duca di <placeName>Sammartino</placeName></supplied>
+                                </hi>
+                            </persName>
+                        </s>
+                    </salute>
+                </opener>
+            </div>
+
+            <!-- CORPO DELLA LETTERA -->
+            <div xml:id="body_lettera" type="letter-body" n="t_01" hand="#h1">
+                <ab type="parag" n="ab_02">
+                    <s type="sentence" n="s_02">
+                    <lb xml:id="LL1.1_lb_fr_01" n="1" facs="#LL1.1_line_fr-02"/>
+                    <persName ref="#VB" role="composer"><forename>Vincenzo</forename> <surname> Bellini</surname></persName><pc type="comma">,</pc> e <supplied resp="#AC"><persName ref="#VB"><forename>(Vincenzo)</forename></persName></supplied><persName><surname> Ferlito</surname></persName> spinto dal
+                    <lb xml:id="LL1.1_lb_fr_02" n="2" facs="#LL1.1_line_fr-03"/> 
+                    proprio genio<pc type="comma">,</pc> dall<pc type="apostrophe">'</pc>esempio<pc type="comma">,</pc> e dalla
+                    <lb xml:id="LL1.1_lb_fr_03" n="3" facs="#LL1.1_line_fr-04"/> 
+                    Educazione<pc type="comma">,</pc> che ha ricevuto dai suoi<pc type="comma">, </pc> <persName ref="#VTB">Avo <supplied resp="#AC"><forename>(Vincenzo</forename> <forename> Tobia</forename> <surname> Bellini</surname></supplied></persName>)<pc type="comma">,</pc> 
+                    <lb xml:id="LL1.1_lb_fr_04" n="4" facs="#LL1.1_line_fr-05"/>
+                    e <persName ref="#RB">Padre <supplied resp="#AC"><forename> (Rosario </forename> <surname>Bellini)</surname></supplied></persName><pc type="comma">,</pc> ha professato<pc type="comma">,</pc> com<pc type="apostrophe">'</pc><persName ref="#VTB #RB">eglino</persName><pc type="comma">,</pc> la
+                    <lb xml:id="LL1.1_lb_fr_05" n="5" facs="#LL1.1_line_fr-06"/> 
+                    Musica sin dai più teneri anni<pc type="comma">,</pc> <w><choice xml:id="choice7"><sic>tantoc
+                    <lb xml:id="LL1.1_lb_fr_06" n="6" facs="#LL1.1_line_fr-07" break="no" rend="double stroke"/>
+                    ché</sic><corr resp="#AC">tantoché</corr></choice></w> nella sua appena giovanile età 
+                    <lb xml:id="LL1.1_lb_fr_07" n="7" facs="#LL1.1_line_fr-08"/>
+                    ha prodotto alcune <term subtype="music-term" ref="#composizione">composizioni</term><pc type="comma">,</pc> il 
+                    <lb xml:id="LL1.1_lb_fr_08" n="8" facs="#LL1.1_line_fr-09"/>
+                    merito delle quali<pc type="comma">,</pc> ignoto a <persName ref="#VB">lui</persName><pc type="comma">,</pc> è 
+                    <lb xml:id="LL1.1_lb_fr_09" n="9" facs="#LL1.1_line_fr-10"/>
+                    stato applaudito dai suoi amici<pc type="comma">,</pc> <w> com<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_fr_10" n="10" facs="#LL1.1_line_fr-11" break="no" rend="double-stroke"/>
+                    patito</w> dagl<pc type="apostrophe">'</pc>indifferenti<pc type="comma">,</pc> e non <w>di<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_fr_11" n="11" facs="#LL1.1_line_fr-12" break="no" rend="double-stroke"/>
+                    sprezzato</w> dagli emuli<pc type="dot">.</pc></s> <s type="sentence" n="s_03"> Volendo però 
+                    <lb xml:id="LL1.1_lb_fr_12" n="12" facs="#LL1.1_line_fr-13"/>
+                    soddisfare quel desiderio <w>inestinguibi<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_fr_13" n="13" facs="#LL1.1_line_fr-14" break="no" rend="double-stroke"/>
+                    le</w> di apprendere nelle scuole <w>su<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_fr_14" n="14" facs="#LL1.1_line_fr-15" break="no" rend="double-stroke"/>
+                    periori</w><pc type="comma">,</pc> e rinomate quel gusto<pc type="comma">,</pc> che si 
+                    <lb xml:id="LL1.1_lb_fr_15" n="15" facs="#LL1.1_line_fr-16"/>
+                    ammira da stupidi nelle carte<pc type="comma">,</pc> che 
+                    <lb xml:id="LL1.1_lb_fr_16" n="16" facs="#LL1.1_line_fr-17"/>
+                    qui pervengono<pc type="comma">,</pc> ma che non si sa<pc type="comma">,</pc> né 
+                    <lb xml:id="LL1.1_lb_fr_17" n="17" facs="#LL1.1_line_fr-18"/>
+                    può imitarsi<pc type="comma">,</pc> mancandoci i principii<pc type="comma">,</pc> 
+                    <lb xml:id="LL1.1_lb_fr_18" n="18" facs="#LL1.1_line_fr-19"/>
+                    ne viene impossibilitato dalla sua 
+                    <lb xml:id="LL1.1_lb_fr_19" n="19" facs="#LL1.1_line_fr-20"/>
+                    povertà. </s> <s type="sentence" n="s_04"> <persName ref="#VB" role="composer"> Figlio</persName> di un <persName ref="#RB"> Padre<supplied resp="#AC"><forename> (Rosario </forename> <surname> Bellini)</surname></supplied></persName> senza 
+                    <lb xml:id="LL1.1_lb_fr_20" n="20" facs="#LL1.1_line_fr-21"/>
+                    rendite di sorte alcuna<pc type="comma">,</pc> e carico di 
+                    <lb xml:id="LL1.1_lb_fr_21" n="21" facs="#LL1.1_line_fr-22"/>
+                    numerosa famiglia<ptr target="#LL1_1_note4"/><pc type="comma">,</pc> e <persName ref="#VB" role="composer">Nipote</persName> di un 
+                    <lb xml:id="LL1.1_lb_fr_22" n="22" facs="#LL1.1_line_fr-23"/>
+                    <persName ref="#VTB">Avo <supplied resp="#AC"><forename>(Vincenzo</forename> <forename> Tobia</forename> <surname> Bellini)</surname></supplied></persName> dell’uguale condizione<ptr target="#LL1_1_note5"/> <pc type="comma">,</pc> non può 
+                    <lb xml:id="LL1.1_lb_fr_23" n="23" facs="#LL1.1_line_fr-24"/>
+                    sperare il <distinct type="non-preferred">menomo</distinct> sussidio<pc type="comma">,</pc> di cui 
+                    <lb xml:id="LL1.1_lb_fr_24" n="24" facs="#LL1.1_line_fr-25"/>
+                    ha preciso bisogno<pc type="comma">,</pc> per almeno portarsi 
+                    <lb xml:id="LL1.1_lb_fr_25" n="25" facs="#LL1.1_line_fr-26"/>
+                    in <placeName ref="#NA">Napoli</placeName><pc type="comma">,</pc> ove non men<pc type="comma">,</pc> che in altri
+                    
+                            <!-- RETRO VERSO FACCIATA 2 -->
+                    <pb n="2" xml:id="LL1.1_rv_body" facs="#LL1.1_retro_verso"/>     
+
+                    <lb xml:id="LL1.1_lb_rv_01" n="26" facs="#LL1.1_line_rv-01"/> 
+                    paesi dell<pc type="apostrophe">'</pc><placeName>Europa</placeName><pc type="comma">,</pc> Fiorisce quest<pc type="apostrophe">'</pc>arte<pc type="comma">,</pc>
+                    <lb xml:id="LL1.1_lb_rv_02" n="27" facs="#LL1.1_line_rv-02"/> 
+                    per <term type="archaic" ref="#commorare">commorarvi</term><ptr target="#LL1_1_note6"/> tanto<pc type="comma">,</pc> quanto sarà <w>ne<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rv_03" n="28" facs="#LL1.1_line_rv-03" break="no" rend="double-stroke"/>
+                    cessario</w><pc type="comma">,</pc> ad arrivare a quella perfezione<pc type="comma">,</pc>
+                    <lb xml:id="LL1.1_lb_rv_04" n="29" facs="#LL1.1_line_rv-04"/> 
+                    che permetter gli potranno i lumi <w>ac<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rv_05" n="30" facs="#LL1.1_line_rv-05" break="no" rend="double-stroke"/>
+                    quistati</w><pc type="comma">,</pc> e lo sviluppo della propria 
+                    <lb xml:id="LL1.1_lb_rv_06" n="31" facs="#LL1.1_line_rv-06"/>
+                    inclinazione<pc type="colon">:</pc></s> <s type="sentence" n="s_05"> In quest<pc type="apostrophe">'</pc>angustia non ha 
+                    <lb xml:id="LL1.1_lb_rv_07" n="32" facs="#LL1.1_line_rv-07"/>
+                    dimenticato<pc type="comma">,</pc> che appartiene per nascita
+                    <lb xml:id="LL1.1_lb_rv_08" n="33" facs="#LL1.1_line_rv-08"/> 
+                    ad una Città <supplied resp="#AC"><placeName ref="#CT">Catania</placeName></supplied><pc type="comma">,</pc> che<pc type="comma">,</pc> non delle ultime 
+                    <lb xml:id="LL1.1_lb_rv_09" n="34" facs="#LL1.1_line_rv-09"/>
+                    in quest<pc type="apostrophe">'</pc>Isola<pc type="comma">,</pc> procura di non <w>deca<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rv_10" n="35" facs="#LL1.1_line_rv-10"/>
+                    dere</w> per ogni ramo di quella <w>rinoman<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rv_11" n="36" facs="#LL1.1_line_rv-11"/>
+                    za</w><pc type="comma">,</pc> di cui ha goduto<pc type="semicolon">;</pc> e le arti <w>del
+                    <lb xml:id="LL1.1_lb_rv_12" n="37" facs="#LL1.1_line_rv-12" break="no" rend="double-stroke"/>
+                    la</w> Pittura<pc type="comma">,</pc> e della Scultura hanno
+                    <lb xml:id="LL1.1_lb_rv_13" n="38" facs="#LL1.1_line_rv-13"/>
+                    meritato la pubblica considerazione<pc type="comma">,</pc> onde
+                    <lb xml:id="LL1.1_lb_rv_14" n="39" facs="#LL1.1_line_rv-14"/> 
+                    rianimarsi<pc type="comma">,</pc> e perfezionarsi colla <w>spe<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rv_15" n="40" facs="#LL1.1_line_rv-15" break="no" rend="double-stroke"/>
+                    dizione</w> di alcuni Individui<pc type="comma">,</pc> alle Scuole 
+                    <lb xml:id="LL1.1_lb_rv_16" n="41" facs="#LL1.1_line_rv-16"/>
+                    più celebri dell<pc type="apostrophe">'</pc>Europa<pc type="semicolon">;</pc></s> <s type="sentence" n="s_06"> Non inferiore
+                    <lb xml:id="LL1.1_lb_rv_17" n="42" facs="#LL1.1_line_rv-17"/> 
+                    la Musica tanto oggi conosciuta nelle 
+                    <lb xml:id="LL1.1_lb_rv_18" n="43" facs="#LL1.1_line_rv-18"/>
+                    colte nazioni<pc type="comma">,</pc> per non essere <w>trascura<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rv_19" n="44" facs="#LL1.1_line_rv-19" break="no" rend="double-stroke"/>
+                    ta</w> tra noi<pc type="comma">,</pc> viene l<pc type="apostrophe">'</pc><persName ref="#VB" role="composer">Esponente <supplied resp="#AC"><forename> (Vincenzo </forename> <surname>Bellini) </surname></supplied></persName> a <w>pre<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rv_20" n="45" facs="#LL1.1_line_rv-20" break="no" rend="double-stroke"/>
+                    sentarsi</w> a <persName ref="#SN">lei</persName> <persName ref="#SN"> <roleName> <choice xml:id="choice9"><abbr> Sig:r</abbr><expan resp="#AC">Sig<ex>no</ex>r</expan></choice></roleName> <roleName type="honorific" ref="#SN"> Duca Intendente</roleName><supplied resp="#AC"> Duca di <placeName>Sammartino</placeName></supplied></persName><pc type="comma">,</pc> 
+                    <lb xml:id="LL1.1_lb_rv_21" n="46" facs="#LL1.1_line_rv-21"/>
+                    cui<pc type="comma">,</pc> dopo avere umiliato la sua <w>po<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rv_22" n="47" facs="#LL1.1_line_rv-22" break="no" rend="double-stroke"/>
+                    vertà</w><pc type="comma">,</pc> il suo genio<pc type="comma">,</pc> e la sua <w>disposi<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rv_23" n="48" facs="#LL1.1_line_rv-23" break="no" rend="double-stroke"/>
+                    zione</w><pc type="comma">,</pc> passa a pregare ad <w>interpor<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rv_24" n="49" facs="#LL1.1_line_rv-24" break="no" rend="double-stroke"/>
+                    re</w> la di <persName ref="#SN">lei</persName> <choice xml:id="choice8"><sic>auttorità</sic><corr resp="#AC">autorità</corr></choice> <pc type="comma">,</pc> affinché si 
+                    <lb xml:id="LL1.1_lb_rv_25" n="50" facs="#LL1.1_line_rv-25"/>
+                    prestasse da questo Civico <w>Patrimo<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rv_26" n="51" facs="#LL1.1_line_rv-26" break="no" rend="double-stroke"/>
+                    nio</w> tanto<pc type="comma">,</pc> quanto bastar possa alla 
+                    <lb xml:id="LL1.1_lb_rv_27" n="52" facs="#LL1.1_line_rv-27"/>
+                    sua anche scarsa sussistenza<pc type="comma">,</pc> fuori
+
+                            <!-- RETRO RECTO FACCIATA 3 -->
+                    <pb n="3" xml:id="LL1.1_rr_body" facs="#LL1.1_retro_recto"/>  
+                    
+                    <add type="paratext" subtype="addition" hand="#h4" rend="align(right)" xml:id="LL1.1_hs_rr-01" facs="#LL1.1_hotspot_rr-01">189</add>	<!-- annotazione catalogatore 189 -->
+                    <lb xml:id="LL1.1_lb_rr_01" n="53" facs="#LL1.1_line_rr-01"/>    
+                    della propria famiglia<pc type="comma">,</pc> e della
+                    <lb xml:id="LL1.1_lb_rr_02" n="54" facs="#LL1.1_line_rr-02"/>    
+                    propria Patria<pc type="comma">,</pc> ed a corrispondenza 
+                    <lb xml:id="LL1.1_lb_rr_03" n="55" facs="#LL1.1_line_rr-03"/>   
+                    di come si viene di <choice xml:id="choice11"><sic>pratticare</sic><corr>praticare</corr></choice> in pro 
+                    <lb xml:id="LL1.1_lb_rr_04" n="56" facs="#LL1.1_line_rr-04"/>   
+                    dell<pc type="apostrophe">'</pc>Inviati apprendisti di Pittura<pc type="comma">,</pc> 
+                    <lb xml:id="LL1.1_lb_rr_05" n="57" facs="#LL1.1_line_rr-05"/>   
+                    e della Scultura <pc type="comma">,</pc> quando non si vorrà <w>con<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rr_06" n="58" facs="#LL1.1_line_rr-06" break="no" rend="double-stroke"/>   
+                    siderare</w> la prestanza dell<pc type="apostrophe">'</pc>arte del
+                    <lb xml:id="LL1.1_lb_rr_07" n="59" facs="#LL1.1_line_rr-07"/>   
+                    <persName ref="#VB" role="composer">Ricorrente</persName> <supplied resp="#AC"><forename>Vincenzo</forename> <surname>Bellini</surname></supplied><pc type="comma">,</pc> la sua onesta estrazione<pc type="comma">,</pc> 
+                    <lb xml:id="LL1.1_lb_rr_08" n="60" facs="#LL1.1_line_rr-08"/>   
+                    e la decente educazione<pc type="comma">,</pc> che ha <w>ricevu<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rr_09" n="61" facs="#LL1.1_line_rr-09" break="no" rend="double-stroke"/>   
+                    to</w><pc type="colon">:</pc></s> 
+                </ab>
+            </div>
+
+            <!-- CLOSER -->
+            <div xml:id="closer_lettera" type="closer" n="c_01">
+                <salute n="ab_03">
+                    <s type="sentence" n="s_07">Conoscendosi universalmente <w>que<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rr_10" n="62" facs="#LL1.1_line_rr-10" break="no" rend="double-stroke"/>   
+                    sto</w> bisogno<pc type="comma">,</pc> ed <choice xml:id="choice12"><sic>anzioso</sic><corr resp="#AC">ansioso</corr></choice> il <persName ref="#VB" role="composer">Ricorrente</persName> <supplied resp="#AC"><forename> Vincenzo</forename> <surname> Bellini</surname></supplied> 
+                    <lb xml:id="LL1.1_lb_rr_11" n="63" facs="#LL1.1_line_rr-11"/>   
+                    di soddisfarlo insieme colle sue <w>bra<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rr_12" n="64" facs="LL1.1_line_rr-12" break="no" rend="double-stroke"/>   
+                    me</w><pc type="comma">,</pc> e non eccessive le sue <w>limita<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rr_13" n="65" facs="#LL1.1_line_rr-13" break="no" rend="double-stroke"/>   
+                    te</w> pretese<pc type="comma">,</pc> si augura<pc type="comma">,</pc> che saranno 
+                    <lb xml:id="LL1.1_lb_rr_14" n="66" facs="#LL1.1_line_rr-14"/>   
+                    accolte le sue preghiere<pc type="comma">,</pc> ed il <persName ref="#VB" role="composer">Ricorrente</persName> <supplied resp="#AC"><forename>Vincenzo </forename> <surname>Bellini</surname></supplied> 
+                    <lb xml:id="LL1.1_lb_rr_15" n="67" facs="#LL1.1_line_rr-15"/>   
+                    grato all<pc type="apostrophe">'</pc>interesse<pc type="comma">,</pc> che sarà 
+                    <lb xml:id="LL1.1_lb_rr_16" n="68" facs="#LL1.1_line_rr-16"/>   
+                    per prendere in di <persName ref="#VB" role="composer">lui</persName> favore la 
+                    <lb xml:id="LL1.1_lb_rr_17" n="69" facs="#LL1.1_line_rr-17"/>   
+                    propria Patria<pc type="comma">,</pc> promette per quanto 
+                    <lb xml:id="LL1.1_lb_rr_18" n="70" facs="#LL1.1_line_rr-18"/>   
+                    arriverà la sua abilità di <w>sod<pc force="weak">-</pc>
+                    <lb xml:id="LL1.1_lb_rr_19" n="71" facs="#LL1.1_line_rr-19" break="no" rend="double-stroke"/>   
+                    disfare</w><pc type="comma">,</pc> e contentare la pubblica 
+                    <lb xml:id="LL1.1_lb_rr_20" n="72" facs="#LL1.1_line_rr-20"/>   
+                    aspettazione </s>
+                </salute>
+                <signed hand="#h2" rend="align(right)" xml:id="LL1.1_hs_rr-02" facs="#LL1.1_hotspot_rr-06">
+                    <persName ref="#VB" role="composer">Vincenzo Bellini Ferlito</persName> <choice xml:id="choice13"><abbr>supp.te</abbr><expan resp="#AC">supp<ex>plican</ex>te</expan></choice>
+                </signed>
+            </div>
+
+                        
+            <!-- FRONTE VERSO, FACCIATA 4 - VUOTA --> 
+            <div type="fronte-verso">
+                <pb n="4" xml:id="LL1.1_fv_div" facs="#LL1.1_fronte_verso"/>     
+            </div>
+        </body>
+
+
+        <back>
+            <!-- Note -->
+            <div type="notes">
+                <div type="ann_notes">
+        <!-- 1 -->  <note xml:id="LL1_1_note1" source="#Seminara2017" resp="#AC" ana="1">
+                        <bibl>
+                            <citedRange unit="page" from="65">65</citedRange>
+                        </bibl>
+                        <p>
+                            <persName ref="#SN"><forename>Stefano </forename> <surname>Notarbartolo</surname>, <roleName type="honorific">duca di <placeName>Sammartino</placeName></roleName></persName>, nel <date when="1818">1818</date> era stato nominato <roleName type="honorific">Intendente del Valle di <placeName ref="#CT">Catania</placeName></roleName><pc type="dot">.</pc>
+                        </p>
+                    </note>
+        <!-- 2 -->  <note xml:id="LL1_1_note2" source="#Seminara2017" resp="#AC" ana="2">
+                        <bibl>
+                            <citedRange unit="page" from="65">65</citedRange>
+                        </bibl>
+                        <p>
+                            La Supplica<pc type="comma">,</pc> in bella scrittura<pc type="comma">,</pc> 
+                            non è di mano di <persName ref="#VB"><surname>Bellini</surname></persName><pc type="comma">,</pc> 
+                            che appose solo la <hi facs="#LL1.1_hotspot_rr-02">firma</hi><pc type="dot">.</pc> 
+                            Nella prima <hi facs="#LL1.1_fronte_recto">facciata</hi> del foglio è scritto da una terza mano
+                            <hi facs="#LL1.1_hotspot_fr-01"> "Supp | <date when="1819-05-03">3<pc type="dot">.</pc> Mag 1819</date>"</hi><ptr target="#LL1.1_hs_fr-01"/>.
+                        </p>
+                    </note>
+        <!-- 3 -->  <note xml:id="LL1_1_note3" source="#Seminara2017" resp="#AC" ana="3">
+                        <bibl>
+                            <citedRange unit="page" from="65">65</citedRange>
+                        </bibl>
+                        <p>
+                            Nella sua edizione <persName ref="#LC"><forename>Luisa </forename> <surname>Cambi</surname></persName> dichiara di aver desunto il testo della
+                            lettera dal <ref><bibl><title level="m">giornale Bellini</title>, a. IV, <biblScope unit="volume" from="84" to="85">n. 84-85</biblScope>, <date when="1879-11-16">1879, 16 novembre</date> (p. <biblScope unit="page">18</biblScope>, nota 1)</bibl></ref><pc type="semicolon">;</pc>
+                            <persName ref="#CN"><forename> Carmelo</forename> <surname> Neri </surname></persName> invece informa correttamente circa l<pc type="apostrophe">'</pc>ubicazione dell<pc type="apostrophe">'</pc>autografo presso il Museo Civico Belliniano di <placeName ref="#CT">Catania</placeName><pc type="character">.</pc> 
+                            Nondimeno <persName ref="#LC #CN">entrambi</persName> offrono un testo mutilo<pc type="comma">,</pc> mancante della porzione di lettera contenuta nella <hi facs="#LL1.1_retro_verso">seconda facciata</hi><ptr target="#LL1.1_rv_body"/> del
+                            documento, ripiegato in tre parti.
+                        </p>
+                    </note>
+        <!-- 4 -->  <note xml:id="LL1_1_note4" source="#Seminara2017" resp="#AC" ana="4">
+                        <bibl>
+                            <citedRange unit="page" from="65">65</citedRange>
+                        </bibl>
+                        <p>
+                            <persName ref="#RB"><forename>Rosario</forename> <surname> Bellini</surname></persName><pc type="dot">.</pc> <persName ref="#RB"> Padre</persName> di <persName ref="#VB"><forename>Vincenzo</forename></persName><pc type="comma">,</pc> aveva sposato
+                            <persName ref="#AF"><forename>Agata</forename> <surname> Ferlito</surname></persName> il <date when="1801-01-17">17 gennaio 1801</date><pc type="semicolon">;</pc> con <persName ref="#AF">lei</persName> si stabilì in un modesto appartamento di <num type="cardinal" value="3">tre</num> stanze ricavato dalle 
+                            <foreign xml:lang="fr">dépendances</foreign> del settecentesco palazzo<pc type="comma">,</pc> situato in <settlement><address><street> Largo San Francesco</street></address> a <placeName ref="#CT">Catania</placeName></settlement><pc type="dot">.</pc> I <persName ref="#RB #AF"><num type="cardinal" value="2">due</num></persName>
+                            coniugi ebbero <num type="cardinal" value="7">sette</num> figli<pc type="colon">:</pc> <persName ref="#VB"><forename> Vincenzo</forename></persName><pc type="comma">,</pc> il primogenito<pc type="comma">,</pc> nel <date when="1801">1801</date><pc type="comma">, </pc> <persName><forename> Carmelo</forename></persName> nel <date when="1803">1803</date><pc type="comma">,</pc> <persName><forename> Francesco</forename></persName> nel <date when="1804">1804</date><pc type="comma">,</pc> <persName><forename> Michela</forename></persName>
+                            nel <date when="1806">1806</date><pc type="comma">,</pc> <persName><forename> Giuseppa</forename></persName> nel <date when="1807">1807</date><pc type="comma"></pc> <persName><forename> Mario</forename></persName> nel <date when="1810">1810</date><pc type="comma">,</pc> <persName><forename> Maria</forename></persName> nel <date when="1813">1813</date><pc type="dot">.</pc> Come il <persName ref="#VTB">padre <forename>Vincenzo</forename> <forename> Tobia</forename></persName> e come i fratelli
+                            <persName><forename>Carmelo</forename></persName> e <persName><forename>Mario</forename></persName><pc type="comma">,</pc> anche <persName ref="#RB"><forename>Rosario</forename> <surname> Bellini</surname></persName> operò a <placeName ref="#CT">Catania</placeName> come musicista e si dedicò prevalentemente al <term subtype="music-term" ref="#genere-sacro">genere sacro</term><pc type="dot">.</pc>
+                        </p>
+                    </note>
+        <!-- 5 -->  <note xml:id="LL1_1_note5" source="#Seminara2017" resp="#AC" ana="5">
+                        <bibl>
+                            <citedRange unit="page" from="65">65</citedRange>
+                        </bibl>
+                        <p>
+                            <persName ref="#VTB"><forename>Vincenzo</forename> <forename> Tobia</forename> <surname> Bellini</surname></persName><pc type="dot">.</pc>
+                            <persName ref="#VTB"> Nonno</persName> di <persName ref="#VB"><forename>Vincenzo</forename></persName><pc type="comma">,</pc> 
+                            studiò a <placeName ref="#NA">Napoli</placeName> al <orgName ref="#conservatorioSOPC">Conservatorio di Sant<pc type="apostrophe">'</pc>Onofrio a <placeName ref="#PortaCapuana">Capuana</placeName></orgName> con 
+                            <persName ref="#CC"><forename>Carlo </forename> <surname>Cotumacci</surname></persName> e <persName ref="#GD"><forename>Giuseppe </forename> <surname>Dol</surname></persName><pc type="dot">.</pc> 
+                            Dal <date notBefore="1769">1769</date> è attestata la sua presenza a <placeName ref="#CT">Catania</placeName><pc type="semicolon">;</pc> 
+                            risale a quell<pc type="apostrophe">'</pc>anno il matrimonio con <persName ref="#MBu"><forename>Michela</forename> <surname> Burzì</surname></persName><pc type="comma">,</pc>
+                            celebrato nella chiesa dei SS. <persName><forename>Filippo</forename></persName> e <persName><forename>Giacomo</forename></persName><pc type="dot">.
+                            </pc> Nella città etnea <supplied resp="#AC">(<placeName ref="#CT">Catania</placeName>)</supplied> compose <term subtype="music-term" ref="#dramma">drammi</term> sacri e <term subtype="music-term" ref="#oratorio">oratori</term><pc type="comma">,</pc> operò
+                            come <term subtype="music-term" ref="#maestro-di-cappella">maestro di cappella</term> presso il Monastero benedettino di S.
+                            <persName><forename>Nicolò </forename> <surname>l<pc type="apostrophe">'</pc>Arena</surname></persName> tra il <date notBefore="1784" notAfter="1793">1784 e il 1793</date> e fu
+                            stabilmente al servizio di <persName ref="#IPC"><forename>Ignazio </forename> <surname>Paternò </surname> <surname>Castello</surname><pc type="comma">,</pc> <genName> V </genName> <roleName>principe di <placeName>Biscari</placeName></roleName></persName><pc type="dot">.</pc>
+                        </p>
+                    </note>
+        <!-- 6 -->  <note xml:id="LL1_1_note6" source="#Seminara2017" resp="#AC" ana="6">
+                        <bibl>
+                            <citedRange unit="page" from="65">65</citedRange>
+                        </bibl>
+                        <p>
+                            Da intendersi per <term>"dimorarvi"</term><pc type="semicolon">; </pc> cfr. la voce <term>commorare</term> in
+                            <ref><bibl><title>TOMMASEO - BELLINI</title>, <biblScope>vol. I</biblScope>, <biblScope unit="page">p. 1535</biblScope>: "Aff. al lat. aureo <distinct>Commorari</distinct>. Dimorare insieme"</bibl></ref>
+                        </p>
+                    </note>                                                  
+                </div>
+
+
+
+                
+                <div type="bibliography">
+					<listBibl xml:id="LL1_1_bibliography">
+						<head>Bibliography of the letter LL1.1</head>
+						<bibl xml:id="LL1_1_Cambi">
+							<ref target="#Cambi1943">
+                                <bibl>
+                                    <author>Cambi</author>
+                                    <date when="1943">1943</date>
+                                    <citedRange unit="page" from="18" to="19">18-19</citedRange>
+                                </bibl>
+							</ref>
+						</bibl>
+                        <bibl xml:id="LL1_1_Neri">
+                            <ref target="#Neri2005">
+                                <bibl>
+                                    <author>Neri</author>
+                                    <date when="2005">2005</date>
+                                    <citedRange unit="page" from="18" to="18">18</citedRange>
+                                </bibl>
+                            </ref>
+                        </bibl>
+                        <bibl xml:id="LL1_1_Seminara">
+                            <ref target="#Seminara2017">
+                                <bibl>
+                                    <author>Seminara</author>
+                                    <date when="2017">2017</date>
+                                    <citedRange unit="page" from="65" to="66">65-66</citedRange>
+                                </bibl>
+                            </ref>
+                        </bibl>
+					</listBibl>
+                </div>
+            </div>
+
+            <!--LISTE-->
+            <div type="lists">
+            <!-- ListPerson -->
+				<listPerson>
+					<head>Lista persone</head>
+
+                    <!-- Vincenzo Bellini -->
+					<person xml:id="VB" sameAs="http://viaf.org/viaf/39560983"> 
+						<persName role="composer" > 
+							<ref target="http://www.treccani.it/enciclopedia/vincenzo-bellini_(Dizionario-Biografico)"/>
+							<forename>Vincenzo</forename>
+							<forename>Salvatore</forename>
+							<forename>Carmelo</forename>
+							<forename>Francesco</forename> 
+							<surname>Bellini</surname>
+							<addName type="alias">Il Cigno</addName>
+							<roleName type="honorific">Cavaliere della Legione d'onore</roleName> 
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1801-11-03">3 novembre 1801</date>
+							<placeName ref="#CT">
+								<settlement type="municipality">Catania</settlement>
+								<settlement type="provincia" key="CT">Catania</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+                        <death>
+							<date when="1835-09-23">23 settembre 1835</date>
+							<placeName ref="#Put">
+								<settlement type="municipality">Puteaux</settlement>
+								<settlement type="department" key="Paris">Paris</settlement>
+								<country key="FR">France</country>
+							</placeName>
+						</death>   
+					</person>
+
+                    <!-- Stefano Notarbartolo -->
+                    <person xml:id="SN"> 
+						<persName> 
+							<forename>Stefano</forename>
+							<surname>Notarbartolo</surname>
+							<roleName type="honorific">duca di Sammartino</roleName> 
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1787-04-18">18 aprile 1787</date>
+							<placeName ref="#PA">
+								<settlement type="municipality">Palermo</settlement>
+								<settlement type="provincia" key="PA">Palermo</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+                        <death>
+							<date when="1856-05-30">30 maggio 1856</date>
+                            <placeName type="unknown"/>
+						</death>
+					</person> 
+
+                    <!-- Vincenzo Tobia Bellini -->
+                    <person xml:id="VTB" sameAs="https://viaf.org/viaf/62666262"> 
+						<persName role="composer"> 
+							<ref target="http://www.treccani.it/enciclopedia/vincenzo-tobia-nicola-bellini_%28Dizionario-Biografico%29/ https://it.wikipedia.org/wiki/Vincenzo_Tobia_Nicola_Bellini"/>
+							<forename>Vincenzo</forename>
+							<forename>Tobia</forename>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1744-05-11">11 maggio 1744</date>
+							<placeName>
+								<settlement type="municipality" key="TorPel">Torricella Peligna</settlement>
+								<settlement type="provincia" key="CH">Chieti</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+                        <death>
+							<date when="1829-06-08">8 giugno 1829</date>
+							<placeName ref="#CT">
+								<settlement type="municipality">Catania</settlement>
+								<settlement type="provincia" key="CT">Catania</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</death> 
+					</person>
+
+                    <!-- Agata Ferlito -->
+                    <person xml:id="AF"> 
+                        <persName> 
+                            <forename>Agata</forename>
+                            <surname>Ferlito</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <birth>
+                            <date when="1778">1778</date>
+                            <placeName ref="#CT">
+                                <settlement type="municipality">Catania</settlement>
+                                <settlement type="provincia" key="CT">Catania</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </birth>
+                        <death><date when="1842">1842</date>
+                            <placeName ref="#CT">
+                                <settlement type="municipality">Catania</settlement>
+                                <settlement type="provincia" key="CT">Catania</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </death>
+                        <note resp="#GS">
+                            <p>
+                                Agata Ferlito (Catania, 1778 - 1842) apparteneva a una famiglia relativamente agiata poiché il padre 
+                                Carmelo era funzionario presso l'amministrazione catanese. Sposò <persName ref="#RB">Rosario Bellini</persName> 
+                                il 17 gennaio 1801 e con lui si stabilì in un modesto appartamento di tre stanze ricavato dalle dépendances 
+                                del settecentesco palazzo Gravina Cruylas, situato in Largo San Francesco a 
+                                <placeName ref="#CT"> Catania </placeName>. I due coniugi ebbero sette figli: 
+                                <persName ref="#VB">Vincenzo</persName>, il primogenito, nel 1801, Carmelo nel 1803, Francesco nel 1804, 
+                                Michela nel 1806, Giuseppa nel 1807, Mario nel 1810, Maria nel 1813.
+                            </p>
+                        </note> 
+                    </person>
+
+                    <!-- Ignazio Paternò Castello, V principe di Biscari -->
+                    <person xml:id="IPC" sameAs="http://viaf.org/viaf/208235133"> 
+                        <persName> 
+                            <ref target="https://it.wikipedia.org/wiki/Ignazio_Patern%C3%B2_Castello http://www.treccani.it/enciclopedia/ignazio-paterno-castello-principe-di-biscari_%28Dizionario-Biografico%29/"/>
+                            <forename>Ignazio</forename>
+                            <surname>Paternò</surname>
+                            <surname>Castello</surname>
+                            <roleName>principe di Biscari</roleName>
+                        </persName>
+                        <sex>M</sex>
+                        <birth>
+                            <date when="1719-05-24">24 maggio 1719</date>
+                            <placeName ref="#CT">
+                                <settlement type="municipality">Catania</settlement>
+                                <settlement type="provincia" key="CT">Catania</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </birth>
+                        <death>
+                            <date when="1786-09-01">01 settembre 1786</date>
+                            <placeName ref="#CT">
+                                <settlement type="municipality">Catania</settlement>
+                                <settlement type="provincia" key="CT">Catania</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </death>
+                        <note source="#Seminara2017" resp="#GS" ana="353">
+                            <bibl>
+                                <citedRange unit="page" from="220" to="220">220</citedRange>
+                            </bibl>
+                        </note> 
+                    </person>
+
+                    <!-- Agnese Camici -->
+                    <person xml:id="AC"> 
+                        <persName> 
+                            <forename>Agnese</forename>
+                            <surname>Camici</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <birth>
+                            <date when="1997-01-25">25 gennaio 1997</date>
+                            <placeName>
+                                <settlement type="municipality" key="Piombino">Piombino</settlement>
+                                <settlement type="provincia" key="LI">Livorno</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </birth>
+                    </person>
+
+                    <!-- Angelo Mario Del Grosso -->
+                    <person xml:id="AMDG" sameAs="https://viaf.org/viaf/323148207835400342025"> 
+                        <persName> 
+                            <forename>Angelo</forename>
+                            <forename>Mario</forename>
+                            <surname>Del Grosso</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <birth>
+                            <date when="1980-02-19">19 febbraio 1980</date>
+                            <placeName>
+                                <settlement type="municipality">Benevento</settlement>
+                                <settlement type="provincia" key="BN">Benevento</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </birth>
+                    </person>
+
+                    <!-- Daria Spampinato -->
+                    <person xml:id="DS"> 
+                        <persName> 
+                            <forename>Daria</forename>
+                            <surname>Spampinato</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <birth>
+                            <date type="unknown"/>
+                            <placeName type="unknown"/>
+                        </birth>
+                    </person>
+
+                    <!-- Erica Capizzi -->
+                    <person xml:id="EC"> 
+                        <persName> 
+                            <forename>Erica</forename>
+                            <surname>Capizzi</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <birth>
+                            <date type="unknown"/>
+                            <placeName type="unknown"/>
+                        </birth>
+                    </person>
+
+                    <!-- Graziella Seminara -->
+                    <person xml:id="GS" sameAs="https://viaf.org/viaf/37139452/"> 
+                        <persName> 
+                            <forename>Graziella</forename>
+                            <surname>Seminara</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <birth>
+                            <date when="1957">1957</date>
+                            <placeName>
+                                <settlement type="municipality">Catania</settlement>
+                                <settlement type="provincia" key="CT">Catania</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>                        
+                        </birth>
+                    </person>
+
+                    <!-- Rosario Bellini -->
+                    <person xml:id="RB"> 
+                        <persName> 
+                            <forename>Rosario</forename>
+                            <surname>Bellini</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <birth>
+                            <date when="1776">1776</date>
+                            <placeName ref="#CT">
+                                <settlement type="municipality">Catania</settlement>
+                                <settlement type="provincia" key="CT">Catania</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </birth>
+                        <death>
+                            <date when="1840">1840</date>
+                            <placeName ref="#CT">
+                                <settlement type="municipality">Catania</settlement>
+                                <settlement type="provincia" key="CT">Catania</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+                        </death>
+                    </person>
+
+                    <!-- Luisa Cambi -->
+                    <person xml:id="LC" sameAs="https://viaf.org/viaf/2582281/"> 
+                        <persName> 
+                            <forename>Luisa</forename>
+                            <surname>Cambi</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <birth>
+                            <date type="unknown"/>
+                            <placeName type="unknown"/>      
+                        </birth>
+                    </person>
+
+                    <!-- Carmelo Neri -->
+                    <person xml:id="CN" sameAs="https://viaf.org/viaf/76540365/"> 
+                        <persName> 
+                            <forename>Carmelo</forename>
+                            <surname>Neri</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <birth>
+                            <date when="1943">1943</date>
+                            <placeName type="unknown"/>      
+                        </birth>
+                    </person>
+                    
+                    <!-- Carmelo Bellini (fratello)-->
+                    <person xml:id="CB" sameAs="https://viaf.org/viaf/286152742936827732115"> 
+						<persName> 
+							<forename>Carmelo</forename>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1803">1803</date>
+                            <placeName type="unknown"/>
+						</birth>
+                        <death>
+							<date when="1884">1884</date>
+							<placeName type="unknown"/>
+						</death> 
+					</person>
+                    
+                    <!-- Francesco Bellini (fratello)-->
+                    <person xml:id="FB"> 
+						<persName> 
+							<forename>Francesco</forename>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date type="unknown"/>
+                            <placeName type="unknown"/>
+						</birth>
+                        <death>
+							<date type="unknown"/>
+							<placeName type="unknown"/>
+						</death> 
+					</person>
+
+                    <!-- Michela Bellini -->
+                    <person xml:id="MiB"> 
+						<persName> 
+							<forename>Michela</forename>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>F</sex>
+						<birth>
+							<date type="unknown"/>
+                            <placeName type="unknown"/>
+						</birth>
+                        <death>
+							<date type="unknown"/>
+							<placeName type="unknown"/>
+						</death> 
+					</person>
+
+                    <!-- Giuseppa Bellini -->
+                    <person xml:id="GB"> 
+						<persName> 
+							<forename>Giuseppa</forename>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>F</sex>
+						<birth>
+							<date type="unknown"/>
+                            <placeName type="unknown"/>
+						</birth>
+                        <death>
+							<date type="unknown"/>
+							<placeName type="unknown"/>
+						</death> 
+					</person>
+
+                    <!-- Mario Bellini -->
+                    <person xml:id="MoB"> 
+						<persName> 
+							<forename>Mario</forename>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date type="unknown"/>
+                            <placeName type="unknown"/>
+						</birth>
+                        <death>
+							<date type="unknown"/>
+							<placeName type="unknown"/>
+						</death> 
+					</person>
+
+                    <!-- Maria Bellini-->
+                    <person xml:id="MaB"> 
+						<persName> 
+							<forename>Maria</forename>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>F</sex>
+						<birth>
+							<date type="unknown"/>
+                            <placeName type="unknown"/>
+						</birth>
+                        <death>
+							<date type="unknown"/>
+							<placeName type="unknown"/>
+						</death> 
+					</person>    
+
+                    <!-- Carlo Cotumacci -->
+                    <person xml:id="CC" sameAs="https://viaf.org/viaf/47025512/"> 
+						<persName role="composer">
+                            <ref target="https://it.wikipedia.org/wiki/Carlo_Cotumacci http://www.treccani.it/enciclopedia/carlo-cotumacci_%28Dizionario-Biografico%29/"/> 
+							<forename>Carlo</forename>
+							<surname>Cotumacci</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1709">1709</date>                          
+                            <placeName>
+                                <settlement type="municipality">Villa Santamaria</settlement>
+                                <settlement type="provincia" key="CH">CH</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+						</birth>
+                        <death>
+							<date when="1785">1785</date>
+							<placeName ref="#NA">
+                                <settlement type="municipality">Napoli</settlement>
+                                <settlement type="provincia" key="NA">Napoli</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+						</death> 
+					</person>
+
+                    <!-- Giuseppe Dol -->
+                    <person xml:id="GD" sameAs="http://viaf.org/viaf/152159032774201182283"> 
+						<persName role="organist">
+                            <ref target="https://it.wikipedia.org/wiki/Joseph_Doll"/> 
+							<forename>Giuseppe</forename>
+							<surname>Dol</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date type="unknown"/>                          
+                            <placeName type="unknown"/>
+						</birth>
+                        <death>
+							<date when="08-1774">agosto 1774</date>
+							<placeName ref="#NA">
+                                <settlement type="municipality">Napoli</settlement>
+                                <settlement type="provincia" key="NA">Napoli</settlement>
+                                <country key="IT">Italia</country>
+                            </placeName>
+						</death> 
+					</person>
+
+                    <!-- Michela Burzì -->
+                    <person xml:id="MBu"> 
+                        <persName> 
+                            <forename>Michela</forename>
+                            <surname>Burzì</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <birth>
+                            <date type="unknown"/>
+                            <placeName type="unknown"/>      
+                        </birth>
+                    </person>
+
+                    <listRelation>
+                        <!--Parentele-->
+						<relation name="spouse" mutual="#RB #AF"/>
+                        <relation name="parent" active="#RB #AF" passive="#VB"/>
+                        <relation name="parent" active="#VTB" passive="#RB"/>
+                        <relation name="parent" active="#CF" passive="#AF"/>
+                        <relation name="sibling" mutual="#VB #CB #FB #MiB #GB #MoB #MaB"/>
+                        <relation name="supervisor" active="#CC" passive="#VTB"/>
+                        <relation name="supervisor" active="#VTB" passive="#VB"/>
+					</listRelation>
+                </listPerson>
+                    
+
+
+                <!-- ListPlace -->
+                <listPlace>
+                    <head> Lista dei luoghi </head>
+
+                    <!-- Catania -->
+                    <place xml:id="CT">
+                        <placeName ref="http://www.geonames.org/2525068/catania.html http://www.treccani.it/enciclopedia/catania/">Catania</placeName>
+                        <country key="IT">Italia</country>
+                        <note></note>
+                    </place>
+
+                    <!-- Napoli -->
+                    <place xml:id="NA">
+                        <placeName ref="http://www.geonames.org/3172394 http://www.treccani.it/enciclopedia/napoli/">Napoli</placeName>
+                        <country key="IT">Italia</country>
+                        <note></note>
+                    </place>
+
+                    <!-- Puteaux -->
+                    <place xml:id="Put">
+						<placeName ref="http://www.geonames.org/2985034 http://www.treccani.it/enciclopedia/puteaux_(Enciclopedia-Italiana)">Puteaux</placeName>
+						<district type="arrondissement">Nanterre</district>
+						<settlement type="city">Paris</settlement>
+						<country key="FR">France</country>
+						<note source="#Seminara2017" resp="#GS" ana="580">
+							<bibl>
+								<citedRange unit="page" from="346" to="346">346</citedRange>
+							</bibl>
+							<p>
+								Puteaux era un sobborgo di 
+								<placeName ref="#Paris">Parigi</placeName><pc type="comma">,</pc>
+								immerso nel verde e situato sulla <foreign xml:lang="fr">rive gauche</foreign> 
+								della Senna<pc type="dot">.</pc> Qui <persName ref="#VB"><surname>Bellini</surname></persName> 
+                                si stabilì <date from="1834-05-26" to="1834-11-01">dal 26 maggio al 1° novembre 1834</date> e di nuovo 
+                                <date from="1835-05-11" to="1835-09-23">nel 1835 dall'11 maggio al 23 settembre</date> (giorno della morte) 
+                                nella residenza di <persName>Solomon Levy (o Lewis)</persName><pc type="comma">,</pc> un facoltoso ebreo inglese 
+                                che verosimilmente aveva conosciuto nel <date when="1830">1830</date> a 
+                                <placeName ref="#MI">Milano</placeName><pc type="dot">.</pc> 
+                                Levy, che negli anni <date from="1834" to="1835">1834-35</date> si trattenne stabilmente a 
+                                <placeName ref="Paris">Parigi</placeName><pc type="comma">,</pc> apparteneva alla cerchia 
+                                delle più ristrette frequentazioni francesi del musicista<pc type="semicolon">;</pc> risiedeva in un lussuoso appartamento 
+                                <settlement><address><street>in Boulevard des Capucines</street></address></settlement><pc type="comma">,</pc> ma possedeva anche la residenza di Puteaux.
+							</p>                        											
+						</note>
+					</place>
+
+                    <!-- Palermo -->
+                    <place xml:id="PA">
+                        <placeName ref="http://www.geonames.org/6542127 http://www.treccani.it/enciclopedia/palermo/">Palermo</placeName>
+                        <country key="IT">Italia</country>
+                        <note></note>
+                    </place>
+                        
+                    <!-- Porta Capuana-->
+                    <place xml:id="PortaCapuana">
+                        <placeName ref="https://www.geonames.org/8015174/">Porta Capuana</placeName>
+                        <country key="IT">Italia</country>
+                        <settlement type="municipality">Napoli</settlement>
+                        <settlement type="provincia" key="NA">Napoli</settlement>
+                        <country key="IT">Italia</country>
+                        <note></note>
+                    </place> 
+
+                    <!-- Milano -->
+                    <place xml:id="MI">
+                        <placeName ref="https://www.geonames.org/3173434/citta-metropolitana-di-milano.html http://www.treccani.it/enciclopedia/milano/">Milano</placeName>
+                        <country key="IT">Italia</country>
+                        <note></note>
+                    </place>                    
+
+                    <listRelation>
+                        <!--Luoghi vicini-->
+						<relation name="near" mutual="#NA #PortaCapuana"/>
+                        <!--Luogo di nascita di una persona-->
+                        <relation name="birth_place" active="#VB #AF #IPC #GS #RB" passive="#CT"/>   
+                        <relation name="birth_place" active="#SN" passive="#PA"/>
+                        <relation name="birth_place" active="#VTB" passive="#TorPel"/>
+                        <relation name="birth_place" active="#AC" passive="#Piombino"/>                        
+                        <relation name="birth_place" active="#AMDG" passive="#BN"/>
+                        <relation name="birth_place" active="#CC" passive="#CH"/>
+                        
+                        <!--Luogo di morte di una persona-->
+                        <relation name="death_place" active="#VB" passive="#Put"/>
+                        <relation name="death_place" active="#VTB #AF #IPC #RB" passive="#CT"/>
+                        <relation name="death_place" active="#CC" passive="#NA"/>
+                        <relation name="death_place" active="#GD" passive="#NA"/>
+					</listRelation>
+                </listPlace>            
+                    
+
+                <!-- ListTerm -->
+                <list type="terminology">                  
+                    <!-- composizione -->
+                    <label>
+                        <term subtype="music-term" xml:lang="it" xml:id="composizione" key="">Composizione</term>
+					</label>
+					<item>
+						<gloss xml:lang="it" target="#composizione">
+                            Processo creativo che concepisce un'opera d'arte e il prodotto stesso dell'atto
+						</gloss>
+					</item>
+                    <!-- commorare -->
+                    <label>
+                        <term xml:lang="it" xml:id="commorare" key="">Commorare</term>
+					</label>
+					<item>
+						<gloss xml:lang="it" target="#commorare">
+                            Dimorare insieme
+						</gloss>
+					</item>
+                    <!-- genere sacro -->
+                    <label>
+                        <term xml:lang="it" xml:id="genere-sacro" key="">Genere sacro</term>
+					</label>
+					<item>
+						<gloss xml:lang="it" target="#genere-sacro">
+                            Musica associata a tematiche sacre e religiose
+						</gloss>
+					</item>
+                    <!-- dramma -->
+                    <label>
+                        <term xml:lang="it" xml:id="dramma" key="">Dramma</term>
+					</label>
+					<item>
+						<gloss xml:lang="it" target="#dramma">
+                            Opera diretta a riprodurre una vicenda che si fondi e si sviluppi su elementi di conflitto particolarmente significativi
+						</gloss>
+					</item>
+                    <!-- oratorio -->
+                    <label>
+                        <term xml:lang="it" xml:id="oratorio" key="">Oratorio</term>
+					</label>
+					<item>
+						<gloss xml:lang="it" target="#oratorio">
+                            Genere musicale drammatico eseguito in forma di concerto, senza rappresentazione scenica o personaggi in costume
+						</gloss>
+					</item>
+                    <!-- maestro di cappella -->
+                    <label>
+                        <term xml:lang="it" xml:id="maestro-di-cappella" key="">Maestro di cappella</term>
+					</label>
+					<item>
+						<gloss xml:lang="it" target="#maestro-di-cappella">
+                            Persona responsabile della musica di una compagine
+						</gloss>
+					</item>
+                    <!-- compositore -->
+                    <label>
+                        <term xml:lang="it" xml:id="compositore" key="">Compositore</term>
+					</label>
+					<item>
+						<gloss xml:lang="it" target="#compositore">
+                            Persona responsabile della musica di una compagine
+						</gloss>
+					</item>
+                    <!-- spartito -->
+                    <label>
+                        <term xml:lang="it" xml:id="spartito" key="">Spartito</term>
+					</label>
+					<item>
+						<gloss xml:lang="it" target="#spartito">
+                            Versione ridotta per canto e pianoforte di una composizione per canto e orchestra
+						</gloss>
+					</item>
+                    <!-- direttore -->
+                    <label>
+                        <term xml:lang="it" xml:id="direttore" key="">Direttore</term>
+					</label>
+					<item>
+						<gloss xml:lang="it" target="#direttore">
+                            Figura professionista nell'esecuzione di composizioni che coordina un gruppo di musicisti
+						</gloss>
+					</item>
+                </list>
+
+
+                <!-- List Organization -->
+                <listOrg>
+                    <org xml:id="conservatorioSOPC">
+                            <orgName ref="https://it.wikipedia.org/wiki/Conservatorio_di_Sant%27Onofrio_a_Porta_Capuana>">Conservatorio di Sant'Onofrio a Porta Capuana</orgName>
+                            <placeName ref="#NA">Napoli</placeName>
+                        <desc>              
+                        </desc>
+                    </org>
+                </listOrg>
+
+
+                <!-- ListBibl -->
+                <listBibl>
+                    <head> Bibliografia </head>
+                    <!-- Seminara2017 -->
+                    <bibl xml:id="Seminara2017" type="print">
+						<author ref="#GS">
+							<forename>Graziella </forename> 
+							<surname>Seminara</surname>
+						</author>
+						<title level="m">Vincenzo Bellini. Carteggi</title>
+						<title level="s">Historiae Musicae Cultores</title>
+						<biblScope unit="volume">CXXXI</biblScope>
+						<biblScope unit="page">pp. vi+622</biblScope>
+						<pubPlace>Firenze</pubPlace>
+						<publisher>Leo S. Olschki Editore</publisher>
+						<date when="2017">2017</date>                       
+					</bibl>
+                    <!-- Neri2005 -->
+                    <bibl xml:id="Neri2005" type="print">
+						<author ref="#CN">
+							<forename>Carmelo </forename>
+							<surname>Neri</surname>
+						</author>
+						<title level="m">Vincenzo Bellini. Nuovo Epistolario 1819-1835</title>
+						<pubPlace>Catania</pubPlace>
+						<publisher>Agorà</publisher>
+						<date when="2005">2005</date>
+					</bibl>
+                    <!-- Cambi1943 -->
+                    <bibl xml:id="Cambi1943" type="print">
+						<author ref="#LC">
+							<forename>Luisa </forename> 
+							<surname>Cambi</surname>
+						</author>
+						<title level="m">Vincenzo Bellini</title>
+						<title level="s">Epistolario</title>
+						<biblScope unit="page">pp. 616</biblScope>
+						<pubPlace>Milano</pubPlace>
+						<publisher>A. Mondadori</publisher>
+						<date when="1943">1943</date>                       
+					</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>                
+</TEI>
