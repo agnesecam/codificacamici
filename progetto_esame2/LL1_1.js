@@ -1,25 +1,25 @@
-/* //Mostra-chiudi informazioni
-function gestoreApriInformazioni() {
+//Mostra-chiudi istruzioni
+function gestoreApriIstruzioni() {
 	try {
-		if (nodoBoxInformazioni.getAttribute("class") == "nascondi") {
-			nodoBoxInformazioni.removeAttribute("class");
-            nodoBoxInformazioni.setAttribute("class", "articoli_box");
-            nodoDesc.removeAttribute("class");
+		if (nodoBoxIstruzioni.getAttribute("class") == "nascondi") {
+			nodoBoxIstruzioni.removeAttribute("class");
+            nodoBoxIstruzioni.setAttribute("class", "istruzioni");
+/*             nodoDesc.removeAttribute("class");
             nodoDesc.setAttribute("class", "desc_manos_insieme");
             nodoMani.removeAttribute("class");
-            nodoMani.setAttribute("class", "mani_insieme"); 
+            nodoMani.setAttribute("class", "mani_insieme"); */ 
 		} else {
-			nodoBoxInformazioni.removeAttribute("class");
-            nodoBoxInformazioni.setAttribute("class", "nascondi");
-            nodoDesc.removeAttribute("class");
+			nodoBoxIstruzioni.removeAttribute("class");
+            nodoBoxIstruzioni.setAttribute("class", "nascondi");
+            /* nodoDesc.removeAttribute("class");
             nodoDesc.setAttribute("class", "desc_manos_senza");
             nodoMani.removeAttribute("class");
-            nodoMani.setAttribute("class", "mani_senza");
+            nodoMani.setAttribute("class", "mani_senza"); */
 		} 
 	} catch(e) {
-		alert("gestoreApriInformazioni"+e);
+		alert("gestoreApriIstruzioni"+e);
     }
-} */
+} 
 
 
 //Mostra-chiudi Contenuto del fronte della lettera
@@ -155,16 +155,10 @@ function gestoreEvidenzia(name){
         alert("gestoreEvidenzia()"+e);   
     }                                     
 }
-/* 
-Una volta cambiate le classi agli elementi non di interesse, 
-facendo scomparire il puntino che precede le righe della lettera, 
-ma anche tutti i collegamenti "a href='...' nella pagina, 
-ricarico la pagina per riportare i simboli "i" e "♪" delle note
-altrimenti non sarebbero più visibili 
-*/
-function reloadFunction(){                  
+
+/* function reloadFunction(){                  
     document.location.reload(true);
-}
+} */
 
 
 /*Apri fronte ed evidenzia, per #ID#LL1.1_hotspot_fr-04 
@@ -192,11 +186,11 @@ function gestoreApriFronte_Evidenzia() {
 
 
 //Variabili
-var nodoIconaTecnica1;
-var nodoBoxInformazioni;
+var nodoIconaIstruzioni;
+var nodoBoxIstruzioni;
 var nodoTastoChiudiBox1;
-var nodoDesc;
-var nodoMani;
+/* var nodoDesc;
+var nodoMani; */
 
 var nodoBoxFronte;
 var nodoTitoloFront;
@@ -215,13 +209,13 @@ var nodoScanCatania;
 //Gestore load
 function gestoreLoad(){
     try {
-        nodoIconaTecnica1 = document.getElementById("icona_apertura_fileDesc");
-        //nodoIconaTecnica1.onclick = gestoreApriInformazioni;
-        nodoBoxInformazioni = document.getElementById("div_scomparsa");
-        nodoDesc = document.getElementById("descrizione_manoscritto");
-        nodoMani = document.getElementById("mani");
+        nodoIconaIstruzioni = document.getElementById("icona_istruzioni");
+        nodoIconaIstruzioni.onclick = gestoreApriIstruzioni;
+        nodoBoxIstruzioni = document.getElementById("istruzioni");
+/*         nodoDesc = document.getElementById("descrizione_manoscritto");
+        nodoMani = document.getElementById("mani"); */
         //nodoTastoChiudiBox1 = document.getElementById("icona_spegni");
-        //nodoTastoChiudiBox1.onclick = gestoreApriInformazioni;
+        //nodoTastoChiudiBox1.onclick = gestoreApriIstruzioni;
 
         nodoIconaBoxFronte = document.getElementById("icona_apertura_front");
         nodoIconaBoxFronte.onclick = gestoreApriFronte;

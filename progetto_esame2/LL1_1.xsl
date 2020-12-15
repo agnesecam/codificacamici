@@ -75,7 +75,7 @@
                     </div>                
                 </div>
 
-                <!--Divisore estetico--><hr class="rounded"/>
+                <!--Divisore estetico invisibile --><hr class="rounded"/>
             
                 <!-- Div contenitore scan e lettera -->
                 <div id="scan-e-lettera">
@@ -128,7 +128,25 @@
                     </div>
                 </div>
 
-
+                <!--ISTRUZIONI FRUIZIONE SITO-->
+                <input type="image" class="icone" id="icona_istruzioni" src="icona_istruzioni.svg" alt="Clicca per leggere le istruzioni su come usare la fruizione del sito"/>
+                <div id="istruzioni" class="nascondi">
+                    <h2> Istruzioni per la fruizione del sito</h2>
+                    <p>
+                        <ul>
+                            <li>Premere le icone dei numeri sopra le immagini della lettera per scegliere la facciata da visualizzare.</li>
+                            <li>Per leggere la trascrizione della lettera utilizzare la barra di scorrimento verde a lato destro del testo.</li>
+                            <li>Per nascondere il fronte della lettera premere l'icona con la freccia verso il basso, premerla di nuovo per visualizzarlo.</li>
+                            <li>Nella lettera scritta da Vincenzo Bellini sono state utilizzate alcune abbreviazioni, nella loro codifica è stata riportata sia la versione abbreviata (Sig.) che quella estesa (Signor) la cui responsabiltà è del codificatore <a href="#AC">Agnese Camici</a>. &#200; possibile scegliere quale visualizzare da un menù a tendina che racchiude le due opzioni.  </li>
+                            <li>Il simbolo &#8505; usato come pedice di una parola segnala la presenza di ulteriori informazioni riguardo quell'elemento, spesso sono descrizioni di luoghi, persone o chiarimenti su un termine. Premendolo, la pagina mostrerà in alto le informazioni di riferimento collegate, facendola lampeggiare quattro volte e mantendendone i caratteri in grassetto. </li>
+                            <li>Il simbolo &#9834; usato come apice di una parola segnala la presenza di una nota in riferimento al termine che lo precede. Le note sono prese da <a href="#Seminara2017"> Seminara 2017</a>. Premendo il simbolo della nota, la pagina mostrerà in alto la nota collegata facendola lampeggiare quattro volte e mantendendone i caratteri in grassetto. </li>
+                            <li>L'immagine della lettera è interattiva: le zone "sensibili" e cliccabili della mappa sono le righe del corpo della lettera, le annotazioni, la filigrana, e segni di usura. Posizionando il cursore sopra a queste zone il puntatore si trasforma nella classica manina. Se l'utente preme una riga del testo della lettera dalla scannerizzazione, il puntino che precede la rispettiva trascrizione codificata, si colorerà di rosso lampeggiando quattro volte e la riga trascritta si posizionerà in cima alla pagina. Lo stesso principio è usato per le informazioni relative ad annotazioni, filigrana o altro. </li>
+                            <li>In fondo alla pagina sono presenti gli elenchi delle persone citate nella lettera, della terminologia utilizzata (sono quasi tutti termini musicali) e dei luoghi a cui viene fatto riferimento nella lettera. La lista delle persone citate presenta collegamenti a portali per la ricerca di autorità controllate (authority file) o voci presenti nell'enciclopedia Treccani e, dove non siano state trovate fonti autorevoli, a Wikipedia.</li>
+                            <li> In linea di principio, i collegamenti ad altre parti della pagina o a pagine esterne sono colorati di rosso scuro e cliccabili.</li>
+                        </ul>
+                    </p>
+                </div>
+                
                 <!-- NOTE -->            
                 <div id="contenitore_note">
                     <h2>Note:</h2>
@@ -458,13 +476,13 @@
                     <xsl:attribute name="name">     <!--  al posto di &nbsp; appare un quadratino rosso per indicare l'elemento che corrisponde alla zona della mappa dell'immagine della lettera -->
                         <xsl:value-of select="concat('ID',//tei:watermark/tei:hi[1]/@facs)"/>
                     </xsl:attribute>
-                    <xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;]]></xsl:text>
+                    <xsl:text disable-output-escaping="yes"><![CDATA[&#8226;&nbsp;]]></xsl:text>
                 </xsl:element>
                 <xsl:element name="a">
                     <xsl:attribute name="name">
                         <xsl:value-of select="concat('ID', //tei:watermark/tei:hi[2]/@facs )"/>
                     </xsl:attribute>
-                    <xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;]]></xsl:text>
+                    <xsl:text disable-output-escaping="yes"><![CDATA[&#8226;&nbsp;]]></xsl:text>
                 </xsl:element>
                 <xsl:value-of select="concat('Filigrana: ',tei:watermark)"/> 
             </p>
@@ -494,7 +512,7 @@
                     <xsl:attribute name="name">
                         <xsl:value-of select="concat('ID',//tei:support/tei:p[2]/tei:hi[1]/@facs)"/>
                     </xsl:attribute>
-                    <xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;]]></xsl:text>
+                    <xsl:text disable-output-escaping="yes"><![CDATA[&#8226;&nbsp;]]></xsl:text>
                 </xsl:element>
             <xsl:value-of select="concat('Stato di conservazione: ', //tei:support/tei:p[2], //tei:support/tei:p[3] )"/>
             </p>
