@@ -1,4 +1,4 @@
-//Mostra-chiudi informazioni
+/* //Mostra-chiudi informazioni
 function gestoreApriInformazioni() {
 	try {
 		if (nodoBoxInformazioni.getAttribute("class") == "nascondi") {
@@ -19,7 +19,7 @@ function gestoreApriInformazioni() {
 	} catch(e) {
 		alert("gestoreApriInformazioni"+e);
     }
-}
+} */
 
 
 //Mostra-chiudi Contenuto del fronte della lettera
@@ -216,12 +216,12 @@ var nodoScanCatania;
 function gestoreLoad(){
     try {
         nodoIconaTecnica1 = document.getElementById("icona_apertura_fileDesc");
-        nodoIconaTecnica1.onclick = gestoreApriInformazioni;
+        //nodoIconaTecnica1.onclick = gestoreApriInformazioni;
         nodoBoxInformazioni = document.getElementById("div_scomparsa");
         nodoDesc = document.getElementById("descrizione_manoscritto");
         nodoMani = document.getElementById("mani");
-        nodoTastoChiudiBox1 = document.getElementById("icona_spegni");
-        nodoTastoChiudiBox1.onclick = gestoreApriInformazioni;
+        //nodoTastoChiudiBox1 = document.getElementById("icona_spegni");
+        //nodoTastoChiudiBox1.onclick = gestoreApriInformazioni;
 
         nodoIconaBoxFronte = document.getElementById("icona_apertura_front");
         nodoIconaBoxFronte.onclick = gestoreApriFronte;

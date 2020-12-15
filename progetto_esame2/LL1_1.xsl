@@ -18,109 +18,116 @@
                 <xsl:text disable-output-escaping="yes"><![CDATA[<link rel='icon' href='favicon.png' type='image/x-icon'/ >]]></xsl:text>   <!--favicon tab-->
             </head>
             <body>
-                <input type="image" class="icone" id="icona_apertura_fileDesc" src="icona_info.png" alt="Clicca per leggere le informazioni sul manoscritto"/>
+                <!--<input type="image" class="icone" id="icona_apertura_fileDesc" src="icona_info.png" alt="Clicca per leggere le informazioni sul manoscritto"/>-->
                 <!-- Info e dettagli -->
-                <div id="info_e_desc">                    
-                    <!--fileDesc-->               
-                    <div id="fileDesc">
-                        <div id="div_scomparsa" class="nascondi">
+                <div id="info-desc-mani">
+                    <div id="info_e_desc">                    
+                        <!--fileDesc-->               
+                        <div id="fileDesc">
+                            <div id="div_scomparsa" class="articoli_box">
 
-                            <!--titleStmt-->
-                            <div class="nascoste">
-                                <h2 class="titolo-sezione" style="text-align: center" >Informazioni generali</h2>
-                                <div class="contenuto-sezioni">
-                                    <xsl:apply-templates select="//tei:titleStmt" />
+                                <!--titleStmt-->
+                                <div class="nascoste">
+                                    <h2 class="titolo-sezione" style="text-align: center" >Informazioni generali</h2>
+                                    <div class="contenuto-sezioni">
+                                        <xsl:apply-templates select="//tei:titleStmt" />
+                                    </div>
                                 </div>
-                            </div>
-                            <!--editionStmt-->
-                            <div class="nascoste">
-                                <div class="contenuto-sezioni">
-                                    <xsl:apply-templates select="//tei:editionStmt" />
+                                <!--editionStmt-->
+                                <div class="nascoste">
+                                    <div class="contenuto-sezioni">
+                                        <xsl:apply-templates select="//tei:editionStmt" />
+                                    </div>
                                 </div>
-                            </div>
 
-                            <!--publicationStmt-->
-                            <div class="nascoste">
-                                <h2 class="titolo-sezione">Pubblicazione</h2>
-                                <div style='font-size: 9px' class="contenuto-sezioni">
-                                    <xsl:apply-templates select="//tei:publicationStmt" />
-                                    <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>                                 
+                                <!--publicationStmt-->
+                                <div class="nascoste">
+                                    <h2 class="titolo-sezione">Pubblicazione</h2>
+                                    <div style='font-size: 9px' class="contenuto-sezioni">
+                                        <xsl:apply-templates select="//tei:publicationStmt" />
+                                        <xsl:text disable-output-escaping="yes"><![CDATA[<br><br>]]></xsl:text>                                 
+                                    </div>
                                 </div>
-                            </div>
-                            <!--sourceDesc-->
-                            <div class="nascoste">
-                                <div class="contenuto-sezioni">
-                                    <xsl:apply-templates select="//tei:sourceDesc" />
+                                <!--sourceDesc-->
+                                <div class="nascoste">
+                                    <div class="contenuto-sezioni">
+                                        <xsl:apply-templates select="//tei:sourceDesc" />
+                                    </div>
                                 </div>
-                            </div>
-                        
-                            <input type="image" id="icona_spegni" class="icone" src="icona_spegni.png" alt="Clicca per chiudere il riquadro"/>
-                            <br/>
-                        </div>
-                    </div>
-                    
-                    <!--msDesc -> support-->
-                    <div id="descrizione_manoscritto" class="desc_manos_senza">
-                        <h2>Descrizione del manoscritto:</h2>
-                        <div>
-                            <xsl:apply-templates select="//tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:support"/>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- MANI -->
-                <div id="mani" class="mani_senza">
-                    <h2>Scrittura a 5 mani:</h2>
-                    <xsl:apply-templates select="//tei:handDesc/tei:handNote"/>
-                </div>                
-
-                <!-- SCAN -->
-                <div id="immagini_lettera">
-                    <h2>Immagini del manoscritto originale</h2>
-                    <div id="pulsanti_immagini_lettera" >
-                        <input id="icona_1" type="image" class="icone_numeri" alt="Clicca per visualizzare la prima facciata del manoscritto" src="icona1.png"/>
-                        <input id="icona_2" type="image" class="icone_numeri" alt="Clicca per visualizzare la seconda facciata del manoscritto" src="icona2.png"/>
-                        <input id="icona_3" type="image" class="icone_numeri" alt="Clicca per visualizzare la terza facciata del manoscritto" src="icona3.png"/>           
-                        <input id="icona_4" type="image" class="icone_numeri" alt="Clicca per visualizzare la quarta facciata del manoscritto" src="icona4.png"/>             
-                    </div>
-                    <xsl:apply-templates select="//tei:facsimile"/>
-                </div>                
                             
-                <!-- LETTERA -->
-                <div id="front_e_body_lettera">  
-                    <div id="contenitore_scrollbar"> 
-                        <!-- fronte -->
-                        <div id="contenitore_front" style="line-height: 10px;">                        
-                            <h2 id="titolo_front" class="titolo_front_insieme">Fronte della lettera 
-                            <input style="float:right" id="icona_apertura_front" type="image" class="icone" alt="Clicca per aprire o chiudere il riquadro" src="icona_apertura_front.png"/></h2>                            
-                            <div class="contenuto_front" id="contenuto_front">
-                                La lettera non presenta né francobolli, né timbri, né sigilli.
-                                Presenta il nome del destinatario:
-                                <i style="color: brown"><div id="info_dest" >
-                                    <xsl:apply-templates select="//tei:div[@xml:id='info_dest']" />
-                                </div> </i>        
-                                sulla prima facciata, accompagnato dall'annotazione    
-                                <i style="color: brown;"><xsl:apply-templates select="//tei:text/tei:front/tei:div[@type='sent']/tei:ab/tei:mentioned" /></i>
-                            </div>                        
-                        </div>          
-                        <!-- opener, corpo e chiusura -->
-                        <div id="contenitore_body">
-                            <div><xsl:apply-templates select="//tei:body/tei:div[@type='fronte-recto']" /></div>
-                            <div id="corpo_della_lettera">
-                                <h2>Corpo della lettera</h2>
-                                <div id="opener_lettera">
-                                    <xsl:apply-templates select="//tei:opener"/>
-                                </div>
-                                <div id="body_lettera">
-                                    <xsl:apply-templates select="//tei:div[@xml:id='body_lettera']"/>
-                                </div>
-                                <div id="closer_lettera">
-                                    <xsl:apply-templates select="//tei:div[@xml:id='closer_lettera']"/>
+                                <!--<input type="image" id="icona_spegni" class="icone" src="icona_spegni.png" alt="Clicca per chiudere il riquadro"/>-->
+                            </div>
+                        </div>
+                        
+                        <!--msDesc -> support-->
+                        <div id="descrizione_manoscritto" class="desc_manos_insieme">
+                            <h2>Descrizione del manoscritto:</h2>
+                            <div>
+                                <xsl:apply-templates select="//tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:support"/>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- MANI -->
+                    <div id="mani" class="mani_insieme">
+                        <h2>Scrittura a 5 mani:</h2>
+                        <xsl:apply-templates select="//tei:handDesc/tei:handNote"/>
+                    </div>                
+                </div>
+
+                <!--Divisore estetico--><hr class="rounded"/>
+            
+                <!-- Div contenitore scan e lettera -->
+                <div id="scan-e-lettera">
+                    <!-- SCAN -->
+                    <div id="immagini_lettera">
+                        <h2>Immagini del manoscritto originale</h2>
+                        <div id="pulsanti_immagini_lettera" >
+                            <input id="icona_1" type="image" class="icone_numeri" alt="Clicca per visualizzare la prima facciata del manoscritto" src="icona1.png"/>
+                            <input id="icona_2" type="image" class="icone_numeri" alt="Clicca per visualizzare la seconda facciata del manoscritto" src="icona2.png"/>
+                            <input id="icona_3" type="image" class="icone_numeri" alt="Clicca per visualizzare la terza facciata del manoscritto" src="icona3.png"/>           
+                            <input id="icona_4" type="image" class="icone_numeri" alt="Clicca per visualizzare la quarta facciata del manoscritto" src="icona4.png"/>             
+                        </div>
+                        <xsl:apply-templates select="//tei:facsimile"/>
+                    </div>                
+                                
+                    <!-- LETTERA -->
+                    <div id="front_e_body_lettera">  
+                        <div id="contenitore_scrollbar"> 
+                            <!-- fronte -->
+                            <div id="contenitore_front" style="line-height: 10px;">                        
+                                <h2 id="titolo_front" class="titolo_front_insieme">Fronte della lettera 
+                                <input style="float:right" id="icona_apertura_front" type="image" class="icone" alt="Clicca per aprire o chiudere il riquadro" src="icona_apertura_front.png"/></h2>                            
+                                <div class="contenuto_front" id="contenuto_front">
+                                    La lettera non presenta né francobolli, né timbri, né sigilli.
+                                    Presenta il nome del destinatario:
+                                    <i style="color: brown"><div id="info_dest" >
+                                        <xsl:apply-templates select="//tei:div[@xml:id='info_dest']" />
+                                    </div> </i>        
+                                    sulla prima facciata, accompagnato dall'annotazione    
+                                    <i style="color: brown;"><xsl:apply-templates select="//tei:text/tei:front/tei:div[@type='sent']/tei:ab/tei:mentioned" /></i>
+                                </div>                        
+                            </div>          
+                            <!-- opener, corpo e chiusura -->
+                            <div id="contenitore_body">
+                                <div><xsl:apply-templates select="//tei:body/tei:div[@type='fronte-recto']" /></div>
+                                <div id="corpo_della_lettera">
+                                    <h2>Corpo della lettera</h2>
+                                    <div id="opener_lettera">
+                                        <xsl:apply-templates select="//tei:opener"/>
+                                    </div>
+                                    <div id="body_lettera">
+                                        <xsl:apply-templates select="//tei:div[@xml:id='body_lettera']"/>
+                                    </div>
+                                    <div id="closer_lettera">
+                                        <xsl:apply-templates select="//tei:div[@xml:id='closer_lettera']"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
 
                 <!-- NOTE -->            
                 <div id="contenitore_note">
@@ -566,6 +573,9 @@
             <xsl:attribute name="name">
                 <xsl:value-of select="concat('ID',@facs)"/>
             </xsl:attribute>
+<!--             <xsl:attribute name="style">
+                <xsl:text disable-output-escaping="yes">color: blue;</xsl:text>
+            </xsl:attribute> -->
             <xsl:text disable-output-escaping="yes"><![CDATA[&#8226;&nbsp]]></xsl:text> 
         </xsl:element>
     </xsl:template>

@@ -5,21 +5,31 @@ body {
   font-family: 'Hind Madurai', sans-serif;
 }
 
-#icona_apertura_fileDesc {
+#info-desc-mani{
+ padding: 3px;
+}
+
+#scan-e-lettera{
+  display: inline-block;
+  float: bottom;
+  margin-top: 15px;
+}
+
+/* #icona_apertura_fileDesc {
   margin-left:10px;
   display: inline;
   float:left;
   outline: none;
   width: 15px;
-}
-#icona_spegni{
+} */
+/* #icona_spegni{
   opacity: 0.9;
   margin-top: 10px;
   margin-left: 44%;
   outline: none;
   width: 17px;
   margin-bottom: -5px;
-}
+} */
 .icone{
   width: 30px;
   outline:none;
@@ -28,34 +38,37 @@ body {
   opacity: 0.3;
   cursor: pointer;
 }
-#icona_spegni:hover {
+/* #icona_spegni:hover {
 	opacity: 0.3;
-}
+} */
 
 .articoli_box {
-  max-width: 290px;
-	padding: 5px 10px 0px 10px;
+  max-width: 350px;
 	border-radius: 30px;
 	background-color: #c1c1a4;
 	color: #474234;
-  margin-left:10px;
-  font-size: 12px;
+  margin-left:5px;
+  font-size: 14px;
+  display: inline-block;
   float: left;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .desc_manos_insieme {
-  max-width: 665px;
-  padding: 23px 40px 5px 5px;
+  max-width: 825px;
 	border-radius: 30px;
 	background-color: #c1c1a4;
 	color: #474234;
   margin-bottom: 8px;
-  margin-right:30px;
-  font-size: 13px;
-  line-height: 25px;
-  float: right;
+  margin-left: 15px;
+  padding-right: 30px;
+  font-size: 15px;
+  line-height: 20px;
+  display: inline-block;
+  float: left;
 }
-.desc_manos_senza {
+/* .desc_manos_senza {
   max-width: 770px;
   padding: 23px 40px  5px 5px;
 	border-radius: 40px;
@@ -67,7 +80,7 @@ body {
   text-align: justify;
   float: left;
   line-height: 25px;
-}
+} */
 #descrizione_manoscritto a:hover{
   opacity: 1.0;
 }
@@ -76,17 +89,17 @@ body {
 }
 
 .mani_insieme {
-  max-width: 350px;
-  padding: 4px 40px  45px 30px;
+  max-width: 600px;
+  padding: 20px 25px;
   border-radius: 30px;
   background-color: #c1c1a4;
   color: #474234;
   margin-left: 4px;
-  font-size: 13px;
-  text-align: left;
-  float: left;
+  font-size: 15px;
+  display: inline-block;
+  float: right;
 }
-.mani_senza {
+/* .mani_senza {
   float: top;
   margin-right: 40px;
   margin-left: 61%;
@@ -97,6 +110,9 @@ body {
   background-color: #c1c1a4;
   color: #474234;
   font-size: 16px;
+} */
+.mani_insieme h2{
+  margin-top:0px;
 }
 
 .nascoste{
@@ -105,15 +121,13 @@ body {
   padding-right: 5px;
   padding-top: 2px;
   padding-bottom: 2px;
-  margin: 2px 2px 2px 2px;
+  margin: 5px 10px 5px 10px;
   border-radius:15px;
 }
 .nascoste:first-child {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
-
-
 
 #fileDesc h2 {
   color: black;
@@ -126,7 +140,7 @@ body {
 }
 
 .immagini_lettera {
-  display: block;
+  display: inline-block;
   max-width: 725px;
   float: left;
 }
@@ -164,7 +178,7 @@ body {
 #front_e_body_lettera{
   float: right;
   margin-top:0px; 
-  margin-right: 10px; 
+  margin-left: 10px;
   background-color: #c1c1a4;
   padding: 19px 15px 20px 25px;
   border-radius: 35px;
@@ -182,6 +196,7 @@ body {
   background-color: #adab86;
   padding: 15px 15px 15px 50px;
   font-size: 16px;
+  line-height: 15px;
 }
 
 #contenitore_scrollbar{
@@ -193,10 +208,10 @@ body {
 }
 ::-webkit-scrollbar {
   width: 7px;
-  background-color: #c1c1a4;
+  background-color: transparent;
 }
 ::-webkit-scrollbar-track {
-  background:#c1c1a4; 
+  background:transparent; 
   border-radius: 10px; 
 }
 ::-webkit-scrollbar-thumb {
@@ -207,12 +222,7 @@ body {
   background: #7f8a7e;
 }
 ::-webkit-scrollbar-corner { 
-  background: #c1c1a4; 
-}
-
-#div_scomparsa{
-  margin-bottom: 186px;
-
+  background:transparent; 
 }
 
 #contenitore_titolo_e_front select, .contenuto_front select{
@@ -249,7 +259,7 @@ body {
   border-radius: 55px;
   padding: 25px;
   margin-bottom:10px;
-}b
+}
 
 #opener_lettera, #contenitore_body h2 {
   margin-left: 15px;
@@ -282,6 +292,8 @@ body {
   border-radius: 40px;
   padding: 20px;
   margin: 10px;
+  margin-top:30px;
+  margin-bottom: 50px;
   font-size: 16px;
   color: #474234;
 }
@@ -289,11 +301,16 @@ body {
   float:left;
   background-color: c1c1a4;
   border-radius: 40px;
-  margin: 20px;
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 90px;
   padding: 10px;
   font-size: 16px;
   line-height: 26px;
   color: #474234;
+  overflow: scroll;
+  height: 420px;
+  width: 1030px;
 }
 
 #persone_citate li{
@@ -302,8 +319,9 @@ body {
   max-width: 280px;
   display: inline;
   float: left;
-  margin: 10px;
+  margin: 15px;
   padding: 6px;
+  font-size: 15px;
 }
 #persone_citate li a:hover{
   opacity: 1.0;
@@ -316,7 +334,7 @@ body {
 }
 #luoghi_citati{
   float:right;
-  max-width: 350px;
+  max-width: 370px;
   background-color: #c1c1a4;
   border-radius: 55px;
   margin: 5px;
@@ -335,7 +353,7 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: #474234;
-  max-width: 200px;
+  max-width: 300px;
   float:left;
 }
 #bibliografia2{
@@ -343,12 +361,12 @@ body {
   border-radius: 44px;
   bottom: 20px;
   padding: 20px;
-  margin-right:5px;
+  margin-left:10px;
   font-size: 16px;
   color: #474234;
   line-height: 26px;
-  max-width: 385px;
-  float:right;
+  max-width: 700px;
+  float:left;
 }
 #terminologia{
   float:right;
@@ -359,7 +377,7 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: #474234;
-  max-width: 360px;
+  max-width: 335px;
 }
 
 #bibliografia li a:hover, #bibliografia2 li a:hover, #luoghi_citati li a:hover, #terminologia a:hover{
@@ -445,4 +463,12 @@ a:hover{
   background-image: url('freccia_sopra.png');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* Dividore estetico */
+hr.rounded {
+  margin-top: 800px;
+  border: 3px solid #627455;
+  opacity: 0;
+  border-radius: 5px;
 }
